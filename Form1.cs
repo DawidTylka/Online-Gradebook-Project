@@ -17,14 +17,19 @@ namespace Tylka
             InitializeComponent();
         }
 
-        private void logbtn_MouseClick(object sender, MouseEventArgs e)
+        private void logbtn_Click(object sender, EventArgs e)
         {
-
         }
 
-        private void regbtn_MouseClick(object sender, MouseEventArgs e)
+        private void regbtn_Click(object sender, EventArgs e)
         {
+            registerwindow1.Show();
+            registerwindow1.BringToFront();
+        }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            registerwindow1.Hide();
         }
     }
 }

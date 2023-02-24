@@ -34,6 +34,7 @@
             this.loglabel = new System.Windows.Forms.Label();
             this.passlabel = new System.Windows.Forms.Label();
             this.regbtn = new System.Windows.Forms.Button();
+            this.registerwindow1 = new Tylka.Registerwindow();
             this.SuspendLayout();
             // 
             // logbtn
@@ -44,8 +45,7 @@
             this.logbtn.TabIndex = 0;
             this.logbtn.Text = "button1";
             this.logbtn.UseVisualStyleBackColor = true;
-            this.logbtn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.logbtn_MouseClick);
-            // 
+            this.logbtn.Click += new System.EventHandler(this.logbtn_Click);
             // logtxt
             // 
             this.logtxt.Location = new System.Drawing.Point(296, 103);
@@ -86,21 +86,30 @@
             this.regbtn.TabIndex = 5;
             this.regbtn.Text = "button1";
             this.regbtn.UseVisualStyleBackColor = true;
-            this.regbtn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.regbtn_MouseClick);
+            this.regbtn.Click += new System.EventHandler(this.regbtn_Click);
+            // 
+            // registerwindow1
+            // 
+            this.registerwindow1.Location = new System.Drawing.Point(-1, -1);
+            this.registerwindow1.Name = "registerwindow1";
+            this.registerwindow1.Size = new System.Drawing.Size(784, 453);
+            this.registerwindow1.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(782, 453);
             this.Controls.Add(this.regbtn);
             this.Controls.Add(this.passlabel);
             this.Controls.Add(this.loglabel);
             this.Controls.Add(this.passtxt);
             this.Controls.Add(this.logtxt);
             this.Controls.Add(this.logbtn);
+            this.Controls.Add(this.registerwindow1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,6 +123,7 @@
         private System.Windows.Forms.Label loglabel;
         private System.Windows.Forms.Label passlabel;
         private System.Windows.Forms.Button regbtn;
+        private Registerwindow registerwindow1;
     }
 }
 
