@@ -153,6 +153,7 @@
             this.RegisterBtn.TabIndex = 12;
             this.RegisterBtn.Text = "Zarejestruj";
             this.RegisterBtn.UseVisualStyleBackColor = true;
+            this.RegisterBtn.Click += new System.EventHandler(this.RegisterBtn_Click);
             // 
             // RoleBox
             // 
