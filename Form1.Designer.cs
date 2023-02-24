@@ -39,13 +39,14 @@
             // 
             // logbtn
             // 
-            this.logbtn.Location = new System.Drawing.Point(321, 219);
+            this.logbtn.Location = new System.Drawing.Point(307, 219);
             this.logbtn.Name = "logbtn";
-            this.logbtn.Size = new System.Drawing.Size(75, 23);
+            this.logbtn.Size = new System.Drawing.Size(89, 44);
             this.logbtn.TabIndex = 0;
-            this.logbtn.Text = "button1";
+            this.logbtn.Text = "Zaloguj";
             this.logbtn.UseVisualStyleBackColor = true;
             this.logbtn.Click += new System.EventHandler(this.logbtn_Click);
+            // 
             // logtxt
             // 
             this.logtxt.Location = new System.Drawing.Point(296, 103);
@@ -80,20 +81,21 @@
             // 
             // regbtn
             // 
-            this.regbtn.Location = new System.Drawing.Point(170, 219);
+            this.regbtn.Location = new System.Drawing.Point(181, 219);
             this.regbtn.Name = "regbtn";
-            this.regbtn.Size = new System.Drawing.Size(75, 23);
+            this.regbtn.Size = new System.Drawing.Size(89, 44);
             this.regbtn.TabIndex = 5;
-            this.regbtn.Text = "button1";
+            this.regbtn.Text = "Zarejestruj";
             this.regbtn.UseVisualStyleBackColor = true;
             this.regbtn.Click += new System.EventHandler(this.regbtn_Click);
             // 
             // registerwindow1
             // 
-            this.registerwindow1.Location = new System.Drawing.Point(-1, -1);
+            this.registerwindow1.Location = new System.Drawing.Point(1, 1);
             this.registerwindow1.Name = "registerwindow1";
             this.registerwindow1.Size = new System.Drawing.Size(784, 453);
             this.registerwindow1.TabIndex = 6;
+            this.registerwindow1.Load += new System.EventHandler(this.registerwindow1_Load);
             // 
             // Form1
             // 

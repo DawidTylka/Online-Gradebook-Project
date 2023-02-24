@@ -55,6 +55,7 @@
             this.BackToLogBtn.TabIndex = 0;
             this.BackToLogBtn.Text = "Powrót do logowania";
             this.BackToLogBtn.UseVisualStyleBackColor = true;
+            this.BackToLogBtn.Click += new System.EventHandler(this.BackToLogBtn_Click);
             // 
             // NameLabel
             // 

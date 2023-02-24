@@ -21,5 +21,10 @@ namespace Tylka
         {
 
         }
+
+        private void BackToLogBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

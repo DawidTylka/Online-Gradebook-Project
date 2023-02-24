@@ -31,5 +31,10 @@ namespace Tylka
         {
             registerwindow1.Hide();
         }
+
+        private void registerwindow1_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
