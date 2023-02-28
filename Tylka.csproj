@@ -52,10 +52,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="onlinegradebookprojectDataSet1.Designer.cs">
+    <Compile Include="onlinegradebookproject.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>onlinegradebookprojectDataSet1.xsd</DependentUpon>
+      <DependentUpon>onlinegradebookproject.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,16 +80,16 @@
     <EmbeddedResource Include="RegisterWindow.resx">
       <DependentUpon>RegisterWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="onlinegradebookprojectDataSet1.xsc">
-      <DependentUpon>onlinegradebookprojectDataSet1.xsd</DependentUpon>
+    <None Include="onlinegradebookproject.xsc">
+      <DependentUpon>onlinegradebookproject.xsd</DependentUpon>
     </None>
-    <None Include="onlinegradebookprojectDataSet1.xsd">
+    <None Include="onlinegradebookproject.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>onlinegradebookprojectDataSet1.Designer.cs</LastGenOutput>
+      <LastGenOutput>onlinegradebookproject.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="onlinegradebookprojectDataSet1.xss">
-      <DependentUpon>onlinegradebookprojectDataSet1.xsd</DependentUpon>
+    <None Include="onlinegradebookproject.xss">
+      <DependentUpon>onlinegradebookproject.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

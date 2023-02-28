@@ -91,9 +91,9 @@
             // 
             // registerwindow1
             // 
-            this.registerwindow1.Location = new System.Drawing.Point(12, -16);
+            this.registerwindow1.Location = new System.Drawing.Point(-1, 2);
             this.registerwindow1.Name = "registerwindow1";
-            this.registerwindow1.Size = new System.Drawing.Size(800, 500);
+            this.registerwindow1.Size = new System.Drawing.Size(783, 454);
             this.registerwindow1.TabIndex = 6;
             // 
             // Form1
