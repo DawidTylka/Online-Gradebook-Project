@@ -2957,10 +2957,10 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UsersRow AddUsersRow(string id, string login, string password, string name, string surname, string email, string telefon, string pesel, bool admin, string rola, string _id_opiekuna) {
+            public UsersRow AddUsersRow(string login, string password, string name, string surname, string email, string telefon, string pesel, bool admin, int rola, string _id_opiekuna) {
                 UsersRow rowUsersRow = ((UsersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        id,
+                        null,
                         login,
                         password,
                         name,
@@ -3009,7 +3009,7 @@ namespace Tylka {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnid = new global::System.Data.DataColumn("id", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnid = new global::System.Data.DataColumn("id", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnid);
                 this.columnlogin = new global::System.Data.DataColumn("login", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnlogin);
@@ -3027,13 +3027,18 @@ namespace Tylka {
                 base.Columns.Add(this.columnpesel);
                 this.columnadmin = new global::System.Data.DataColumn("admin", typeof(bool), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnadmin);
-                this.columnrola = new global::System.Data.DataColumn("rola", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnrola = new global::System.Data.DataColumn("rola", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnrola);
                 this._columnid_opiekuna = new global::System.Data.DataColumn("id-opiekuna", typeof(string), null, global::System.Data.MappingType.Element);
                 this._columnid_opiekuna.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnid_opiekuna");
                 this._columnid_opiekuna.ExtendedProperties.Add("Generator_UserColumnName", "id-opiekuna");
                 base.Columns.Add(this._columnid_opiekuna);
-                this.columnid.MaxLength = 50;
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnid}, false));
+                this.columnid.AutoIncrement = true;
+                this.columnid.AutoIncrementSeed = 1;
+                this.columnid.AllowDBNull = false;
+                this.columnid.Unique = true;
                 this.columnlogin.MaxLength = 10;
                 this.columnpassword.MaxLength = 10;
                 this.columnname.MaxLength = 10;
@@ -3041,7 +3046,6 @@ namespace Tylka {
                 this.columnemail.MaxLength = 10;
                 this.columntelefon.MaxLength = 10;
                 this.columnpesel.MaxLength = 10;
-                this.columnrola.MaxLength = 10;
                 this._columnid_opiekuna.MaxLength = 10;
             }
             
@@ -4179,14 +4183,9 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string id {
+            public int id {
                 get {
-                    try {
-                        return ((string)(this[this.tableUsers.idColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'id\' in table \'Users\' is DBNull.", e);
-                    }
+                    return ((int)(this[this.tableUsers.idColumn]));
                 }
                 set {
                     this[this.tableUsers.idColumn] = value;
@@ -4323,10 +4322,10 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string rola {
+            public int rola {
                 get {
                     try {
-                        return ((string)(this[this.tableUsers.rolaColumn]));
+                        return ((int)(this[this.tableUsers.rolaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'rola\' in table \'Users\' is DBNull.", e);
@@ -4351,18 +4350,6 @@ namespace Tylka {
                 set {
                     this[this.tableUsers._id_opiekunaColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsidNull() {
-                return this.IsNull(this.tableUsers.idColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetidNull() {
-                this[this.tableUsers.idColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7801,7 +7788,7 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
         public virtual int Insert(string id, string login, string password, string name, string surname, string email, string telefon, string pesel, global::System.Nullable<bool> admin, string rola, string p1) {
             if ((id == null)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("id");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(id));

@@ -20,11 +20,21 @@ namespace Tylka
         private SqlConnection conn = new SqlConnection(@"Server=tcp:onlinegradebook.database.windows.net,1433;Initial Catalog=onlinegradebookproject;Persist Security Info=False;User ID=theedziu;Password=Kacper123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         private void RegisterBtn_Click(object sender, EventArgs e)
         {
-            String LoginT, PasswordT, NameT, SurnameT;
+            String LoginT, PasswordT, NameT, SurnameT, RoleT;
             LoginT = LoginTxt.Text;
             PasswordT = PasswordTxt.Text;
             NameT = NameTxt.Text;
             SurnameT = SurnameTxt.Text;
+            RoleT = RoleBox.Text;
+            int role = 0;
+            if (RoleT == "Uczeń")
+                role = 1;
+            if (RoleT == "Rodzic")
+                role = 2;
+            if (RoleT == "Nauczyciel")
+                role = 3;
+
+
             conn.Open();
             SqlCommand command = conn.CreateCommand();
             command.CommandText = "Select login from Users where login=@name";//wynbieram wszystkie wartosci ktore sa rowne loginowi
@@ -37,7 +47,7 @@ namespace Tylka
             if ((PasswordT != "") && (LoginT != "") && (NameT != "") && (SurnameT != "") && (dt.Rows.Count <= 0))
             {
                 //ustalamy komende do wsadzenia do bazdy danych wszystkich tekstow z rejestracji
-                SqlCommand cmd = new SqlCommand("INSERT INTO Users(login,password,name,surname) VALUES('" + LoginT + "','" + PasswordT + "','" + NameT + "','" + SurnameT + "')", conn);
+                SqlCommand cmd = new SqlCommand("INSERT INTO Users(login,password,name,surname,rola) VALUES('" + LoginT + "','" + PasswordT + "','" + NameT + "','" + SurnameT+ "','"+role +"')", conn);
                 conn.Open();//otwieramy polaczenie
 
                 var i = cmd.ExecuteNonQuery();//uruchamamy komende
