@@ -12,7 +12,7 @@
     <Shape ID="DesignTable:Oceny" ZOrder="5" X="912" Y="70" Height="273" Width="210" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="214" />
     <Shape ID="DesignTable:Plany_lekcji" ZOrder="4" X="1192" Y="70" Height="227" Width="249" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="168" />
     <Shape ID="DesignTable:Przedmioty" ZOrder="3" X="1511" Y="70" Height="135" Width="248" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="76" />
-    <Shape ID="DesignTable:Sprawdziany" ZOrder="2" X="1829" Y="70" Height="181" Width="257" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="122" />
+    <Shape ID="DesignTable:Sprawdziany" ZOrder="2" X="1829" Y="70" Height="158" Width="257" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="99" />
     <Shape ID="DesignTable:Users" ZOrder="1" X="2156" Y="70" Height="342" Width="204" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="283" />
   </Shapes>
   <Connectors />

@@ -47,7 +47,7 @@ namespace Tylka
             if ((PasswordT != "") && (LoginT != "") && (NameT != "") && (SurnameT != "") && (dt.Rows.Count <= 0))
             {
                 //ustalamy komende do wsadzenia do bazdy danych wszystkich tekstow z rejestracji
-                SqlCommand cmd = new SqlCommand("INSERT INTO Users(login,password,name,surname,rola) VALUES('" + LoginT + "','" + PasswordT + "','" + NameT + "','" + SurnameT+ "','"+role +"')", conn);
+                SqlCommand cmd = new SqlCommand("INSERT INTO Users(login,password,name,surname,rola,admin) VALUES('" + LoginT + "','" + PasswordT + "','" + NameT + "','" + SurnameT+ "','"+role +"','"+0+"')", conn);
                 conn.Open();//otwieramy polaczenie
 
                 var i = cmd.ExecuteNonQuery();//uruchamamy komende

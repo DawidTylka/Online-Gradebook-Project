@@ -20,9 +20,9 @@ namespace Tylka {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("onlinegradebookproject")]
+    [global::System.Xml.Serialization.XmlRootAttribute("onlinegradebookprojectDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class onlinegradebookproject : global::System.Data.DataSet {
+    public partial class onlinegradebookprojectDataSet : global::System.Data.DataSet {
         
         private DniDataTable tableDni;
         
@@ -44,7 +44,7 @@ namespace Tylka {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public onlinegradebookproject() {
+        public onlinegradebookprojectDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -55,7 +55,7 @@ namespace Tylka {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected onlinegradebookproject(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected onlinegradebookprojectDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -232,7 +232,7 @@ namespace Tylka {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            onlinegradebookproject cln = ((onlinegradebookproject)(base.Clone()));
+            onlinegradebookprojectDataSet cln = ((onlinegradebookprojectDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -367,9 +367,9 @@ namespace Tylka {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "onlinegradebookproject";
+            this.DataSetName = "onlinegradebookprojectDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/onlinegradebookproject.xsd";
+            this.Namespace = "http://tempuri.org/onlinegradebookprojectDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableDni = new DniDataTable();
@@ -449,7 +449,7 @@ namespace Tylka {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            onlinegradebookproject ds = new onlinegradebookproject();
+            onlinegradebookprojectDataSet ds = new onlinegradebookprojectDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -524,7 +524,7 @@ namespace Tylka {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class DniDataTable : global::System.Data.TypedTableBase<DniRow> {
             
-            private global::System.Data.DataColumn columnIdentyfikator;
+            private global::System.Data.DataColumn columniddnia;
             
             private global::System.Data.DataColumn columnPoniedziałe;
             
@@ -575,9 +575,9 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn IdentyfikatorColumn {
+            public global::System.Data.DataColumn iddniaColumn {
                 get {
-                    return this.columnIdentyfikator;
+                    return this.columniddnia;
                 }
             }
             
@@ -692,9 +692,9 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public DniRow FindByIdentyfikator(int Identyfikator) {
+            public DniRow FindByiddnia(int iddnia) {
                 return ((DniRow)(this.Rows.Find(new object[] {
-                            Identyfikator})));
+                            iddnia})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -714,7 +714,7 @@ namespace Tylka {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnIdentyfikator = base.Columns["Identyfikator"];
+                this.columniddnia = base.Columns["iddnia"];
                 this.columnPoniedziałe = base.Columns["Poniedziałe"];
                 this.columnWtorek = base.Columns["Wtorek"];
                 this.columnŚroda = base.Columns["Środa"];
@@ -727,8 +727,8 @@ namespace Tylka {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnIdentyfikator = new global::System.Data.DataColumn("Identyfikator", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnIdentyfikator);
+                this.columniddnia = new global::System.Data.DataColumn("iddnia", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columniddnia);
                 this.columnPoniedziałe = new global::System.Data.DataColumn("Poniedziałe", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPoniedziałe);
                 this.columnWtorek = new global::System.Data.DataColumn("Wtorek", typeof(string), null, global::System.Data.MappingType.Element);
@@ -744,13 +744,13 @@ namespace Tylka {
                 this.columnNiedziela = new global::System.Data.DataColumn("Niedziela", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNiedziela);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnIdentyfikator}, true));
-                this.columnIdentyfikator.AutoIncrement = true;
-                this.columnIdentyfikator.AutoIncrementSeed = -1;
-                this.columnIdentyfikator.AutoIncrementStep = -1;
-                this.columnIdentyfikator.AllowDBNull = false;
-                this.columnIdentyfikator.ReadOnly = true;
-                this.columnIdentyfikator.Unique = true;
+                                this.columniddnia}, true));
+                this.columniddnia.AutoIncrement = true;
+                this.columniddnia.AutoIncrementSeed = -1;
+                this.columniddnia.AutoIncrementStep = -1;
+                this.columniddnia.AllowDBNull = false;
+                this.columniddnia.ReadOnly = true;
+                this.columniddnia.Unique = true;
                 this.columnPoniedziałe.MaxLength = 255;
                 this.columnWtorek.MaxLength = 255;
                 this.columnŚroda.MaxLength = 255;
@@ -825,7 +825,7 @@ namespace Tylka {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                onlinegradebookproject ds = new onlinegradebookproject();
+                onlinegradebookprojectDataSet ds = new onlinegradebookprojectDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1102,7 +1102,7 @@ namespace Tylka {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                onlinegradebookproject ds = new onlinegradebookproject();
+                onlinegradebookprojectDataSet ds = new onlinegradebookprojectDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1168,7 +1168,7 @@ namespace Tylka {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class ObecnosciDataTable : global::System.Data.TypedTableBase<ObecnosciRow> {
             
-            private global::System.Data.DataColumn columnIdentyfikator;
+            private global::System.Data.DataColumn columnidobecnosci;
             
             private global::System.Data.DataColumn columnid_ucznia;
             
@@ -1215,9 +1215,9 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn IdentyfikatorColumn {
+            public global::System.Data.DataColumn idobecnosciColumn {
                 get {
-                    return this.columnIdentyfikator;
+                    return this.columnidobecnosci;
                 }
             }
             
@@ -1314,9 +1314,9 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ObecnosciRow FindByIdentyfikator(int Identyfikator) {
+            public ObecnosciRow FindByidobecnosci(int idobecnosci) {
                 return ((ObecnosciRow)(this.Rows.Find(new object[] {
-                            Identyfikator})));
+                            idobecnosci})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1336,7 +1336,7 @@ namespace Tylka {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnIdentyfikator = base.Columns["Identyfikator"];
+                this.columnidobecnosci = base.Columns["idobecnosci"];
                 this.columnid_ucznia = base.Columns["id_ucznia"];
                 this.columnid_przedmiotu = base.Columns["id_przedmiotu"];
                 this.columndata = base.Columns["data"];
@@ -1347,8 +1347,8 @@ namespace Tylka {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnIdentyfikator = new global::System.Data.DataColumn("Identyfikator", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnIdentyfikator);
+                this.columnidobecnosci = new global::System.Data.DataColumn("idobecnosci", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnidobecnosci);
                 this.columnid_ucznia = new global::System.Data.DataColumn("id_ucznia", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnid_ucznia);
                 this.columnid_przedmiotu = new global::System.Data.DataColumn("id_przedmiotu", typeof(int), null, global::System.Data.MappingType.Element);
@@ -1360,13 +1360,13 @@ namespace Tylka {
                 this.columnSSMA_TimeStamp = new global::System.Data.DataColumn("SSMA_TimeStamp", typeof(byte[]), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSSMA_TimeStamp);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnIdentyfikator}, true));
-                this.columnIdentyfikator.AutoIncrement = true;
-                this.columnIdentyfikator.AutoIncrementSeed = -1;
-                this.columnIdentyfikator.AutoIncrementStep = -1;
-                this.columnIdentyfikator.AllowDBNull = false;
-                this.columnIdentyfikator.ReadOnly = true;
-                this.columnIdentyfikator.Unique = true;
+                                this.columnidobecnosci}, true));
+                this.columnidobecnosci.AutoIncrement = true;
+                this.columnidobecnosci.AutoIncrementSeed = -1;
+                this.columnidobecnosci.AutoIncrementStep = -1;
+                this.columnidobecnosci.AllowDBNull = false;
+                this.columnidobecnosci.ReadOnly = true;
+                this.columnidobecnosci.Unique = true;
                 this.columnSSMA_TimeStamp.ReadOnly = true;
             }
             
@@ -1435,7 +1435,7 @@ namespace Tylka {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                onlinegradebookproject ds = new onlinegradebookproject();
+                onlinegradebookprojectDataSet ds = new onlinegradebookprojectDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1797,7 +1797,7 @@ namespace Tylka {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                onlinegradebookproject ds = new onlinegradebookproject();
+                onlinegradebookprojectDataSet ds = new onlinegradebookprojectDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2129,7 +2129,7 @@ namespace Tylka {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                onlinegradebookproject ds = new onlinegradebookproject();
+                onlinegradebookprojectDataSet ds = new onlinegradebookprojectDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2406,7 +2406,7 @@ namespace Tylka {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                onlinegradebookproject ds = new onlinegradebookproject();
+                onlinegradebookprojectDataSet ds = new onlinegradebookprojectDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2472,8 +2472,6 @@ namespace Tylka {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class SprawdzianyDataTable : global::System.Data.TypedTableBase<SprawdzianyRow> {
             
-            private global::System.Data.DataColumn columnIdentyfikator;
-            
             private global::System.Data.DataColumn columnid_przedmiotu;
             
             private global::System.Data.DataColumn columntemat;
@@ -2511,14 +2509,6 @@ namespace Tylka {
             protected SprawdzianyDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn IdentyfikatorColumn {
-                get {
-                    return this.columnIdentyfikator;
-                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2585,7 +2575,6 @@ namespace Tylka {
             public SprawdzianyRow AddSprawdzianyRow(int id_przedmiotu, string temat, System.DateTime termin) {
                 SprawdzianyRow rowSprawdzianyRow = ((SprawdzianyRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
                         id_przedmiotu,
                         temat,
                         termin};
@@ -2596,9 +2585,9 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SprawdzianyRow FindByIdentyfikator(int Identyfikator) {
+            public SprawdzianyRow FindByid_przedmiotu(int id_przedmiotu) {
                 return ((SprawdzianyRow)(this.Rows.Find(new object[] {
-                            Identyfikator})));
+                            id_przedmiotu})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2618,7 +2607,6 @@ namespace Tylka {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnIdentyfikator = base.Columns["Identyfikator"];
                 this.columnid_przedmiotu = base.Columns["id_przedmiotu"];
                 this.columntemat = base.Columns["temat"];
                 this.columntermin = base.Columns["termin"];
@@ -2627,8 +2615,6 @@ namespace Tylka {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnIdentyfikator = new global::System.Data.DataColumn("Identyfikator", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnIdentyfikator);
                 this.columnid_przedmiotu = new global::System.Data.DataColumn("id_przedmiotu", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnid_przedmiotu);
                 this.columntemat = new global::System.Data.DataColumn("temat", typeof(string), null, global::System.Data.MappingType.Element);
@@ -2636,14 +2622,12 @@ namespace Tylka {
                 this.columntermin = new global::System.Data.DataColumn("termin", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columntermin);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnIdentyfikator}, true));
-                this.columnIdentyfikator.AutoIncrement = true;
-                this.columnIdentyfikator.AutoIncrementSeed = -1;
-                this.columnIdentyfikator.AutoIncrementStep = -1;
-                this.columnIdentyfikator.AllowDBNull = false;
-                this.columnIdentyfikator.ReadOnly = true;
-                this.columnIdentyfikator.Unique = true;
+                                this.columnid_przedmiotu}, true));
+                this.columnid_przedmiotu.AllowDBNull = false;
+                this.columnid_przedmiotu.Unique = true;
+                this.columntemat.AllowDBNull = false;
                 this.columntemat.MaxLength = 255;
+                this.columntermin.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2711,7 +2695,7 @@ namespace Tylka {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                onlinegradebookproject ds = new onlinegradebookproject();
+                onlinegradebookprojectDataSet ds = new onlinegradebookprojectDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2797,7 +2781,7 @@ namespace Tylka {
             
             private global::System.Data.DataColumn columnrola;
             
-            private global::System.Data.DataColumn _columnid_opiekuna;
+            private global::System.Data.DataColumn columnidopiekuna;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -2914,9 +2898,9 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn _id_opiekunaColumn {
+            public global::System.Data.DataColumn idopiekunaColumn {
                 get {
-                    return this._columnid_opiekuna;
+                    return this.columnidopiekuna;
                 }
             }
             
@@ -2957,7 +2941,7 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UsersRow AddUsersRow(string login, string password, string name, string surname, string email, string telefon, string pesel, bool admin, int rola, string _id_opiekuna) {
+            public UsersRow AddUsersRow(string login, string password, string name, string surname, string email, int telefon, int pesel, bool admin, int rola, int idopiekuna) {
                 UsersRow rowUsersRow = ((UsersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2970,10 +2954,17 @@ namespace Tylka {
                         pesel,
                         admin,
                         rola,
-                        _id_opiekuna};
+                        idopiekuna};
                 rowUsersRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowUsersRow);
                 return rowUsersRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public UsersRow FindByid(int id) {
+                return ((UsersRow)(this.Rows.Find(new object[] {
+                            id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3003,7 +2994,7 @@ namespace Tylka {
                 this.columnpesel = base.Columns["pesel"];
                 this.columnadmin = base.Columns["admin"];
                 this.columnrola = base.Columns["rola"];
-                this._columnid_opiekuna = base.Columns["id-opiekuna"];
+                this.columnidopiekuna = base.Columns["idopiekuna"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3021,32 +3012,33 @@ namespace Tylka {
                 base.Columns.Add(this.columnsurname);
                 this.columnemail = new global::System.Data.DataColumn("email", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnemail);
-                this.columntelefon = new global::System.Data.DataColumn("telefon", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columntelefon = new global::System.Data.DataColumn("telefon", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columntelefon);
-                this.columnpesel = new global::System.Data.DataColumn("pesel", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnpesel = new global::System.Data.DataColumn("pesel", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnpesel);
                 this.columnadmin = new global::System.Data.DataColumn("admin", typeof(bool), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnadmin);
                 this.columnrola = new global::System.Data.DataColumn("rola", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnrola);
-                this._columnid_opiekuna = new global::System.Data.DataColumn("id-opiekuna", typeof(string), null, global::System.Data.MappingType.Element);
-                this._columnid_opiekuna.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnid_opiekuna");
-                this._columnid_opiekuna.ExtendedProperties.Add("Generator_UserColumnName", "id-opiekuna");
-                base.Columns.Add(this._columnid_opiekuna);
+                this.columnidopiekuna = new global::System.Data.DataColumn("idopiekuna", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnidopiekuna);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnid}, false));
+                                this.columnid}, true));
                 this.columnid.AutoIncrement = true;
                 this.columnid.AutoIncrementSeed = 1;
                 this.columnid.AllowDBNull = false;
                 this.columnid.Unique = true;
-                this.columnlogin.MaxLength = 10;
-                this.columnpassword.MaxLength = 10;
-                this.columnname.MaxLength = 10;
-                this.columnsurname.MaxLength = 10;
-                this.columnemail.MaxLength = 10;
-                this.columntelefon.MaxLength = 10;
-                this.columnpesel.MaxLength = 10;
-                this._columnid_opiekuna.MaxLength = 10;
+                this.columnlogin.AllowDBNull = false;
+                this.columnlogin.MaxLength = 50;
+                this.columnpassword.AllowDBNull = false;
+                this.columnpassword.MaxLength = 50;
+                this.columnname.AllowDBNull = false;
+                this.columnname.MaxLength = 50;
+                this.columnsurname.AllowDBNull = false;
+                this.columnsurname.MaxLength = 50;
+                this.columnemail.MaxLength = 50;
+                this.columnadmin.AllowDBNull = false;
+                this.columnrola.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3114,7 +3106,7 @@ namespace Tylka {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                onlinegradebookproject ds = new onlinegradebookproject();
+                onlinegradebookprojectDataSet ds = new onlinegradebookprojectDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3189,12 +3181,12 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int Identyfikator {
+            public int iddnia {
                 get {
-                    return ((int)(this[this.tableDni.IdentyfikatorColumn]));
+                    return ((int)(this[this.tableDni.iddniaColumn]));
                 }
                 set {
-                    this[this.tableDni.IdentyfikatorColumn] = value;
+                    this[this.tableDni.iddniaColumn] = value;
                 }
             }
             
@@ -3465,12 +3457,12 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int Identyfikator {
+            public int idobecnosci {
                 get {
-                    return ((int)(this[this.tableObecnosci.IdentyfikatorColumn]));
+                    return ((int)(this[this.tableObecnosci.idobecnosciColumn]));
                 }
                 set {
-                    this[this.tableObecnosci.IdentyfikatorColumn] = value;
+                    this[this.tableObecnosci.idobecnosciColumn] = value;
                 }
             }
             
@@ -4073,25 +4065,9 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int Identyfikator {
-                get {
-                    return ((int)(this[this.tableSprawdziany.IdentyfikatorColumn]));
-                }
-                set {
-                    this[this.tableSprawdziany.IdentyfikatorColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public int id_przedmiotu {
                 get {
-                    try {
-                        return ((int)(this[this.tableSprawdziany.id_przedmiotuColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'id_przedmiotu\' in table \'Sprawdziany\' is DBNull.", e);
-                    }
+                    return ((int)(this[this.tableSprawdziany.id_przedmiotuColumn]));
                 }
                 set {
                     this[this.tableSprawdziany.id_przedmiotuColumn] = value;
@@ -4102,12 +4078,7 @@ namespace Tylka {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string temat {
                 get {
-                    try {
-                        return ((string)(this[this.tableSprawdziany.tematColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'temat\' in table \'Sprawdziany\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tableSprawdziany.tematColumn]));
                 }
                 set {
                     this[this.tableSprawdziany.tematColumn] = value;
@@ -4118,52 +4089,11 @@ namespace Tylka {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public System.DateTime termin {
                 get {
-                    try {
-                        return ((global::System.DateTime)(this[this.tableSprawdziany.terminColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'termin\' in table \'Sprawdziany\' is DBNull.", e);
-                    }
+                    return ((global::System.DateTime)(this[this.tableSprawdziany.terminColumn]));
                 }
                 set {
                     this[this.tableSprawdziany.terminColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Isid_przedmiotuNull() {
-                return this.IsNull(this.tableSprawdziany.id_przedmiotuColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Setid_przedmiotuNull() {
-                this[this.tableSprawdziany.id_przedmiotuColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IstematNull() {
-                return this.IsNull(this.tableSprawdziany.tematColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SettematNull() {
-                this[this.tableSprawdziany.tematColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsterminNull() {
-                return this.IsNull(this.tableSprawdziany.terminColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetterminNull() {
-                this[this.tableSprawdziany.terminColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -4196,12 +4126,7 @@ namespace Tylka {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string login {
                 get {
-                    try {
-                        return ((string)(this[this.tableUsers.loginColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'login\' in table \'Users\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tableUsers.loginColumn]));
                 }
                 set {
                     this[this.tableUsers.loginColumn] = value;
@@ -4212,12 +4137,7 @@ namespace Tylka {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string password {
                 get {
-                    try {
-                        return ((string)(this[this.tableUsers.passwordColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'password\' in table \'Users\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tableUsers.passwordColumn]));
                 }
                 set {
                     this[this.tableUsers.passwordColumn] = value;
@@ -4228,12 +4148,7 @@ namespace Tylka {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string name {
                 get {
-                    try {
-                        return ((string)(this[this.tableUsers.nameColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'name\' in table \'Users\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tableUsers.nameColumn]));
                 }
                 set {
                     this[this.tableUsers.nameColumn] = value;
@@ -4244,12 +4159,7 @@ namespace Tylka {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string surname {
                 get {
-                    try {
-                        return ((string)(this[this.tableUsers.surnameColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'surname\' in table \'Users\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tableUsers.surnameColumn]));
                 }
                 set {
                     this[this.tableUsers.surnameColumn] = value;
@@ -4274,10 +4184,10 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string telefon {
+            public int telefon {
                 get {
                     try {
-                        return ((string)(this[this.tableUsers.telefonColumn]));
+                        return ((int)(this[this.tableUsers.telefonColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'telefon\' in table \'Users\' is DBNull.", e);
@@ -4290,10 +4200,10 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string pesel {
+            public int pesel {
                 get {
                     try {
-                        return ((string)(this[this.tableUsers.peselColumn]));
+                        return ((int)(this[this.tableUsers.peselColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'pesel\' in table \'Users\' is DBNull.", e);
@@ -4308,12 +4218,7 @@ namespace Tylka {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool admin {
                 get {
-                    try {
-                        return ((bool)(this[this.tableUsers.adminColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'admin\' in table \'Users\' is DBNull.", e);
-                    }
+                    return ((bool)(this[this.tableUsers.adminColumn]));
                 }
                 set {
                     this[this.tableUsers.adminColumn] = value;
@@ -4324,12 +4229,7 @@ namespace Tylka {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public int rola {
                 get {
-                    try {
-                        return ((int)(this[this.tableUsers.rolaColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'rola\' in table \'Users\' is DBNull.", e);
-                    }
+                    return ((int)(this[this.tableUsers.rolaColumn]));
                 }
                 set {
                     this[this.tableUsers.rolaColumn] = value;
@@ -4338,66 +4238,18 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string _id_opiekuna {
+            public int idopiekuna {
                 get {
                     try {
-                        return ((string)(this[this.tableUsers._id_opiekunaColumn]));
+                        return ((int)(this[this.tableUsers.idopiekunaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'id-opiekuna\' in table \'Users\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'idopiekuna\' in table \'Users\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableUsers._id_opiekunaColumn] = value;
+                    this[this.tableUsers.idopiekunaColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsloginNull() {
-                return this.IsNull(this.tableUsers.loginColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetloginNull() {
-                this[this.tableUsers.loginColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IspasswordNull() {
-                return this.IsNull(this.tableUsers.passwordColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetpasswordNull() {
-                this[this.tableUsers.passwordColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsnameNull() {
-                return this.IsNull(this.tableUsers.nameColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetnameNull() {
-                this[this.tableUsers.nameColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IssurnameNull() {
-                return this.IsNull(this.tableUsers.surnameColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetsurnameNull() {
-                this[this.tableUsers.surnameColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4438,38 +4290,14 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsadminNull() {
-                return this.IsNull(this.tableUsers.adminColumn);
+            public bool IsidopiekunaNull() {
+                return this.IsNull(this.tableUsers.idopiekunaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetadminNull() {
-                this[this.tableUsers.adminColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsrolaNull() {
-                return this.IsNull(this.tableUsers.rolaColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetrolaNull() {
-                this[this.tableUsers.rolaColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Is_id_opiekunaNull() {
-                return this.IsNull(this.tableUsers._id_opiekunaColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Set_id_opiekunaNull() {
-                this[this.tableUsers._id_opiekunaColumn] = global::System.Convert.DBNull;
+            public void SetidopiekunaNull() {
+                this[this.tableUsers.idopiekunaColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -4746,7 +4574,7 @@ namespace Tylka {
         }
     }
 }
-namespace Tylka.onlinegradebookprojectTableAdapters {
+namespace Tylka.onlinegradebookprojectDataSetTableAdapters {
     
     
     /// <summary>
@@ -4870,7 +4698,7 @@ namespace Tylka.onlinegradebookprojectTableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Dni";
-            tableMapping.ColumnMappings.Add("Identyfikator", "Identyfikator");
+            tableMapping.ColumnMappings.Add("iddnia", "iddnia");
             tableMapping.ColumnMappings.Add("Poniedziałe", "Poniedziałe");
             tableMapping.ColumnMappings.Add("Wtorek", "Wtorek");
             tableMapping.ColumnMappings.Add("Środa", "Środa");
@@ -4881,9 +4709,9 @@ namespace Tylka.onlinegradebookprojectTableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Dni] WHERE (([Identyfikator] = @Original_Identyfikator) AND ((@IsNull_Poniedziałe = 1 AND [Poniedziałe] IS NULL) OR ([Poniedziałe] = @Original_Poniedziałe)) AND ((@IsNull_Wtorek = 1 AND [Wtorek] IS NULL) OR ([Wtorek] = @Original_Wtorek)) AND ((@IsNull_Środa = 1 AND [Środa] IS NULL) OR ([Środa] = @Original_Środa)) AND ((@IsNull_Czwartek = 1 AND [Czwartek] IS NULL) OR ([Czwartek] = @Original_Czwartek)) AND ((@IsNull_Piątek = 1 AND [Piątek] IS NULL) OR ([Piątek] = @Original_Piątek)) AND ((@IsNull_Sobota = 1 AND [Sobota] IS NULL) OR ([Sobota] = @Original_Sobota)) AND ((@IsNull_Niedziela = 1 AND [Niedziela] IS NULL) OR ([Niedziela] = @Original_Niedziela)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Dni] WHERE (([iddnia] = @Original_iddnia) AND ((@IsNull_Poniedziałe = 1 AND [Poniedziałe] IS NULL) OR ([Poniedziałe] = @Original_Poniedziałe)) AND ((@IsNull_Wtorek = 1 AND [Wtorek] IS NULL) OR ([Wtorek] = @Original_Wtorek)) AND ((@IsNull_Środa = 1 AND [Środa] IS NULL) OR ([Środa] = @Original_Środa)) AND ((@IsNull_Czwartek = 1 AND [Czwartek] IS NULL) OR ([Czwartek] = @Original_Czwartek)) AND ((@IsNull_Piątek = 1 AND [Piątek] IS NULL) OR ([Piątek] = @Original_Piątek)) AND ((@IsNull_Sobota = 1 AND [Sobota] IS NULL) OR ([Sobota] = @Original_Sobota)) AND ((@IsNull_Niedziela = 1 AND [Niedziela] IS NULL) OR ([Niedziela] = @Original_Niedziela)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Identyfikator", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Identyfikator", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_iddnia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "iddnia", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Poniedziałe", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Poniedziałe", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Poniedziałe", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Poniedziałe", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Wtorek", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Wtorek", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -4901,7 +4729,7 @@ namespace Tylka.onlinegradebookprojectTableAdapters {
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Dni] ([Poniedziałe], [Wtorek], [Środa], [Czwartek], [Piątek], [Sobota], [Niedziela]) VALUES (@Poniedziałe, @Wtorek, @Środa, @Czwartek, @Piątek, @Sobota, @Niedziela);
-SELECT Identyfikator, Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, Niedziela FROM Dni WHERE (Identyfikator = SCOPE_IDENTITY())";
+SELECT iddnia, Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, Niedziela FROM Dni WHERE (iddnia = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Poniedziałe", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Poniedziałe", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Wtorek", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Wtorek", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -4912,8 +4740,8 @@ SELECT Identyfikator, Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, N
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Niedziela", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Niedziela", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Dni] SET [Poniedziałe] = @Poniedziałe, [Wtorek] = @Wtorek, [Środa] = @Środa, [Czwartek] = @Czwartek, [Piątek] = @Piątek, [Sobota] = @Sobota, [Niedziela] = @Niedziela WHERE (([Identyfikator] = @Original_Identyfikator) AND ((@IsNull_Poniedziałe = 1 AND [Poniedziałe] IS NULL) OR ([Poniedziałe] = @Original_Poniedziałe)) AND ((@IsNull_Wtorek = 1 AND [Wtorek] IS NULL) OR ([Wtorek] = @Original_Wtorek)) AND ((@IsNull_Środa = 1 AND [Środa] IS NULL) OR ([Środa] = @Original_Środa)) AND ((@IsNull_Czwartek = 1 AND [Czwartek] IS NULL) OR ([Czwartek] = @Original_Czwartek)) AND ((@IsNull_Piątek = 1 AND [Piątek] IS NULL) OR ([Piątek] = @Original_Piątek)) AND ((@IsNull_Sobota = 1 AND [Sobota] IS NULL) OR ([Sobota] = @Original_Sobota)) AND ((@IsNull_Niedziela = 1 AND [Niedziela] IS NULL) OR ([Niedziela] = @Original_Niedziela)));
-SELECT Identyfikator, Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, Niedziela FROM Dni WHERE (Identyfikator = @Identyfikator)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Dni] SET [Poniedziałe] = @Poniedziałe, [Wtorek] = @Wtorek, [Środa] = @Środa, [Czwartek] = @Czwartek, [Piątek] = @Piątek, [Sobota] = @Sobota, [Niedziela] = @Niedziela WHERE (([iddnia] = @Original_iddnia) AND ((@IsNull_Poniedziałe = 1 AND [Poniedziałe] IS NULL) OR ([Poniedziałe] = @Original_Poniedziałe)) AND ((@IsNull_Wtorek = 1 AND [Wtorek] IS NULL) OR ([Wtorek] = @Original_Wtorek)) AND ((@IsNull_Środa = 1 AND [Środa] IS NULL) OR ([Środa] = @Original_Środa)) AND ((@IsNull_Czwartek = 1 AND [Czwartek] IS NULL) OR ([Czwartek] = @Original_Czwartek)) AND ((@IsNull_Piątek = 1 AND [Piątek] IS NULL) OR ([Piątek] = @Original_Piątek)) AND ((@IsNull_Sobota = 1 AND [Sobota] IS NULL) OR ([Sobota] = @Original_Sobota)) AND ((@IsNull_Niedziela = 1 AND [Niedziela] IS NULL) OR ([Niedziela] = @Original_Niedziela)));
+SELECT iddnia, Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, Niedziela FROM Dni WHERE (iddnia = @iddnia)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Poniedziałe", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Poniedziałe", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Wtorek", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Wtorek", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -4922,7 +4750,7 @@ SELECT Identyfikator, Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, N
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Piątek", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Piątek", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Sobota", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Sobota", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Niedziela", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Niedziela", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Identyfikator", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Identyfikator", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_iddnia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "iddnia", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Poniedziałe", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Poniedziałe", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Poniedziałe", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Poniedziałe", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Wtorek", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Wtorek", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -4937,7 +4765,7 @@ SELECT Identyfikator, Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, N
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Sobota", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Sobota", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Niedziela", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Niedziela", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Niedziela", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Niedziela", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Identyfikator", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Identyfikator", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@iddnia", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "iddnia", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4953,8 +4781,8 @@ SELECT Identyfikator, Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, N
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Identyfikator, Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, Niedz" +
-                "iela FROM dbo.Dni";
+            this._commandCollection[0].CommandText = "SELECT iddnia, Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, Niedziela FR" +
+                "OM dbo.Dni";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -4962,7 +4790,7 @@ SELECT Identyfikator, Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, N
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(onlinegradebookproject.DniDataTable dataTable) {
+        public virtual int Fill(onlinegradebookprojectDataSet.DniDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4975,9 +4803,9 @@ SELECT Identyfikator, Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, N
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual onlinegradebookproject.DniDataTable GetData() {
+        public virtual onlinegradebookprojectDataSet.DniDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            onlinegradebookproject.DniDataTable dataTable = new onlinegradebookproject.DniDataTable();
+            onlinegradebookprojectDataSet.DniDataTable dataTable = new onlinegradebookprojectDataSet.DniDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4985,14 +4813,14 @@ SELECT Identyfikator, Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, N
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(onlinegradebookproject.DniDataTable dataTable) {
+        public virtual int Update(onlinegradebookprojectDataSet.DniDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(onlinegradebookproject dataSet) {
+        public virtual int Update(onlinegradebookprojectDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Dni");
         }
         
@@ -5015,8 +4843,8 @@ SELECT Identyfikator, Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, N
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Identyfikator, string Original_Poniedziałe, string Original_Wtorek, string Original_Środa, string Original_Czwartek, string Original_Piątek, string Original_Sobota, string Original_Niedziela) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Identyfikator));
+        public virtual int Delete(int Original_iddnia, string Original_Poniedziałe, string Original_Wtorek, string Original_Środa, string Original_Czwartek, string Original_Piątek, string Original_Sobota, string Original_Niedziela) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_iddnia));
             if ((Original_Poniedziałe == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
@@ -5164,7 +4992,7 @@ SELECT Identyfikator, Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, N
                     string Piątek, 
                     string Sobota, 
                     string Niedziela, 
-                    int Original_Identyfikator, 
+                    int Original_iddnia, 
                     string Original_Poniedziałe, 
                     string Original_Wtorek, 
                     string Original_Środa, 
@@ -5172,7 +5000,7 @@ SELECT Identyfikator, Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, N
                     string Original_Piątek, 
                     string Original_Sobota, 
                     string Original_Niedziela, 
-                    int Identyfikator) {
+                    int iddnia) {
             if ((Poniedziałe == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -5215,7 +5043,7 @@ SELECT Identyfikator, Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, N
             else {
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Niedziela));
             }
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_Identyfikator));
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_iddnia));
             if ((Original_Poniedziałe == null)) {
                 this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
@@ -5272,7 +5100,7 @@ SELECT Identyfikator, Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, N
                 this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_Niedziela));
             }
-            this.Adapter.UpdateCommand.Parameters[22].Value = ((int)(Identyfikator));
+            this.Adapter.UpdateCommand.Parameters[22].Value = ((int)(iddnia));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -5293,8 +5121,8 @@ SELECT Identyfikator, Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, N
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Poniedziałe, string Wtorek, string Środa, string Czwartek, string Piątek, string Sobota, string Niedziela, int Original_Identyfikator, string Original_Poniedziałe, string Original_Wtorek, string Original_Środa, string Original_Czwartek, string Original_Piątek, string Original_Sobota, string Original_Niedziela) {
-            return this.Update(Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, Niedziela, Original_Identyfikator, Original_Poniedziałe, Original_Wtorek, Original_Środa, Original_Czwartek, Original_Piątek, Original_Sobota, Original_Niedziela, Original_Identyfikator);
+        public virtual int Update(string Poniedziałe, string Wtorek, string Środa, string Czwartek, string Piątek, string Sobota, string Niedziela, int Original_iddnia, string Original_Poniedziałe, string Original_Wtorek, string Original_Środa, string Original_Czwartek, string Original_Piątek, string Original_Sobota, string Original_Niedziela) {
+            return this.Update(Poniedziałe, Wtorek, Środa, Czwartek, Piątek, Sobota, Niedziela, Original_iddnia, Original_Poniedziałe, Original_Wtorek, Original_Środa, Original_Czwartek, Original_Piątek, Original_Sobota, Original_Niedziela, Original_iddnia);
         }
     }
     
@@ -5469,7 +5297,7 @@ SELECT Identyfikator, Profil FROM Klasy WHERE (Identyfikator = @Identyfikator)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(onlinegradebookproject.KlasyDataTable dataTable) {
+        public virtual int Fill(onlinegradebookprojectDataSet.KlasyDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5482,9 +5310,9 @@ SELECT Identyfikator, Profil FROM Klasy WHERE (Identyfikator = @Identyfikator)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual onlinegradebookproject.KlasyDataTable GetData() {
+        public virtual onlinegradebookprojectDataSet.KlasyDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            onlinegradebookproject.KlasyDataTable dataTable = new onlinegradebookproject.KlasyDataTable();
+            onlinegradebookprojectDataSet.KlasyDataTable dataTable = new onlinegradebookprojectDataSet.KlasyDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5492,14 +5320,14 @@ SELECT Identyfikator, Profil FROM Klasy WHERE (Identyfikator = @Identyfikator)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(onlinegradebookproject.KlasyDataTable dataTable) {
+        public virtual int Update(onlinegradebookprojectDataSet.KlasyDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(onlinegradebookproject dataSet) {
+        public virtual int Update(onlinegradebookprojectDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Klasy");
         }
         
@@ -5742,7 +5570,7 @@ SELECT Identyfikator, Profil FROM Klasy WHERE (Identyfikator = @Identyfikator)";
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Obecnosci";
-            tableMapping.ColumnMappings.Add("Identyfikator", "Identyfikator");
+            tableMapping.ColumnMappings.Add("idobecnosci", "idobecnosci");
             tableMapping.ColumnMappings.Add("id_ucznia", "id_ucznia");
             tableMapping.ColumnMappings.Add("id_przedmiotu", "id_przedmiotu");
             tableMapping.ColumnMappings.Add("data", "data");
@@ -5751,15 +5579,15 @@ SELECT Identyfikator, Profil FROM Klasy WHERE (Identyfikator = @Identyfikator)";
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Obecnosci] WHERE (([Identyfikator] = @Original_Identyfikator) " +
-                "AND ([SSMA_TimeStamp] = @Original_SSMA_TimeStamp))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Obecnosci] WHERE (([idobecnosci] = @Original_idobecnosci) AND " +
+                "([SSMA_TimeStamp] = @Original_SSMA_TimeStamp))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Identyfikator", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Identyfikator", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_idobecnosci", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idobecnosci", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SSMA_TimeStamp", global::System.Data.SqlDbType.Timestamp, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SSMA_TimeStamp", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Obecnosci] ([id_ucznia], [id_przedmiotu], [data], [czy_obecny]) VALUES (@id_ucznia, @id_przedmiotu, @data, @czy_obecny);
-SELECT Identyfikator, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp FROM Obecnosci WHERE (Identyfikator = SCOPE_IDENTITY())";
+SELECT idobecnosci, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp FROM Obecnosci WHERE (idobecnosci = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_ucznia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_ucznia", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_przedmiotu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_przedmiotu", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -5767,16 +5595,16 @@ SELECT Identyfikator, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@czy_obecny", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "czy_obecny", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Obecnosci] SET [id_ucznia] = @id_ucznia, [id_przedmiotu] = @id_przedmiotu, [data] = @data, [czy_obecny] = @czy_obecny WHERE (([Identyfikator] = @Original_Identyfikator) AND ([SSMA_TimeStamp] = @Original_SSMA_TimeStamp));
-SELECT Identyfikator, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp FROM Obecnosci WHERE (Identyfikator = @Identyfikator)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Obecnosci] SET [id_ucznia] = @id_ucznia, [id_przedmiotu] = @id_przedmiotu, [data] = @data, [czy_obecny] = @czy_obecny WHERE (([idobecnosci] = @Original_idobecnosci) AND ([SSMA_TimeStamp] = @Original_SSMA_TimeStamp));
+SELECT idobecnosci, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp FROM Obecnosci WHERE (idobecnosci = @idobecnosci)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_ucznia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_ucznia", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_przedmiotu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_przedmiotu", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@data", global::System.Data.SqlDbType.DateTime2, 0, global::System.Data.ParameterDirection.Input, 0, 0, "data", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@czy_obecny", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "czy_obecny", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Identyfikator", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Identyfikator", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_idobecnosci", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idobecnosci", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SSMA_TimeStamp", global::System.Data.SqlDbType.Timestamp, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SSMA_TimeStamp", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Identyfikator", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Identyfikator", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@idobecnosci", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "idobecnosci", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5792,8 +5620,8 @@ SELECT Identyfikator, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Identyfikator, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp " +
-                "FROM dbo.Obecnosci";
+            this._commandCollection[0].CommandText = "SELECT idobecnosci, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp FR" +
+                "OM dbo.Obecnosci";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -5801,7 +5629,7 @@ SELECT Identyfikator, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(onlinegradebookproject.ObecnosciDataTable dataTable) {
+        public virtual int Fill(onlinegradebookprojectDataSet.ObecnosciDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5814,9 +5642,9 @@ SELECT Identyfikator, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual onlinegradebookproject.ObecnosciDataTable GetData() {
+        public virtual onlinegradebookprojectDataSet.ObecnosciDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            onlinegradebookproject.ObecnosciDataTable dataTable = new onlinegradebookproject.ObecnosciDataTable();
+            onlinegradebookprojectDataSet.ObecnosciDataTable dataTable = new onlinegradebookprojectDataSet.ObecnosciDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5824,14 +5652,14 @@ SELECT Identyfikator, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(onlinegradebookproject.ObecnosciDataTable dataTable) {
+        public virtual int Update(onlinegradebookprojectDataSet.ObecnosciDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(onlinegradebookproject dataSet) {
+        public virtual int Update(onlinegradebookprojectDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Obecnosci");
         }
         
@@ -5854,8 +5682,8 @@ SELECT Identyfikator, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Identyfikator, byte[] Original_SSMA_TimeStamp) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Identyfikator));
+        public virtual int Delete(int Original_idobecnosci, byte[] Original_SSMA_TimeStamp) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_idobecnosci));
             if ((Original_SSMA_TimeStamp == null)) {
                 throw new global::System.ArgumentNullException("Original_SSMA_TimeStamp");
             }
@@ -5927,7 +5755,7 @@ SELECT Identyfikator, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<int> id_ucznia, global::System.Nullable<int> id_przedmiotu, global::System.Nullable<global::System.DateTime> data, global::System.Nullable<bool> czy_obecny, int Original_Identyfikator, byte[] Original_SSMA_TimeStamp, int Identyfikator) {
+        public virtual int Update(global::System.Nullable<int> id_ucznia, global::System.Nullable<int> id_przedmiotu, global::System.Nullable<global::System.DateTime> data, global::System.Nullable<bool> czy_obecny, int Original_idobecnosci, byte[] Original_SSMA_TimeStamp, int idobecnosci) {
             if ((id_ucznia.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(id_ucznia.Value));
             }
@@ -5952,14 +5780,14 @@ SELECT Identyfikator, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp
             else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_Identyfikator));
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_idobecnosci));
             if ((Original_SSMA_TimeStamp == null)) {
                 throw new global::System.ArgumentNullException("Original_SSMA_TimeStamp");
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[5].Value = ((byte[])(Original_SSMA_TimeStamp));
             }
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Identyfikator));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(idobecnosci));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -5980,8 +5808,8 @@ SELECT Identyfikator, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<int> id_ucznia, global::System.Nullable<int> id_przedmiotu, global::System.Nullable<global::System.DateTime> data, global::System.Nullable<bool> czy_obecny, int Original_Identyfikator, byte[] Original_SSMA_TimeStamp) {
-            return this.Update(id_ucznia, id_przedmiotu, data, czy_obecny, Original_Identyfikator, Original_SSMA_TimeStamp, Original_Identyfikator);
+        public virtual int Update(global::System.Nullable<int> id_ucznia, global::System.Nullable<int> id_przedmiotu, global::System.Nullable<global::System.DateTime> data, global::System.Nullable<bool> czy_obecny, int Original_idobecnosci, byte[] Original_SSMA_TimeStamp) {
+            return this.Update(id_ucznia, id_przedmiotu, data, czy_obecny, Original_idobecnosci, Original_SSMA_TimeStamp, Original_idobecnosci);
         }
     }
     
@@ -6171,7 +5999,7 @@ SELECT Identyfikator, temat, id_ucznia, id_nauczyciela, data_wystawienia, id_prz
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(onlinegradebookproject.OcenyDataTable dataTable) {
+        public virtual int Fill(onlinegradebookprojectDataSet.OcenyDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -6184,9 +6012,9 @@ SELECT Identyfikator, temat, id_ucznia, id_nauczyciela, data_wystawienia, id_prz
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual onlinegradebookproject.OcenyDataTable GetData() {
+        public virtual onlinegradebookprojectDataSet.OcenyDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            onlinegradebookproject.OcenyDataTable dataTable = new onlinegradebookproject.OcenyDataTable();
+            onlinegradebookprojectDataSet.OcenyDataTable dataTable = new onlinegradebookprojectDataSet.OcenyDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -6194,14 +6022,14 @@ SELECT Identyfikator, temat, id_ucznia, id_nauczyciela, data_wystawienia, id_prz
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(onlinegradebookproject.OcenyDataTable dataTable) {
+        public virtual int Update(onlinegradebookprojectDataSet.OcenyDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(onlinegradebookproject dataSet) {
+        public virtual int Update(onlinegradebookprojectDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Oceny");
         }
         
@@ -6578,7 +6406,7 @@ SELECT Identyfikator, id_planu, id_przedmiotu, id_nauczyciela, godzina_rozpoczec
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(onlinegradebookproject.Plany_lekcjiDataTable dataTable) {
+        public virtual int Fill(onlinegradebookprojectDataSet.Plany_lekcjiDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -6591,9 +6419,9 @@ SELECT Identyfikator, id_planu, id_przedmiotu, id_nauczyciela, godzina_rozpoczec
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual onlinegradebookproject.Plany_lekcjiDataTable GetData() {
+        public virtual onlinegradebookprojectDataSet.Plany_lekcjiDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            onlinegradebookproject.Plany_lekcjiDataTable dataTable = new onlinegradebookproject.Plany_lekcjiDataTable();
+            onlinegradebookprojectDataSet.Plany_lekcjiDataTable dataTable = new onlinegradebookprojectDataSet.Plany_lekcjiDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -6601,14 +6429,14 @@ SELECT Identyfikator, id_planu, id_przedmiotu, id_nauczyciela, godzina_rozpoczec
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(onlinegradebookproject.Plany_lekcjiDataTable dataTable) {
+        public virtual int Update(onlinegradebookprojectDataSet.Plany_lekcjiDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(onlinegradebookproject dataSet) {
+        public virtual int Update(onlinegradebookprojectDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Plany_lekcji");
         }
         
@@ -7014,7 +6842,7 @@ SELECT Identyfikator, przedmioty FROM Przedmioty WHERE (Identyfikator = @Identyf
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(onlinegradebookproject.PrzedmiotyDataTable dataTable) {
+        public virtual int Fill(onlinegradebookprojectDataSet.PrzedmiotyDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -7027,9 +6855,9 @@ SELECT Identyfikator, przedmioty FROM Przedmioty WHERE (Identyfikator = @Identyf
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual onlinegradebookproject.PrzedmiotyDataTable GetData() {
+        public virtual onlinegradebookprojectDataSet.PrzedmiotyDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            onlinegradebookproject.PrzedmiotyDataTable dataTable = new onlinegradebookproject.PrzedmiotyDataTable();
+            onlinegradebookprojectDataSet.PrzedmiotyDataTable dataTable = new onlinegradebookprojectDataSet.PrzedmiotyDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -7037,14 +6865,14 @@ SELECT Identyfikator, przedmioty FROM Przedmioty WHERE (Identyfikator = @Identyf
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(onlinegradebookproject.PrzedmiotyDataTable dataTable) {
+        public virtual int Update(onlinegradebookprojectDataSet.PrzedmiotyDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(onlinegradebookproject dataSet) {
+        public virtual int Update(onlinegradebookprojectDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Przedmioty");
         }
         
@@ -7287,47 +7115,38 @@ SELECT Identyfikator, przedmioty FROM Przedmioty WHERE (Identyfikator = @Identyf
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Sprawdziany";
-            tableMapping.ColumnMappings.Add("Identyfikator", "Identyfikator");
             tableMapping.ColumnMappings.Add("id_przedmiotu", "id_przedmiotu");
             tableMapping.ColumnMappings.Add("temat", "temat");
             tableMapping.ColumnMappings.Add("termin", "termin");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Sprawdziany] WHERE (([Identyfikator] = @Original_Identyfikator) AND ((@IsNull_id_przedmiotu = 1 AND [id_przedmiotu] IS NULL) OR ([id_przedmiotu] = @Original_id_przedmiotu)) AND ((@IsNull_temat = 1 AND [temat] IS NULL) OR ([temat] = @Original_temat)) AND ((@IsNull_termin = 1 AND [termin] IS NULL) OR ([termin] = @Original_termin)))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Sprawdziany] WHERE (([id_przedmiotu] = @Original_id_przedmiotu" +
+                ") AND ([temat] = @Original_temat) AND ([termin] = @Original_termin))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Identyfikator", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Identyfikator", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_przedmiotu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_przedmiotu", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_przedmiotu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_przedmiotu", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_temat", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "temat", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_temat", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "temat", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_termin", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "termin", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_termin", global::System.Data.SqlDbType.DateTime2, 0, global::System.Data.ParameterDirection.Input, 0, 0, "termin", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Sprawdziany] ([id_przedmiotu], [temat], [termin]) VALUES (@id_" +
-                "przedmiotu, @temat, @termin);\r\nSELECT Identyfikator, id_przedmiotu, temat, termi" +
-                "n FROM Sprawdziany WHERE (Identyfikator = SCOPE_IDENTITY())";
+                "przedmiotu, @temat, @termin);\r\nSELECT id_przedmiotu, temat, termin FROM Sprawdzi" +
+                "any WHERE (id_przedmiotu = @id_przedmiotu)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_przedmiotu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_przedmiotu", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@temat", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "temat", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@termin", global::System.Data.SqlDbType.DateTime2, 0, global::System.Data.ParameterDirection.Input, 0, 0, "termin", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Sprawdziany] SET [id_przedmiotu] = @id_przedmiotu, [temat] = @temat, [termin] = @termin WHERE (([Identyfikator] = @Original_Identyfikator) AND ((@IsNull_id_przedmiotu = 1 AND [id_przedmiotu] IS NULL) OR ([id_przedmiotu] = @Original_id_przedmiotu)) AND ((@IsNull_temat = 1 AND [temat] IS NULL) OR ([temat] = @Original_temat)) AND ((@IsNull_termin = 1 AND [termin] IS NULL) OR ([termin] = @Original_termin)));
-SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Identyfikator = @Identyfikator)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Sprawdziany] SET [id_przedmiotu] = @id_przedmiotu, [temat] = @temat, [termin] = @termin WHERE (([id_przedmiotu] = @Original_id_przedmiotu) AND ([temat] = @Original_temat) AND ([termin] = @Original_termin));
+SELECT id_przedmiotu, temat, termin FROM Sprawdziany WHERE (id_przedmiotu = @id_przedmiotu)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_przedmiotu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_przedmiotu", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@temat", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "temat", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@termin", global::System.Data.SqlDbType.DateTime2, 0, global::System.Data.ParameterDirection.Input, 0, 0, "termin", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Identyfikator", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Identyfikator", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_przedmiotu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_przedmiotu", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_przedmiotu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_przedmiotu", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_temat", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "temat", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_temat", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "temat", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_termin", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "termin", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_termin", global::System.Data.SqlDbType.DateTime2, 0, global::System.Data.ParameterDirection.Input, 0, 0, "termin", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Identyfikator", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Identyfikator", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7343,7 +7162,7 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Identyfikator, id_przedmiotu, temat, termin FROM dbo.Sprawdziany";
+            this._commandCollection[0].CommandText = "SELECT id_przedmiotu, temat, termin FROM dbo.Sprawdziany";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -7351,7 +7170,7 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(onlinegradebookproject.SprawdzianyDataTable dataTable) {
+        public virtual int Fill(onlinegradebookprojectDataSet.SprawdzianyDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -7364,9 +7183,9 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual onlinegradebookproject.SprawdzianyDataTable GetData() {
+        public virtual onlinegradebookprojectDataSet.SprawdzianyDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            onlinegradebookproject.SprawdzianyDataTable dataTable = new onlinegradebookproject.SprawdzianyDataTable();
+            onlinegradebookprojectDataSet.SprawdzianyDataTable dataTable = new onlinegradebookprojectDataSet.SprawdzianyDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -7374,14 +7193,14 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(onlinegradebookproject.SprawdzianyDataTable dataTable) {
+        public virtual int Update(onlinegradebookprojectDataSet.SprawdzianyDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(onlinegradebookproject dataSet) {
+        public virtual int Update(onlinegradebookprojectDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Sprawdziany");
         }
         
@@ -7404,32 +7223,15 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Identyfikator, global::System.Nullable<int> Original_id_przedmiotu, string Original_temat, global::System.Nullable<global::System.DateTime> Original_termin) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Identyfikator));
-            if ((Original_id_przedmiotu.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_id_przedmiotu.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
+        public virtual int Delete(int Original_id_przedmiotu, string Original_temat, System.DateTime Original_termin) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_id_przedmiotu));
             if ((Original_temat == null)) {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Original_temat");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_temat));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_temat));
             }
-            if ((Original_termin.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((System.DateTime)(Original_termin.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
+            this.Adapter.DeleteCommand.Parameters[2].Value = ((System.DateTime)(Original_termin));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -7450,25 +7252,15 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<int> id_przedmiotu, string temat, global::System.Nullable<global::System.DateTime> termin) {
-            if ((id_przedmiotu.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((int)(id_przedmiotu.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
+        public virtual int Insert(int id_przedmiotu, string temat, System.DateTime termin) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(id_przedmiotu));
             if ((temat == null)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("temat");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(temat));
             }
-            if ((termin.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((System.DateTime)(termin.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
+            this.Adapter.InsertCommand.Parameters[2].Value = ((System.DateTime)(termin));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -7489,51 +7281,23 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<int> id_przedmiotu, string temat, global::System.Nullable<global::System.DateTime> termin, int Original_Identyfikator, global::System.Nullable<int> Original_id_przedmiotu, string Original_temat, global::System.Nullable<global::System.DateTime> Original_termin, int Identyfikator) {
-            if ((id_przedmiotu.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(id_przedmiotu.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
+        public virtual int Update(int id_przedmiotu, string temat, System.DateTime termin, int Original_id_przedmiotu, string Original_temat, System.DateTime Original_termin) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(id_przedmiotu));
             if ((temat == null)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("temat");
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(temat));
             }
-            if ((termin.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((System.DateTime)(termin.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_Identyfikator));
-            if ((Original_id_przedmiotu.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_id_przedmiotu.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((System.DateTime)(termin));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_id_przedmiotu));
             if ((Original_temat == null)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Original_temat");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_temat));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_temat));
             }
-            if ((Original_termin.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((System.DateTime)(Original_termin.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Identyfikator));
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((System.DateTime)(Original_termin));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -7554,8 +7318,8 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<int> id_przedmiotu, string temat, global::System.Nullable<global::System.DateTime> termin, int Original_Identyfikator, global::System.Nullable<int> Original_id_przedmiotu, string Original_temat, global::System.Nullable<global::System.DateTime> Original_termin) {
-            return this.Update(id_przedmiotu, temat, termin, Original_Identyfikator, Original_id_przedmiotu, Original_temat, Original_termin, Original_Identyfikator);
+        public virtual int Update(string temat, System.DateTime termin, int Original_id_przedmiotu, string Original_temat, System.DateTime Original_termin) {
+            return this.Update(Original_id_przedmiotu, temat, termin, Original_id_przedmiotu, Original_temat, Original_termin);
         }
     }
     
@@ -7690,25 +7454,74 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
             tableMapping.ColumnMappings.Add("pesel", "pesel");
             tableMapping.ColumnMappings.Add("admin", "admin");
             tableMapping.ColumnMappings.Add("rola", "rola");
-            tableMapping.ColumnMappings.Add("id-opiekuna", "id-opiekuna");
+            tableMapping.ColumnMappings.Add("idopiekuna", "idopiekuna");
             this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Users] WHERE (([id] = @Original_id) AND ([login] = @Original_login) AND ([password] = @Original_password) AND ([name] = @Original_name) AND ([surname] = @Original_surname) AND ((@IsNull_email = 1 AND [email] IS NULL) OR ([email] = @Original_email)) AND ((@IsNull_telefon = 1 AND [telefon] IS NULL) OR ([telefon] = @Original_telefon)) AND ((@IsNull_pesel = 1 AND [pesel] IS NULL) OR ([pesel] = @Original_pesel)) AND ([admin] = @Original_admin) AND ([rola] = @Original_rola) AND ((@IsNull_idopiekuna = 1 AND [idopiekuna] IS NULL) OR ([idopiekuna] = @Original_idopiekuna)))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_login", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "login", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_password", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "password", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_surname", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "surname", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_email", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_telefon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "telefon", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_telefon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "telefon", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_pesel", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pesel", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pesel", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pesel", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_admin", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "admin", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_rola", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "rola", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_idopiekuna", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idopiekuna", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_idopiekuna", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idopiekuna", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Users] ([id], [login], [password], [name], [surname], [email]," +
-                " [telefon], [pesel], [admin], [rola], [id-opiekuna]) VALUES (@id, @login, @passw" +
-                "ord, @name, @surname, @email, @telefon, @pesel, @admin, @rola, @p1)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Users] ([id], [login], [password], [name], [surname], [email], [telefon], [pesel], [admin], [rola], [idopiekuna]) VALUES (@id, @login, @password, @name, @surname, @email, @telefon, @pesel, @admin, @rola, @idopiekuna);
+SELECT id, login, password, name, surname, email, telefon, pesel, admin, rola, idopiekuna FROM Users WHERE (id = @id)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@login", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "login", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@password", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@surname", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "surname", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@email", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@telefon", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "telefon", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pesel", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pesel", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@login", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "login", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@password", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@surname", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "surname", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@telefon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "telefon", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pesel", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pesel", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@admin", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "admin", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@rola", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "rola", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p1", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id-opiekuna", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@rola", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "rola", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@idopiekuna", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idopiekuna", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Users] SET [id] = @id, [login] = @login, [password] = @password, [name] = @name, [surname] = @surname, [email] = @email, [telefon] = @telefon, [pesel] = @pesel, [admin] = @admin, [rola] = @rola, [idopiekuna] = @idopiekuna WHERE (([id] = @Original_id) AND ([login] = @Original_login) AND ([password] = @Original_password) AND ([name] = @Original_name) AND ([surname] = @Original_surname) AND ((@IsNull_email = 1 AND [email] IS NULL) OR ([email] = @Original_email)) AND ((@IsNull_telefon = 1 AND [telefon] IS NULL) OR ([telefon] = @Original_telefon)) AND ((@IsNull_pesel = 1 AND [pesel] IS NULL) OR ([pesel] = @Original_pesel)) AND ([admin] = @Original_admin) AND ([rola] = @Original_rola) AND ((@IsNull_idopiekuna = 1 AND [idopiekuna] IS NULL) OR ([idopiekuna] = @Original_idopiekuna)));
+SELECT id, login, password, name, surname, email, telefon, pesel, admin, rola, idopiekuna FROM Users WHERE (id = @id)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@login", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "login", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@password", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@surname", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "surname", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@telefon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "telefon", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pesel", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pesel", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@admin", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "admin", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@rola", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "rola", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@idopiekuna", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idopiekuna", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_login", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "login", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_password", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "password", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_surname", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "surname", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_email", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_telefon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "telefon", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_telefon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "telefon", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_pesel", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pesel", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_pesel", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "pesel", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_admin", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "admin", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_rola", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "rola", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_idopiekuna", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idopiekuna", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_idopiekuna", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idopiekuna", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7724,8 +7537,8 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT id, login, password, name, surname, email, telefon, pesel, admin, rola, [i" +
-                "d-opiekuna] FROM dbo.Users";
+            this._commandCollection[0].CommandText = "SELECT id, login, password, name, surname, email, telefon, pesel, admin, rola, id" +
+                "opiekuna FROM dbo.Users";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -7733,7 +7546,7 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(onlinegradebookproject.UsersDataTable dataTable) {
+        public virtual int Fill(onlinegradebookprojectDataSet.UsersDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -7746,9 +7559,9 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual onlinegradebookproject.UsersDataTable GetData() {
+        public virtual onlinegradebookprojectDataSet.UsersDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            onlinegradebookproject.UsersDataTable dataTable = new onlinegradebookproject.UsersDataTable();
+            onlinegradebookprojectDataSet.UsersDataTable dataTable = new onlinegradebookprojectDataSet.UsersDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -7756,14 +7569,14 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(onlinegradebookproject.UsersDataTable dataTable) {
+        public virtual int Update(onlinegradebookprojectDataSet.UsersDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(onlinegradebookproject dataSet) {
+        public virtual int Update(onlinegradebookprojectDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Users");
         }
         
@@ -7785,34 +7598,109 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string id, string login, string password, string name, string surname, string email, string telefon, string pesel, global::System.Nullable<bool> admin, string rola, string p1) {
-            if ((id == null)) {
-                throw new global::System.ArgumentNullException("id");
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(int Original_id, string Original_login, string Original_password, string Original_name, string Original_surname, string Original_email, global::System.Nullable<int> Original_telefon, global::System.Nullable<int> Original_pesel, bool Original_admin, int Original_rola, global::System.Nullable<int> Original_idopiekuna) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_id));
+            if ((Original_login == null)) {
+                throw new global::System.ArgumentNullException("Original_login");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(id));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_login));
             }
+            if ((Original_password == null)) {
+                throw new global::System.ArgumentNullException("Original_password");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_password));
+            }
+            if ((Original_name == null)) {
+                throw new global::System.ArgumentNullException("Original_name");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_name));
+            }
+            if ((Original_surname == null)) {
+                throw new global::System.ArgumentNullException("Original_surname");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_surname));
+            }
+            if ((Original_email == null)) {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_email));
+            }
+            if ((Original_telefon.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((int)(Original_telefon.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((Original_pesel.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((int)(Original_pesel.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.DeleteCommand.Parameters[11].Value = ((bool)(Original_admin));
+            this.Adapter.DeleteCommand.Parameters[12].Value = ((int)(Original_rola));
+            if ((Original_idopiekuna.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((int)(Original_idopiekuna.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(int id, string login, string password, string name, string surname, string email, global::System.Nullable<int> telefon, global::System.Nullable<int> pesel, bool admin, int rola, global::System.Nullable<int> idopiekuna) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(id));
             if ((login == null)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("login");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(login));
             }
             if ((password == null)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("password");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[2].Value = ((string)(password));
             }
             if ((name == null)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("name");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = ((string)(name));
             }
             if ((surname == null)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("surname");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = ((string)(surname));
@@ -7823,35 +7711,25 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
             else {
                 this.Adapter.InsertCommand.Parameters[5].Value = ((string)(email));
             }
-            if ((telefon == null)) {
+            if ((telefon.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((int)(telefon.Value));
+            }
+            else {
                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(telefon));
+            if ((pesel.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((int)(pesel.Value));
             }
-            if ((pesel == null)) {
+            else {
                 this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(pesel));
-            }
-            if ((admin.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((bool)(admin.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            if ((rola == null)) {
-                this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
+            this.Adapter.InsertCommand.Parameters[8].Value = ((bool)(admin));
+            this.Adapter.InsertCommand.Parameters[9].Value = ((int)(rola));
+            if ((idopiekuna.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[10].Value = ((int)(idopiekuna.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(rola));
-            }
-            if ((p1 == null)) {
                 this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(p1));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -7867,6 +7745,188 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
                     this.Adapter.InsertCommand.Connection.Close();
                 }
             }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(
+                    int id, 
+                    string login, 
+                    string password, 
+                    string name, 
+                    string surname, 
+                    string email, 
+                    global::System.Nullable<int> telefon, 
+                    global::System.Nullable<int> pesel, 
+                    bool admin, 
+                    int rola, 
+                    global::System.Nullable<int> idopiekuna, 
+                    int Original_id, 
+                    string Original_login, 
+                    string Original_password, 
+                    string Original_name, 
+                    string Original_surname, 
+                    string Original_email, 
+                    global::System.Nullable<int> Original_telefon, 
+                    global::System.Nullable<int> Original_pesel, 
+                    bool Original_admin, 
+                    int Original_rola, 
+                    global::System.Nullable<int> Original_idopiekuna) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(id));
+            if ((login == null)) {
+                throw new global::System.ArgumentNullException("login");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(login));
+            }
+            if ((password == null)) {
+                throw new global::System.ArgumentNullException("password");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(password));
+            }
+            if ((name == null)) {
+                throw new global::System.ArgumentNullException("name");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(name));
+            }
+            if ((surname == null)) {
+                throw new global::System.ArgumentNullException("surname");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(surname));
+            }
+            if ((email == null)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(email));
+            }
+            if ((telefon.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(telefon.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((pesel.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(pesel.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((bool)(admin));
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(rola));
+            if ((idopiekuna.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(idopiekuna.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_id));
+            if ((Original_login == null)) {
+                throw new global::System.ArgumentNullException("Original_login");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_login));
+            }
+            if ((Original_password == null)) {
+                throw new global::System.ArgumentNullException("Original_password");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_password));
+            }
+            if ((Original_name == null)) {
+                throw new global::System.ArgumentNullException("Original_name");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_name));
+            }
+            if ((Original_surname == null)) {
+                throw new global::System.ArgumentNullException("Original_surname");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_surname));
+            }
+            if ((Original_email == null)) {
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_email));
+            }
+            if ((Original_telefon.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((int)(Original_telefon.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
+            }
+            if ((Original_pesel.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((int)(Original_pesel.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[22].Value = ((bool)(Original_admin));
+            this.Adapter.UpdateCommand.Parameters[23].Value = ((int)(Original_rola));
+            if ((Original_idopiekuna.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((int)(Original_idopiekuna.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(
+                    string login, 
+                    string password, 
+                    string name, 
+                    string surname, 
+                    string email, 
+                    global::System.Nullable<int> telefon, 
+                    global::System.Nullable<int> pesel, 
+                    bool admin, 
+                    int rola, 
+                    global::System.Nullable<int> idopiekuna, 
+                    int Original_id, 
+                    string Original_login, 
+                    string Original_password, 
+                    string Original_name, 
+                    string Original_surname, 
+                    string Original_email, 
+                    global::System.Nullable<int> Original_telefon, 
+                    global::System.Nullable<int> Original_pesel, 
+                    bool Original_admin, 
+                    int Original_rola, 
+                    global::System.Nullable<int> Original_idopiekuna) {
+            return this.Update(Original_id, login, password, name, surname, email, telefon, pesel, admin, rola, idopiekuna, Original_id, Original_login, Original_password, Original_name, Original_surname, Original_email, Original_telefon, Original_pesel, Original_admin, Original_rola, Original_idopiekuna);
         }
     }
     
@@ -8122,7 +8182,7 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(onlinegradebookproject dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(onlinegradebookprojectDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._dniTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Dni.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -8204,7 +8264,7 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(onlinegradebookproject dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(onlinegradebookprojectDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._dniTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Dni.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -8278,7 +8338,7 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(onlinegradebookproject dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(onlinegradebookprojectDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._usersTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Users.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -8376,7 +8436,7 @@ SELECT Identyfikator, id_przedmiotu, temat, termin FROM Sprawdziany WHERE (Ident
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(onlinegradebookproject dataSet) {
+        public virtual int UpdateAll(onlinegradebookprojectDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
