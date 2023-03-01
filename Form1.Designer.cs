@@ -34,6 +34,7 @@
             this.loglabel = new System.Windows.Forms.Label();
             this.passlabel = new System.Windows.Forms.Label();
             this.regbtn = new System.Windows.Forms.Button();
+            this.userControl11 = new Tylka.UserControl1();
             this.registerwindow1 = new Tylka.Registerwindow();
             this.SuspendLayout();
             // 
@@ -89,18 +90,27 @@
             this.regbtn.UseVisualStyleBackColor = true;
             this.regbtn.Click += new System.EventHandler(this.regbtn_Click);
             // 
+            // userControl11
+            // 
+            this.userControl11.Location = new System.Drawing.Point(339, 297);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(558, 332);
+            this.userControl11.TabIndex = 7;
+            // 
             // registerwindow1
             // 
-            this.registerwindow1.Location = new System.Drawing.Point(-1, 2);
+            this.registerwindow1.Location = new System.Drawing.Point(368, 58);
             this.registerwindow1.Name = "registerwindow1";
             this.registerwindow1.Size = new System.Drawing.Size(783, 454);
             this.registerwindow1.TabIndex = 6;
+            this.registerwindow1.Load += new System.EventHandler(this.registerwindow1_Load_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 453);
+            this.Controls.Add(this.userControl11);
             this.Controls.Add(this.registerwindow1);
             this.Controls.Add(this.regbtn);
             this.Controls.Add(this.passlabel);
@@ -125,6 +135,7 @@
         private System.Windows.Forms.Label passlabel;
         private System.Windows.Forms.Button regbtn;
         private Registerwindow registerwindow1;
+        private UserControl1 userControl11;
     }
 }
 

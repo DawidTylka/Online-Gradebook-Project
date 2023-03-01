@@ -10,3 +10,4 @@ C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.exe
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.pdb
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.Form1.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.Registerwindow.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.UserControl1.resources
