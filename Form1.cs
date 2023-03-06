@@ -40,50 +40,62 @@ namespace Tylka
                 SqlDataAdapter sda = new SqlDataAdapter(querry, conn);//tworzymy adapter by pozniej stworzyc baze danych i wypchac ją danymi pobranymi z komendy powyzej
                 DataTable dtable = new DataTable();//to taki adapter bazy danych jakby
                 sda.Fill(dtable);
-                DataRow[] admincheck = dtable.Select("admin = '" + true + "'");
+                if (dtable.Rows.Count > 0)
+                {
+                    DataRow[] admincheck = dtable.Select("admin = '" + true + "'");
 
-                DataRow[] rolecheck1 = dtable.Select("rola = '" + 1 + "'");// tutaj sprawdzamy czy w podanym userze istnieje cos co w kolumnie rola ma 1 czyli ucznia no i tak po koleji cale te
-                if (rolecheck1.Length != 0)
-                {
-                    userControl11.Show();
-                    userControl11.BringToFront();
-                    MessageBox.Show("prrr", "uczen" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);//to takie fajne message boxy co som jak wygrales iphone kliknij ok
-                    if (admincheck.Length != 0)
+                    DataRow[] rolecheck1 = dtable.Select("rola = '" + 1 + "'");// tutaj sprawdzamy czy w podanym userze istnieje cos co w kolumnie rola ma 1 czyli ucznia no i tak po koleji cale te
+                    if (rolecheck1.Length != 0)
                     {
-                        //tu wjebać komunistyczne pierdolenie co sie bedzie dzialo jak masz admina
+                        userControl11.Show();
+                        userControl11.BringToFront();
+                        MessageBox.Show("prrr", "uczen" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);//to takie fajne message boxy co som jak wygrales iphone kliknij ok
+                        if (admincheck.Length != 0)
+                        {
+                            //tutaj komunistyczne linijki typu co sie bedzie dzialo jak masz admina
+                        }
+                    }
+                    DataRow[] rolecheck2 = dtable.Select("rola = '" + 2 + "'");
+                    if (rolecheck2.Length != 0)
+                    {
+                        userControl11.Show();
+                        userControl11.BringToFront();
+                        MessageBox.Show("prrr", "rodzic" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        if (admincheck.Length != 0)
+                        {
+                            //tu wjebać komunistyczne pierdolenie co sie bedzie dzialo jak masz admina
+                        }
+                    }
+                    DataRow[] rolecheck3 = dtable.Select("rola = '" + 3 + "'");
+                    if (rolecheck3.Length != 0)
+                    {
+                        userControl11.Show();
+                        userControl11.BringToFront();
+                        MessageBox.Show("prrr", "nauczyciel" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        if (admincheck.Length != 0)
+                        {
+                            //tu wjebać komunistyczne pierdolenie co sie bedzie dzialo jak masz admina
+                        }
                     }
                 }
-                DataRow[] rolecheck2 = dtable.Select("rola = '" + 2 + "'");
-                if (rolecheck2.Length != 0)
+                else//jezeli nie to blad
                 {
-                    userControl11.Show();
-                    userControl11.BringToFront();
-                    MessageBox.Show("prrr", "rodzic" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    if (admincheck.Length != 0)
-                    {
-                        //tu wjebać komunistyczne pierdolenie co sie bedzie dzialo jak masz admina
-                    }
-                }
-                DataRow[] rolecheck3 = dtable.Select("rola = '" + 3 + "'");
-                if (rolecheck3.Length != 0)
-                {
-                    userControl11.Show();
-                    userControl11.BringToFront();
-                    MessageBox.Show("prrr", "nauczyciel" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    if (admincheck.Length != 0)
-                    {
-                        //tu wjebać komunistyczne pierdolenie co sie bedzie dzialo jak masz admina
-                    }
+                    MessageBox.Show("nieprawidłowy login lub hasło", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    logtxt.Clear();
+                    passtxt.Clear();
+                    logtxt.Focus();
                 }
             }
-            
+
             catch
             {
-                
+                MessageBox.Show("prrr", "błont", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                MessageBox.Show("prrr", "błont"+i, MessageBoxButtons.OK, MessageBoxIcon.Information);
-            
-        }
+            }
+            finally//zamknij polaczenie z baza danych
+            {
+                conn.Close();
+            }
         }
 
         private void regbtn_Click(object sender, EventArgs e)
