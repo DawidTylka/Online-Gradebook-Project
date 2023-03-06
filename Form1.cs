@@ -36,7 +36,7 @@ namespace Tylka
             int i = 0;
             try
             {
-                String querry = "SELECT * FROM users WHERE login = '" + login + "' AND password = '" + password + "'";//zapytanko do bazy
+                String querry = "SELECT * FROM Users WHERE login = '" + login + "' AND password = '" + password + "'";//zapytanko do bazy
                 SqlDataAdapter sda = new SqlDataAdapter(querry, conn);//tworzymy adapter by pozniej stworzyc baze danych i wypchac ją danymi pobranymi z komendy powyzej
                 DataTable dtable = new DataTable();//to taki adapter bazy danych jakby
                 sda.Fill(dtable);
@@ -49,7 +49,9 @@ namespace Tylka
                     {
                         userControl11.Show();
                         userControl11.BringToFront();
-                        MessageBox.Show("prrr", "uczen" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);//to takie fajne message boxy co som jak wygrales iphone kliknij ok
+                        //MessageBox.Show("prrr", "uczen" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);//to takie fajne message boxy co som jak wygrales iphone kliknij ok
+                        Tylka.admin admin = new Tylka.admin();
+                        admin.Show();
                         if (admincheck.Length != 0)
                         {
                             //tutaj komunistyczne linijki typu co sie bedzie dzialo jak masz admina
