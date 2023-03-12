@@ -11,3 +11,17 @@ C:\Users\kacpe\Desktop\Projekt\Tylka\obj\Debug\Tylka.csproj.CoreCompileInputs.ca
 C:\Users\kacpe\Desktop\Projekt\Tylka\obj\Debug\Tylka.exe
 C:\Users\kacpe\Desktop\Projekt\Tylka\obj\Debug\Tylka.pdb
 C:\Users\kacpe\Desktop\Projekt\Tylka\obj\Debug\Tylka.admintest.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\bin\Debug\Tylka.exe.config
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\bin\Debug\Tylka.exe
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\bin\Debug\Tylka.pdb
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.csproj.AssemblyReference.cache
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.csproj.SuggestedBindingRedirects.cache
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.admintest.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.Form1.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.PanelAdmin_User.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.Properties.Resources.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.register.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.csproj.GenerateResource.cache
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.csproj.CoreCompileInputs.cache
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.exe
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.pdb

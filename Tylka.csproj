@@ -52,6 +52,12 @@
     <Compile Include="admintest.Designer.cs">
       <DependentUpon>admintest.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gradient.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>onlinegradebookprojectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PanelAdmin_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelAdmin_User.Designer.cs">
+      <DependentUpon>PanelAdmin_User.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelAdmin_User.resx">
+      <DependentUpon>PanelAdmin_User.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
