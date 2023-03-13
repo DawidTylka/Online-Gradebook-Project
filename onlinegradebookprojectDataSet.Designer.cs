@@ -739,8 +739,7 @@ namespace Tylka {
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columniddnia}, true));
                 this.columniddnia.AutoIncrement = true;
-                this.columniddnia.AutoIncrementSeed = -1;
-                this.columniddnia.AutoIncrementStep = -1;
+                this.columniddnia.AutoIncrementSeed = 1;
                 this.columniddnia.AllowDBNull = false;
                 this.columniddnia.ReadOnly = true;
                 this.columniddnia.Unique = true;
@@ -2247,10 +2246,10 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SprawdzianyRow AddSprawdzianyRow(int id_przedmiotu, string temat, System.DateTime termin) {
+            public SprawdzianyRow AddSprawdzianyRow(string temat, System.DateTime termin) {
                 SprawdzianyRow rowSprawdzianyRow = ((SprawdzianyRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        id_przedmiotu,
+                        null,
                         temat,
                         termin};
                 rowSprawdzianyRow.ItemArray = columnValuesArray;
@@ -2298,6 +2297,8 @@ namespace Tylka {
                 base.Columns.Add(this.columntermin);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid_przedmiotu}, true));
+                this.columnid_przedmiotu.AutoIncrement = true;
+                this.columnid_przedmiotu.AutoIncrementSeed = 1;
                 this.columnid_przedmiotu.AllowDBNull = false;
                 this.columnid_przedmiotu.Unique = true;
                 this.columntemat.AllowDBNull = false;

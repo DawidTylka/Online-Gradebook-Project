@@ -28,6 +28,8 @@ namespace Tylka
 
         private void Plany_Lekcji_Click(object sender, EventArgs e)
         {
+            usersAdmin1.Hide();
+            plansAdmin1.Show();
         }
 
         private void Przedmioty_Click(object sender, EventArgs e)
@@ -46,6 +48,7 @@ namespace Tylka
         private void PanelAdmin_User_Load(object sender, EventArgs e)
         {
             usersAdmin1.Hide();
+            plansAdmin1.Hide();
             // TODO: This line of code loads data into the 'onlinegradebookprojectDataSet.Users' table. You can move, or remove it, as needed.
 
         }

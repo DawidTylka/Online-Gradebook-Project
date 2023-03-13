@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PanelAdmin_User));
             this.gradient1 = new Tylka.Gradient();
-            this.usersAdmin1 = new Tylka.UsersAdmin();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Urzytkownicy = new Tylka.CustomButton();
             this.Sprawdziany = new Tylka.CustomButton();
@@ -39,6 +38,8 @@
             this.gradient8 = new Tylka.Gradient();
             this.Plany_Lekcji = new Tylka.CustomButton();
             this.Klasy = new Tylka.CustomButton();
+            this.usersAdmin1 = new Tylka.UsersAdmin();
+            this.plansAdmin1 = new Tylka.PlansAdmin();
             this.gradient1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,6 +48,7 @@
             // 
             this.gradient1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
             this.gradient1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
+            this.gradient1.Controls.Add(this.plansAdmin1);
             this.gradient1.Controls.Add(this.pictureBox1);
             this.gradient1.Controls.Add(this.Urzytkownicy);
             this.gradient1.Controls.Add(this.Sprawdziany);
@@ -61,13 +63,6 @@
             this.gradient1.Name = "gradient1";
             this.gradient1.Size = new System.Drawing.Size(1359, 871);
             this.gradient1.TabIndex = 5;
-            // 
-            // usersAdmin1
-            // 
-            this.usersAdmin1.Location = new System.Drawing.Point(273, 45);
-            this.usersAdmin1.Name = "usersAdmin1";
-            this.usersAdmin1.Size = new System.Drawing.Size(1019, 532);
-            this.usersAdmin1.TabIndex = 10;
             // 
             // pictureBox1
             // 
@@ -230,6 +225,20 @@
             this.Klasy.UseVisualStyleBackColor = false;
             this.Klasy.Click += new System.EventHandler(this.Klasy_Click);
             // 
+            // usersAdmin1
+            // 
+            this.usersAdmin1.Location = new System.Drawing.Point(273, 45);
+            this.usersAdmin1.Name = "usersAdmin1";
+            this.usersAdmin1.Size = new System.Drawing.Size(1019, 532);
+            this.usersAdmin1.TabIndex = 10;
+            // 
+            // plansAdmin1
+            // 
+            this.plansAdmin1.Location = new System.Drawing.Point(273, 45);
+            this.plansAdmin1.Name = "plansAdmin1";
+            this.plansAdmin1.Size = new System.Drawing.Size(1024, 522);
+            this.plansAdmin1.TabIndex = 11;
+            // 
             // PanelAdmin_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -264,5 +273,6 @@
         private CustomButton Home;
         private System.Windows.Forms.PictureBox pictureBox1;
         private UsersAdmin usersAdmin1;
+        private PlansAdmin plansAdmin1;
     }
 }
