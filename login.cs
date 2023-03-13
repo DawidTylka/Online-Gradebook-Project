@@ -24,7 +24,7 @@ namespace Tylka
         {
             register1.Show();
         }
-
+        Tylka.PanelAdmin_User paneladmin = new Tylka.PanelAdmin_User();
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             LLoginTxtB.Focus();  //nie wiemy o conb
@@ -45,8 +45,7 @@ namespace Tylka
                     DataRow[] rolecheck1 = dtable.Select("rola = '" + 1 + "'");// tutaj sprawdzamy czy w podanym userze istnieje cos co w kolumnie rola ma 1 czyli ucznia no i tak po koleji cale te
                     if (rolecheck1.Length != 0)
                     {
-                        admintest1.Show();
-                        
+                        paneladmin.Show();
                         //MessageBox.Show("prrr", "uczen" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);//to takie fajne message boxy co som jak wygrales iphone kliknij ok
                         if (admincheck.Length != 0)
                         {

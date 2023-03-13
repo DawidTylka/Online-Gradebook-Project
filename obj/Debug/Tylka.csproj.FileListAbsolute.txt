@@ -25,3 +25,18 @@ F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.
 F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.csproj.CoreCompileInputs.cache
 F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.exe
 F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.pdb
+C:\Users\kacpe\Desktop\newapp\Tylka\bin\Debug\Tylka.exe.config
+C:\Users\kacpe\Desktop\newapp\Tylka\bin\Debug\Tylka.exe
+C:\Users\kacpe\Desktop\newapp\Tylka\bin\Debug\Tylka.pdb
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.csproj.AssemblyReference.cache
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.csproj.SuggestedBindingRedirects.cache
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.admintest.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.Form1.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.PanelAdmin_User.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.Properties.Resources.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.register.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.csproj.GenerateResource.cache
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.csproj.CoreCompileInputs.cache
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.exe
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.pdb
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.UsersTabAdmin.resources

@@ -15,49 +15,44 @@ namespace Tylka
         public PanelAdmin_User()
         {
             InitializeComponent();
-
-            //buttons disable
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-
-            //hide Tab control
-            this.TabAdmin_User.ItemSize = new Size(0, 1);
-            this.TabAdmin_User.SizeMode = TabSizeMode.Fixed;
-            this.TabAdmin_User.SizeMode = TabSizeMode.FillToRight;
-            this.TabAdmin_User.Multiline = true;
-            this.TabAdmin_User.Padding = new Point(0, 0);
+            usersTabAdmin1.Hide();
         }
 
         private void Home_Click(object sender, EventArgs e)
         {
-            this.TabAdmin_User.SelectTab(this.TabHome);
         }
 
         private void Klasy_Click(object sender, EventArgs e)
         {
-            this.TabAdmin_User.SelectTab(this.TabKlasy);
         }
 
         private void Plany_Lekcji_Click(object sender, EventArgs e)
         {
-            this.TabAdmin_User.SelectTab(this.TabPlanLekcji);
         }
 
         private void Przedmioty_Click(object sender, EventArgs e)
         {
-            this.TabAdmin_User.SelectTab(this.TabPrzedmioty);
         }
 
         private void Sprawdziany_Click(object sender, EventArgs e)
         {
-            this.TabAdmin_User.SelectTab(this.TabSprawdziany);
         }
 
         private void Urzytkownicy_Click(object sender, EventArgs e)
         {
-            this.TabAdmin_User.SelectTab(this.TabUrzytkownicy);
+            usersTabAdmin1.Show();
         }
 
-        
+        private void PanelAdmin_User_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'onlinegradebookprojectDataSet.Users' table. You can move, or remove it, as needed.
+            this.usersTableAdapter.Fill(this.onlinegradebookprojectDataSet.Users);
+
+        }
+
+        private void usersTabAdmin1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

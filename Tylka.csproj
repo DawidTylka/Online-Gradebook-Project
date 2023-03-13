@@ -84,6 +84,12 @@
     <Compile Include="register.Designer.cs">
       <DependentUpon>register.cs</DependentUpon>
     </Compile>
+    <Compile Include="UsersTabAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsersTabAdmin.Designer.cs">
+      <DependentUpon>UsersTabAdmin.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="admintest.resx">
       <DependentUpon>admintest.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,9 +107,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="register.resx">
       <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersTabAdmin.resx">
+      <DependentUpon>UsersTabAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="onlinegradebookprojectDataSet.xsc">
       <DependentUpon>onlinegradebookprojectDataSet.xsd</DependentUpon>
@@ -128,6 +138,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dziennik funkcje\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\odswiezbtn.Image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
