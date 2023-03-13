@@ -10,28 +10,27 @@ using System.Windows.Forms;
 
 namespace Tylka
 {
-    public partial class UsersTabAdmin : UserControl
+    public partial class UsersAdmin : UserControl
     {
-        public UsersTabAdmin()
+        public UsersAdmin()
         {
             InitializeComponent();
-        }
-
-        private void UsersTabAdmin_Load(object sender, EventArgs e)
-        {
-            this.usersTableAdapter.Fill(onlinegradebookprojectDataSet.Users);
         }
 
         private void saveToolStripButton_Click(object sender, EventArgs e)
         {
             this.Validate();
             this.usersBindingSource.EndEdit();
-            this.usersTableAdapter.Update(onlinegradebookprojectDataSet);
+            this.usersTableAdapter.Update(onlinegradebookprojectDataSet.Users);
+        }
+
+        private void UsersAdmin_Load(object sender, EventArgs e)
+        {
+            this.usersTableAdapter.Fill(onlinegradebookprojectDataSet.Users);
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            this.usersTableAdapter.Fill(onlinegradebookprojectDataSet.Users);
             this.usersTableAdapter.Fill(onlinegradebookprojectDataSet.Users);
         }
     }

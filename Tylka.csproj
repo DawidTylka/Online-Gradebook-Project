@@ -84,11 +84,11 @@
     <Compile Include="register.Designer.cs">
       <DependentUpon>register.cs</DependentUpon>
     </Compile>
-    <Compile Include="UsersTabAdmin.cs">
+    <Compile Include="UsersAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UsersTabAdmin.Designer.cs">
-      <DependentUpon>UsersTabAdmin.cs</DependentUpon>
+    <Compile Include="UsersAdmin.Designer.cs">
+      <DependentUpon>UsersAdmin.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="admintest.resx">
       <DependentUpon>admintest.cs</DependentUpon>
@@ -112,8 +112,8 @@
     <EmbeddedResource Include="register.resx">
       <DependentUpon>register.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UsersTabAdmin.resx">
-      <DependentUpon>UsersTabAdmin.cs</DependentUpon>
+    <EmbeddedResource Include="UsersAdmin.resx">
+      <DependentUpon>UsersAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="onlinegradebookprojectDataSet.xsc">
       <DependentUpon>onlinegradebookprojectDataSet.xsd</DependentUpon>

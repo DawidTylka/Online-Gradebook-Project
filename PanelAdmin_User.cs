@@ -15,7 +15,7 @@ namespace Tylka
         public PanelAdmin_User()
         {
             InitializeComponent();
-            usersTabAdmin1.Hide();
+
         }
 
         private void Home_Click(object sender, EventArgs e)
@@ -40,13 +40,13 @@ namespace Tylka
 
         private void Urzytkownicy_Click(object sender, EventArgs e)
         {
-            usersTabAdmin1.Show();
+            usersAdmin1.Show();
         }
 
         private void PanelAdmin_User_Load(object sender, EventArgs e)
         {
+            usersAdmin1.Hide();
             // TODO: This line of code loads data into the 'onlinegradebookprojectDataSet.Users' table. You can move, or remove it, as needed.
-            this.usersTableAdapter.Fill(this.onlinegradebookprojectDataSet.Users);
 
         }
 

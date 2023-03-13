@@ -19,7 +19,6 @@ namespace Tylka
 
         private void admintest_Load(object sender, EventArgs e)
         {
-            this.usersTableAdapter.Fill(onlinegradebookprojectDataSet.Users);
         }
     }
 }

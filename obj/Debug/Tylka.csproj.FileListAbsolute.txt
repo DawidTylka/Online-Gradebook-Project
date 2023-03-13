@@ -39,4 +39,4 @@ C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.csproj.GenerateResource.cach
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.csproj.CoreCompileInputs.cache
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.exe
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.pdb
-C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.UsersTabAdmin.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.UsersAdmin.resources

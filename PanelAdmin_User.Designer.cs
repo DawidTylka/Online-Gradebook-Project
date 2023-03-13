@@ -28,12 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PanelAdmin_User));
-            this.onlinegradebookprojectDataSet = new Tylka.onlinegradebookprojectDataSet();
-            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.usersTableAdapter = new Tylka.onlinegradebookprojectDataSetTableAdapters.UsersTableAdapter();
             this.gradient1 = new Tylka.Gradient();
+            this.usersAdmin1 = new Tylka.UsersAdmin();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Urzytkownicy = new Tylka.CustomButton();
             this.Sprawdziany = new Tylka.CustomButton();
@@ -42,32 +39,14 @@
             this.gradient8 = new Tylka.Gradient();
             this.Plany_Lekcji = new Tylka.CustomButton();
             this.Klasy = new Tylka.CustomButton();
-            this.usersTabAdmin1 = new Tylka.UsersTabAdmin();
-            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             this.gradient1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // onlinegradebookprojectDataSet
-            // 
-            this.onlinegradebookprojectDataSet.DataSetName = "onlinegradebookprojectDataSet";
-            this.onlinegradebookprojectDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // usersBindingSource
-            // 
-            this.usersBindingSource.DataMember = "Users";
-            this.usersBindingSource.DataSource = this.onlinegradebookprojectDataSet;
-            // 
-            // usersTableAdapter
-            // 
-            this.usersTableAdapter.ClearBeforeFill = true;
             // 
             // gradient1
             // 
             this.gradient1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
             this.gradient1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
-            this.gradient1.Controls.Add(this.usersTabAdmin1);
             this.gradient1.Controls.Add(this.pictureBox1);
             this.gradient1.Controls.Add(this.Urzytkownicy);
             this.gradient1.Controls.Add(this.Sprawdziany);
@@ -76,11 +55,19 @@
             this.gradient1.Controls.Add(this.gradient8);
             this.gradient1.Controls.Add(this.Plany_Lekcji);
             this.gradient1.Controls.Add(this.Klasy);
+            this.gradient1.Controls.Add(this.usersAdmin1);
             this.gradient1.Location = new System.Drawing.Point(-3, -22);
             this.gradient1.Margin = new System.Windows.Forms.Padding(4);
             this.gradient1.Name = "gradient1";
             this.gradient1.Size = new System.Drawing.Size(1359, 871);
             this.gradient1.TabIndex = 5;
+            // 
+            // usersAdmin1
+            // 
+            this.usersAdmin1.Location = new System.Drawing.Point(273, 45);
+            this.usersAdmin1.Name = "usersAdmin1";
+            this.usersAdmin1.Size = new System.Drawing.Size(1019, 532);
+            this.usersAdmin1.TabIndex = 10;
             // 
             // pictureBox1
             // 
@@ -243,32 +230,22 @@
             this.Klasy.UseVisualStyleBackColor = false;
             this.Klasy.Click += new System.EventHandler(this.Klasy_Click);
             // 
-            // usersTabAdmin1
-            // 
-            this.usersTabAdmin1.Location = new System.Drawing.Point(297, 34);
-            this.usersTabAdmin1.Name = "usersTabAdmin1";
-            this.usersTabAdmin1.Size = new System.Drawing.Size(910, 477);
-            this.usersTabAdmin1.TabIndex = 10;
-            this.usersTabAdmin1.Load += new System.EventHandler(this.usersTabAdmin1_Load);
-            // 
             // PanelAdmin_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1312, 814);
+            this.ClientSize = new System.Drawing.Size(1323, 814);
             this.Controls.Add(this.gradient1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PanelAdmin_User";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Dziennik Jordan";
             this.Load += new System.EventHandler(this.PanelAdmin_User_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             this.gradient1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -286,9 +263,6 @@
         private Gradient gradient8;
         private CustomButton Home;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private onlinegradebookprojectDataSet onlinegradebookprojectDataSet;
-        private System.Windows.Forms.BindingSource usersBindingSource;
-        private onlinegradebookprojectDataSetTableAdapters.UsersTableAdapter usersTableAdapter;
-        private UsersTabAdmin usersTabAdmin1;
+        private UsersAdmin usersAdmin1;
     }
 }
