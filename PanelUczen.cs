@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Tylka.apkrodzic
+namespace Tylka
 {
-    public partial class PlanLekcjiRodzic : UserControl
+    public partial class PanelUczen : Form
     {
-        public PlanLekcjiRodzic()
+        public PanelUczen()
         {
             InitializeComponent();
+        }
+
+        private void Plan_Uczen_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -46,9 +46,6 @@ namespace Tylka
                     if (rolecheck1.Length != 0)
                     {
                         paneladmin.Show();
-                        /*Tylka.PanelUczen paneluczen = new Tylka.PanelUczen();
-                        paneluczen.Show();to narazie zostasje bo panel admin tam jest narazie*/
-
                         //MessageBox.Show("prrr", "uczen" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);//to takie fajne message boxy co som jak wygrales iphone kliknij ok
                         if (admincheck.Length != 0)
                         {
@@ -58,10 +55,9 @@ namespace Tylka
                     DataRow[] rolecheck2 = dtable.Select("rola = '" + 2 + "'");
                     if (rolecheck2.Length != 0)
                     {
-                                              
-                        //apkrodzic. panelrodzic = new Tylka.apkrodzic.();
-                        //panelrodzic.Show();
-                        //tutaj zrobic forma dla rodzica i go dodac
+                        
+                        Tylka.PanelUczen paneluczen = new Tylka.PanelUczen();
+                        paneluczen.Show();
                         MessageBox.Show("prrr", "rodzic" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         if (admincheck.Length != 0)
                         {
@@ -71,7 +67,6 @@ namespace Tylka
                     DataRow[] rolecheck3 = dtable.Select("rola = '" + 3 + "'");
                     if (rolecheck3.Length != 0)
                     {
-                        //tutaj zrobic forma dla nauczyciela i go dodac
                         MessageBox.Show("prrr", "nauczyciel" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         if (admincheck.Length != 0)
                         {

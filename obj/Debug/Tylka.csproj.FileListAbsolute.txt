@@ -59,5 +59,3 @@ C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.exe
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.pdb
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.PanelUczen.resources
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.PlanLekcjiUczen.resources
-C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkuczen.PanelRodzic.resources
-C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkrodzic.PlanLekcjiRodzic.resources
