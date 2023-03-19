@@ -55,6 +55,9 @@ namespace Tylka
                     DataRow[] rolecheck2 = dtable.Select("rola = '" + 2 + "'");
                     if (rolecheck2.Length != 0)
                     {
+                        
+                        Tylka.PanelUczen paneluczen = new Tylka.PanelUczen();
+                        paneluczen.Show();
                         MessageBox.Show("prrr", "rodzic" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         if (admincheck.Length != 0)
                         {

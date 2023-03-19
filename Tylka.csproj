@@ -79,6 +79,18 @@
     <Compile Include="PanelAdmin_User.Designer.cs">
       <DependentUpon>PanelAdmin_User.cs</DependentUpon>
     </Compile>
+    <Compile Include="PanelUczen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelUczen.Designer.cs">
+      <DependentUpon>PanelUczen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlanLekcjiUczen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlanLekcjiUczen.Designer.cs">
+      <DependentUpon>PlanLekcjiUczen.cs</DependentUpon>
+    </Compile>
     <Compile Include="PlansAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -107,6 +119,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PanelAdmin_User.resx">
       <DependentUpon>PanelAdmin_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelUczen.resx">
+      <DependentUpon>PanelUczen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanLekcjiUczen.resx">
+      <DependentUpon>PlanLekcjiUczen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlansAdmin.resx">
       <DependentUpon>PlansAdmin.cs</DependentUpon>
