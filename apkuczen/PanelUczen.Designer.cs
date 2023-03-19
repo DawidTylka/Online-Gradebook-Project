@@ -54,7 +54,6 @@
             this.Plan_Uczen.Text = "Plan Lekcji";
             this.Plan_Uczen.TextColor = System.Drawing.Color.White;
             this.Plan_Uczen.UseVisualStyleBackColor = false;
-            this.Plan_Uczen.Click += new System.EventHandler(this.Plan_Uczen_Click);
             // 
             // Wiad_Uczen
             // 
@@ -123,16 +122,16 @@
             // 
             // planLekcjiUczen1
             // 
-            this.planLekcjiUczen1.Location = new System.Drawing.Point(164, 88);
+            this.planLekcjiUczen1.Location = new System.Drawing.Point(196, 44);
             this.planLekcjiUczen1.Name = "planLekcjiUczen1";
-            this.planLekcjiUczen1.Size = new System.Drawing.Size(950, 629);
+            this.planLekcjiUczen1.Size = new System.Drawing.Size(950, 620);
             this.planLekcjiUczen1.TabIndex = 5;
             // 
             // PanelUczen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1131, 671);
             this.Controls.Add(this.planLekcjiUczen1);
             this.Controls.Add(this.Dziennik_dla_Ucznia);
             this.Controls.Add(this.Obecnosc_Uczen);

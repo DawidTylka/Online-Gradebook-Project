@@ -52,6 +52,18 @@
     <Compile Include="admintest.Designer.cs">
       <DependentUpon>admintest.cs</DependentUpon>
     </Compile>
+    <Compile Include="apkrodzic\PanelRodzic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="apkrodzic\PanelRodzic.Designer.cs">
+      <DependentUpon>PanelRodzic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="apkrodzic\PlanLekcjiRodzic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apkrodzic\PlanLekcjiRodzic.Designer.cs">
+      <DependentUpon>PlanLekcjiRodzic.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -79,16 +91,16 @@
     <Compile Include="PanelAdmin_User.Designer.cs">
       <DependentUpon>PanelAdmin_User.cs</DependentUpon>
     </Compile>
-    <Compile Include="PanelUczen.cs">
+    <Compile Include="apkuczen\PanelUczen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PanelUczen.Designer.cs">
+    <Compile Include="apkuczen\PanelUczen.Designer.cs">
       <DependentUpon>PanelUczen.cs</DependentUpon>
     </Compile>
-    <Compile Include="PlanLekcjiUczen.cs">
+    <Compile Include="apkuczen\PlanLekcjiUczen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PlanLekcjiUczen.Designer.cs">
+    <Compile Include="apkuczen\PlanLekcjiUczen.Designer.cs">
       <DependentUpon>PlanLekcjiUczen.cs</DependentUpon>
     </Compile>
     <Compile Include="PlansAdmin.cs">
@@ -114,16 +126,22 @@
     <EmbeddedResource Include="admintest.resx">
       <DependentUpon>admintest.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="apkrodzic\PanelRodzic.resx">
+      <DependentUpon>PanelRodzic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apkrodzic\PlanLekcjiRodzic.resx">
+      <DependentUpon>PlanLekcjiRodzic.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PanelAdmin_User.resx">
       <DependentUpon>PanelAdmin_User.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PanelUczen.resx">
+    <EmbeddedResource Include="apkuczen\PanelUczen.resx">
       <DependentUpon>PanelUczen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PlanLekcjiUczen.resx">
+    <EmbeddedResource Include="apkuczen\PlanLekcjiUczen.resx">
       <DependentUpon>PlanLekcjiUczen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlansAdmin.resx">
@@ -170,6 +188,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="apknauczyciel\" />
     <Folder Include="dziennik funkcje\" />
   </ItemGroup>
   <ItemGroup>
