@@ -35,6 +35,9 @@
             this.LLoginTxtB = new System.Windows.Forms.TextBox();
             this.LPasswordTxtB = new System.Windows.Forms.TextBox();
             this.register1 = new Tylka.register();
+            this.loginpick11 = new Tylka.dziennik_funkcje.loginpick1();
+            this.loginpick21 = new Tylka.dziennik_funkcje.loginpick2();
+            this.loginpick31 = new Tylka.dziennik_funkcje.loginpick3();
             this.SuspendLayout();
             // 
             // label1
@@ -95,17 +98,41 @@
             // 
             // register1
             // 
-            this.register1.Location = new System.Drawing.Point(527, 31);
+            this.register1.Location = new System.Drawing.Point(376, 30);
             this.register1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.register1.Name = "register1";
             this.register1.Size = new System.Drawing.Size(645, 380);
             this.register1.TabIndex = 6;
+            // 
+            // loginpick11
+            // 
+            this.loginpick11.Location = new System.Drawing.Point(157, 57);
+            this.loginpick11.Name = "loginpick11";
+            this.loginpick11.Size = new System.Drawing.Size(399, 366);
+            this.loginpick11.TabIndex = 7;
+            // 
+            // loginpick21
+            // 
+            this.loginpick21.Location = new System.Drawing.Point(191, 81);
+            this.loginpick21.Name = "loginpick21";
+            this.loginpick21.Size = new System.Drawing.Size(375, 355);
+            this.loginpick21.TabIndex = 8;
+            // 
+            // loginpick31
+            // 
+            this.loginpick31.Location = new System.Drawing.Point(218, 81);
+            this.loginpick31.Name = "loginpick31";
+            this.loginpick31.Size = new System.Drawing.Size(387, 316);
+            this.loginpick31.TabIndex = 9;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.loginpick31);
+            this.Controls.Add(this.loginpick21);
+            this.Controls.Add(this.loginpick11);
             this.Controls.Add(this.register1);
             this.Controls.Add(this.LPasswordTxtB);
             this.Controls.Add(this.LLoginTxtB);
@@ -116,6 +143,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,6 +158,9 @@
         private System.Windows.Forms.TextBox LLoginTxtB;
         private System.Windows.Forms.TextBox LPasswordTxtB;
         private register register1;
+        private dziennik_funkcje.loginpick1 loginpick11;
+        private dziennik_funkcje.loginpick2 loginpick21;
+        private dziennik_funkcje.loginpick3 loginpick31;
     }
 }
 

@@ -17,6 +17,7 @@ namespace Tylka
         {
             InitializeComponent();
             register1.Hide();
+
         }
         private SqlConnection conn = new SqlConnection(@"Server=tcp:onlinegradebook.database.windows.net,1433;Initial Catalog=onlinegradebookproject;Persist Security Info=False;User ID=theedziu;Password=Kacper123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
@@ -24,7 +25,6 @@ namespace Tylka
         {
             register1.Show();
         }
-        Tylka.PanelAdmin_User paneladmin = new Tylka.PanelAdmin_User();
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             LLoginTxtB.Focus();  //nie wiemy o conb
@@ -45,33 +45,46 @@ namespace Tylka
                     DataRow[] rolecheck1 = dtable.Select("rola = '" + 1 + "'");// tutaj sprawdzamy czy w podanym userze istnieje cos co w kolumnie rola ma 1 czyli ucznia no i tak po koleji cale te
                     if (rolecheck1.Length != 0)
                     {
-                        paneladmin.Show();
-                        //MessageBox.Show("prrr", "uczen" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);//to takie fajne message boxy co som jak wygrales iphone kliknij ok
                         if (admincheck.Length != 0)
                         {
-                            //tutaj komunistyczne linijki typu co sie bedzie dzialo jak masz admina
+                            loginpick11.Show();
                         }
+                        else
+                        {
+                            apkuczen.PanelUczen paneluczen = new apkuczen.PanelUczen();
+                            paneluczen.Show();
+                        }
+                        //MessageBox.Show("prrr", "uczen" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);//to takie fajne message boxy co som jak wygrales iphone kliknij ok
                     }
+                        
                     DataRow[] rolecheck2 = dtable.Select("rola = '" + 2 + "'");
                     if (rolecheck2.Length != 0)
                     {
-                        
-                        Tylka.PanelUczen paneluczen = new Tylka.PanelUczen();
-                        paneluczen.Show();
-                        MessageBox.Show("prrr", "rodzic" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         if (admincheck.Length != 0)
                         {
-                            //tu wjebać komunistyczne pierdolenie co sie bedzie dzialo jak masz admina
+                            loginpick21.Show();
                         }
+                        else
+                        {
+                            apkrodzic.PanelRodzic panelrodzic = new apkrodzic.PanelRodzic();
+                            panelrodzic.Show();
+                            MessageBox.Show("prrr", "rodzic" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        
                     }
                     DataRow[] rolecheck3 = dtable.Select("rola = '" + 3 + "'");
                     if (rolecheck3.Length != 0)
                     {
-                        MessageBox.Show("prrr", "nauczyciel" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         if (admincheck.Length != 0)
                         {
-                            //tu wjebać komunistyczne pierdolenie co sie bedzie dzialo jak masz admina
+                            loginpick31.Show();
                         }
+                        else
+                        {
+                            apknauczyciel.PanelNauczyciel panelnauczyciel = new apknauczyciel.PanelNauczyciel();
+                            MessageBox.Show("prrr", "nauczyciel" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+
                     }
                 }
                 else//jezeli nie to blad
@@ -92,6 +105,13 @@ namespace Tylka
             {
                 conn.Close();
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            loginpick11.Hide();
+            loginpick21.Hide();
+            loginpick31.Hide();
         }
     }
 }

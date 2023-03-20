@@ -59,3 +59,9 @@ C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.exe
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.pdb
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.PanelUczen.resources
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.PlanLekcjiUczen.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.PlanLekcjiUczen.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkuczen.PanelUczen.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkuczen.PlanLekcjiUczen.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.dziennik_funkcje.loginpick1.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.dziennik_funkcje.loginpick2.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.dziennik_funkcje.loginpick3.resources

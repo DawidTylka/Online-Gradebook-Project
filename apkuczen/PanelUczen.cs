@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Tylka
+namespace Tylka.apkuczen
 {
     public partial class PanelUczen : Form
     {
         public PanelUczen()
         {
             InitializeComponent();
-        }
-
-        private void Plan_Uczen_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

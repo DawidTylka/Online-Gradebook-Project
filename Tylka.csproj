@@ -52,8 +52,50 @@
     <Compile Include="admintest.Designer.cs">
       <DependentUpon>admintest.cs</DependentUpon>
     </Compile>
+    <Compile Include="apknauczyciel\PanelNauczyciel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="apknauczyciel\PanelNauczyciel.Designer.cs">
+      <DependentUpon>PanelNauczyciel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="apkrodzic\PanelRodzic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="apkrodzic\PanelRodzic.Designer.cs">
+      <DependentUpon>PanelRodzic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="apkuczen\PanelUczen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="apkuczen\PanelUczen.Designer.cs">
+      <DependentUpon>PanelUczen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="apkuczen\PlanLekcjiUczen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apkuczen\PlanLekcjiUczen.Designer.cs">
+      <DependentUpon>PlanLekcjiUczen.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomButton.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dziennik funkcje\loginpick1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dziennik funkcje\loginpick1.Designer.cs">
+      <DependentUpon>loginpick1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dziennik funkcje\loginpick2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dziennik funkcje\loginpick2.Designer.cs">
+      <DependentUpon>loginpick2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dziennik funkcje\loginpick3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dziennik funkcje\loginpick3.Designer.cs">
+      <DependentUpon>loginpick3.cs</DependentUpon>
     </Compile>
     <Compile Include="Gradient.cs">
       <SubType>Component</SubType>
@@ -78,12 +120,6 @@
     </Compile>
     <Compile Include="PanelAdmin_User.Designer.cs">
       <DependentUpon>PanelAdmin_User.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PanelUczen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PanelUczen.Designer.cs">
-      <DependentUpon>PanelUczen.cs</DependentUpon>
     </Compile>
     <Compile Include="PlanLekcjiUczen.cs">
       <SubType>UserControl</SubType>
@@ -114,14 +150,26 @@
     <EmbeddedResource Include="admintest.resx">
       <DependentUpon>admintest.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="apkuczen\PanelUczen.resx">
+      <DependentUpon>PanelUczen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apkuczen\PlanLekcjiUczen.resx">
+      <DependentUpon>PlanLekcjiUczen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dziennik funkcje\loginpick1.resx">
+      <DependentUpon>loginpick1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dziennik funkcje\loginpick2.resx">
+      <DependentUpon>loginpick2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dziennik funkcje\loginpick3.resx">
+      <DependentUpon>loginpick3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PanelAdmin_User.resx">
       <DependentUpon>PanelAdmin_User.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PanelUczen.resx">
-      <DependentUpon>PanelUczen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlanLekcjiUczen.resx">
       <DependentUpon>PlanLekcjiUczen.cs</DependentUpon>
@@ -169,9 +217,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="dziennik funkcje\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\odswiezbtn.Image.png" />
   </ItemGroup>
