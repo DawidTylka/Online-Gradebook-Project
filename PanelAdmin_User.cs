@@ -15,7 +15,7 @@ namespace Tylka
         public PanelAdmin_User()
         {
             InitializeComponent();
-
+            MaximizeBox = false;
         }
 
         private void Home_Click(object sender, EventArgs e)

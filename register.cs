@@ -19,12 +19,12 @@ namespace Tylka
         }
         private SqlConnection conn = new SqlConnection(@"Server=tcp:onlinegradebook.database.windows.net,1433;Initial Catalog=onlinegradebookproject;Persist Security Info=False;User ID=theedziu;Password=Kacper123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
-        private void ToLogBtn_Click(object sender, EventArgs e)
+        private void ToLogBtnC_Click(object sender, EventArgs e)
         {
             this.Hide();
         }
 
-        private void RegisterBtn_Click(object sender, EventArgs e)
+        private void RegisterBtnC_Click(object sender, EventArgs e)
         {
             String LoginT, PasswordT, NameT, SurnameT, RoleT;
             LoginT = LoginTxtB.Text;
@@ -69,5 +69,6 @@ namespace Tylka
                 MessageBox.Show("nieprawidłowe dane logowanie", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
     }
 }

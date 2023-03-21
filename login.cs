@@ -17,15 +17,14 @@ namespace Tylka
         {
             InitializeComponent();
             register1.Hide();
-
         }
         private SqlConnection conn = new SqlConnection(@"Server=tcp:onlinegradebook.database.windows.net,1433;Initial Catalog=onlinegradebookproject;Persist Security Info=False;User ID=theedziu;Password=Kacper123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
-        private void ToRegBtn_Click(object sender, EventArgs e)
+        private void ToRegBtnC_Click(object sender, EventArgs e)
         {
             register1.Show();
         }
-        private void LoginBtn_Click(object sender, EventArgs e)
+        private void LoginBtnC_Click(object sender, EventArgs e)
         {
             LLoginTxtB.Focus();  //nie wiemy o conb
             String login, password; ;
@@ -112,6 +111,12 @@ namespace Tylka
             loginpick11.Hide();
             loginpick21.Hide();
             loginpick31.Hide();
+            label1.Parent = this.gradient1;
+            label2.Parent = this.gradient1;
+            loginpick11.Parent = this.gradient1;
+            loginpick21.Parent = this.gradient1;
+            loginpick31.Parent = this.gradient1;
         }
+
     }
 }

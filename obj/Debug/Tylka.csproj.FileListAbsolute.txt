@@ -65,3 +65,13 @@ C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkuczen.PlanLekcjiUczen.res
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.dziennik_funkcje.loginpick1.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.dziennik_funkcje.loginpick2.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.dziennik_funkcje.loginpick3.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apknauczyciel.PanelNauczyciel.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkrodzic.PanelRodzic.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkuczen.PanelUczen.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkuczen.PlanLekcjiUczen.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.dziennik_funkcje.loginpick1.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.dziennik_funkcje.loginpick2.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.dziennik_funkcje.loginpick3.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.PlanLekcjiUczen.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.PlansAdmin.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.UsersAdmin.resources

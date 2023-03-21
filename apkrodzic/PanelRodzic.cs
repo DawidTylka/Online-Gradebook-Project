@@ -15,6 +15,7 @@ namespace Tylka.apkrodzic
         public PanelRodzic()
         {
             InitializeComponent();
+            MaximizeBox = false;
         }
     }
 }

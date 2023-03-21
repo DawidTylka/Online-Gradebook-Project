@@ -15,6 +15,7 @@ namespace Tylka.apkuczen
         public PanelUczen()
         {
             InitializeComponent();
+            MaximizeBox = false;
         }
     }
 }

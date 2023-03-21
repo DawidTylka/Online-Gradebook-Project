@@ -15,6 +15,7 @@ namespace Tylka.apknauczyciel
         public PanelNauczyciel()
         {
             InitializeComponent();
+            MaximizeBox = false;
         }
     }
 }

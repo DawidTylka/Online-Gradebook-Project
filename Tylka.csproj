@@ -150,6 +150,12 @@
     <EmbeddedResource Include="admintest.resx">
       <DependentUpon>admintest.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="apknauczyciel\PanelNauczyciel.resx">
+      <DependentUpon>PanelNauczyciel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apkrodzic\PanelRodzic.resx">
+      <DependentUpon>PanelRodzic.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="apkuczen\PanelUczen.resx">
       <DependentUpon>PanelUczen.cs</DependentUpon>
     </EmbeddedResource>
