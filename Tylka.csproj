@@ -76,6 +76,12 @@
     <Compile Include="apkuczen\PlanLekcjiUczen.Designer.cs">
       <DependentUpon>PlanLekcjiUczen.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClassAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassAdmin.Designer.cs">
+      <DependentUpon>ClassAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -96,6 +102,12 @@
     </Compile>
     <Compile Include="dziennik funkcje\loginpick3.Designer.cs">
       <DependentUpon>loginpick3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExamsAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExamsAdmin.Designer.cs">
+      <DependentUpon>ExamsAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Gradient.cs">
       <SubType>Component</SubType>
@@ -135,6 +147,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PrzedmiotyAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PrzedmiotyAdmin.Designer.cs">
+      <DependentUpon>PrzedmiotyAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="register.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -162,6 +180,9 @@
     <EmbeddedResource Include="apkuczen\PlanLekcjiUczen.resx">
       <DependentUpon>PlanLekcjiUczen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ClassAdmin.resx">
+      <DependentUpon>ClassAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dziennik funkcje\loginpick1.resx">
       <DependentUpon>loginpick1.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="dziennik funkcje\loginpick3.resx">
       <DependentUpon>loginpick3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamsAdmin.resx">
+      <DependentUpon>ExamsAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
@@ -193,6 +217,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="PrzedmiotyAdmin.resx">
+      <DependentUpon>PrzedmiotyAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="register.resx">
       <DependentUpon>register.cs</DependentUpon>
     </EmbeddedResource>

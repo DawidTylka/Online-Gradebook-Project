@@ -30,8 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PanelAdmin_User));
             this.gradient1 = new Tylka.Gradient();
+            this.przedmiotyAdmin1 = new Tylka.PrzedmiotyAdmin();
+            this.classAdmin1 = new Tylka.ClassAdmin();
             this.plansAdmin1 = new Tylka.PlansAdmin();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Urzytkownicy = new Tylka.CustomButton();
             this.Sprawdziany = new Tylka.CustomButton();
             this.Home = new Tylka.CustomButton();
@@ -40,6 +41,8 @@
             this.Plany_Lekcji = new Tylka.CustomButton();
             this.Klasy = new Tylka.CustomButton();
             this.usersAdmin1 = new Tylka.UsersAdmin();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.examsAdmin1 = new Tylka.ExamsAdmin();
             this.gradient1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +51,9 @@
             // 
             this.gradient1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
             this.gradient1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
+            this.gradient1.Controls.Add(this.examsAdmin1);
+            this.gradient1.Controls.Add(this.przedmiotyAdmin1);
+            this.gradient1.Controls.Add(this.classAdmin1);
             this.gradient1.Controls.Add(this.plansAdmin1);
             this.gradient1.Controls.Add(this.pictureBox1);
             this.gradient1.Controls.Add(this.Urzytkownicy);
@@ -64,24 +70,27 @@
             this.gradient1.Size = new System.Drawing.Size(992, 661);
             this.gradient1.TabIndex = 5;
             // 
+            // przedmiotyAdmin1
+            // 
+            this.przedmiotyAdmin1.Location = new System.Drawing.Point(204, 37);
+            this.przedmiotyAdmin1.Name = "przedmiotyAdmin1";
+            this.przedmiotyAdmin1.Size = new System.Drawing.Size(758, 424);
+            this.przedmiotyAdmin1.TabIndex = 13;
+            // 
+            // classAdmin1
+            // 
+            this.classAdmin1.Location = new System.Drawing.Point(204, 37);
+            this.classAdmin1.Name = "classAdmin1";
+            this.classAdmin1.Size = new System.Drawing.Size(769, 424);
+            this.classAdmin1.TabIndex = 12;
+            // 
             // plansAdmin1
             // 
             this.plansAdmin1.Location = new System.Drawing.Point(205, 37);
-            this.plansAdmin1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.plansAdmin1.Margin = new System.Windows.Forms.Padding(2);
             this.plansAdmin1.Name = "plansAdmin1";
             this.plansAdmin1.Size = new System.Drawing.Size(768, 424);
             this.plansAdmin1.TabIndex = 11;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(47, 47);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(47, 20, 47, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(81, 63);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
             // 
             // Urzytkownicy
             // 
@@ -236,10 +245,28 @@
             // usersAdmin1
             // 
             this.usersAdmin1.Location = new System.Drawing.Point(205, 37);
-            this.usersAdmin1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.usersAdmin1.Margin = new System.Windows.Forms.Padding(2);
             this.usersAdmin1.Name = "usersAdmin1";
-            this.usersAdmin1.Size = new System.Drawing.Size(764, 432);
+            this.usersAdmin1.Size = new System.Drawing.Size(768, 424);
             this.usersAdmin1.TabIndex = 10;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(47, 47);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(47, 20, 47, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(81, 63);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
+            // examsAdmin1
+            // 
+            this.examsAdmin1.Location = new System.Drawing.Point(204, 37);
+            this.examsAdmin1.Name = "examsAdmin1";
+            this.examsAdmin1.Size = new System.Drawing.Size(769, 424);
+            this.examsAdmin1.TabIndex = 14;
             // 
             // PanelAdmin_User
             // 
@@ -275,5 +302,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private UsersAdmin usersAdmin1;
         private PlansAdmin plansAdmin1;
+        private ClassAdmin classAdmin1;
+        private PrzedmiotyAdmin przedmiotyAdmin1;
+        private ExamsAdmin examsAdmin1;
     }
 }
