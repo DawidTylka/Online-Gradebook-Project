@@ -17,23 +17,10 @@ namespace Tylka
             InitializeComponent();
         }
 
-        private void saveToolStripButton_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.KlasySource1.EndEdit();
-            this.klasyTableAdapter1.Update(onlinegradebookprojectDataSet.Klasy);
-        }
-
         private void ClassAdmin_Load(object sender, EventArgs e)
         {
             this.klasyTableAdapter1.Fill(onlinegradebookprojectDataSet.Klasy);
         }
-
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-            this.klasyTableAdapter1.Fill(onlinegradebookprojectDataSet.Klasy);
-        }
-
         private void bindingSource1_CurrentChanged(object sender, EventArgs e)
         {
 
@@ -42,6 +29,18 @@ namespace Tylka
         private void bindingNavigator1_RefreshItems(object sender, EventArgs e)
         {
 
+        }
+
+        private void saveToolStripButton_Click_1(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.KlasySource1.EndEdit();
+            this.klasyTableAdapter1.Update(onlinegradebookprojectDataSet.Klasy);
+        }
+
+        private void toolStripButton1_Click_1(object sender, EventArgs e)
+        {
+            this.klasyTableAdapter1.Fill(onlinegradebookprojectDataSet.Klasy);
         }
     }
 }

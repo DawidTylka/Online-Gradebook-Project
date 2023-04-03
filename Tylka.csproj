@@ -127,6 +127,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>onlinegradebookprojectDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="onlinegradebookprojectDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>onlinegradebookprojectDataSet11.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PanelAdmin_User.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -236,6 +241,17 @@
     </None>
     <None Include="onlinegradebookprojectDataSet.xss">
       <DependentUpon>onlinegradebookprojectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="onlinegradebookprojectDataSet11.xsc">
+      <DependentUpon>onlinegradebookprojectDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="onlinegradebookprojectDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>onlinegradebookprojectDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="onlinegradebookprojectDataSet11.xss">
+      <DependentUpon>onlinegradebookprojectDataSet11.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -17,14 +17,19 @@ namespace Tylka
             InitializeComponent();
         }
 
-        private void saveToolStripButton_Click(object sender, EventArgs e)
+        private void ExamsAdmin_Load(object sender, EventArgs e)
+        {
+            this.sprawdzianyTableAdapter1.Fill(onlinegradebookprojectDataSet1.Sprawdziany);
+        }
+
+        private void saveToolStripButton_Click_1(object sender, EventArgs e)
         {
             this.Validate();
             this.sprawdzianybindingSource1.EndEdit();
             this.sprawdzianyTableAdapter1.Update(onlinegradebookprojectDataSet1.Sprawdziany);
         }
 
-        private void ExamsAdmin_Load(object sender, EventArgs e)
+        private void toolStripButton1_Click(object sender, EventArgs e)
         {
             this.sprawdzianyTableAdapter1.Fill(onlinegradebookprojectDataSet1.Sprawdziany);
         }
