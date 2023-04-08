@@ -64,6 +64,12 @@
     <Compile Include="apkrodzic\PanelRodzic.Designer.cs">
       <DependentUpon>PanelRodzic.cs</DependentUpon>
     </Compile>
+    <Compile Include="apkuczen\KlasyUczen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apkuczen\KlasyUczen.Designer.cs">
+      <DependentUpon>KlasyUczen.cs</DependentUpon>
+    </Compile>
     <Compile Include="apkuczen\PanelUczen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,18 @@
     </Compile>
     <Compile Include="apkuczen\PlanLekcjiUczen.Designer.cs">
       <DependentUpon>PlanLekcjiUczen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="apkuczen\PrzedmiotyUczen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apkuczen\PrzedmiotyUczen.Designer.cs">
+      <DependentUpon>PrzedmiotyUczen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="apkuczen\SprawdzianyUczen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apkuczen\SprawdzianyUczen.Designer.cs">
+      <DependentUpon>SprawdzianyUczen.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassAdmin.cs">
       <SubType>UserControl</SubType>
@@ -179,11 +197,20 @@
     <EmbeddedResource Include="apkrodzic\PanelRodzic.resx">
       <DependentUpon>PanelRodzic.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="apkuczen\KlasyUczen.resx">
+      <DependentUpon>KlasyUczen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="apkuczen\PanelUczen.resx">
       <DependentUpon>PanelUczen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="apkuczen\PlanLekcjiUczen.resx">
       <DependentUpon>PlanLekcjiUczen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apkuczen\PrzedmiotyUczen.resx">
+      <DependentUpon>PrzedmiotyUczen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apkuczen\SprawdzianyUczen.resx">
+      <DependentUpon>SprawdzianyUczen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClassAdmin.resx">
       <DependentUpon>ClassAdmin.cs</DependentUpon>

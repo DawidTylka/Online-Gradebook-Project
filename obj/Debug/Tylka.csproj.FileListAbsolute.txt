@@ -57,7 +57,6 @@ C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.cspro
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.csproj.CoreCompileInputs.cache
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.exe
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.pdb
-C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.PanelUczen.resources
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.PlanLekcjiUczen.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.PlanLekcjiUczen.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkuczen.PanelUczen.resources
@@ -129,3 +128,16 @@ C:\Users\Mikołaj\source\repos\TheEdziu\Online-Gradebook-Project\obj\Debug\Tylka
 C:\Users\Mikołaj\source\repos\TheEdziu\Online-Gradebook-Project\obj\Debug\Tylka.csproj.CoreCompileInputs.cache
 C:\Users\Mikołaj\source\repos\TheEdziu\Online-Gradebook-Project\obj\Debug\Tylka.exe
 C:\Users\Mikołaj\source\repos\TheEdziu\Online-Gradebook-Project\obj\Debug\Tylka.pdb
+C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apknauczyciel.PanelNauczyciel.resources
+C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkrodzic.PanelRodzic.resources
+C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkuczen.PanelUczen.resources
+C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkuczen.PlanLekcjiUczen.resources
+C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.ClassAdmin.resources
+C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.dziennik_funkcje.loginpick1.resources
+C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.dziennik_funkcje.loginpick2.resources
+C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.dziennik_funkcje.loginpick3.resources
+C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.ExamsAdmin.resources
+C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.PrzedmiotyAdmin.resources
+C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkuczen.PrzedmiotyUczen.resources
+C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkuczen.SprawdzianyUczen.resources
+C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkuczen.KlasyUczen.resources
