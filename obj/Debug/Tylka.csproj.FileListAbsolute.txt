@@ -46,7 +46,6 @@ C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\bin\Debug\Tylka.exe
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\bin\Debug\Tylka.pdb
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.csproj.AssemblyReference.cache
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.csproj.SuggestedBindingRedirects.cache
-C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.admintest.resources
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.Form1.resources
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.PanelAdmin_User.resources
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.PlansAdmin.resources
@@ -57,7 +56,6 @@ C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.cspro
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.csproj.CoreCompileInputs.cache
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.exe
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.pdb
-C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.PlanLekcjiUczen.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.PlanLekcjiUczen.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkuczen.PanelUczen.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkuczen.PlanLekcjiUczen.resources

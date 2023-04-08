@@ -36,7 +36,7 @@ namespace Tylka.apkuczen
 
         private void Plany_Lekcji_Click(object sender, EventArgs e)
         {
-            
+
             planLekcjiUczen1.Show();
             przedmiotyUczen1.Hide();
             sprawdzianyUczen1.Hide();

@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="admintest.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="admintest.Designer.cs">
-      <DependentUpon>admintest.cs</DependentUpon>
-    </Compile>
     <Compile Include="apknauczyciel\PanelNauczyciel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,30 +131,16 @@
       <DependentUpon>login.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="onlinegradebookprojectDataSet.cs">
-      <DependentUpon>onlinegradebookprojectDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="onlinegradebookprojectDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>onlinegradebookprojectDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="onlinegradebookprojectDataSet11.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>onlinegradebookprojectDataSet11.xsd</DependentUpon>
     </Compile>
     <Compile Include="PanelAdmin_User.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PanelAdmin_User.Designer.cs">
       <DependentUpon>PanelAdmin_User.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PlanLekcjiUczen.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PlanLekcjiUczen.Designer.cs">
-      <DependentUpon>PlanLekcjiUczen.cs</DependentUpon>
     </Compile>
     <Compile Include="PlansAdmin.cs">
       <SubType>UserControl</SubType>
@@ -188,9 +168,6 @@
     <Compile Include="UsersAdmin.Designer.cs">
       <DependentUpon>UsersAdmin.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="admintest.resx">
-      <DependentUpon>admintest.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="apknauczyciel\PanelNauczyciel.resx">
       <DependentUpon>PanelNauczyciel.cs</DependentUpon>
     </EmbeddedResource>
@@ -233,9 +210,6 @@
     <EmbeddedResource Include="PanelAdmin_User.resx">
       <DependentUpon>PanelAdmin_User.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PlanLekcjiUczen.resx">
-      <DependentUpon>PlanLekcjiUczen.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PlansAdmin.resx">
       <DependentUpon>PlansAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -268,17 +242,6 @@
     </None>
     <None Include="onlinegradebookprojectDataSet.xss">
       <DependentUpon>onlinegradebookprojectDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="onlinegradebookprojectDataSet11.xsc">
-      <DependentUpon>onlinegradebookprojectDataSet11.xsd</DependentUpon>
-    </None>
-    <None Include="onlinegradebookprojectDataSet11.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>onlinegradebookprojectDataSet11.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="onlinegradebookprojectDataSet11.xss">
-      <DependentUpon>onlinegradebookprojectDataSet11.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

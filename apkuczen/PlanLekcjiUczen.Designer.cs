@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.onlinegradebookprojectDataSet = new Tylka.onlinegradebookprojectDataSet();
             this.dniBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.onlinegradebookprojectDataSet = new Tylka.onlinegradebookprojectDataSet();
             this.dniTableAdapter = new Tylka.onlinegradebookprojectDataSetTableAdapters.DniTableAdapter();
             this.iddniaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idklasyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,9 +43,11 @@
             this.piątekDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sobotaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.niedzielaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dniBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dniBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dniBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -63,23 +65,24 @@
             this.piątekDataGridViewTextBoxColumn,
             this.sobotaDataGridViewTextBoxColumn,
             this.niedzielaDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.dniBindingSource;
+            this.dataGridView1.DataSource = this.dniBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(3, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1061, 334);
             this.dataGridView1.TabIndex = 0;
             // 
-            // onlinegradebookprojectDataSet
-            // 
-            this.onlinegradebookprojectDataSet.DataSetName = "onlinegradebookprojectDataSet";
-            this.onlinegradebookprojectDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // dniBindingSource
             // 
             this.dniBindingSource.DataMember = "Dni";
             this.dniBindingSource.DataSource = this.onlinegradebookprojectDataSet;
+            // 
+            // onlinegradebookprojectDataSet
+            // 
+            this.onlinegradebookprojectDataSet.DataSetName = "onlinegradebookprojectDataSet";
+            this.onlinegradebookprojectDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dniTableAdapter
             // 
@@ -89,96 +92,80 @@
             // 
             this.iddniaDataGridViewTextBoxColumn.DataPropertyName = "iddnia";
             this.iddniaDataGridViewTextBoxColumn.HeaderText = "iddnia";
-            this.iddniaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.iddniaDataGridViewTextBoxColumn.Name = "iddniaDataGridViewTextBoxColumn";
             this.iddniaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iddniaDataGridViewTextBoxColumn.Visible = false;
-            this.iddniaDataGridViewTextBoxColumn.Width = 125;
             // 
             // idklasyDataGridViewTextBoxColumn
             // 
             this.idklasyDataGridViewTextBoxColumn.DataPropertyName = "id_klasy";
             this.idklasyDataGridViewTextBoxColumn.HeaderText = "id_klasy";
-            this.idklasyDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idklasyDataGridViewTextBoxColumn.Name = "idklasyDataGridViewTextBoxColumn";
-            this.idklasyDataGridViewTextBoxColumn.Width = 125;
             // 
             // godzinaDataGridViewTextBoxColumn
             // 
             this.godzinaDataGridViewTextBoxColumn.DataPropertyName = "godzina";
             this.godzinaDataGridViewTextBoxColumn.HeaderText = "godzina";
-            this.godzinaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.godzinaDataGridViewTextBoxColumn.Name = "godzinaDataGridViewTextBoxColumn";
-            this.godzinaDataGridViewTextBoxColumn.Width = 125;
             // 
             // poniedziałeDataGridViewTextBoxColumn
             // 
             this.poniedziałeDataGridViewTextBoxColumn.DataPropertyName = "Poniedziałe";
-            this.poniedziałeDataGridViewTextBoxColumn.HeaderText = "Poniedziałek";
-            this.poniedziałeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.poniedziałeDataGridViewTextBoxColumn.HeaderText = "Poniedziałe";
             this.poniedziałeDataGridViewTextBoxColumn.Name = "poniedziałeDataGridViewTextBoxColumn";
-            this.poniedziałeDataGridViewTextBoxColumn.Width = 125;
             // 
             // wtorekDataGridViewTextBoxColumn
             // 
             this.wtorekDataGridViewTextBoxColumn.DataPropertyName = "Wtorek";
             this.wtorekDataGridViewTextBoxColumn.HeaderText = "Wtorek";
-            this.wtorekDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.wtorekDataGridViewTextBoxColumn.Name = "wtorekDataGridViewTextBoxColumn";
-            this.wtorekDataGridViewTextBoxColumn.Width = 125;
             // 
             // środaDataGridViewTextBoxColumn
             // 
             this.środaDataGridViewTextBoxColumn.DataPropertyName = "Środa";
             this.środaDataGridViewTextBoxColumn.HeaderText = "Środa";
-            this.środaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.środaDataGridViewTextBoxColumn.Name = "środaDataGridViewTextBoxColumn";
-            this.środaDataGridViewTextBoxColumn.Width = 125;
             // 
             // czwartekDataGridViewTextBoxColumn
             // 
             this.czwartekDataGridViewTextBoxColumn.DataPropertyName = "Czwartek";
             this.czwartekDataGridViewTextBoxColumn.HeaderText = "Czwartek";
-            this.czwartekDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.czwartekDataGridViewTextBoxColumn.Name = "czwartekDataGridViewTextBoxColumn";
-            this.czwartekDataGridViewTextBoxColumn.Width = 125;
             // 
             // piątekDataGridViewTextBoxColumn
             // 
             this.piątekDataGridViewTextBoxColumn.DataPropertyName = "Piątek";
             this.piątekDataGridViewTextBoxColumn.HeaderText = "Piątek";
-            this.piątekDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.piątekDataGridViewTextBoxColumn.Name = "piątekDataGridViewTextBoxColumn";
-            this.piątekDataGridViewTextBoxColumn.Width = 125;
             // 
             // sobotaDataGridViewTextBoxColumn
             // 
             this.sobotaDataGridViewTextBoxColumn.DataPropertyName = "Sobota";
             this.sobotaDataGridViewTextBoxColumn.HeaderText = "Sobota";
-            this.sobotaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.sobotaDataGridViewTextBoxColumn.Name = "sobotaDataGridViewTextBoxColumn";
-            this.sobotaDataGridViewTextBoxColumn.Visible = false;
-            this.sobotaDataGridViewTextBoxColumn.Width = 125;
             // 
             // niedzielaDataGridViewTextBoxColumn
             // 
             this.niedzielaDataGridViewTextBoxColumn.DataPropertyName = "Niedziela";
             this.niedzielaDataGridViewTextBoxColumn.HeaderText = "Niedziela";
-            this.niedzielaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.niedzielaDataGridViewTextBoxColumn.Name = "niedzielaDataGridViewTextBoxColumn";
-            this.niedzielaDataGridViewTextBoxColumn.Visible = false;
-            this.niedzielaDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // dniBindingSource1
+            // 
+            this.dniBindingSource1.DataMember = "Dni";
+            this.dniBindingSource1.DataSource = this.onlinegradebookprojectDataSet;
             // 
             // PlanLekcjiUczen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "PlanLekcjiUczen";
             this.Size = new System.Drawing.Size(1067, 490);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dniBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dniBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -199,5 +186,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn piątekDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sobotaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn niedzielaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource dniBindingSource1;
     }
 }

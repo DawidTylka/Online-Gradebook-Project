@@ -30,14 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.onlinegradebookprojectDataSet = new Tylka.onlinegradebookprojectDataSet();
             this.klasyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.onlinegradebookprojectDataSet = new Tylka.onlinegradebookprojectDataSet();
             this.klasyTableAdapter = new Tylka.onlinegradebookprojectDataSetTableAdapters.KlasyTableAdapter();
+            this.sprawdzianyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sprawdzianyTableAdapter = new Tylka.onlinegradebookprojectDataSetTableAdapters.SprawdzianyTableAdapter();
+            this.klasyBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.identyfikatorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.profilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.klasyBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprawdzianyBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klasyBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -47,25 +52,40 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.identyfikatorDataGridViewTextBoxColumn,
             this.profilDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.klasyBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(116, 85);
+            this.dataGridView1.DataSource = this.klasyBindingSource1;
+            this.dataGridView1.Location = new System.Drawing.Point(155, 105);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(241, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(321, 185);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // onlinegradebookprojectDataSet
-            // 
-            this.onlinegradebookprojectDataSet.DataSetName = "onlinegradebookprojectDataSet";
-            this.onlinegradebookprojectDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // klasyBindingSource
             // 
             this.klasyBindingSource.DataMember = "Klasy";
             this.klasyBindingSource.DataSource = this.onlinegradebookprojectDataSet;
             // 
+            // onlinegradebookprojectDataSet
+            // 
+            this.onlinegradebookprojectDataSet.DataSetName = "onlinegradebookprojectDataSet";
+            this.onlinegradebookprojectDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // klasyTableAdapter
             // 
             this.klasyTableAdapter.ClearBeforeFill = true;
+            // 
+            // sprawdzianyBindingSource
+            // 
+            this.sprawdzianyBindingSource.DataMember = "Sprawdziany";
+            this.sprawdzianyBindingSource.DataSource = this.onlinegradebookprojectDataSet;
+            // 
+            // sprawdzianyTableAdapter
+            // 
+            this.sprawdzianyTableAdapter.ClearBeforeFill = true;
+            // 
+            // klasyBindingSource1
+            // 
+            this.klasyBindingSource1.DataMember = "Klasy";
+            this.klasyBindingSource1.DataSource = this.onlinegradebookprojectDataSet;
             // 
             // identyfikatorDataGridViewTextBoxColumn
             // 
@@ -82,14 +102,17 @@
             // 
             // KlasyUczen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "KlasyUczen";
-            this.Size = new System.Drawing.Size(462, 315);
+            this.Size = new System.Drawing.Size(616, 388);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.klasyBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sprawdzianyBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klasyBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -97,10 +120,13 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn identyfikatorDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn profilDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource klasyBindingSource;
         private onlinegradebookprojectDataSet onlinegradebookprojectDataSet;
         private onlinegradebookprojectDataSetTableAdapters.KlasyTableAdapter klasyTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn identyfikatorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn profilDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource klasyBindingSource1;
+        private System.Windows.Forms.BindingSource sprawdzianyBindingSource;
+        private onlinegradebookprojectDataSetTableAdapters.SprawdzianyTableAdapter sprawdzianyTableAdapter;
     }
 }
