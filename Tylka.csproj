@@ -46,11 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="apknauczyciel\ClassNauczyciel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apknauczyciel\ClassNauczyciel.Designer.cs">
+      <DependentUpon>ClassNauczyciel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="apknauczyciel\ExamsNauczyciel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apknauczyciel\ExamsNauczyciel.Designer.cs">
+      <DependentUpon>ExamsNauczyciel.cs</DependentUpon>
+    </Compile>
     <Compile Include="apknauczyciel\PanelNauczyciel.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="apknauczyciel\PanelNauczyciel.Designer.cs">
       <DependentUpon>PanelNauczyciel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="apknauczyciel\PlansNauczyciel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apknauczyciel\PlansNauczyciel.Designer.cs">
+      <DependentUpon>PlansNauczyciel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="apknauczyciel\PrzedmiotyNauczyciel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apknauczyciel\PrzedmiotyNauczyciel.Designer.cs">
+      <DependentUpon>PrzedmiotyNauczyciel.cs</DependentUpon>
     </Compile>
     <Compile Include="apkrodzic\PanelRodzic.cs">
       <SubType>Form</SubType>
@@ -168,8 +192,20 @@
     <Compile Include="UsersAdmin.Designer.cs">
       <DependentUpon>UsersAdmin.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="apknauczyciel\ClassNauczyciel.resx">
+      <DependentUpon>ClassNauczyciel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apknauczyciel\ExamsNauczyciel.resx">
+      <DependentUpon>ExamsNauczyciel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="apknauczyciel\PanelNauczyciel.resx">
       <DependentUpon>PanelNauczyciel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apknauczyciel\PlansNauczyciel.resx">
+      <DependentUpon>PlansNauczyciel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apknauczyciel\PrzedmiotyNauczyciel.resx">
+      <DependentUpon>PrzedmiotyNauczyciel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="apkrodzic\PanelRodzic.resx">
       <DependentUpon>PanelRodzic.cs</DependentUpon>

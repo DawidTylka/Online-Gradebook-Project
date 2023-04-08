@@ -1,6 +1,6 @@
-﻿namespace Tylka
+﻿namespace Tylka.apknauczyciel
 {
-    partial class ClassAdmin
+    partial class ClassNauczyciel
     {
         /// <summary> 
         /// Wymagana zmienna projektanta.
@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClassAdmin));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClassNauczyciel));
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.KlasySource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.onlinegradebookprojectDataSet = new Tylka.onlinegradebookprojectDataSet();
             this.klasyTableAdapter1 = new Tylka.onlinegradebookprojectDataSetTableAdapters.KlasyTableAdapter();
+            this.onlinegradebookprojectDataSet1 = new Tylka.onlinegradebookprojectDataSet();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.klasyBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.identyfikatorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.profilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.klasyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.KlasySource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klasyBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.klasyBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,10 +87,81 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(765, 31);
-            this.bindingNavigator1.TabIndex = 0;
+            this.bindingNavigator1.Size = new System.Drawing.Size(610, 31);
+            this.bindingNavigator1.TabIndex = 1;
             this.bindingNavigator1.Text = "bindingNavigator1";
-            this.bindingNavigator1.RefreshItems += new System.EventHandler(this.bindingNavigator1_RefreshItems);
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorCountItem.Text = "z {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Suma elementów";
+            // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Pozycja";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Bieżąca pozycja";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
+            // 
+            // klasyTableAdapter1
+            // 
+            this.klasyTableAdapter1.ClearBeforeFill = true;
+            // 
+            // onlinegradebookprojectDataSet1
+            // 
+            this.onlinegradebookprojectDataSet1.DataSetName = "onlinegradebookprojectDataSet";
+            this.onlinegradebookprojectDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.identyfikatorDataGridViewTextBoxColumn,
+            this.profilDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.klasyBindingSource1;
+            this.dataGridView1.Location = new System.Drawing.Point(30, 34);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(550, 300);
+            this.dataGridView1.TabIndex = 2;
+            // 
+            // klasyBindingSource1
+            // 
+            this.klasyBindingSource1.DataMember = "Klasy";
+            this.klasyBindingSource1.DataSource = this.onlinegradebookprojectDataSet1;
+            // 
+            // identyfikatorDataGridViewTextBoxColumn
+            // 
+            this.identyfikatorDataGridViewTextBoxColumn.DataPropertyName = "Identyfikator";
+            this.identyfikatorDataGridViewTextBoxColumn.HeaderText = "Identyfikator";
+            this.identyfikatorDataGridViewTextBoxColumn.Name = "identyfikatorDataGridViewTextBoxColumn";
+            this.identyfikatorDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // profilDataGridViewTextBoxColumn
+            // 
+            this.profilDataGridViewTextBoxColumn.DataPropertyName = "Profil";
+            this.profilDataGridViewTextBoxColumn.HeaderText = "Profil";
+            this.profilDataGridViewTextBoxColumn.Name = "profilDataGridViewTextBoxColumn";
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -100,13 +171,6 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorAddNewItem.Text = "Dodaj nowy";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorCountItem.Text = "z {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Suma elementów";
             // 
             // bindingNavigatorDeleteItem
             // 
@@ -135,26 +199,6 @@
             this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Przenieś poprzedni";
             // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Pozycja";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Bieżąca pozycja";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
-            // 
             // bindingNavigatorMoveNextItem
             // 
             this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -173,11 +217,6 @@
             this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorMoveLastItem.Text = "Przenieś ostatni";
             // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
-            // 
             // saveToolStripButton
             // 
             this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -186,7 +225,7 @@
             this.saveToolStripButton.Name = "saveToolStripButton";
             this.saveToolStripButton.Size = new System.Drawing.Size(28, 28);
             this.saveToolStripButton.Text = "&Save";
-            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click_1);
+            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
             // 
             // toolStripButton1
             // 
@@ -196,71 +235,22 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(28, 28);
             this.toolStripButton1.Text = "toolStripButton1";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click_1);
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
-            // KlasySource1
-            // 
-            this.KlasySource1.AllowNew = true;
-            this.KlasySource1.DataMember = "Klasy";
-            this.KlasySource1.DataSource = this.onlinegradebookprojectDataSet;
-            this.KlasySource1.CurrentChanged += new System.EventHandler(this.bindingSource1_CurrentChanged);
-            // 
-            // onlinegradebookprojectDataSet
-            // 
-            this.onlinegradebookprojectDataSet.DataSetName = "onlinegradebookprojectDataSet";
-            this.onlinegradebookprojectDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // klasyTableAdapter1
-            // 
-            this.klasyTableAdapter1.ClearBeforeFill = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.identyfikatorDataGridViewTextBoxColumn,
-            this.profilDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.klasyBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(43, 60);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(671, 309);
-            this.dataGridView1.TabIndex = 1;
-            // 
-            // identyfikatorDataGridViewTextBoxColumn
-            // 
-            this.identyfikatorDataGridViewTextBoxColumn.DataPropertyName = "Identyfikator";
-            this.identyfikatorDataGridViewTextBoxColumn.HeaderText = "Identyfikator";
-            this.identyfikatorDataGridViewTextBoxColumn.Name = "identyfikatorDataGridViewTextBoxColumn";
-            this.identyfikatorDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // profilDataGridViewTextBoxColumn
-            // 
-            this.profilDataGridViewTextBoxColumn.DataPropertyName = "Profil";
-            this.profilDataGridViewTextBoxColumn.HeaderText = "Profil";
-            this.profilDataGridViewTextBoxColumn.Name = "profilDataGridViewTextBoxColumn";
-            // 
-            // klasyBindingSource
-            // 
-            this.klasyBindingSource.DataMember = "Klasy";
-            this.klasyBindingSource.DataSource = this.onlinegradebookprojectDataSet;
-            // 
-            // ClassAdmin
+            // ClassNauczyciel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bindingNavigator1);
-            this.Name = "ClassAdmin";
-            this.Size = new System.Drawing.Size(765, 421);
-            this.Load += new System.EventHandler(this.ClassAdmin_Load);
+            this.Name = "ClassNauczyciel";
+            this.Size = new System.Drawing.Size(610, 360);
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.KlasySource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.klasyBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.klasyBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -281,14 +271,14 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.BindingSource KlasySource1;
-        private onlinegradebookprojectDataSet onlinegradebookprojectDataSet;
-        private onlinegradebookprojectDataSetTableAdapters.KlasyTableAdapter klasyTableAdapter1;
         private System.Windows.Forms.ToolStripButton saveToolStripButton;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private onlinegradebookprojectDataSetTableAdapters.KlasyTableAdapter klasyTableAdapter1;
+        private onlinegradebookprojectDataSet onlinegradebookprojectDataSet1;
+        private System.Windows.Forms.BindingSource klasyBindingSource;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn identyfikatorDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn profilDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource klasyBindingSource;
+        private System.Windows.Forms.BindingSource klasyBindingSource1;
     }
 }
