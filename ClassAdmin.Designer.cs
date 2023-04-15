@@ -87,10 +87,9 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(765, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(789, 31);
             this.bindingNavigator1.TabIndex = 0;
             this.bindingNavigator1.Text = "bindingNavigator1";
-            this.bindingNavigator1.RefreshItems += new System.EventHandler(this.bindingNavigator1_RefreshItems);
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -203,7 +202,6 @@
             this.KlasySource1.AllowNew = true;
             this.KlasySource1.DataMember = "Klasy";
             this.KlasySource1.DataSource = this.onlinegradebookprojectDataSet;
-            this.KlasySource1.CurrentChanged += new System.EventHandler(this.bindingSource1_CurrentChanged);
             // 
             // onlinegradebookprojectDataSet
             // 
@@ -217,15 +215,16 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(114)))), ((int)(((byte)(190)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.identyfikatorDataGridViewTextBoxColumn,
             this.profilDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.klasyBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(43, 60);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 34);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(671, 309);
+            this.dataGridView1.Size = new System.Drawing.Size(789, 366);
             this.dataGridView1.TabIndex = 1;
             // 
             // identyfikatorDataGridViewTextBoxColumn
@@ -253,7 +252,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bindingNavigator1);
             this.Name = "ClassAdmin";
-            this.Size = new System.Drawing.Size(765, 421);
+            this.Size = new System.Drawing.Size(789, 400);
             this.Load += new System.EventHandler(this.ClassAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);

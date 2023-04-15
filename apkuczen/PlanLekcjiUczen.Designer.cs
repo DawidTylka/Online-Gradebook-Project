@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dniBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.onlinegradebookprojectDataSet = new Tylka.onlinegradebookprojectDataSet();
-            this.dniTableAdapter = new Tylka.onlinegradebookprojectDataSetTableAdapters.DniTableAdapter();
             this.iddniaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idklasyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.godzinaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,15 +41,19 @@
             this.sobotaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.niedzielaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dniBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.onlinegradebookprojectDataSet = new Tylka.onlinegradebookprojectDataSet();
+            this.dniBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dniTableAdapter = new Tylka.onlinegradebookprojectDataSetTableAdapters.DniTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dniBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dniBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dniBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(114)))), ((int)(((byte)(190)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iddniaDataGridViewTextBoxColumn,
@@ -66,27 +67,14 @@
             this.sobotaDataGridViewTextBoxColumn,
             this.niedzielaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.dniBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 34);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1061, 334);
+            this.dataGridView1.Size = new System.Drawing.Size(789, 366);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // dniBindingSource
-            // 
-            this.dniBindingSource.DataMember = "Dni";
-            this.dniBindingSource.DataSource = this.onlinegradebookprojectDataSet;
-            // 
-            // onlinegradebookprojectDataSet
-            // 
-            this.onlinegradebookprojectDataSet.DataSetName = "onlinegradebookprojectDataSet";
-            this.onlinegradebookprojectDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dniTableAdapter
-            // 
-            this.dniTableAdapter.ClearBeforeFill = true;
             // 
             // iddniaDataGridViewTextBoxColumn
             // 
@@ -154,18 +142,33 @@
             this.dniBindingSource1.DataMember = "Dni";
             this.dniBindingSource1.DataSource = this.onlinegradebookprojectDataSet;
             // 
+            // onlinegradebookprojectDataSet
+            // 
+            this.onlinegradebookprojectDataSet.DataSetName = "onlinegradebookprojectDataSet";
+            this.onlinegradebookprojectDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dniBindingSource
+            // 
+            this.dniBindingSource.DataMember = "Dni";
+            this.dniBindingSource.DataSource = this.onlinegradebookprojectDataSet;
+            // 
+            // dniTableAdapter
+            // 
+            this.dniTableAdapter.ClearBeforeFill = true;
+            // 
             // PlanLekcjiUczen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PlanLekcjiUczen";
-            this.Size = new System.Drawing.Size(1067, 490);
+            this.Size = new System.Drawing.Size(789, 400);
+            this.Load += new System.EventHandler(this.PlanLekcjiUczen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dniBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dniBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dniBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

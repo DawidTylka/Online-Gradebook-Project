@@ -56,5 +56,13 @@ namespace Tylka.apkrodzic
             chowaj();
             examsRodzic1.Show();
         }
+
+        private void PanelRodzic_Load(object sender, EventArgs e)
+        {
+            classRodzic1.Parent = this.gradient1;
+            plansRodzic1.Parent = this.gradient1;
+            przedmiotyRodzic1.Parent = this.gradient1;
+            examsRodzic1.Parent = this.gradient1;
+        }
     }
 }

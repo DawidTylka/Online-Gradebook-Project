@@ -142,6 +142,11 @@ namespace Tylka
         protected override void OnHandleCreated(EventArgs e)
         {
             base.OnHandleCreated(e);
+            NewMethod();
+        }
+
+        private void NewMethod()
+        {
             Parent.BackColorChanged += new EventHandler(Container_BackColorChanged);
         }
 

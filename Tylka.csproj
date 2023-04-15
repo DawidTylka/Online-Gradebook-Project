@@ -145,6 +145,7 @@
     <Compile Include="CustomButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="dziennik funkcje\Resize_data.cs" />
     <Compile Include="dziennik funkcje\loginpick1.cs">
       <SubType>UserControl</SubType>
     </Compile>

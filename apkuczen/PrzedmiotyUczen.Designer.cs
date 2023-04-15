@@ -30,52 +30,34 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.przedmiotyBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.onlinegradebookprojectDataSet = new Tylka.onlinegradebookprojectDataSet();
-            this.przedmiotyTableAdapter = new Tylka.onlinegradebookprojectDataSetTableAdapters.PrzedmiotyTableAdapter();
-            this.przedmiotyBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.idprzedmiotuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nazwaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idnauczycielaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.przedmiotyBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.onlinegradebookprojectDataSet = new Tylka.onlinegradebookprojectDataSet();
+            this.przedmiotyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.przedmiotyTableAdapter = new Tylka.onlinegradebookprojectDataSetTableAdapters.PrzedmiotyTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.przedmiotyBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.przedmiotyBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.przedmiotyBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(114)))), ((int)(((byte)(190)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idprzedmiotuDataGridViewTextBoxColumn,
             this.nazwaDataGridViewTextBoxColumn,
             this.idnauczycielaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.przedmiotyBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(275, 156);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 34);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(456, 261);
+            this.dataGridView1.Size = new System.Drawing.Size(789, 366);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // przedmiotyBindingSource
-            // 
-            this.przedmiotyBindingSource.DataMember = "Przedmioty";
-            this.przedmiotyBindingSource.DataSource = this.onlinegradebookprojectDataSet;
-            // 
-            // onlinegradebookprojectDataSet
-            // 
-            this.onlinegradebookprojectDataSet.DataSetName = "onlinegradebookprojectDataSet";
-            this.onlinegradebookprojectDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // przedmiotyTableAdapter
-            // 
-            this.przedmiotyTableAdapter.ClearBeforeFill = true;
-            // 
-            // przedmiotyBindingSource1
-            // 
-            this.przedmiotyBindingSource1.DataMember = "Przedmioty";
-            this.przedmiotyBindingSource1.DataSource = this.onlinegradebookprojectDataSet;
             // 
             // idprzedmiotuDataGridViewTextBoxColumn
             // 
@@ -96,18 +78,37 @@
             this.idnauczycielaDataGridViewTextBoxColumn.HeaderText = "id_nauczyciela";
             this.idnauczycielaDataGridViewTextBoxColumn.Name = "idnauczycielaDataGridViewTextBoxColumn";
             // 
+            // przedmiotyBindingSource1
+            // 
+            this.przedmiotyBindingSource1.DataMember = "Przedmioty";
+            this.przedmiotyBindingSource1.DataSource = this.onlinegradebookprojectDataSet;
+            // 
+            // onlinegradebookprojectDataSet
+            // 
+            this.onlinegradebookprojectDataSet.DataSetName = "onlinegradebookprojectDataSet";
+            this.onlinegradebookprojectDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // przedmiotyBindingSource
+            // 
+            this.przedmiotyBindingSource.DataMember = "Przedmioty";
+            this.przedmiotyBindingSource.DataSource = this.onlinegradebookprojectDataSet;
+            // 
+            // przedmiotyTableAdapter
+            // 
+            this.przedmiotyTableAdapter.ClearBeforeFill = true;
+            // 
             // PrzedmiotyUczen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "PrzedmiotyUczen";
-            this.Size = new System.Drawing.Size(1127, 604);
+            this.Size = new System.Drawing.Size(789, 400);
+            this.Load += new System.EventHandler(this.PrzedmiotyUczen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.przedmiotyBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.przedmiotyBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.przedmiotyBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

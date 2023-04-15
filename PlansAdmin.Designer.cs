@@ -48,7 +48,6 @@
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dniBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.iddniaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idklasyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.godzinaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,6 +58,7 @@
             this.piątekDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sobotaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.niedzielaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dniBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dniBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
@@ -92,7 +92,7 @@
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(49, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
@@ -140,7 +140,7 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1024, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(789, 27);
             this.bindingNavigator1.TabIndex = 1;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -223,6 +223,7 @@
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(114)))), ((int)(((byte)(190)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iddniaDataGridViewTextBoxColumn,
@@ -236,20 +237,13 @@
             this.sobotaDataGridViewTextBoxColumn,
             this.niedzielaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.dniBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(59, 46);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 34);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(904, 430);
+            this.dataGridView1.Size = new System.Drawing.Size(789, 366);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // dniBindingSource1
-            // 
-            this.dniBindingSource1.DataMember = "Dni";
-            this.dniBindingSource1.DataSource = this.onlinegradebookprojectDataSet;
             // 
             // iddniaDataGridViewTextBoxColumn
             // 
@@ -257,80 +251,86 @@
             this.iddniaDataGridViewTextBoxColumn.HeaderText = "iddnia";
             this.iddniaDataGridViewTextBoxColumn.Name = "iddniaDataGridViewTextBoxColumn";
             this.iddniaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iddniaDataGridViewTextBoxColumn.Width = 69;
+            this.iddniaDataGridViewTextBoxColumn.Width = 60;
             // 
             // idklasyDataGridViewTextBoxColumn
             // 
             this.idklasyDataGridViewTextBoxColumn.DataPropertyName = "id_klasy";
             this.idklasyDataGridViewTextBoxColumn.HeaderText = "id_klasy";
             this.idklasyDataGridViewTextBoxColumn.Name = "idklasyDataGridViewTextBoxColumn";
-            this.idklasyDataGridViewTextBoxColumn.Width = 82;
+            this.idklasyDataGridViewTextBoxColumn.Width = 70;
             // 
             // godzinaDataGridViewTextBoxColumn
             // 
             this.godzinaDataGridViewTextBoxColumn.DataPropertyName = "godzina";
             this.godzinaDataGridViewTextBoxColumn.HeaderText = "godzina";
             this.godzinaDataGridViewTextBoxColumn.Name = "godzinaDataGridViewTextBoxColumn";
-            this.godzinaDataGridViewTextBoxColumn.Width = 80;
+            this.godzinaDataGridViewTextBoxColumn.Width = 69;
             // 
             // poniedziałeDataGridViewTextBoxColumn
             // 
             this.poniedziałeDataGridViewTextBoxColumn.DataPropertyName = "Poniedziałe";
             this.poniedziałeDataGridViewTextBoxColumn.HeaderText = "Poniedziałe";
             this.poniedziałeDataGridViewTextBoxColumn.Name = "poniedziałeDataGridViewTextBoxColumn";
-            this.poniedziałeDataGridViewTextBoxColumn.Width = 106;
+            this.poniedziałeDataGridViewTextBoxColumn.Width = 88;
             // 
             // wtorekDataGridViewTextBoxColumn
             // 
             this.wtorekDataGridViewTextBoxColumn.DataPropertyName = "Wtorek";
             this.wtorekDataGridViewTextBoxColumn.HeaderText = "Wtorek";
             this.wtorekDataGridViewTextBoxColumn.Name = "wtorekDataGridViewTextBoxColumn";
-            this.wtorekDataGridViewTextBoxColumn.Width = 75;
+            this.wtorekDataGridViewTextBoxColumn.Width = 67;
             // 
             // środaDataGridViewTextBoxColumn
             // 
             this.środaDataGridViewTextBoxColumn.DataPropertyName = "Środa";
             this.środaDataGridViewTextBoxColumn.HeaderText = "Środa";
             this.środaDataGridViewTextBoxColumn.Name = "środaDataGridViewTextBoxColumn";
-            this.środaDataGridViewTextBoxColumn.Width = 69;
+            this.środaDataGridViewTextBoxColumn.Width = 60;
             // 
             // czwartekDataGridViewTextBoxColumn
             // 
             this.czwartekDataGridViewTextBoxColumn.DataPropertyName = "Czwartek";
             this.czwartekDataGridViewTextBoxColumn.HeaderText = "Czwartek";
             this.czwartekDataGridViewTextBoxColumn.Name = "czwartekDataGridViewTextBoxColumn";
-            this.czwartekDataGridViewTextBoxColumn.Width = 86;
+            this.czwartekDataGridViewTextBoxColumn.Width = 76;
             // 
             // piątekDataGridViewTextBoxColumn
             // 
             this.piątekDataGridViewTextBoxColumn.DataPropertyName = "Piątek";
             this.piątekDataGridViewTextBoxColumn.HeaderText = "Piątek";
             this.piątekDataGridViewTextBoxColumn.Name = "piątekDataGridViewTextBoxColumn";
-            this.piątekDataGridViewTextBoxColumn.Width = 70;
+            this.piątekDataGridViewTextBoxColumn.Width = 62;
             // 
             // sobotaDataGridViewTextBoxColumn
             // 
             this.sobotaDataGridViewTextBoxColumn.DataPropertyName = "Sobota";
             this.sobotaDataGridViewTextBoxColumn.HeaderText = "Sobota";
             this.sobotaDataGridViewTextBoxColumn.Name = "sobotaDataGridViewTextBoxColumn";
-            this.sobotaDataGridViewTextBoxColumn.Width = 76;
+            this.sobotaDataGridViewTextBoxColumn.Width = 66;
             // 
             // niedzielaDataGridViewTextBoxColumn
             // 
             this.niedzielaDataGridViewTextBoxColumn.DataPropertyName = "Niedziela";
             this.niedzielaDataGridViewTextBoxColumn.HeaderText = "Niedziela";
             this.niedzielaDataGridViewTextBoxColumn.Name = "niedzielaDataGridViewTextBoxColumn";
-            this.niedzielaDataGridViewTextBoxColumn.Width = 89;
+            this.niedzielaDataGridViewTextBoxColumn.Width = 75;
+            // 
+            // dniBindingSource1
+            // 
+            this.dniBindingSource1.DataMember = "Dni";
+            this.dniBindingSource1.DataSource = this.onlinegradebookprojectDataSet;
             // 
             // PlansAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bindingNavigator1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PlansAdmin";
-            this.Size = new System.Drawing.Size(1024, 522);
+            this.Size = new System.Drawing.Size(789, 400);
+            this.Load += new System.EventHandler(this.PlansAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dniBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();

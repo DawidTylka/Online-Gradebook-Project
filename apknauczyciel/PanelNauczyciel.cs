@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tylka.apkuczen;
 
 namespace Tylka.apknauczyciel
 {
@@ -54,6 +55,14 @@ namespace Tylka.apknauczyciel
         {
             chowaj();
             examsNauczyciel1.Show();
+        }
+
+        private void PanelNauczyciel_Load(object sender, EventArgs e)
+        {
+            classNauczyciel1.Parent = this.gradient1;
+            plansNauczyciel1.Parent = this.gradient1;
+            przedmiotyNauczyciel1.Parent = this.gradient1;
+            examsNauczyciel1.Parent = this.gradient1;
         }
     }
 }

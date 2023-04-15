@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tylka.dziennik_funkcje;
 
 namespace Tylka.apkrodzic
 {
@@ -22,11 +23,21 @@ namespace Tylka.apkrodzic
             this.Validate();
             this.plansbindingSource1.EndEdit();
             this.dniTableAdapter.Update(onlinegradebookprojectDataSet1.Dni);
+            Resize_data TaH = new Resize_data();
+            TaH.Table_auto_size(dataGridView1);
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             this.dniTableAdapter.Fill(onlinegradebookprojectDataSet1.Dni);
+            Resize_data TaH = new Resize_data();
+            TaH.Table_auto_size(dataGridView1);
+        }
+
+        private void PlansRodzic_Load(object sender, EventArgs e)
+        {
+            Resize_data TaH = new Resize_data();
+            TaH.Table_auto_size(dataGridView1);
         }
     }
 }

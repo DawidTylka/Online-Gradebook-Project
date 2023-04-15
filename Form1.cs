@@ -13,6 +13,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Tylka
 {
+
     public partial class Form1 : Form
     {
         public Form1()

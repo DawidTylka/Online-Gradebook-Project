@@ -65,6 +65,10 @@ namespace Tylka.apkuczen
             przedmiotyUczen1.Hide();
             sprawdzianyUczen1.Hide();
             klasyUczen1.Hide();
+            planLekcjiUczen1.Parent = this.gradient1;
+            przedmiotyUczen1.Parent = this.gradient1;
+            sprawdzianyUczen1.Parent = this.gradient1;
+            klasyUczen1.Parent = this.gradient1;
         }
     }
 }
