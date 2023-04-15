@@ -171,3 +171,7 @@ C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apknauc
 C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apknauczyciel.PlansNauczyciel.resources
 C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apknauczyciel.PrzedmiotyNauczyciel.resources
 C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apknauczyciel.ExamsNauczyciel.resources
+C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkrodzic.ClassRodzic.resources
+C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkrodzic.PlansRodzic.resources
+C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkrodzic.PrzedmiotyRodzic.resources
+C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkrodzic.ExamsRodzic.resources

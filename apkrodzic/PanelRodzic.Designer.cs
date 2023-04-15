@@ -36,7 +36,12 @@
             this.Plany_Lekcji = new Tylka.CustomButton();
             this.Klasy = new Tylka.CustomButton();
             this.gradient1 = new Tylka.Gradient();
+            this.przedmiotyRodzic1 = new Tylka.apkrodzic.PrzedmiotyRodzic();
+            this.plansRodzic1 = new Tylka.apkrodzic.PlansRodzic();
+            this.classRodzic1 = new Tylka.apkrodzic.ClassRodzic();
+            this.examsRodzic1 = new Tylka.apkrodzic.ExamsRodzic();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.gradient1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -71,6 +76,7 @@
             this.Sprawdziany.Text = "Sprawdziany";
             this.Sprawdziany.TextColor = System.Drawing.Color.White;
             this.Sprawdziany.UseVisualStyleBackColor = false;
+            this.Sprawdziany.Click += new System.EventHandler(this.Sprawdziany_Click);
             // 
             // Home
             // 
@@ -94,6 +100,7 @@
             this.Home.Text = "Home";
             this.Home.TextColor = System.Drawing.Color.White;
             this.Home.UseVisualStyleBackColor = false;
+            this.Home.Click += new System.EventHandler(this.Home_Click);
             // 
             // Przedmioty
             // 
@@ -116,6 +123,7 @@
             this.Przedmioty.Text = "Przedmioty";
             this.Przedmioty.TextColor = System.Drawing.Color.White;
             this.Przedmioty.UseVisualStyleBackColor = false;
+            this.Przedmioty.Click += new System.EventHandler(this.Przedmioty_Click);
             // 
             // Plany_Lekcji
             // 
@@ -136,9 +144,10 @@
             this.Plany_Lekcji.Name = "Plany_Lekcji";
             this.Plany_Lekcji.Size = new System.Drawing.Size(150, 30);
             this.Plany_Lekcji.TabIndex = 11;
-            this.Plany_Lekcji.Text = "Plany Lekcji";
+            this.Plany_Lekcji.Text = "Plan Lekcji";
             this.Plany_Lekcji.TextColor = System.Drawing.Color.White;
             this.Plany_Lekcji.UseVisualStyleBackColor = false;
+            this.Plany_Lekcji.Click += new System.EventHandler(this.Plany_Lekcji_Click);
             // 
             // Klasy
             // 
@@ -161,16 +170,49 @@
             this.Klasy.Text = "Klasy";
             this.Klasy.TextColor = System.Drawing.Color.White;
             this.Klasy.UseVisualStyleBackColor = false;
+            this.Klasy.Click += new System.EventHandler(this.Klasy_Click);
             // 
             // gradient1
             // 
             this.gradient1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
             this.gradient1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
+            this.gradient1.Controls.Add(this.examsRodzic1);
+            this.gradient1.Controls.Add(this.przedmiotyRodzic1);
+            this.gradient1.Controls.Add(this.plansRodzic1);
+            this.gradient1.Controls.Add(this.classRodzic1);
             this.gradient1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gradient1.Location = new System.Drawing.Point(0, 0);
             this.gradient1.Name = "gradient1";
             this.gradient1.Size = new System.Drawing.Size(800, 450);
             this.gradient1.TabIndex = 17;
+            // 
+            // przedmiotyRodzic1
+            // 
+            this.przedmiotyRodzic1.Location = new System.Drawing.Point(178, 45);
+            this.przedmiotyRodzic1.Name = "przedmiotyRodzic1";
+            this.przedmiotyRodzic1.Size = new System.Drawing.Size(610, 360);
+            this.przedmiotyRodzic1.TabIndex = 2;
+            // 
+            // plansRodzic1
+            // 
+            this.plansRodzic1.Location = new System.Drawing.Point(178, 45);
+            this.plansRodzic1.Name = "plansRodzic1";
+            this.plansRodzic1.Size = new System.Drawing.Size(610, 360);
+            this.plansRodzic1.TabIndex = 1;
+            // 
+            // classRodzic1
+            // 
+            this.classRodzic1.Location = new System.Drawing.Point(178, 45);
+            this.classRodzic1.Name = "classRodzic1";
+            this.classRodzic1.Size = new System.Drawing.Size(610, 360);
+            this.classRodzic1.TabIndex = 0;
+            // 
+            // examsRodzic1
+            // 
+            this.examsRodzic1.Location = new System.Drawing.Point(178, 45);
+            this.examsRodzic1.Name = "examsRodzic1";
+            this.examsRodzic1.Size = new System.Drawing.Size(610, 360);
+            this.examsRodzic1.TabIndex = 3;
             // 
             // PanelRodzic
             // 
@@ -189,6 +231,7 @@
             this.Name = "PanelRodzic";
             this.Text = "PanelRodzic";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.gradient1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -202,5 +245,9 @@
         private CustomButton Plany_Lekcji;
         private CustomButton Klasy;
         private Gradient gradient1;
+        private ClassRodzic classRodzic1;
+        private PlansRodzic plansRodzic1;
+        private PrzedmiotyRodzic przedmiotyRodzic1;
+        private ExamsRodzic examsRodzic1;
     }
 }

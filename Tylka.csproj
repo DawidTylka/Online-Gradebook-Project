@@ -76,11 +76,35 @@
     <Compile Include="apknauczyciel\PrzedmiotyNauczyciel.Designer.cs">
       <DependentUpon>PrzedmiotyNauczyciel.cs</DependentUpon>
     </Compile>
+    <Compile Include="apkrodzic\ClassRodzic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apkrodzic\ClassRodzic.Designer.cs">
+      <DependentUpon>ClassRodzic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="apkrodzic\ExamsRodzic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apkrodzic\ExamsRodzic.Designer.cs">
+      <DependentUpon>ExamsRodzic.cs</DependentUpon>
+    </Compile>
     <Compile Include="apkrodzic\PanelRodzic.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="apkrodzic\PanelRodzic.Designer.cs">
       <DependentUpon>PanelRodzic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="apkrodzic\PlansRodzic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apkrodzic\PlansRodzic.Designer.cs">
+      <DependentUpon>PlansRodzic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="apkrodzic\PrzedmiotyRodzic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apkrodzic\PrzedmiotyRodzic.Designer.cs">
+      <DependentUpon>PrzedmiotyRodzic.cs</DependentUpon>
     </Compile>
     <Compile Include="apkuczen\KlasyUczen.cs">
       <SubType>UserControl</SubType>
@@ -207,8 +231,20 @@
     <EmbeddedResource Include="apknauczyciel\PrzedmiotyNauczyciel.resx">
       <DependentUpon>PrzedmiotyNauczyciel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="apkrodzic\ClassRodzic.resx">
+      <DependentUpon>ClassRodzic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apkrodzic\ExamsRodzic.resx">
+      <DependentUpon>ExamsRodzic.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="apkrodzic\PanelRodzic.resx">
       <DependentUpon>PanelRodzic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apkrodzic\PlansRodzic.resx">
+      <DependentUpon>PlansRodzic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apkrodzic\PrzedmiotyRodzic.resx">
+      <DependentUpon>PrzedmiotyRodzic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="apkuczen\KlasyUczen.resx">
       <DependentUpon>KlasyUczen.cs</DependentUpon>
