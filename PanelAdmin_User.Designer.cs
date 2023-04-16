@@ -43,6 +43,7 @@
             this.gradient8 = new Tylka.Gradient();
             this.Plany_Lekcji = new Tylka.CustomButton();
             this.Klasy = new Tylka.CustomButton();
+            this.home1 = new Tylka.dziennik_funkcje.home();
             this.gradient1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -51,6 +52,7 @@
             // 
             this.gradient1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
             this.gradient1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
+            this.gradient1.Controls.Add(this.home1);
             this.gradient1.Controls.Add(this.plansAdmin1);
             this.gradient1.Controls.Add(this.usersAdmin1);
             this.gradient1.Controls.Add(this.examsAdmin1);
@@ -74,7 +76,7 @@
             // 
             this.plansAdmin1.BackColor = System.Drawing.Color.Transparent;
             this.plansAdmin1.Location = new System.Drawing.Point(186, 47);
-            this.plansAdmin1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.plansAdmin1.Margin = new System.Windows.Forms.Padding(2);
             this.plansAdmin1.Name = "plansAdmin1";
             this.plansAdmin1.Size = new System.Drawing.Size(789, 400);
             this.plansAdmin1.TabIndex = 14;
@@ -83,7 +85,7 @@
             // 
             this.usersAdmin1.BackColor = System.Drawing.Color.Transparent;
             this.usersAdmin1.Location = new System.Drawing.Point(186, 47);
-            this.usersAdmin1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.usersAdmin1.Margin = new System.Windows.Forms.Padding(2);
             this.usersAdmin1.Name = "usersAdmin1";
             this.usersAdmin1.Size = new System.Drawing.Size(789, 400);
             this.usersAdmin1.TabIndex = 13;
@@ -272,6 +274,14 @@
             this.Klasy.UseVisualStyleBackColor = false;
             this.Klasy.Click += new System.EventHandler(this.Klasy_Click);
             // 
+            // home1
+            // 
+            this.home1.BackColor = System.Drawing.Color.Transparent;
+            this.home1.Location = new System.Drawing.Point(186, 47);
+            this.home1.Name = "home1";
+            this.home1.Size = new System.Drawing.Size(789, 400);
+            this.home1.TabIndex = 15;
+            // 
             // PanelAdmin_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -309,5 +319,6 @@
         private ClassAdmin classAdmin1;
         private PrzedmiotyAdmin przedmiotyAdmin1;
         private PlansAdmin plansAdmin1;
+        private dziennik_funkcje.home home1;
     }
 }

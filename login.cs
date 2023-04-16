@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tylka.dziennik_funkcje;
 
 namespace Tylka
 {
@@ -28,7 +29,17 @@ namespace Tylka
         {
             LLoginTxtB.Focus();  //nie wiemy o conb
             String login, password; ;
-            login = LLoginTxtB.Text;
+            UserData.login_all = login = LLoginTxtB.Text;
+
+            //Create home data
+            for (int x = 0; x < 6; x++)
+            {
+                UserData.data.Add(new Data("" + x, 1));
+                UserData.dataAadmin.Add(new Data("" + x, (x*x)+5));
+            }
+            UserData.title = "oceny";
+            UserData.adminTitle = "oceny";
+
             password = LPasswordTxtB.Text;
             int i = 0;
             try

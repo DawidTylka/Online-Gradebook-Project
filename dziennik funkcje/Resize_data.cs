@@ -7,9 +7,29 @@ using System.Windows.Forms;
 
 namespace Tylka.dziennik_funkcje
 {
+    public class Data
+    {
+        public String v1;
+        public int v2;
+
+        public Data(String x, int y)
+        {
+            v1 = x;
+            v2 = y;
+        }
+    }
+    static class UserData
+    {
+        public static String login_all;
+        public static List<Data> data = new List<Data>();
+        public static List<Data> dataAadmin = new List<Data>();
+        public static bool admin = false;
+        public static String title;
+        public static String adminTitle;
+    }
     internal class Resize_data
     {
-            public void Table_auto_size(DataGridView dataGridView)
+        public void Table_auto_size(DataGridView dataGridView)
             {
                 int addition = 0;
                 int colw = 0;

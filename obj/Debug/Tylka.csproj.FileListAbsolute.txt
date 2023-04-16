@@ -187,3 +187,4 @@ F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.
 F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.ClassAdmin.resources
 F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.ExamsAdmin.resources
 F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.PrzedmiotyAdmin.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.dziennik_funkcje.home.resources

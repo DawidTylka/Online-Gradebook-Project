@@ -36,12 +36,13 @@
             this.Plany_Lekcji = new Tylka.CustomButton();
             this.Klasy = new Tylka.CustomButton();
             this.gradient1 = new Tylka.Gradient();
+            this.gradient8 = new Tylka.Gradient();
             this.sprawdzianyUczen1 = new Tylka.apkuczen.SprawdzianyUczen();
             this.przedmiotyUczen1 = new Tylka.apkuczen.PrzedmiotyUczen();
             this.klasyUczen1 = new Tylka.apkuczen.KlasyUczen();
             this.planLekcjiUczen1 = new Tylka.apkuczen.PlanLekcjiUczen();
             this.Edycja_Danych = new Tylka.CustomButton();
-            this.gradient8 = new Tylka.Gradient();
+            this.home1 = new Tylka.dziennik_funkcje.home();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gradient1.SuspendLayout();
             this.SuspendLayout();
@@ -178,6 +179,7 @@
             // 
             this.gradient1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
             this.gradient1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
+            this.gradient1.Controls.Add(this.home1);
             this.gradient1.Controls.Add(this.gradient8);
             this.gradient1.Controls.Add(this.sprawdzianyUczen1);
             this.gradient1.Controls.Add(this.Sprawdziany);
@@ -193,6 +195,16 @@
             this.gradient1.Name = "gradient1";
             this.gradient1.Size = new System.Drawing.Size(984, 511);
             this.gradient1.TabIndex = 17;
+            // 
+            // gradient8
+            // 
+            this.gradient8.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
+            this.gradient8.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
+            this.gradient8.Location = new System.Drawing.Point(175, 0);
+            this.gradient8.Margin = new System.Windows.Forms.Padding(0);
+            this.gradient8.Name = "gradient8";
+            this.gradient8.Size = new System.Drawing.Size(10, 662);
+            this.gradient8.TabIndex = 14;
             // 
             // sprawdzianyUczen1
             // 
@@ -248,15 +260,13 @@
             this.Edycja_Danych.TextColor = System.Drawing.Color.White;
             this.Edycja_Danych.UseVisualStyleBackColor = false;
             // 
-            // gradient8
+            // home1
             // 
-            this.gradient8.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
-            this.gradient8.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
-            this.gradient8.Location = new System.Drawing.Point(175, 0);
-            this.gradient8.Margin = new System.Windows.Forms.Padding(0);
-            this.gradient8.Name = "gradient8";
-            this.gradient8.Size = new System.Drawing.Size(10, 662);
-            this.gradient8.TabIndex = 14;
+            this.home1.BackColor = System.Drawing.Color.Transparent;
+            this.home1.Location = new System.Drawing.Point(186, 47);
+            this.home1.Name = "home1";
+            this.home1.Size = new System.Drawing.Size(789, 400);
+            this.home1.TabIndex = 15;
             // 
             // PanelUczen
             // 
@@ -292,5 +302,6 @@
         private KlasyUczen klasyUczen1;
         private PlanLekcjiUczen planLekcjiUczen1;
         private Gradient gradient8;
+        private dziennik_funkcje.home home1;
     }
 }

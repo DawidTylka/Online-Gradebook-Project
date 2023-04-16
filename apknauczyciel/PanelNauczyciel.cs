@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tylka.apkuczen;
+using Tylka.dziennik_funkcje;
 
 namespace Tylka.apknauczyciel
 {
@@ -18,6 +19,7 @@ namespace Tylka.apknauczyciel
             InitializeComponent();
             MaximizeBox = false;
             chowaj();
+            UserData.admin = false;
         }
 
         private void chowaj()
@@ -26,11 +28,13 @@ namespace Tylka.apknauczyciel
             plansNauczyciel1.Hide();
             przedmiotyNauczyciel1.Hide();
             examsNauczyciel1.Hide();
+            home1.Hide();
         }
 
         private void Home_Click(object sender, EventArgs e)
         {
             chowaj();
+            home1.Show();
         }
 
         private void Klasy_Click(object sender, EventArgs e)
@@ -63,6 +67,8 @@ namespace Tylka.apknauczyciel
             plansNauczyciel1.Parent = this.gradient1;
             przedmiotyNauczyciel1.Parent = this.gradient1;
             examsNauczyciel1.Parent = this.gradient1;
+            home1.Parent = this.gradient1;
+            home1.Show();
         }
     }
 }
