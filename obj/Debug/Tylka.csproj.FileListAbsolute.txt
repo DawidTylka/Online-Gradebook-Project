@@ -29,7 +29,6 @@ C:\Users\kacpe\Desktop\newapp\Tylka\bin\Debug\Tylka.exe
 C:\Users\kacpe\Desktop\newapp\Tylka\bin\Debug\Tylka.pdb
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.csproj.AssemblyReference.cache
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.csproj.SuggestedBindingRedirects.cache
-C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.admintest.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.Form1.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.PanelAdmin_User.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.Properties.Resources.resources
@@ -55,7 +54,6 @@ C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.cspro
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.csproj.CoreCompileInputs.cache
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.exe
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.pdb
-C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.PlanLekcjiUczen.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkuczen.PanelUczen.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkuczen.PlanLekcjiUczen.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.dziennik_funkcje.loginpick1.resources
@@ -188,3 +186,20 @@ F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.
 F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.ExamsAdmin.resources
 F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.PrzedmiotyAdmin.resources
 F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.dziennik_funkcje.home.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apknauczyciel.ClassNauczyciel.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apknauczyciel.ExamsNauczyciel.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apknauczyciel.PanelNauczyciel.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apknauczyciel.PlansNauczyciel.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apknauczyciel.PrzedmiotyNauczyciel.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkrodzic.ClassRodzic.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkrodzic.ExamsRodzic.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkrodzic.PanelRodzic.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkrodzic.PlansRodzic.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkrodzic.PrzedmiotyRodzic.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkuczen.KlasyUczen.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkuczen.PrzedmiotyUczen.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkuczen.SprawdzianyUczen.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.ClassAdmin.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.dziennik_funkcje.home.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.ExamsAdmin.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.PrzedmiotyAdmin.resources
