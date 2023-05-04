@@ -26,6 +26,9 @@ namespace Tylka.dziennik_funkcje
         public static bool admin = false;
         public static String title;
         public static String adminTitle;
+        public static int classid;
+        public static int user_id;
+        public static String Namedata;
     }
     internal class Resize_data
     {

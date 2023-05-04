@@ -113,6 +113,12 @@
     <Compile Include="apkuczen\KlasyUczen.Designer.cs">
       <DependentUpon>KlasyUczen.cs</DependentUpon>
     </Compile>
+    <Compile Include="apkuczen\OcenyUczen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apkuczen\OcenyUczen.Designer.cs">
+      <DependentUpon>OcenyUczen.cs</DependentUpon>
+    </Compile>
     <Compile Include="apkuczen\PanelUczen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="apkuczen\KlasyUczen.resx">
       <DependentUpon>KlasyUczen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apkuczen\OcenyUczen.resx">
+      <DependentUpon>OcenyUczen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="apkuczen\PanelUczen.resx">
       <DependentUpon>PanelUczen.cs</DependentUpon>

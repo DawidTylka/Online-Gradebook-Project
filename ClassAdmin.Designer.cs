@@ -48,9 +48,11 @@
             this.onlinegradebookprojectDataSet = new Tylka.onlinegradebookprojectDataSet();
             this.klasyTableAdapter1 = new Tylka.onlinegradebookprojectDataSetTableAdapters.KlasyTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.identyfikatorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.profilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.klasyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.identyfikatorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.User_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Klasa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.profilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.KlasySource1)).BeginInit();
@@ -85,9 +87,9 @@
             this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
-            this.bindingNavigator1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
+            this.bindingNavigator1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(789, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1052, 31);
             this.bindingNavigator1.TabIndex = 0;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -97,14 +99,14 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorAddNewItem.Text = "Dodaj nowy";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorCountItem.Text = "z {0}";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 28);
+            this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Suma elementów";
             // 
             // bindingNavigatorDeleteItem
@@ -113,7 +115,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorDeleteItem.Text = "Usuń";
             // 
             // bindingNavigatorMoveFirstItem
@@ -122,7 +124,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Przenieś pierwszy";
             // 
             // bindingNavigatorMovePreviousItem
@@ -131,7 +133,7 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Przenieś poprzedni";
             // 
             // bindingNavigatorSeparator
@@ -145,7 +147,7 @@
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Bieżąca pozycja";
             // 
@@ -160,7 +162,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveNextItem.Text = "Przenieś następny";
             // 
             // bindingNavigatorMoveLastItem
@@ -169,7 +171,7 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveLastItem.Text = "Przenieś ostatni";
             // 
             // bindingNavigatorSeparator2
@@ -183,7 +185,7 @@
             this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
             this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripButton.Name = "saveToolStripButton";
-            this.saveToolStripButton.Size = new System.Drawing.Size(28, 28);
+            this.saveToolStripButton.Size = new System.Drawing.Size(29, 28);
             this.saveToolStripButton.Text = "&Save";
             this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click_1);
             // 
@@ -193,7 +195,7 @@
             this.toolStripButton1.Image = global::Tylka.Properties.Resources.odswiezbtn_Image;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(28, 28);
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click_1);
             // 
@@ -219,40 +221,64 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.identyfikatorDataGridViewTextBoxColumn,
+            this.User_id,
+            this.Klasa,
             this.profilDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.klasyBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 34);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 42);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(789, 366);
+            this.dataGridView1.Size = new System.Drawing.Size(1052, 450);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // identyfikatorDataGridViewTextBoxColumn
-            // 
-            this.identyfikatorDataGridViewTextBoxColumn.DataPropertyName = "Identyfikator";
-            this.identyfikatorDataGridViewTextBoxColumn.HeaderText = "Identyfikator";
-            this.identyfikatorDataGridViewTextBoxColumn.Name = "identyfikatorDataGridViewTextBoxColumn";
-            this.identyfikatorDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // profilDataGridViewTextBoxColumn
-            // 
-            this.profilDataGridViewTextBoxColumn.DataPropertyName = "Profil";
-            this.profilDataGridViewTextBoxColumn.HeaderText = "Profil";
-            this.profilDataGridViewTextBoxColumn.Name = "profilDataGridViewTextBoxColumn";
             // 
             // klasyBindingSource
             // 
             this.klasyBindingSource.DataMember = "Klasy";
             this.klasyBindingSource.DataSource = this.onlinegradebookprojectDataSet;
             // 
+            // identyfikatorDataGridViewTextBoxColumn
+            // 
+            this.identyfikatorDataGridViewTextBoxColumn.DataPropertyName = "Identyfikator";
+            this.identyfikatorDataGridViewTextBoxColumn.HeaderText = "Identyfikator";
+            this.identyfikatorDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.identyfikatorDataGridViewTextBoxColumn.Name = "identyfikatorDataGridViewTextBoxColumn";
+            this.identyfikatorDataGridViewTextBoxColumn.ReadOnly = true;
+            this.identyfikatorDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // User_id
+            // 
+            this.User_id.DataPropertyName = "User_id";
+            this.User_id.HeaderText = "User_id";
+            this.User_id.MinimumWidth = 6;
+            this.User_id.Name = "User_id";
+            this.User_id.Width = 125;
+            // 
+            // Klasa
+            // 
+            this.Klasa.DataPropertyName = "Klasa";
+            this.Klasa.HeaderText = "Klasa";
+            this.Klasa.MinimumWidth = 6;
+            this.Klasa.Name = "Klasa";
+            this.Klasa.Width = 125;
+            // 
+            // profilDataGridViewTextBoxColumn
+            // 
+            this.profilDataGridViewTextBoxColumn.DataPropertyName = "Profil";
+            this.profilDataGridViewTextBoxColumn.HeaderText = "Profil";
+            this.profilDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.profilDataGridViewTextBoxColumn.Name = "profilDataGridViewTextBoxColumn";
+            this.profilDataGridViewTextBoxColumn.Width = 125;
+            // 
             // ClassAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bindingNavigator1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ClassAdmin";
-            this.Size = new System.Drawing.Size(789, 400);
+            this.Size = new System.Drawing.Size(1052, 492);
             this.Load += new System.EventHandler(this.ClassAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
@@ -286,8 +312,10 @@
         private System.Windows.Forms.ToolStripButton saveToolStripButton;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn identyfikatorDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn profilDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource klasyBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn identyfikatorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn User_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Klasa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn profilDataGridViewTextBoxColumn;
     }
 }

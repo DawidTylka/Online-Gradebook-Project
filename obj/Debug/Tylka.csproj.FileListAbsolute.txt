@@ -203,3 +203,4 @@ C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.ClassAdmin.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.dziennik_funkcje.home.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.ExamsAdmin.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.PrzedmiotyAdmin.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkuczen.OcenyUczen.resources

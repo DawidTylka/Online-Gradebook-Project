@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,14 +14,17 @@ namespace Tylka.dziennik_funkcje
 {
     public partial class home : UserControl
     {
-        public home(bool admint = false)
+        public home()
         {
             InitializeComponent();
         }
 
+        private SqlConnection conn = new SqlConnection(@"Server=tcp:onlinegradebook.database.windows.net,1433;Initial Catalog=onlinegradebookproject;Persist Security Info=False;User ID=theedziu;Password=Kacper123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+
+
         private void home_Load(object sender, EventArgs e)
         {
-            this.zalogowany.Text = "Witaj " + UserData.login_all;
+            this.zalogowany.Text = "Witaj " + UserData.Namedata;
             DateTime localDate = DateTime.Now;
             this.data.Text = localDate.ToString();
             chart1.Series["Salary"].IsValueShownAsLabel = true;

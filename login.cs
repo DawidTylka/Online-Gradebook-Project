@@ -30,6 +30,7 @@ namespace Tylka
             LLoginTxtB.Focus();  //nie wiemy o conb
             String login, password; ;
             UserData.login_all = login = LLoginTxtB.Text;
+            UserData.admin = false;
 
             //Create home data
             for (int x = 0; x < 6; x++)
@@ -50,13 +51,75 @@ namespace Tylka
                 sda.Fill(dtable);
                 if (dtable.Rows.Count > 0)
                 {
+
+                    string query = "SELECT name FROM Users WHERE login = '" + UserData.login_all + "'";
+
+                    {
+                        SqlCommand command = new SqlCommand(query, conn);
+
+                        conn.Open();
+
+                        SqlDataReader reader = command.ExecuteReader();
+
+                        if (reader.Read())
+                        {
+                            UserData.Namedata = reader.GetString(0);
+                        }
+                        else
+                        {
+                            MessageBox.Show("No data found for the specified ID.");
+                        }
+
+                        reader.Close();
+                        conn.Close();
+                    }
+                    {
+
+                        string query1 = "SELECT id FROM Users WHERE login = @login";
+
+                        {
+                            SqlCommand command1 = new SqlCommand(query1, conn);
+                            command1.Parameters.AddWithValue("@login", login);
+
+                            conn.Open();
+
+                            SqlDataReader reader1 = command1.ExecuteReader();
+
+                            if (reader1.Read())
+                            {
+                                UserData.user_id = reader1.GetInt32(0);
+                                reader1.Close();
+                                string query2 = "SELECT Klasa FROM Klasy WHERE User_id = "+UserData.user_id;
+
+                                {
+                                    SqlCommand command2 = new SqlCommand(query2, conn);
+
+                                    SqlDataReader reader2 = command2.ExecuteReader();
+
+                                    if (reader2.Read())
+                                    {
+                                        UserData.classid = reader2.GetInt32(0);
+                                    }
+                                    reader2.Close();
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("No data found for the specified ID.");
+                            }
+
+                            reader1.Close();
+                            conn.Close();
+                        }
+                    }
                     DataRow[] admincheck = dtable.Select("admin = '" + true + "'");
 
                     DataRow[] rolecheck1 = dtable.Select("rola = '" + 1 + "'");// tutaj sprawdzamy czy w podanym userze istnieje cos co w kolumnie rola ma 1 czyli ucznia no i tak po koleji cale te
                     if (rolecheck1.Length != 0)
                     {
                         if (admincheck.Length != 0)
-                        {
+                        {   
+                            UserData.admin = true;
                             loginpick11.Show();
                         }
                         else
@@ -72,6 +135,7 @@ namespace Tylka
                     {
                         if (admincheck.Length != 0)
                         {
+                            UserData.admin = true;
                             loginpick21.Show();
                         }
                         else
@@ -87,6 +151,7 @@ namespace Tylka
                     {
                         if (admincheck.Length != 0)
                         {
+                            UserData.admin = true;
                             loginpick31.Show();
                         }
                         else

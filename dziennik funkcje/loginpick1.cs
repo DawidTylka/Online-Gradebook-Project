@@ -27,6 +27,7 @@ namespace Tylka.dziennik_funkcje
         {
             apkuczen.PanelUczen paneluczen = new apkuczen.PanelUczen();
             paneluczen.Show();
+            
         }
     }
 }

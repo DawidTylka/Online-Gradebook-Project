@@ -19,7 +19,6 @@ namespace Tylka.apkrodzic
             InitializeComponent();
             MaximizeBox = false;
             chowaj();
-            UserData.admin = false;
         }
 
         private void chowaj()

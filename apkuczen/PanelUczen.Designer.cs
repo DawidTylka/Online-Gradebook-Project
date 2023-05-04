@@ -30,19 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PanelUczen));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Sprawdziany = new Tylka.CustomButton();
             this.Home = new Tylka.CustomButton();
-            this.Przedmioty = new Tylka.CustomButton();
-            this.Plany_Lekcji = new Tylka.CustomButton();
-            this.Klasy = new Tylka.CustomButton();
             this.gradient1 = new Tylka.Gradient();
             this.gradient8 = new Tylka.Gradient();
-            this.sprawdzianyUczen1 = new Tylka.apkuczen.SprawdzianyUczen();
-            this.przedmiotyUczen1 = new Tylka.apkuczen.PrzedmiotyUczen();
-            this.klasyUczen1 = new Tylka.apkuczen.KlasyUczen();
-            this.planLekcjiUczen1 = new Tylka.apkuczen.PlanLekcjiUczen();
+            this.Sprawdziany = new Tylka.CustomButton();
+            this.Przedmioty = new Tylka.CustomButton();
+            this.Plany_Lekcji = new Tylka.CustomButton();
             this.Edycja_Danych = new Tylka.CustomButton();
-            this.home1 = new Tylka.dziennik_funkcje.home();
+            this.Klasy = new Tylka.CustomButton();
+            this.home2 = new Tylka.dziennik_funkcje.home();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gradient1.SuspendLayout();
             this.SuspendLayout();
@@ -50,36 +46,13 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(47, 47);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(47, 20, 47, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(63, 58);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(63, 25, 63, 25);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(81, 63);
+            this.pictureBox1.Size = new System.Drawing.Size(108, 78);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
-            // 
-            // Sprawdziany
-            // 
-            this.Sprawdziany.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Sprawdziany.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(129)))), ((int)(((byte)(182)))));
-            this.Sprawdziany.borderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
-            this.Sprawdziany.BorderRadius = 30;
-            this.Sprawdziany.BorderSize = 1;
-            this.Sprawdziany.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(114)))), ((int)(((byte)(190)))));
-            this.Sprawdziany.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(129)))), ((int)(((byte)(182)))));
-            this.Sprawdziany.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Sprawdziany.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
-            this.Sprawdziany.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Sprawdziany.ForeColor = System.Drawing.Color.White;
-            this.Sprawdziany.Location = new System.Drawing.Point(14, 295);
-            this.Sprawdziany.Margin = new System.Windows.Forms.Padding(5);
-            this.Sprawdziany.Name = "Sprawdziany";
-            this.Sprawdziany.Size = new System.Drawing.Size(150, 30);
-            this.Sprawdziany.TabIndex = 13;
-            this.Sprawdziany.Text = "Sprawdziany";
-            this.Sprawdziany.TextColor = System.Drawing.Color.White;
-            this.Sprawdziany.UseVisualStyleBackColor = false;
-            this.Sprawdziany.Click += new System.EventHandler(this.Sprawdziany_Click);
             // 
             // Home
             // 
@@ -95,15 +68,66 @@
             this.Home.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
             this.Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Home.ForeColor = System.Drawing.Color.White;
-            this.Home.Location = new System.Drawing.Point(16, 135);
-            this.Home.Margin = new System.Windows.Forms.Padding(5);
+            this.Home.Location = new System.Drawing.Point(21, 166);
+            this.Home.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(150, 30);
+            this.Home.Size = new System.Drawing.Size(200, 37);
             this.Home.TabIndex = 15;
             this.Home.Text = "Home";
             this.Home.TextColor = System.Drawing.Color.White;
             this.Home.UseVisualStyleBackColor = false;
             this.Home.Click += new System.EventHandler(this.Home_Click);
+            // 
+            // gradient1
+            // 
+            this.gradient1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
+            this.gradient1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
+            this.gradient1.Controls.Add(this.home2);
+            this.gradient1.Controls.Add(this.gradient8);
+            this.gradient1.Controls.Add(this.Sprawdziany);
+            this.gradient1.Controls.Add(this.Przedmioty);
+            this.gradient1.Controls.Add(this.Plany_Lekcji);
+            this.gradient1.Controls.Add(this.Edycja_Danych);
+            this.gradient1.Controls.Add(this.Klasy);
+            this.gradient1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gradient1.Location = new System.Drawing.Point(0, 0);
+            this.gradient1.Margin = new System.Windows.Forms.Padding(4);
+            this.gradient1.Name = "gradient1";
+            this.gradient1.Size = new System.Drawing.Size(1312, 629);
+            this.gradient1.TabIndex = 17;
+            // 
+            // gradient8
+            // 
+            this.gradient8.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
+            this.gradient8.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
+            this.gradient8.Location = new System.Drawing.Point(233, 0);
+            this.gradient8.Margin = new System.Windows.Forms.Padding(0);
+            this.gradient8.Name = "gradient8";
+            this.gradient8.Size = new System.Drawing.Size(13, 815);
+            this.gradient8.TabIndex = 14;
+            // 
+            // Sprawdziany
+            // 
+            this.Sprawdziany.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Sprawdziany.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(129)))), ((int)(((byte)(182)))));
+            this.Sprawdziany.borderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
+            this.Sprawdziany.BorderRadius = 30;
+            this.Sprawdziany.BorderSize = 1;
+            this.Sprawdziany.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(114)))), ((int)(((byte)(190)))));
+            this.Sprawdziany.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(129)))), ((int)(((byte)(182)))));
+            this.Sprawdziany.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Sprawdziany.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
+            this.Sprawdziany.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Sprawdziany.ForeColor = System.Drawing.Color.White;
+            this.Sprawdziany.Location = new System.Drawing.Point(19, 363);
+            this.Sprawdziany.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.Sprawdziany.Name = "Sprawdziany";
+            this.Sprawdziany.Size = new System.Drawing.Size(200, 37);
+            this.Sprawdziany.TabIndex = 13;
+            this.Sprawdziany.Text = "Sprawdziany";
+            this.Sprawdziany.TextColor = System.Drawing.Color.White;
+            this.Sprawdziany.UseVisualStyleBackColor = false;
+            this.Sprawdziany.Click += new System.EventHandler(this.Sprawdziany_Click);
             // 
             // Przedmioty
             // 
@@ -118,10 +142,10 @@
             this.Przedmioty.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
             this.Przedmioty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Przedmioty.ForeColor = System.Drawing.Color.White;
-            this.Przedmioty.Location = new System.Drawing.Point(14, 255);
-            this.Przedmioty.Margin = new System.Windows.Forms.Padding(5);
+            this.Przedmioty.Location = new System.Drawing.Point(19, 314);
+            this.Przedmioty.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Przedmioty.Name = "Przedmioty";
-            this.Przedmioty.Size = new System.Drawing.Size(150, 30);
+            this.Przedmioty.Size = new System.Drawing.Size(200, 37);
             this.Przedmioty.TabIndex = 12;
             this.Przedmioty.Text = "Przedmioty";
             this.Przedmioty.TextColor = System.Drawing.Color.White;
@@ -142,102 +166,15 @@
             this.Plany_Lekcji.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
             this.Plany_Lekcji.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Plany_Lekcji.ForeColor = System.Drawing.Color.White;
-            this.Plany_Lekcji.Location = new System.Drawing.Point(14, 215);
-            this.Plany_Lekcji.Margin = new System.Windows.Forms.Padding(5);
+            this.Plany_Lekcji.Location = new System.Drawing.Point(19, 265);
+            this.Plany_Lekcji.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Plany_Lekcji.Name = "Plany_Lekcji";
-            this.Plany_Lekcji.Size = new System.Drawing.Size(150, 30);
+            this.Plany_Lekcji.Size = new System.Drawing.Size(200, 37);
             this.Plany_Lekcji.TabIndex = 11;
-            this.Plany_Lekcji.Text = "Plany Lekcji";
+            this.Plany_Lekcji.Text = "Plan Lekcji";
             this.Plany_Lekcji.TextColor = System.Drawing.Color.White;
             this.Plany_Lekcji.UseVisualStyleBackColor = false;
             this.Plany_Lekcji.Click += new System.EventHandler(this.Plany_Lekcji_Click);
-            // 
-            // Klasy
-            // 
-            this.Klasy.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Klasy.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Klasy.borderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
-            this.Klasy.BorderRadius = 30;
-            this.Klasy.BorderSize = 1;
-            this.Klasy.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(114)))), ((int)(((byte)(190)))));
-            this.Klasy.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(129)))), ((int)(((byte)(182)))));
-            this.Klasy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Klasy.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
-            this.Klasy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Klasy.ForeColor = System.Drawing.Color.White;
-            this.Klasy.Location = new System.Drawing.Point(16, 175);
-            this.Klasy.Margin = new System.Windows.Forms.Padding(5);
-            this.Klasy.Name = "Klasy";
-            this.Klasy.Size = new System.Drawing.Size(150, 30);
-            this.Klasy.TabIndex = 10;
-            this.Klasy.Text = "Klasy";
-            this.Klasy.TextColor = System.Drawing.Color.White;
-            this.Klasy.UseVisualStyleBackColor = false;
-            this.Klasy.Click += new System.EventHandler(this.Klasy_Click);
-            // 
-            // gradient1
-            // 
-            this.gradient1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
-            this.gradient1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
-            this.gradient1.Controls.Add(this.home1);
-            this.gradient1.Controls.Add(this.gradient8);
-            this.gradient1.Controls.Add(this.sprawdzianyUczen1);
-            this.gradient1.Controls.Add(this.Sprawdziany);
-            this.gradient1.Controls.Add(this.przedmiotyUczen1);
-            this.gradient1.Controls.Add(this.klasyUczen1);
-            this.gradient1.Controls.Add(this.Przedmioty);
-            this.gradient1.Controls.Add(this.planLekcjiUczen1);
-            this.gradient1.Controls.Add(this.Plany_Lekcji);
-            this.gradient1.Controls.Add(this.Edycja_Danych);
-            this.gradient1.Controls.Add(this.Klasy);
-            this.gradient1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gradient1.Location = new System.Drawing.Point(0, 0);
-            this.gradient1.Name = "gradient1";
-            this.gradient1.Size = new System.Drawing.Size(984, 511);
-            this.gradient1.TabIndex = 17;
-            // 
-            // gradient8
-            // 
-            this.gradient8.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
-            this.gradient8.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
-            this.gradient8.Location = new System.Drawing.Point(175, 0);
-            this.gradient8.Margin = new System.Windows.Forms.Padding(0);
-            this.gradient8.Name = "gradient8";
-            this.gradient8.Size = new System.Drawing.Size(10, 662);
-            this.gradient8.TabIndex = 14;
-            // 
-            // sprawdzianyUczen1
-            // 
-            this.sprawdzianyUczen1.BackColor = System.Drawing.Color.Transparent;
-            this.sprawdzianyUczen1.Location = new System.Drawing.Point(186, 47);
-            this.sprawdzianyUczen1.Name = "sprawdzianyUczen1";
-            this.sprawdzianyUczen1.Size = new System.Drawing.Size(789, 400);
-            this.sprawdzianyUczen1.TabIndex = 8;
-            // 
-            // przedmiotyUczen1
-            // 
-            this.przedmiotyUczen1.BackColor = System.Drawing.Color.Transparent;
-            this.przedmiotyUczen1.Location = new System.Drawing.Point(186, 47);
-            this.przedmiotyUczen1.Name = "przedmiotyUczen1";
-            this.przedmiotyUczen1.Size = new System.Drawing.Size(789, 400);
-            this.przedmiotyUczen1.TabIndex = 7;
-            // 
-            // klasyUczen1
-            // 
-            this.klasyUczen1.BackColor = System.Drawing.Color.Transparent;
-            this.klasyUczen1.Location = new System.Drawing.Point(186, 47);
-            this.klasyUczen1.Name = "klasyUczen1";
-            this.klasyUczen1.Size = new System.Drawing.Size(789, 400);
-            this.klasyUczen1.TabIndex = 6;
-            // 
-            // planLekcjiUczen1
-            // 
-            this.planLekcjiUczen1.BackColor = System.Drawing.Color.Transparent;
-            this.planLekcjiUczen1.Location = new System.Drawing.Point(186, 47);
-            this.planLekcjiUczen1.Margin = new System.Windows.Forms.Padding(2);
-            this.planLekcjiUczen1.Name = "planLekcjiUczen1";
-            this.planLekcjiUczen1.Size = new System.Drawing.Size(789, 400);
-            this.planLekcjiUczen1.TabIndex = 5;
             // 
             // Edycja_Danych
             // 
@@ -252,33 +189,56 @@
             this.Edycja_Danych.FlatAppearance.BorderSize = 0;
             this.Edycja_Danych.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Edycja_Danych.ForeColor = System.Drawing.Color.White;
-            this.Edycja_Danych.Location = new System.Drawing.Point(14, 333);
+            this.Edycja_Danych.Location = new System.Drawing.Point(19, 410);
+            this.Edycja_Danych.Margin = new System.Windows.Forms.Padding(4);
             this.Edycja_Danych.Name = "Edycja_Danych";
-            this.Edycja_Danych.Size = new System.Drawing.Size(150, 30);
+            this.Edycja_Danych.Size = new System.Drawing.Size(200, 37);
             this.Edycja_Danych.TabIndex = 4;
             this.Edycja_Danych.Text = "Edycja Danych";
             this.Edycja_Danych.TextColor = System.Drawing.Color.White;
             this.Edycja_Danych.UseVisualStyleBackColor = false;
             // 
-            // home1
+            // Klasy
             // 
-            this.home1.BackColor = System.Drawing.Color.Transparent;
-            this.home1.Location = new System.Drawing.Point(186, 47);
-            this.home1.Name = "home1";
-            this.home1.Size = new System.Drawing.Size(789, 400);
-            this.home1.TabIndex = 15;
+            this.Klasy.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Klasy.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Klasy.borderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
+            this.Klasy.BorderRadius = 30;
+            this.Klasy.BorderSize = 1;
+            this.Klasy.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(114)))), ((int)(((byte)(190)))));
+            this.Klasy.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(129)))), ((int)(((byte)(182)))));
+            this.Klasy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Klasy.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
+            this.Klasy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Klasy.ForeColor = System.Drawing.Color.White;
+            this.Klasy.Location = new System.Drawing.Point(21, 215);
+            this.Klasy.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.Klasy.Name = "Klasy";
+            this.Klasy.Size = new System.Drawing.Size(200, 37);
+            this.Klasy.TabIndex = 10;
+            this.Klasy.Text = "Oceny";
+            this.Klasy.TextColor = System.Drawing.Color.White;
+            this.Klasy.UseVisualStyleBackColor = false;
+            this.Klasy.Click += new System.EventHandler(this.Klasy_Click);
+            // 
+            // home2
+            // 
+            this.home2.Location = new System.Drawing.Point(356, 80);
+            this.home2.Name = "home2";
+            this.home2.Size = new System.Drawing.Size(848, 429);
+            this.home2.TabIndex = 15;
             // 
             // PanelUczen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 511);
+            this.ClientSize = new System.Drawing.Size(1312, 629);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Home);
             this.Controls.Add(this.gradient1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "PanelUczen";
             this.Text = "PanelUczen";
             this.Load += new System.EventHandler(this.PanelUczen_Load);
@@ -290,18 +250,15 @@
 
         #endregion
         private System.Windows.Forms.PictureBox pictureBox1;
-        private CustomButton Sprawdziany;
         private CustomButton Home;
-        private CustomButton Przedmioty;
-        private CustomButton Plany_Lekcji;
-        private CustomButton Klasy;
-        private Gradient gradient1;
-        private CustomButton Edycja_Danych;
-        private SprawdzianyUczen sprawdzianyUczen1;
-        private PrzedmiotyUczen przedmiotyUczen1;
-        private KlasyUczen klasyUczen1;
-        private PlanLekcjiUczen planLekcjiUczen1;
-        private Gradient gradient8;
         private dziennik_funkcje.home home1;
+        private CustomButton Klasy;
+        private CustomButton Edycja_Danych;
+        private CustomButton Plany_Lekcji;
+        private CustomButton Przedmioty;
+        private CustomButton Sprawdziany;
+        private Gradient gradient8;
+        private Gradient gradient1;
+        private dziennik_funkcje.home home2;
     }
 }
