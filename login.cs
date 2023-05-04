@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,6 +32,7 @@ namespace Tylka
             String login, password; ;
             UserData.login_all = login = LLoginTxtB.Text;
             UserData.admin = false;
+            Random rnd = new Random();
 
             //Create home data
             for (int x = 0; x < 6; x++)

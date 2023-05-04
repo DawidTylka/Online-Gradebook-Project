@@ -1200,8 +1200,6 @@ namespace Tylka {
             
             private global::System.Data.DataColumn columnczy_obecny;
             
-            private global::System.Data.DataColumn columnSSMA_TimeStamp;
-            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ObecnosciDataTable() {
@@ -1277,14 +1275,6 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn SSMA_TimeStampColumn {
-                get {
-                    return this.columnSSMA_TimeStamp;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1320,15 +1310,14 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ObecnosciRow AddObecnosciRow(int id_ucznia, int id_przedmiotu, System.DateTime data, bool czy_obecny, byte[] SSMA_TimeStamp) {
+            public ObecnosciRow AddObecnosciRow(int id_ucznia, int id_przedmiotu, System.DateTime data, bool czy_obecny) {
                 ObecnosciRow rowObecnosciRow = ((ObecnosciRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         id_ucznia,
                         id_przedmiotu,
                         data,
-                        czy_obecny,
-                        SSMA_TimeStamp};
+                        czy_obecny};
                 rowObecnosciRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowObecnosciRow);
                 return rowObecnosciRow;
@@ -1363,7 +1352,6 @@ namespace Tylka {
                 this.columnid_przedmiotu = base.Columns["id_przedmiotu"];
                 this.columndata = base.Columns["data"];
                 this.columnczy_obecny = base.Columns["czy_obecny"];
-                this.columnSSMA_TimeStamp = base.Columns["SSMA_TimeStamp"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1379,8 +1367,6 @@ namespace Tylka {
                 base.Columns.Add(this.columndata);
                 this.columnczy_obecny = new global::System.Data.DataColumn("czy_obecny", typeof(bool), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnczy_obecny);
-                this.columnSSMA_TimeStamp = new global::System.Data.DataColumn("SSMA_TimeStamp", typeof(byte[]), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSSMA_TimeStamp);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnidobecnosci}, true));
                 this.columnidobecnosci.AutoIncrement = true;
@@ -1389,7 +1375,6 @@ namespace Tylka {
                 this.columnidobecnosci.AllowDBNull = false;
                 this.columnidobecnosci.ReadOnly = true;
                 this.columnidobecnosci.Unique = true;
-                this.columnSSMA_TimeStamp.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1537,8 +1522,6 @@ namespace Tylka {
             
             private global::System.Data.DataColumn columnocena;
             
-            private global::System.Data.DataColumn columnSSMA_TimeStamp;
-            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public OcenyDataTable() {
@@ -1630,14 +1613,6 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn SSMA_TimeStampColumn {
-                get {
-                    return this.columnSSMA_TimeStamp;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1673,7 +1648,7 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public OcenyRow AddOcenyRow(string temat, int id_ucznia, int id_nauczyciela, System.DateTime data_wystawienia, int id_przedmiotu, int ocena, byte[] SSMA_TimeStamp) {
+            public OcenyRow AddOcenyRow(string temat, int id_ucznia, int id_nauczyciela, System.DateTime data_wystawienia, int id_przedmiotu, int ocena) {
                 OcenyRow rowOcenyRow = ((OcenyRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1682,8 +1657,7 @@ namespace Tylka {
                         id_nauczyciela,
                         data_wystawienia,
                         id_przedmiotu,
-                        ocena,
-                        SSMA_TimeStamp};
+                        ocena};
                 rowOcenyRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowOcenyRow);
                 return rowOcenyRow;
@@ -1720,7 +1694,6 @@ namespace Tylka {
                 this.columndata_wystawienia = base.Columns["data_wystawienia"];
                 this.columnid_przedmiotu = base.Columns["id_przedmiotu"];
                 this.columnocena = base.Columns["ocena"];
-                this.columnSSMA_TimeStamp = base.Columns["SSMA_TimeStamp"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1740,8 +1713,6 @@ namespace Tylka {
                 base.Columns.Add(this.columnid_przedmiotu);
                 this.columnocena = new global::System.Data.DataColumn("ocena", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnocena);
-                this.columnSSMA_TimeStamp = new global::System.Data.DataColumn("SSMA_TimeStamp", typeof(byte[]), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSSMA_TimeStamp);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnIdentyfikator}, true));
                 this.columnIdentyfikator.AutoIncrement = true;
@@ -1751,7 +1722,6 @@ namespace Tylka {
                 this.columnIdentyfikator.ReadOnly = true;
                 this.columnIdentyfikator.Unique = true;
                 this.columntemat.MaxLength = 2147483647;
-                this.columnSSMA_TimeStamp.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3350,22 +3320,6 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public byte[] SSMA_TimeStamp {
-                get {
-                    try {
-                        return ((byte[])(this[this.tableObecnosci.SSMA_TimeStampColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'SSMA_TimeStamp\' in table \'Obecnosci\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableObecnosci.SSMA_TimeStampColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool Isid_uczniaNull() {
                 return this.IsNull(this.tableObecnosci.id_uczniaColumn);
             }
@@ -3410,18 +3364,6 @@ namespace Tylka {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void Setczy_obecnyNull() {
                 this[this.tableObecnosci.czy_obecnyColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsSSMA_TimeStampNull() {
-                return this.IsNull(this.tableObecnosci.SSMA_TimeStampColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetSSMA_TimeStampNull() {
-                this[this.tableObecnosci.SSMA_TimeStampColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -3548,22 +3490,6 @@ namespace Tylka {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public byte[] SSMA_TimeStamp {
-                get {
-                    try {
-                        return ((byte[])(this[this.tableOceny.SSMA_TimeStampColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'SSMA_TimeStamp\' in table \'Oceny\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableOceny.SSMA_TimeStampColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IstematNull() {
                 return this.IsNull(this.tableOceny.tematColumn);
             }
@@ -3632,18 +3558,6 @@ namespace Tylka {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetocenaNull() {
                 this[this.tableOceny.ocenaColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsSSMA_TimeStampNull() {
-                return this.IsNull(this.tableOceny.SSMA_TimeStampColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetSSMA_TimeStampNull() {
-                this[this.tableOceny.SSMA_TimeStampColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -5384,15 +5298,20 @@ SELECT iddnia, id_klasy, godzina, Poniedziałe, Wtorek, Środa, Czwartek, Piąte
             tableMapping.ColumnMappings.Add("id_przedmiotu", "id_przedmiotu");
             tableMapping.ColumnMappings.Add("data", "data");
             tableMapping.ColumnMappings.Add("czy_obecny", "czy_obecny");
-            tableMapping.ColumnMappings.Add("SSMA_TimeStamp", "SSMA_TimeStamp");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Obecnosci] WHERE (([idobecnosci] = @Original_idobecnosci) AND " +
-                "([SSMA_TimeStamp] = @Original_SSMA_TimeStamp))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Obecnosci] WHERE (([idobecnosci] = @Original_idobecnosci) AND ((@IsNull_id_ucznia = 1 AND [id_ucznia] IS NULL) OR ([id_ucznia] = @Original_id_ucznia)) AND ((@IsNull_id_przedmiotu = 1 AND [id_przedmiotu] IS NULL) OR ([id_przedmiotu] = @Original_id_przedmiotu)) AND ((@IsNull_data = 1 AND [data] IS NULL) OR ([data] = @Original_data)) AND ((@IsNull_czy_obecny = 1 AND [czy_obecny] IS NULL) OR ([czy_obecny] = @Original_czy_obecny)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_idobecnosci", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idobecnosci", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SSMA_TimeStamp", global::System.Data.SqlDbType.Timestamp, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SSMA_TimeStamp", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_ucznia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_ucznia", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_ucznia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_ucznia", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_przedmiotu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_przedmiotu", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_przedmiotu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_przedmiotu", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_data", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "data", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_data", global::System.Data.SqlDbType.DateTime2, 0, global::System.Data.ParameterDirection.Input, 0, 0, "data", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_czy_obecny", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "czy_obecny", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_czy_obecny", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "czy_obecny", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Obecnosci] ([id_ucznia], [id_przedmiotu], [data], [czy_obecny]) VALUES (@id_ucznia, @id_przedmiotu, @data, @czy_obecny);
@@ -5404,15 +5323,22 @@ SELECT idobecnosci, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp F
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@czy_obecny", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "czy_obecny", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Obecnosci] SET [id_ucznia] = @id_ucznia, [id_przedmiotu] = @id_przedmiotu, [data] = @data, [czy_obecny] = @czy_obecny WHERE (([idobecnosci] = @Original_idobecnosci) AND ([SSMA_TimeStamp] = @Original_SSMA_TimeStamp));
-SELECT idobecnosci, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp FROM Obecnosci WHERE (idobecnosci = @idobecnosci)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [Obecnosci] SET [id_ucznia] = @id_ucznia, [id_przedmiotu] = @id_przedmiotu, [data] = @data, [czy_obecny] = @czy_obecny WHERE (([idobecnosci] = @Original_idobecnosci) AND ((@IsNull_id_ucznia = 1 AND [id_ucznia] IS NULL) OR ([id_ucznia] = @Original_id_ucznia)) AND ((@IsNull_id_przedmiotu = 1 AND [id_przedmiotu] IS NULL) OR ([id_przedmiotu] = @Original_id_przedmiotu)) AND ((@IsNull_data = 1 AND [data] IS NULL) OR ([data] = @Original_data)) AND ((@IsNull_czy_obecny = 1 AND [czy_obecny] IS NULL) OR ([czy_obecny] = @Original_czy_obecny)));
+SELECT idobecnosci, id_ucznia, id_przedmiotu, data, czy_obecny FROM Obecnosci WHERE (idobecnosci = @idobecnosci)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_ucznia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_ucznia", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_przedmiotu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_przedmiotu", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@data", global::System.Data.SqlDbType.DateTime2, 0, global::System.Data.ParameterDirection.Input, 0, 0, "data", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@czy_obecny", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "czy_obecny", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_idobecnosci", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idobecnosci", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SSMA_TimeStamp", global::System.Data.SqlDbType.Timestamp, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SSMA_TimeStamp", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_ucznia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_ucznia", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_ucznia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_ucznia", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_przedmiotu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_przedmiotu", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_przedmiotu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_przedmiotu", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_data", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "data", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_data", global::System.Data.SqlDbType.DateTime2, 0, global::System.Data.ParameterDirection.Input, 0, 0, "data", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_czy_obecny", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "czy_obecny", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_czy_obecny", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "czy_obecny", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@idobecnosci", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "idobecnosci", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -5429,8 +5355,7 @@ SELECT idobecnosci, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp F
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT idobecnosci, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp FR" +
-                "OM dbo.Obecnosci";
+            this._commandCollection[0].CommandText = "SELECT idobecnosci, id_ucznia, id_przedmiotu, data, czy_obecny FROM Obecnosci";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -5491,13 +5416,39 @@ SELECT idobecnosci, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp F
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_idobecnosci, byte[] Original_SSMA_TimeStamp) {
+        public virtual int Delete(int Original_idobecnosci, global::System.Nullable<int> Original_id_ucznia, global::System.Nullable<int> Original_id_przedmiotu, global::System.Nullable<global::System.DateTime> Original_data, global::System.Nullable<bool> Original_czy_obecny) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_idobecnosci));
-            if ((Original_SSMA_TimeStamp == null)) {
-                throw new global::System.ArgumentNullException("Original_SSMA_TimeStamp");
+            if ((Original_id_ucznia.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_id_ucznia.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((byte[])(Original_SSMA_TimeStamp));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((Original_id_przedmiotu.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_id_przedmiotu.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((Original_data.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((System.DateTime)(Original_data.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((Original_czy_obecny.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((bool)(Original_czy_obecny.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -5564,7 +5515,7 @@ SELECT idobecnosci, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp F
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<int> id_ucznia, global::System.Nullable<int> id_przedmiotu, global::System.Nullable<global::System.DateTime> data, global::System.Nullable<bool> czy_obecny, int Original_idobecnosci, byte[] Original_SSMA_TimeStamp, int idobecnosci) {
+        public virtual int Update(global::System.Nullable<int> id_ucznia, global::System.Nullable<int> id_przedmiotu, global::System.Nullable<global::System.DateTime> data, global::System.Nullable<bool> czy_obecny, int Original_idobecnosci, global::System.Nullable<int> Original_id_ucznia, global::System.Nullable<int> Original_id_przedmiotu, global::System.Nullable<global::System.DateTime> Original_data, global::System.Nullable<bool> Original_czy_obecny, int idobecnosci) {
             if ((id_ucznia.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(id_ucznia.Value));
             }
@@ -5590,13 +5541,39 @@ SELECT idobecnosci, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp F
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_idobecnosci));
-            if ((Original_SSMA_TimeStamp == null)) {
-                throw new global::System.ArgumentNullException("Original_SSMA_TimeStamp");
+            if ((Original_id_ucznia.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_id_ucznia.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((byte[])(Original_SSMA_TimeStamp));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(idobecnosci));
+            if ((Original_id_przedmiotu.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_id_przedmiotu.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((Original_data.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((System.DateTime)(Original_data.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((Original_czy_obecny.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((bool)(Original_czy_obecny.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(idobecnosci));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -5617,8 +5594,8 @@ SELECT idobecnosci, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp F
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<int> id_ucznia, global::System.Nullable<int> id_przedmiotu, global::System.Nullable<global::System.DateTime> data, global::System.Nullable<bool> czy_obecny, int Original_idobecnosci, byte[] Original_SSMA_TimeStamp) {
-            return this.Update(id_ucznia, id_przedmiotu, data, czy_obecny, Original_idobecnosci, Original_SSMA_TimeStamp, Original_idobecnosci);
+        public virtual int Update(global::System.Nullable<int> id_ucznia, global::System.Nullable<int> id_przedmiotu, global::System.Nullable<global::System.DateTime> data, global::System.Nullable<bool> czy_obecny, int Original_idobecnosci, global::System.Nullable<int> Original_id_ucznia, global::System.Nullable<int> Original_id_przedmiotu, global::System.Nullable<global::System.DateTime> Original_data, global::System.Nullable<bool> Original_czy_obecny) {
+            return this.Update(id_ucznia, id_przedmiotu, data, czy_obecny, Original_idobecnosci, Original_id_ucznia, Original_id_przedmiotu, Original_data, Original_czy_obecny, Original_idobecnosci);
         }
     }
     
@@ -5750,19 +5727,26 @@ SELECT idobecnosci, id_ucznia, id_przedmiotu, data, czy_obecny, SSMA_TimeStamp F
             tableMapping.ColumnMappings.Add("data_wystawienia", "data_wystawienia");
             tableMapping.ColumnMappings.Add("id_przedmiotu", "id_przedmiotu");
             tableMapping.ColumnMappings.Add("ocena", "ocena");
-            tableMapping.ColumnMappings.Add("SSMA_TimeStamp", "SSMA_TimeStamp");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Oceny] WHERE (([Identyfikator] = @Original_Identyfikator) AND " +
-                "([SSMA_TimeStamp] = @Original_SSMA_TimeStamp))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Oceny] WHERE (([Identyfikator] = @Original_Identyfikator) AND ((@IsNull_id_ucznia = 1 AND [id_ucznia] IS NULL) OR ([id_ucznia] = @Original_id_ucznia)) AND ((@IsNull_id_nauczyciela = 1 AND [id_nauczyciela] IS NULL) OR ([id_nauczyciela] = @Original_id_nauczyciela)) AND ((@IsNull_data_wystawienia = 1 AND [data_wystawienia] IS NULL) OR ([data_wystawienia] = @Original_data_wystawienia)) AND ((@IsNull_id_przedmiotu = 1 AND [id_przedmiotu] IS NULL) OR ([id_przedmiotu] = @Original_id_przedmiotu)) AND ((@IsNull_ocena = 1 AND [ocena] IS NULL) OR ([ocena] = @Original_ocena)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Identyfikator", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Identyfikator", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SSMA_TimeStamp", global::System.Data.SqlDbType.Timestamp, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SSMA_TimeStamp", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_ucznia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_ucznia", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_ucznia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_ucznia", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_nauczyciela", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_nauczyciela", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_nauczyciela", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_nauczyciela", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_data_wystawienia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "data_wystawienia", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_data_wystawienia", global::System.Data.SqlDbType.DateTime2, 0, global::System.Data.ParameterDirection.Input, 0, 0, "data_wystawienia", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_przedmiotu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_przedmiotu", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_przedmiotu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_przedmiotu", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ocena", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ocena", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ocena", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ocena", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Oceny] ([temat], [id_ucznia], [id_nauczyciela], [data_wystawienia], [id_przedmiotu], [ocena]) VALUES (@temat, @id_ucznia, @id_nauczyciela, @data_wystawienia, @id_przedmiotu, @ocena);
-SELECT Identyfikator, temat, id_ucznia, id_nauczyciela, data_wystawienia, id_przedmiotu, ocena, SSMA_TimeStamp FROM Oceny WHERE (Identyfikator = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Oceny] ([temat], [id_ucznia], [id_nauczyciela], [data_wystawienia], [id_przedmiotu], [ocena]) VALUES (@temat, @id_ucznia, @id_nauczyciela, @data_wystawienia, @id_przedmiotu, @ocena);
+SELECT Identyfikator, temat, id_ucznia, id_nauczyciela, data_wystawienia, id_przedmiotu, ocena FROM Oceny WHERE (Identyfikator = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@temat", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "temat", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_ucznia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_ucznia", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -5772,8 +5756,8 @@ SELECT Identyfikator, temat, id_ucznia, id_nauczyciela, data_wystawienia, id_prz
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ocena", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ocena", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Oceny] SET [temat] = @temat, [id_ucznia] = @id_ucznia, [id_nauczyciela] = @id_nauczyciela, [data_wystawienia] = @data_wystawienia, [id_przedmiotu] = @id_przedmiotu, [ocena] = @ocena WHERE (([Identyfikator] = @Original_Identyfikator) AND ([SSMA_TimeStamp] = @Original_SSMA_TimeStamp));
-SELECT Identyfikator, temat, id_ucznia, id_nauczyciela, data_wystawienia, id_przedmiotu, ocena, SSMA_TimeStamp FROM Oceny WHERE (Identyfikator = @Identyfikator)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [Oceny] SET [temat] = @temat, [id_ucznia] = @id_ucznia, [id_nauczyciela] = @id_nauczyciela, [data_wystawienia] = @data_wystawienia, [id_przedmiotu] = @id_przedmiotu, [ocena] = @ocena WHERE (([Identyfikator] = @Original_Identyfikator) AND ((@IsNull_id_ucznia = 1 AND [id_ucznia] IS NULL) OR ([id_ucznia] = @Original_id_ucznia)) AND ((@IsNull_id_nauczyciela = 1 AND [id_nauczyciela] IS NULL) OR ([id_nauczyciela] = @Original_id_nauczyciela)) AND ((@IsNull_data_wystawienia = 1 AND [data_wystawienia] IS NULL) OR ([data_wystawienia] = @Original_data_wystawienia)) AND ((@IsNull_id_przedmiotu = 1 AND [id_przedmiotu] IS NULL) OR ([id_przedmiotu] = @Original_id_przedmiotu)) AND ((@IsNull_ocena = 1 AND [ocena] IS NULL) OR ([ocena] = @Original_ocena)));
+SELECT Identyfikator, temat, id_ucznia, id_nauczyciela, data_wystawienia, id_przedmiotu, ocena FROM Oceny WHERE (Identyfikator = @Identyfikator)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@temat", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "temat", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_ucznia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_ucznia", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -5782,7 +5766,16 @@ SELECT Identyfikator, temat, id_ucznia, id_nauczyciela, data_wystawienia, id_prz
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_przedmiotu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_przedmiotu", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ocena", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ocena", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Identyfikator", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Identyfikator", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SSMA_TimeStamp", global::System.Data.SqlDbType.Timestamp, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SSMA_TimeStamp", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_ucznia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_ucznia", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_ucznia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_ucznia", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_nauczyciela", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_nauczyciela", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_nauczyciela", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_nauczyciela", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_data_wystawienia", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "data_wystawienia", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_data_wystawienia", global::System.Data.SqlDbType.DateTime2, 0, global::System.Data.ParameterDirection.Input, 0, 0, "data_wystawienia", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_przedmiotu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_przedmiotu", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_przedmiotu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_przedmiotu", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ocena", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ocena", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ocena", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ocena", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Identyfikator", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Identyfikator", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -5800,7 +5793,7 @@ SELECT Identyfikator, temat, id_ucznia, id_nauczyciela, data_wystawienia, id_prz
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT Identyfikator, temat, id_ucznia, id_nauczyciela, data_wystawienia, id_prze" +
-                "dmiotu, ocena, SSMA_TimeStamp FROM dbo.Oceny";
+                "dmiotu, ocena FROM Oceny";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -5861,13 +5854,47 @@ SELECT Identyfikator, temat, id_ucznia, id_nauczyciela, data_wystawienia, id_prz
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Identyfikator, byte[] Original_SSMA_TimeStamp) {
+        public virtual int Delete(int Original_Identyfikator, global::System.Nullable<int> Original_id_ucznia, global::System.Nullable<int> Original_id_nauczyciela, global::System.Nullable<global::System.DateTime> Original_data_wystawienia, global::System.Nullable<int> Original_id_przedmiotu, global::System.Nullable<int> Original_ocena) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Identyfikator));
-            if ((Original_SSMA_TimeStamp == null)) {
-                throw new global::System.ArgumentNullException("Original_SSMA_TimeStamp");
+            if ((Original_id_ucznia.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_id_ucznia.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((byte[])(Original_SSMA_TimeStamp));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((Original_id_nauczyciela.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_id_nauczyciela.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((Original_data_wystawienia.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((System.DateTime)(Original_data_wystawienia.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((Original_id_przedmiotu.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((int)(Original_id_przedmiotu.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((Original_ocena.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((int)(Original_ocena.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -5946,7 +5973,7 @@ SELECT Identyfikator, temat, id_ucznia, id_nauczyciela, data_wystawienia, id_prz
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string temat, global::System.Nullable<int> id_ucznia, global::System.Nullable<int> id_nauczyciela, global::System.Nullable<global::System.DateTime> data_wystawienia, global::System.Nullable<int> id_przedmiotu, global::System.Nullable<int> ocena, int Original_Identyfikator, byte[] Original_SSMA_TimeStamp, int Identyfikator) {
+        public virtual int Update(string temat, global::System.Nullable<int> id_ucznia, global::System.Nullable<int> id_nauczyciela, global::System.Nullable<global::System.DateTime> data_wystawienia, global::System.Nullable<int> id_przedmiotu, global::System.Nullable<int> ocena, int Original_Identyfikator, global::System.Nullable<int> Original_id_ucznia, global::System.Nullable<int> Original_id_nauczyciela, global::System.Nullable<global::System.DateTime> Original_data_wystawienia, global::System.Nullable<int> Original_id_przedmiotu, global::System.Nullable<int> Original_ocena, int Identyfikator) {
             if ((temat == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -5984,13 +6011,47 @@ SELECT Identyfikator, temat, id_ucznia, id_nauczyciela, data_wystawienia, id_prz
                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_Identyfikator));
-            if ((Original_SSMA_TimeStamp == null)) {
-                throw new global::System.ArgumentNullException("Original_SSMA_TimeStamp");
+            if ((Original_id_ucznia.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_id_ucznia.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((byte[])(Original_SSMA_TimeStamp));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Identyfikator));
+            if ((Original_id_nauczyciela.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Original_id_nauczyciela.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((Original_data_wystawienia.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((System.DateTime)(Original_data_wystawienia.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((Original_id_przedmiotu.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(Original_id_przedmiotu.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((Original_ocena.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(Original_ocena.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[17].Value = ((int)(Identyfikator));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -6011,8 +6072,8 @@ SELECT Identyfikator, temat, id_ucznia, id_nauczyciela, data_wystawienia, id_prz
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string temat, global::System.Nullable<int> id_ucznia, global::System.Nullable<int> id_nauczyciela, global::System.Nullable<global::System.DateTime> data_wystawienia, global::System.Nullable<int> id_przedmiotu, global::System.Nullable<int> ocena, int Original_Identyfikator, byte[] Original_SSMA_TimeStamp) {
-            return this.Update(temat, id_ucznia, id_nauczyciela, data_wystawienia, id_przedmiotu, ocena, Original_Identyfikator, Original_SSMA_TimeStamp, Original_Identyfikator);
+        public virtual int Update(string temat, global::System.Nullable<int> id_ucznia, global::System.Nullable<int> id_nauczyciela, global::System.Nullable<global::System.DateTime> data_wystawienia, global::System.Nullable<int> id_przedmiotu, global::System.Nullable<int> ocena, int Original_Identyfikator, global::System.Nullable<int> Original_id_ucznia, global::System.Nullable<int> Original_id_nauczyciela, global::System.Nullable<global::System.DateTime> Original_data_wystawienia, global::System.Nullable<int> Original_id_przedmiotu, global::System.Nullable<int> Original_ocena) {
+            return this.Update(temat, id_ucznia, id_nauczyciela, data_wystawienia, id_przedmiotu, ocena, Original_Identyfikator, Original_id_ucznia, Original_id_nauczyciela, Original_data_wystawienia, Original_id_przedmiotu, Original_ocena, Original_Identyfikator);
         }
     }
     

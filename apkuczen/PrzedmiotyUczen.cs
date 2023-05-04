@@ -20,6 +20,8 @@ namespace Tylka.apkuczen
 
         private void PrzedmiotyUczen_Load(object sender, EventArgs e)
         {
+            this.przedmiotyTableAdapter.Fill(onlinegradebookprojectDataSet.Przedmioty);
+            dataGridView1.RowHeadersVisible = false;
             Resize_data TaH = new Resize_data();
             TaH.Table_auto_size(dataGridView1);
         }

@@ -92,5 +92,10 @@ namespace Tylka
             Hidef();
             ocenyAdmin1.Show();
         }
+
+        private void ocenyAdmin1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

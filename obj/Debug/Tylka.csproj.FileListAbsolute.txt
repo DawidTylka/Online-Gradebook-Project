@@ -211,3 +211,9 @@ F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.
 F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkrodzic.EdycjaDanychRodzic.resources
 F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkuczen.EdycjaDanychUczen.resources
 F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkuczen.OcenyUczen.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apknauczyciel.EdycjaDanychNauczyciel.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apknauczyciel.OcenyNauczyciel.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkrodzic.EdycjaDanychRodzic.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkrodzic.OcenyRodzic.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkuczen.EdycjaDanychUczen.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.OcenyAdmin.resources
