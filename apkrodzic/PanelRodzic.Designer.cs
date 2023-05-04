@@ -29,33 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PanelRodzic));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Sprawdziany = new Tylka.CustomButton();
             this.Home = new Tylka.CustomButton();
             this.Przedmioty = new Tylka.CustomButton();
             this.Plany_Lekcji = new Tylka.CustomButton();
             this.Klasy = new Tylka.CustomButton();
             this.gradient1 = new Tylka.Gradient();
+            this.edycjaDanychRodzic1 = new Tylka.apkrodzic.EdycjaDanychRodzic();
+            this.Edycja_Danych = new Tylka.CustomButton();
+            this.oceny = new Tylka.CustomButton();
+            this.home1 = new Tylka.dziennik_funkcje.home();
             this.gradient8 = new Tylka.Gradient();
             this.examsRodzic1 = new Tylka.apkrodzic.ExamsRodzic();
             this.przedmiotyRodzic1 = new Tylka.apkrodzic.PrzedmiotyRodzic();
             this.plansRodzic1 = new Tylka.apkrodzic.PlansRodzic();
             this.classRodzic1 = new Tylka.apkrodzic.ClassRodzic();
-            this.home1 = new Tylka.dziennik_funkcje.home();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ocenyTableAdapter1 = new Tylka.onlinegradebookprojectDataSetTableAdapters.OcenyTableAdapter();
+            this.ocenyRodzic1 = new Tylka.apkrodzic.OcenyRodzic();
             this.gradient1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(47, 47);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(47, 20, 47, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(81, 63);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
             // 
             // Sprawdziany
             // 
@@ -178,6 +172,10 @@
             // 
             this.gradient1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
             this.gradient1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
+            this.gradient1.Controls.Add(this.ocenyRodzic1);
+            this.gradient1.Controls.Add(this.edycjaDanychRodzic1);
+            this.gradient1.Controls.Add(this.Edycja_Danych);
+            this.gradient1.Controls.Add(this.oceny);
             this.gradient1.Controls.Add(this.home1);
             this.gradient1.Controls.Add(this.gradient8);
             this.gradient1.Controls.Add(this.examsRodzic1);
@@ -193,6 +191,67 @@
             this.gradient1.Name = "gradient1";
             this.gradient1.Size = new System.Drawing.Size(984, 511);
             this.gradient1.TabIndex = 17;
+            // 
+            // edycjaDanychRodzic1
+            // 
+            this.edycjaDanychRodzic1.BackColor = System.Drawing.Color.Transparent;
+            this.edycjaDanychRodzic1.Location = new System.Drawing.Point(186, 47);
+            this.edycjaDanychRodzic1.Name = "edycjaDanychRodzic1";
+            this.edycjaDanychRodzic1.Size = new System.Drawing.Size(789, 400);
+            this.edycjaDanychRodzic1.TabIndex = 20;
+            // 
+            // Edycja_Danych
+            // 
+            this.Edycja_Danych.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Edycja_Danych.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(129)))), ((int)(((byte)(182)))));
+            this.Edycja_Danych.borderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
+            this.Edycja_Danych.BorderRadius = 30;
+            this.Edycja_Danych.BorderSize = 1;
+            this.Edycja_Danych.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(114)))), ((int)(((byte)(190)))));
+            this.Edycja_Danych.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(129)))), ((int)(((byte)(182)))));
+            this.Edycja_Danych.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Edycja_Danych.FlatAppearance.BorderSize = 0;
+            this.Edycja_Danych.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Edycja_Danych.ForeColor = System.Drawing.Color.White;
+            this.Edycja_Danych.Location = new System.Drawing.Point(16, 373);
+            this.Edycja_Danych.Name = "Edycja_Danych";
+            this.Edycja_Danych.Size = new System.Drawing.Size(150, 30);
+            this.Edycja_Danych.TabIndex = 18;
+            this.Edycja_Danych.Text = "Edycja Danych";
+            this.Edycja_Danych.TextColor = System.Drawing.Color.White;
+            this.Edycja_Danych.UseVisualStyleBackColor = false;
+            this.Edycja_Danych.Click += new System.EventHandler(this.Edycja_Danych_Click);
+            // 
+            // oceny
+            // 
+            this.oceny.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.oceny.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.oceny.borderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
+            this.oceny.BorderRadius = 30;
+            this.oceny.BorderSize = 1;
+            this.oceny.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(114)))), ((int)(((byte)(190)))));
+            this.oceny.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(129)))), ((int)(((byte)(182)))));
+            this.oceny.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.oceny.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
+            this.oceny.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.oceny.ForeColor = System.Drawing.Color.White;
+            this.oceny.Location = new System.Drawing.Point(16, 335);
+            this.oceny.Margin = new System.Windows.Forms.Padding(5);
+            this.oceny.Name = "oceny";
+            this.oceny.Size = new System.Drawing.Size(150, 30);
+            this.oceny.TabIndex = 17;
+            this.oceny.Text = "Oceny";
+            this.oceny.TextColor = System.Drawing.Color.White;
+            this.oceny.UseVisualStyleBackColor = false;
+            this.oceny.Click += new System.EventHandler(this.customButton1_Click);
+            // 
+            // home1
+            // 
+            this.home1.BackColor = System.Drawing.Color.Transparent;
+            this.home1.Location = new System.Drawing.Point(186, 47);
+            this.home1.Name = "home1";
+            this.home1.Size = new System.Drawing.Size(789, 400);
+            this.home1.TabIndex = 16;
             // 
             // gradient8
             // 
@@ -236,13 +295,27 @@
             this.classRodzic1.Size = new System.Drawing.Size(789, 400);
             this.classRodzic1.TabIndex = 0;
             // 
-            // home1
+            // pictureBox1
             // 
-            this.home1.BackColor = System.Drawing.Color.Transparent;
-            this.home1.Location = new System.Drawing.Point(186, 47);
-            this.home1.Name = "home1";
-            this.home1.Size = new System.Drawing.Size(789, 400);
-            this.home1.TabIndex = 16;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(47, 47);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(47, 20, 47, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(81, 63);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
+            // ocenyTableAdapter1
+            // 
+            this.ocenyTableAdapter1.ClearBeforeFill = true;
+            // 
+            // ocenyRodzic1
+            // 
+            this.ocenyRodzic1.Location = new System.Drawing.Point(186, 47);
+            this.ocenyRodzic1.Name = "ocenyRodzic1";
+            this.ocenyRodzic1.Size = new System.Drawing.Size(789, 400);
+            this.ocenyRodzic1.TabIndex = 21;
             // 
             // PanelRodzic
             // 
@@ -257,8 +330,8 @@
             this.Name = "PanelRodzic";
             this.Text = "PanelRodzic";
             this.Load += new System.EventHandler(this.PanelRodzic_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gradient1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -278,5 +351,10 @@
         private ExamsRodzic examsRodzic1;
         private Gradient gradient8;
         private dziennik_funkcje.home home1;
+        private CustomButton oceny;
+        private CustomButton Edycja_Danych;
+        private EdycjaDanychRodzic edycjaDanychRodzic1;
+        private onlinegradebookprojectDataSetTableAdapters.OcenyTableAdapter ocenyTableAdapter1;
+        private OcenyRodzic ocenyRodzic1;
     }
 }

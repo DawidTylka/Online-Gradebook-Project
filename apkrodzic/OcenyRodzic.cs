@@ -9,16 +9,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tylka.dziennik_funkcje;
 
-namespace Tylka.apkuczen
+namespace Tylka.apkrodzic
 {
-    public partial class OcenyUczen : UserControl
+    public partial class OcenyRodzic : UserControl
     {
-        public OcenyUczen()
+        public OcenyRodzic()
         {
             InitializeComponent();
         }
 
-        private void OcenyUczen_Load(object sender, EventArgs e)
+        private void OcenyRodzic_Load(object sender, EventArgs e)
         {
             Resize_data TaH = new Resize_data();
             TaH.Table_auto_size(dataGridView1);

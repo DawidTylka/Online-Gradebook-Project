@@ -53,11 +53,23 @@
     <Compile Include="apknauczyciel\ClassNauczyciel.Designer.cs">
       <DependentUpon>ClassNauczyciel.cs</DependentUpon>
     </Compile>
+    <Compile Include="apknauczyciel\EdycjaDanychNauczyciel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apknauczyciel\EdycjaDanychNauczyciel.Designer.cs">
+      <DependentUpon>EdycjaDanychNauczyciel.cs</DependentUpon>
+    </Compile>
     <Compile Include="apknauczyciel\ExamsNauczyciel.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="apknauczyciel\ExamsNauczyciel.Designer.cs">
       <DependentUpon>ExamsNauczyciel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="apknauczyciel\OcenyNauczyciel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apknauczyciel\OcenyNauczyciel.Designer.cs">
+      <DependentUpon>OcenyNauczyciel.cs</DependentUpon>
     </Compile>
     <Compile Include="apknauczyciel\PanelNauczyciel.cs">
       <SubType>Form</SubType>
@@ -83,11 +95,23 @@
     <Compile Include="apkrodzic\ClassRodzic.Designer.cs">
       <DependentUpon>ClassRodzic.cs</DependentUpon>
     </Compile>
+    <Compile Include="apkrodzic\EdycjaDanychRodzic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apkrodzic\EdycjaDanychRodzic.Designer.cs">
+      <DependentUpon>EdycjaDanychRodzic.cs</DependentUpon>
+    </Compile>
     <Compile Include="apkrodzic\ExamsRodzic.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="apkrodzic\ExamsRodzic.Designer.cs">
       <DependentUpon>ExamsRodzic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="apkrodzic\OcenyRodzic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apkrodzic\OcenyRodzic.Designer.cs">
+      <DependentUpon>OcenyRodzic.cs</DependentUpon>
     </Compile>
     <Compile Include="apkrodzic\PanelRodzic.cs">
       <SubType>Form</SubType>
@@ -106,6 +130,12 @@
     </Compile>
     <Compile Include="apkrodzic\PrzedmiotyRodzic.Designer.cs">
       <DependentUpon>PrzedmiotyRodzic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="apkuczen\EdycjaDanychUczen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apkuczen\EdycjaDanychUczen.Designer.cs">
+      <DependentUpon>EdycjaDanychUczen.cs</DependentUpon>
     </Compile>
     <Compile Include="apkuczen\KlasyUczen.cs">
       <SubType>UserControl</SubType>
@@ -193,6 +223,12 @@
       <DependentUpon>login.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="OcenyAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OcenyAdmin.Designer.cs">
+      <DependentUpon>OcenyAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="onlinegradebookprojectDataSet.cs">
       <DependentUpon>onlinegradebookprojectDataSet.xsd</DependentUpon>
     </Compile>
@@ -236,8 +272,14 @@
     <EmbeddedResource Include="apknauczyciel\ClassNauczyciel.resx">
       <DependentUpon>ClassNauczyciel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="apknauczyciel\EdycjaDanychNauczyciel.resx">
+      <DependentUpon>EdycjaDanychNauczyciel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="apknauczyciel\ExamsNauczyciel.resx">
       <DependentUpon>ExamsNauczyciel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apknauczyciel\OcenyNauczyciel.resx">
+      <DependentUpon>OcenyNauczyciel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="apknauczyciel\PanelNauczyciel.resx">
       <DependentUpon>PanelNauczyciel.cs</DependentUpon>
@@ -251,8 +293,14 @@
     <EmbeddedResource Include="apkrodzic\ClassRodzic.resx">
       <DependentUpon>ClassRodzic.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="apkrodzic\EdycjaDanychRodzic.resx">
+      <DependentUpon>EdycjaDanychRodzic.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="apkrodzic\ExamsRodzic.resx">
       <DependentUpon>ExamsRodzic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apkrodzic\OcenyRodzic.resx">
+      <DependentUpon>OcenyRodzic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="apkrodzic\PanelRodzic.resx">
       <DependentUpon>PanelRodzic.cs</DependentUpon>
@@ -262,6 +310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="apkrodzic\PrzedmiotyRodzic.resx">
       <DependentUpon>PrzedmiotyRodzic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apkuczen\EdycjaDanychUczen.resx">
+      <DependentUpon>EdycjaDanychUczen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="apkuczen\KlasyUczen.resx">
       <DependentUpon>KlasyUczen.cs</DependentUpon>
@@ -301,6 +352,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OcenyAdmin.resx">
+      <DependentUpon>OcenyAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PanelAdmin_User.resx">
       <DependentUpon>PanelAdmin_User.cs</DependentUpon>

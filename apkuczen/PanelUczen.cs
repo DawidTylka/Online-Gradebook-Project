@@ -21,30 +21,56 @@ namespace Tylka.apkuczen
         }
         private void chowaj()
         {
+            sprawdzianyUczen1.Hide();
+            przedmiotyUczen1.Hide();
+            planLekcjiUczen1.Hide();
+            klasyUczen1.Hide();
+            edycjaDanychUczen1.Hide();
+            ocenyUczen1.Hide();
+            home2.Hide();
+
         }
         private void Home_Click(object sender, EventArgs e)
         {
-            home1.Show();
+            chowaj();
+            home2.Show();
         }
 
-        private void Klasy_Click(object sender, EventArgs e)
-        {
-        }
 
         private void Plany_Lekcji_Click(object sender, EventArgs e)
         {
+            chowaj();
+            planLekcjiUczen1.Show();
         }
 
         private void Przedmioty_Click(object sender, EventArgs e)
         {
+            chowaj();
+            przedmiotyUczen1.Show();
         }
 
         private void Sprawdziany_Click(object sender, EventArgs e)
-        { 
+        {
+            chowaj();
+            sprawdzianyUczen1.Show();
         }
 
         private void PanelUczen_Load(object sender, EventArgs e)
         {
+            chowaj();
+            home2.Show();
+        }
+
+        private void Edycja_Danych_Click(object sender, EventArgs e)
+        {
+            chowaj();
+            edycjaDanychUczen1.Show();
+        }
+
+        private void oceny_Click(object sender, EventArgs e)
+        {
+            chowaj();
+            ocenyUczen1.Show();
         }
     }
 }

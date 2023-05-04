@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PanelAdmin_User));
             this.gradient1 = new Tylka.Gradient();
+            this.ocenyAdmin1 = new Tylka.OcenyAdmin();
+            this.oceny = new Tylka.CustomButton();
+            this.home1 = new Tylka.dziennik_funkcje.home();
             this.plansAdmin1 = new Tylka.PlansAdmin();
             this.usersAdmin1 = new Tylka.UsersAdmin();
             this.examsAdmin1 = new Tylka.ExamsAdmin();
@@ -43,7 +46,6 @@
             this.gradient8 = new Tylka.Gradient();
             this.Plany_Lekcji = new Tylka.CustomButton();
             this.Klasy = new Tylka.CustomButton();
-            this.home1 = new Tylka.dziennik_funkcje.home();
             this.gradient1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -52,6 +54,8 @@
             // 
             this.gradient1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
             this.gradient1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
+            this.gradient1.Controls.Add(this.ocenyAdmin1);
+            this.gradient1.Controls.Add(this.oceny);
             this.gradient1.Controls.Add(this.home1);
             this.gradient1.Controls.Add(this.plansAdmin1);
             this.gradient1.Controls.Add(this.usersAdmin1);
@@ -71,6 +75,44 @@
             this.gradient1.Name = "gradient1";
             this.gradient1.Size = new System.Drawing.Size(984, 511);
             this.gradient1.TabIndex = 5;
+            // 
+            // ocenyAdmin1
+            // 
+            this.ocenyAdmin1.Location = new System.Drawing.Point(186, 47);
+            this.ocenyAdmin1.Name = "ocenyAdmin1";
+            this.ocenyAdmin1.Size = new System.Drawing.Size(789, 400);
+            this.ocenyAdmin1.TabIndex = 18;
+            // 
+            // oceny
+            // 
+            this.oceny.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.oceny.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.oceny.borderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
+            this.oceny.BorderRadius = 30;
+            this.oceny.BorderSize = 1;
+            this.oceny.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(114)))), ((int)(((byte)(190)))));
+            this.oceny.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(129)))), ((int)(((byte)(182)))));
+            this.oceny.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.oceny.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
+            this.oceny.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.oceny.ForeColor = System.Drawing.Color.White;
+            this.oceny.Location = new System.Drawing.Point(16, 375);
+            this.oceny.Margin = new System.Windows.Forms.Padding(5);
+            this.oceny.Name = "oceny";
+            this.oceny.Size = new System.Drawing.Size(150, 30);
+            this.oceny.TabIndex = 16;
+            this.oceny.Text = "Oceny";
+            this.oceny.TextColor = System.Drawing.Color.White;
+            this.oceny.UseVisualStyleBackColor = false;
+            this.oceny.Click += new System.EventHandler(this.customButton1_Click);
+            // 
+            // home1
+            // 
+            this.home1.BackColor = System.Drawing.Color.Transparent;
+            this.home1.Location = new System.Drawing.Point(186, 47);
+            this.home1.Name = "home1";
+            this.home1.Size = new System.Drawing.Size(789, 400);
+            this.home1.TabIndex = 15;
             // 
             // plansAdmin1
             // 
@@ -274,14 +316,6 @@
             this.Klasy.UseVisualStyleBackColor = false;
             this.Klasy.Click += new System.EventHandler(this.Klasy_Click);
             // 
-            // home1
-            // 
-            this.home1.BackColor = System.Drawing.Color.Transparent;
-            this.home1.Location = new System.Drawing.Point(186, 47);
-            this.home1.Name = "home1";
-            this.home1.Size = new System.Drawing.Size(789, 400);
-            this.home1.TabIndex = 15;
-            // 
             // PanelAdmin_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -320,5 +354,7 @@
         private PrzedmiotyAdmin przedmiotyAdmin1;
         private PlansAdmin plansAdmin1;
         private dziennik_funkcje.home home1;
+        private CustomButton oceny;
+        private OcenyAdmin ocenyAdmin1;
     }
 }

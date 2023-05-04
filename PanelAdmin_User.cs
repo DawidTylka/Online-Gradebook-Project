@@ -22,6 +22,7 @@ namespace Tylka
             classAdmin1.Hide();
             przedmiotyAdmin1.Hide();
             examsAdmin1.Hide();
+            ocenyAdmin1.Hide();
             home1.Hide();
         }
         public PanelAdmin_User()
@@ -84,6 +85,12 @@ namespace Tylka
         private void usersTabAdmin1_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void customButton1_Click(object sender, EventArgs e)
+        {
+            Hidef();
+            ocenyAdmin1.Show();
         }
     }
 }

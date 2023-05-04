@@ -1,6 +1,6 @@
-﻿namespace Tylka.apkuczen
+﻿namespace Tylka.apkrodzic
 {
-    partial class OcenyUczen
+    partial class OcenyRodzic
     {
         /// <summary> 
         /// Wymagana zmienna projektanta.
@@ -130,14 +130,14 @@
             this.sSMATimeStampDataGridViewImageColumn.Name = "sSMATimeStampDataGridViewImageColumn";
             this.sSMATimeStampDataGridViewImageColumn.ReadOnly = true;
             // 
-            // OcenyUczen
+            // OcenyRodzic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
-            this.Name = "OcenyUczen";
+            this.Name = "OcenyRodzic";
             this.Size = new System.Drawing.Size(789, 400);
-            this.Load += new System.EventHandler(this.OcenyUczen_Load);
+            this.Load += new System.EventHandler(this.OcenyRodzic_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ocenyBindingSource)).EndInit();

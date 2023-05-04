@@ -204,3 +204,10 @@ C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.dziennik_funkcje.home.resour
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.ExamsAdmin.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.PrzedmiotyAdmin.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkuczen.OcenyUczen.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apknauczyciel.OcenyNauczyciel.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkrodzic.OcenyRodzic.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.OcenyAdmin.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apknauczyciel.EdycjaDanychNauczyciel.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkrodzic.EdycjaDanychRodzic.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkuczen.EdycjaDanychUczen.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkuczen.OcenyUczen.resources
