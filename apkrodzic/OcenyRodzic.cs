@@ -16,10 +16,12 @@ namespace Tylka.apkrodzic
         public OcenyRodzic()
         {
             InitializeComponent();
+            dataGridView1.RowHeadersVisible = false;
         }
 
         private void OcenyRodzic_Load(object sender, EventArgs e)
         {
+            this.ocenyTableAdapter.Fill(onlinegradebookprojectDataSet.Oceny);
             Resize_data TaH = new Resize_data();
             TaH.Table_auto_size(dataGridView1);
         }

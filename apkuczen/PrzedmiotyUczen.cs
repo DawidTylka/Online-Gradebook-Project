@@ -16,6 +16,7 @@ namespace Tylka.apkuczen
         public PrzedmiotyUczen()
         {
             InitializeComponent();
+            dataGridView1.RowHeadersVisible = false;
         }
 
         private void PrzedmiotyUczen_Load(object sender, EventArgs e)

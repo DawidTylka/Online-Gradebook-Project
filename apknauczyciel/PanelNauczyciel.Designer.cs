@@ -32,6 +32,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Home = new Tylka.CustomButton();
             this.gradient1 = new Tylka.Gradient();
+            this.edycjaDanychNauczyciel1 = new Tylka.apknauczyciel.EdycjaDanychNauczyciel();
             this.ocenyNauczyciel1 = new Tylka.apknauczyciel.OcenyNauczyciel();
             this.Edycja_Danych = new Tylka.CustomButton();
             this.oceny = new Tylka.CustomButton();
@@ -45,7 +46,6 @@
             this.classNauczyciel1 = new Tylka.apknauczyciel.ClassNauczyciel();
             this.Plany_Lekcji = new Tylka.CustomButton();
             this.Klasy = new Tylka.CustomButton();
-            this.edycjaDanychNauczyciel1 = new Tylka.apknauczyciel.EdycjaDanychNauczyciel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gradient1.SuspendLayout();
             this.SuspendLayout();
@@ -108,6 +108,15 @@
             this.gradient1.Name = "gradient1";
             this.gradient1.Size = new System.Drawing.Size(984, 511);
             this.gradient1.TabIndex = 17;
+            // 
+            // edycjaDanychNauczyciel1
+            // 
+            this.edycjaDanychNauczyciel1.BackColor = System.Drawing.Color.Transparent;
+            this.edycjaDanychNauczyciel1.Location = new System.Drawing.Point(186, 47);
+            this.edycjaDanychNauczyciel1.Name = "edycjaDanychNauczyciel1";
+            this.edycjaDanychNauczyciel1.Size = new System.Drawing.Size(789, 400);
+            this.edycjaDanychNauczyciel1.TabIndex = 20;
+            this.edycjaDanychNauczyciel1.Load += new System.EventHandler(this.edycjaDanychNauczyciel1_Load);
             // 
             // ocenyNauczyciel1
             // 
@@ -303,14 +312,6 @@
             this.Klasy.TextColor = System.Drawing.Color.White;
             this.Klasy.UseVisualStyleBackColor = false;
             this.Klasy.Click += new System.EventHandler(this.Klasy_Click);
-            // 
-            // edycjaDanychNauczyciel1
-            // 
-            this.edycjaDanychNauczyciel1.BackColor = System.Drawing.Color.Transparent;
-            this.edycjaDanychNauczyciel1.Location = new System.Drawing.Point(186, 47);
-            this.edycjaDanychNauczyciel1.Name = "edycjaDanychNauczyciel1";
-            this.edycjaDanychNauczyciel1.Size = new System.Drawing.Size(789, 400);
-            this.edycjaDanychNauczyciel1.TabIndex = 20;
             // 
             // PanelNauczyciel
             // 

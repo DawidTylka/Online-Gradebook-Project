@@ -29,6 +29,7 @@ namespace Tylka
         {
             InitializeComponent();
             MaximizeBox = false;
+            MinimizeBox = false;
         }
 
         private void Home_Click(object sender, EventArgs e)

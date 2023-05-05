@@ -16,6 +16,7 @@ namespace Tylka
         public ExamsAdmin()
         {
             InitializeComponent();
+            dataGridView1.RowHeadersVisible = false;
         }
 
         private void ExamsAdmin_Load(object sender, EventArgs e)

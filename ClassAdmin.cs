@@ -16,6 +16,7 @@ namespace Tylka
         public ClassAdmin()
         {
             InitializeComponent();
+            dataGridView1.RowHeadersVisible = false;
         }
 
         private void ClassAdmin_Load(object sender, EventArgs e)

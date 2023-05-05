@@ -19,6 +19,7 @@ namespace Tylka.apkuczen
         public PlanLekcjiUczen()
         {
             InitializeComponent();
+            dataGridView1.RowHeadersVisible = false;
         }
 
         private void PlanLekcjiUczen_Load(object sender, EventArgs e)

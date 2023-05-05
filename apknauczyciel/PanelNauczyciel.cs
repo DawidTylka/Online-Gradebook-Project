@@ -18,6 +18,7 @@ namespace Tylka.apknauczyciel
         {
             InitializeComponent();
             MaximizeBox = false;
+            MinimizeBox = false;
             chowaj();
         }
 
@@ -82,6 +83,11 @@ namespace Tylka.apknauczyciel
         {
             chowaj();
             edycjaDanychNauczyciel1.Show();
+        }
+
+        private void edycjaDanychNauczyciel1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

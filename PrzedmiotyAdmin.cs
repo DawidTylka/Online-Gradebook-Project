@@ -16,11 +16,12 @@ namespace Tylka
         public PrzedmiotyAdmin()
         {
             InitializeComponent();
+            dataGridView2.RowHeadersVisible = false;
         }
 
         private void PrzedmiotyAdmin_Load(object sender, EventArgs e)
         {
-            this.przedmiotyTableAdapter1.Fill(onlinegradebookprojectDataSet1.Przedmioty);
+            this.przedmiotyTableAdapter1.Update(onlinegradebookprojectDataSet1.Przedmioty);
             Resize_data TaH = new Resize_data();
             TaH.Table_auto_size(dataGridView2);
         }

@@ -16,6 +16,7 @@ namespace Tylka.apknauczyciel
         public PlansNauczyciel()
         {
             InitializeComponent();
+            dataGridView1.RowHeadersVisible = false;
         }
 
         private void saveToolStripButton_Click(object sender, EventArgs e)

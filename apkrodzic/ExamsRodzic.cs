@@ -16,6 +16,7 @@ namespace Tylka.apkrodzic
         public ExamsRodzic()
         {
             InitializeComponent();
+            dataGridView1.RowHeadersVisible = false;
         }
 
         private void saveToolStripButton_Click(object sender, EventArgs e)
@@ -36,6 +37,7 @@ namespace Tylka.apkrodzic
 
         private void ExamsRodzic_Load(object sender, EventArgs e)
         {
+            this.sprawdzianyTableAdapter.Fill(onlinegradebookprojectDataSet1.Sprawdziany);
             Resize_data TaH = new Resize_data();
             TaH.Table_auto_size(dataGridView1);
         }

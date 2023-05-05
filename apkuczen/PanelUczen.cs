@@ -18,6 +18,7 @@ namespace Tylka.apkuczen
         {
             InitializeComponent();
             MaximizeBox = false;
+            MinimizeBox = false;
         }
         private void chowaj()
         {

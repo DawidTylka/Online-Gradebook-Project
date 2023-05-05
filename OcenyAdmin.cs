@@ -16,6 +16,7 @@ namespace Tylka
         public OcenyAdmin()
         {
             InitializeComponent();
+            dataGridView1.RowHeadersVisible = false;
         }
 
         private void saveToolStripButton_Click(object sender, EventArgs e)
@@ -36,6 +37,7 @@ namespace Tylka
 
         private void OcenyAdmin_Load(object sender, EventArgs e)
         {
+            this.ocenyTableAdapter.Fill(onlinegradebookprojectDataSet.Oceny);
             Resize_data TaH = new Resize_data();
             TaH.Table_auto_size(dataGridView1);
         }

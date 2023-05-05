@@ -16,10 +16,12 @@ namespace Tylka.apkuczen
         public SprawdzianyUczen()
         {
             InitializeComponent();
+            dataGridView1.RowHeadersVisible = false;
         }
 
         private void SprawdzianyUczen_Load(object sender, EventArgs e)
         {
+            this.sprawdzianyTableAdapter.Fill(onlinegradebookprojectDataSet.Sprawdziany);
             Resize_data TaH = new Resize_data();
             TaH.Table_auto_size(dataGridView1);
         }
