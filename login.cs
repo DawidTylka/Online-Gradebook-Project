@@ -101,8 +101,23 @@ namespace Tylka
                                     if (reader2.Read())
                                     {
                                         UserData.classid = reader2.GetInt32(0);
+                                        reader2.Close();
                                     }
-                                    reader2.Close();
+                                    else 
+                                    {
+                                        reader2.Close();
+                                        string query3 = "SELECT Klasa FROM Klasy WHERE User_id = (Select id FROM Users WHERE idopiekuna = '" + UserData.user_id + "')";
+                                        SqlCommand command3 = new SqlCommand(query3, conn);
+
+                                        SqlDataReader reader3 = command3.ExecuteReader();
+
+                                        if (reader3.Read())
+                                        {
+                                            UserData.classid = reader3.GetInt32(0);
+                                        }
+                                        reader3.Close();
+                                    }
+                                    
                                 }
                             }
                             else

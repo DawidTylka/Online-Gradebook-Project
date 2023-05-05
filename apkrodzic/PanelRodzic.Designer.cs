@@ -35,6 +35,7 @@
             this.Plany_Lekcji = new Tylka.CustomButton();
             this.Klasy = new Tylka.CustomButton();
             this.gradient1 = new Tylka.Gradient();
+            this.ocenyRodzic1 = new Tylka.apkrodzic.OcenyRodzic();
             this.edycjaDanychRodzic1 = new Tylka.apkrodzic.EdycjaDanychRodzic();
             this.Edycja_Danych = new Tylka.CustomButton();
             this.oceny = new Tylka.CustomButton();
@@ -46,7 +47,6 @@
             this.classRodzic1 = new Tylka.apkrodzic.ClassRodzic();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ocenyTableAdapter1 = new Tylka.onlinegradebookprojectDataSetTableAdapters.OcenyTableAdapter();
-            this.ocenyRodzic1 = new Tylka.apkrodzic.OcenyRodzic();
             this.gradient1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -192,6 +192,14 @@
             this.gradient1.Size = new System.Drawing.Size(984, 511);
             this.gradient1.TabIndex = 17;
             // 
+            // ocenyRodzic1
+            // 
+            this.ocenyRodzic1.BackColor = System.Drawing.Color.Transparent;
+            this.ocenyRodzic1.Location = new System.Drawing.Point(186, 47);
+            this.ocenyRodzic1.Name = "ocenyRodzic1";
+            this.ocenyRodzic1.Size = new System.Drawing.Size(789, 400);
+            this.ocenyRodzic1.TabIndex = 21;
+            // 
             // edycjaDanychRodzic1
             // 
             this.edycjaDanychRodzic1.BackColor = System.Drawing.Color.Transparent;
@@ -309,13 +317,6 @@
             // ocenyTableAdapter1
             // 
             this.ocenyTableAdapter1.ClearBeforeFill = true;
-            // 
-            // ocenyRodzic1
-            // 
-            this.ocenyRodzic1.Location = new System.Drawing.Point(186, 47);
-            this.ocenyRodzic1.Name = "ocenyRodzic1";
-            this.ocenyRodzic1.Size = new System.Drawing.Size(789, 400);
-            this.ocenyRodzic1.TabIndex = 21;
             // 
             // PanelRodzic
             // 

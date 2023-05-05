@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,9 @@ namespace Tylka.apkrodzic
 {
     public partial class OcenyRodzic : UserControl
     {
+
+        private SqlConnection conn = new SqlConnection(@"Server=tcp:onlinegradebook.database.windows.net,1433;Initial Catalog=onlinegradebookproject;Persist Security Info=False;User ID=theedziu;Password=Kacper123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+
         public OcenyRodzic()
         {
             InitializeComponent();
@@ -21,7 +25,17 @@ namespace Tylka.apkrodzic
 
         private void OcenyRodzic_Load(object sender, EventArgs e)
         {
-            this.ocenyTableAdapter.Fill(onlinegradebookprojectDataSet.Oceny);
+
+            conn.Open();
+            SqlDataAdapter da = new SqlDataAdapter("Select * FROM Oceny WHERE id_ucznia = (Select id FROM Users WHERE idopiekuna = '" + UserData.user_id + "')", conn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            conn.Close();
+            dataGridView1.Columns[1].Visible = false;
+            dataGridView1.Columns[0].Visible = false;
+            dataGridView1.RowHeadersVisible = false;
+
             Resize_data TaH = new Resize_data();
             TaH.Table_auto_size(dataGridView1);
         }
