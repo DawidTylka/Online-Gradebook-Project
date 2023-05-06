@@ -33,6 +33,7 @@
             this.onlinegradebookprojectDataSet = new Tylka.onlinegradebookprojectDataSet();
             this.ocenyTableAdapter = new Tylka.onlinegradebookprojectDataSetTableAdapters.OcenyTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ocenyBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.identyfikatorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tematDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iduczniaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,7 +41,6 @@
             this.datawystawieniaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idprzedmiotuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ocenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ocenyBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ocenyBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -75,13 +75,18 @@
             this.idprzedmiotuDataGridViewTextBoxColumn,
             this.ocenaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.ocenyBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 34);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 42);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(789, 366);
+            this.dataGridView1.Size = new System.Drawing.Size(1052, 450);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // ocenyBindingSource1
+            // 
+            this.ocenyBindingSource1.DataMember = "Oceny";
+            this.ocenyBindingSource1.DataSource = this.onlinegradebookprojectDataSet;
             // 
             // identyfikatorDataGridViewTextBoxColumn
             // 
@@ -140,18 +145,14 @@
             this.ocenaDataGridViewTextBoxColumn.Name = "ocenaDataGridViewTextBoxColumn";
             this.ocenaDataGridViewTextBoxColumn.Width = 125;
             // 
-            // ocenyBindingSource1
-            // 
-            this.ocenyBindingSource1.DataMember = "Oceny";
-            this.ocenyBindingSource1.DataSource = this.onlinegradebookprojectDataSet;
-            // 
             // OcenyUczen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OcenyUczen";
-            this.Size = new System.Drawing.Size(789, 400);
+            this.Size = new System.Drawing.Size(1052, 492);
             this.Load += new System.EventHandler(this.OcenyUczen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ocenyBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).EndInit();
@@ -167,6 +168,7 @@
         private onlinegradebookprojectDataSet onlinegradebookprojectDataSet;
         private onlinegradebookprojectDataSetTableAdapters.OcenyTableAdapter ocenyTableAdapter;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource ocenyBindingSource1;
         private System.Windows.Forms.DataGridViewTextBoxColumn identyfikatorDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tematDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iduczniaDataGridViewTextBoxColumn;
@@ -174,6 +176,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn datawystawieniaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idprzedmiotuDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ocenaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource ocenyBindingSource1;
     }
 }
