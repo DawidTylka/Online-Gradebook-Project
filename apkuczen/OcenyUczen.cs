@@ -53,16 +53,15 @@ namespace Tylka.apkuczen
 
             DataTable dtUsers = new DataTable();
             adapterUsers.Fill(dtUsers);
-
+            dataGridView1.Columns["teacher_name"].DataPropertyName = "teacher_name";
             foreach (DataRow rowOceny in dtOceny.Rows)
             {
                 Console.WriteLine(rowOceny);
                 foreach (DataRow rowUsers in dtUsers.Rows)
                 {
-                    if (rowOceny["id_nauczyciela"].ToString().Equals(rowUsers["id"].ToString()))
+                    if (rowOceny["id_nauczyciela"].Equals(rowUsers["id"]))
                     {
                         rowOceny["teacher_name"] = rowUsers["name"].ToString();
-                        break;
                     }
                 }
             }
