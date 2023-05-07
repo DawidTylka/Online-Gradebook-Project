@@ -44,7 +44,8 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(3, 55);
+            this.chart1.Location = new System.Drawing.Point(4, 68);
+            this.chart1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
@@ -53,7 +54,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Salary";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(426, 311);
+            this.chart1.Size = new System.Drawing.Size(568, 383);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
@@ -61,9 +62,10 @@
             // 
             this.zalogowany.AutoSize = true;
             this.zalogowany.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.zalogowany.Location = new System.Drawing.Point(24, 21);
+            this.zalogowany.Location = new System.Drawing.Point(32, 26);
+            this.zalogowany.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.zalogowany.Name = "zalogowany";
-            this.zalogowany.Size = new System.Drawing.Size(92, 31);
+            this.zalogowany.Size = new System.Drawing.Size(115, 39);
             this.zalogowany.TabIndex = 1;
             this.zalogowany.Text = "label1";
             // 
@@ -71,21 +73,23 @@
             // 
             this.data.AutoSize = true;
             this.data.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.data.Location = new System.Drawing.Point(3, 369);
+            this.data.Location = new System.Drawing.Point(4, 454);
+            this.data.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.data.Name = "data";
-            this.data.Size = new System.Drawing.Size(92, 31);
+            this.data.Size = new System.Drawing.Size(115, 39);
             this.data.TabIndex = 2;
             this.data.Text = "label1";
             // 
             // home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.data);
             this.Controls.Add(this.zalogowany);
             this.Controls.Add(this.chart1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "home";
-            this.Size = new System.Drawing.Size(789, 400);
+            this.Size = new System.Drawing.Size(1052, 492);
             this.Load += new System.EventHandler(this.home_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
