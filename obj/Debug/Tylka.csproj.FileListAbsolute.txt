@@ -217,3 +217,5 @@ C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkrodzic.EdycjaDanychRodzic
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkrodzic.OcenyRodzic.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkuczen.EdycjaDanychUczen.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.OcenyAdmin.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apknauczyciel.message.resources
+C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apknauczyciel.SendMessage.resources

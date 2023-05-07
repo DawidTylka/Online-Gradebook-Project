@@ -187,6 +187,7 @@ namespace Tylka
                     DataRow[] rolecheck3 = dtable.Select("rola = '" + 3 + "'");
                     if (rolecheck3.Length != 0)
                     {
+                        UserData.messagepermission = 1;
 
                         conn.Open();
                         UserData.title = "średnia z przedmiotów";
@@ -204,7 +205,7 @@ namespace Tylka
                         {
                             conn.Open();
                             UserData.adminTitle = "ilość dzieci w klasach";
-                            cmd = new SqlCommand("SELECT klasa,COUNT(user_id) FROM klasy WHERE 1 GROUP BY klasa", conn);
+                            cmd = new SqlCommand("SELECT klasa,COUNT(user_id) FROM klasy GROUP BY klasa", conn);
                             reader0 = cmd.ExecuteReader();
                             while (reader0.Read())
                             {

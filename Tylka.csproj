@@ -65,6 +65,12 @@
     <Compile Include="apknauczyciel\ExamsNauczyciel.Designer.cs">
       <DependentUpon>ExamsNauczyciel.cs</DependentUpon>
     </Compile>
+    <Compile Include="apknauczyciel\message.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apknauczyciel\message.Designer.cs">
+      <DependentUpon>message.cs</DependentUpon>
+    </Compile>
     <Compile Include="apknauczyciel\OcenyNauczyciel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -88,6 +94,12 @@
     </Compile>
     <Compile Include="apknauczyciel\PrzedmiotyNauczyciel.Designer.cs">
       <DependentUpon>PrzedmiotyNauczyciel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="apknauczyciel\SendMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="apknauczyciel\SendMessage.Designer.cs">
+      <DependentUpon>SendMessage.cs</DependentUpon>
     </Compile>
     <Compile Include="apkrodzic\ClassRodzic.cs">
       <SubType>UserControl</SubType>
@@ -278,6 +290,9 @@
     <EmbeddedResource Include="apknauczyciel\ExamsNauczyciel.resx">
       <DependentUpon>ExamsNauczyciel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="apknauczyciel\message.resx">
+      <DependentUpon>message.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="apknauczyciel\OcenyNauczyciel.resx">
       <DependentUpon>OcenyNauczyciel.cs</DependentUpon>
     </EmbeddedResource>
@@ -289,6 +304,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="apknauczyciel\PrzedmiotyNauczyciel.resx">
       <DependentUpon>PrzedmiotyNauczyciel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apknauczyciel\SendMessage.resx">
+      <DependentUpon>SendMessage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="apkrodzic\ClassRodzic.resx">
       <DependentUpon>ClassRodzic.cs</DependentUpon>

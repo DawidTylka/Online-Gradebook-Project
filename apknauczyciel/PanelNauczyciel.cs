@@ -72,6 +72,8 @@ namespace Tylka.apknauczyciel
             examsNauczyciel1.Parent = this.gradient1;
             home1.Parent = this.gradient1;
             home1.Show();
+            sendMessage1.Show();
+            sendMessage1.BringToFront();
         }
 
         private void customButton1_Click(object sender, EventArgs e)
