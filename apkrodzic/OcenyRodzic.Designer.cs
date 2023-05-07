@@ -62,8 +62,9 @@
             this.idprzedmiotuDataGridViewTextBoxColumn,
             this.ocenaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.ocenyBindingSource;
+            this.dataGridView1.Enabled = false;
             this.dataGridView1.Location = new System.Drawing.Point(0, 42);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1052, 450);
@@ -185,7 +186,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OcenyRodzic";
             this.Size = new System.Drawing.Size(1052, 492);
             this.Load += new System.EventHandler(this.OcenyRodzic_Load);

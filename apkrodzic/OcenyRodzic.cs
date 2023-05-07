@@ -33,6 +33,8 @@ namespace Tylka.apkrodzic
             comboBox1.DataSource = dtopiekun;
             comboBox1.DisplayMember = ("fullname");
             comboBox1.ValueMember = "id";
+            dataGridView1.Columns.Add("teacher_name", "Nauczyciel");
+            dataGridView1.Columns.Add("subject_name", "Przedmioty");
             conn.Close();
             /*SqlDataAdapter da = new SqlDataAdapter("Select * FROM Oceny WHERE id_ucznia = (Select id FROM Users WHERE idopiekuna = '" + UserData.user_id + "')", conn);
             DataTable dt = new DataTable();
@@ -51,8 +53,6 @@ namespace Tylka.apkrodzic
         {
             int selectedId = (int)comboBox1.SelectedValue;
             // Add "teacher name" column to DataGridView
-            dataGridView1.Columns.Add("teacher_name", "Nauczyciel");
-            dataGridView1.Columns.Add("subject_name", "Przedmioty");
 
             conn.Open();
 

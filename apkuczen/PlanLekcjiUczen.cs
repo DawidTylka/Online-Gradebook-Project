@@ -33,6 +33,8 @@ namespace Tylka.apkuczen
             dataGridView1.Columns[1].Visible = false;
             dataGridView1.Columns[0].Visible = false;
             dataGridView1.RowHeadersVisible = false;
+            dataGridView1.Columns[6].Visible = false;
+            dataGridView1.Columns[7].Visible = false;
 
             Resize_data TaH = new Resize_data();
             TaH.Table_auto_size(dataGridView1);

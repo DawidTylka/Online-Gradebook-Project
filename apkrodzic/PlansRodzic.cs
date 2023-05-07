@@ -22,47 +22,55 @@ namespace Tylka.apkrodzic
             InitializeComponent();
             dataGridView1.RowHeadersVisible = false;
         }
-
-        private void saveToolStripButton_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.plansbindingSource1.EndEdit();
-            this.dniTableAdapter.Update(onlinegradebookprojectDataSet1.Dni);
-            Resize_data TaH = new Resize_data();
-            TaH.Table_auto_size(dataGridView1);
-        }
-
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-            conn.Open();
-            SqlDataAdapter da = new SqlDataAdapter("Select * FROM Dni WHERE id_klasy = '" +UserData.classid+ "'", conn);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            conn.Close();
-            dataGridView1.Columns[1].Visible = false;
-            dataGridView1.Columns[0].Visible = false;
-            dataGridView1.RowHeadersVisible = false;
-
-            Resize_data TaH = new Resize_data();
-            TaH.Table_auto_size(dataGridView1);
-        }
-
         private void PlansRodzic_Load(object sender, EventArgs e)
         {
-
             conn.Open();
-            SqlDataAdapter da = new SqlDataAdapter("Select * FROM Dni WHERE id_klasy = '" + UserData.classid + "'", conn);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
+            SqlDataAdapter da1 = new SqlDataAdapter("Select id,idopiekuna,CONCAT(name, ' ', surname) AS fullname FROM Users WHERE idopiekuna=" + UserData.user_id, conn);
+            DataTable dtopiekun = new DataTable();
+            da1.Fill(dtopiekun);
+            comboBox1.DataSource = dtopiekun;
+            comboBox1.DisplayMember = ("fullname");
+            comboBox1.ValueMember = "id";
+            dataGridView1.Visible = false;
             conn.Close();
-            dataGridView1.Columns[1].Visible = false;
-            dataGridView1.Columns[0].Visible = false;
-            dataGridView1.RowHeadersVisible = false;
+        }
 
-            Resize_data TaH = new Resize_data();
-            TaH.Table_auto_size(dataGridView1);
+        private void PlansRodzic_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void customButton1_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Visible = true;
+            conn.Open();
+            int class_id = 0;
+            int selectedId = (int)comboBox1.SelectedValue;
+            string query2 = "SELECT Klasa FROM Klasy WHERE User_id = " + selectedId;
+
+            {
+                SqlCommand command2 = new SqlCommand(query2, conn);
+
+                SqlDataReader reader2 = command2.ExecuteReader();
+
+                if (reader2.Read())
+                {
+                    class_id = reader2.GetInt32(0);
+                    reader2.Close();
+                }
+            }
+            SqlCommand cmdDni = new SqlCommand();
+            cmdDni.Connection = conn;
+            cmdDni.CommandText = "SELECT * FROM Dni WHERE id_klasy ="+class_id;
+            SqlDataAdapter adapterOceny = new SqlDataAdapter(cmdDni);
+
+            DataTable dtDni = new DataTable();
+            adapterOceny.Fill(dtDni);
+            dataGridView1.DataSource = dtDni;
+            dataGridView1.Columns[0].Visible = false;
+            dataGridView1.Columns[1].Visible = false;
+            dataGridView1.Columns[8].Visible = false;
+            dataGridView1.Columns[9].Visible = false;
+            conn.Close();
         }
     }
 }
