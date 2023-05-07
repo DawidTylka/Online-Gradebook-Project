@@ -34,12 +34,7 @@ namespace Tylka
             UserData.admin = false;
             Random rnd = new Random();
 
-            //Create home data
-            for (int x = 0; x < 6; x++)
-            {
-                UserData.data.Add(new Data("" + x, 1));
-                UserData.dataAadmin.Add(new Data("" + x, (x*x)+5));
-            }
+
             UserData.title = "oceny";
             UserData.adminTitle = "oceny";
 
@@ -119,6 +114,16 @@ namespace Tylka
                     DataRow[] rolecheck1 = dtable.Select("rola = '" + 1 + "'");// tutaj sprawdzamy czy w podanym userze istnieje cos co w kolumnie rola ma 1 czyli ucznia no i tak po koleji cale te
                     if (rolecheck1.Length != 0)
                     {
+                        conn.Open();
+                        for (int x = 1; x <= 6; x++)
+                        {
+                            
+                            SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM oceny WHERE ocena ="+x+"AND id_ucznia="+UserData.user_id, conn);
+                            int count = (int)cmd.ExecuteScalar();
+                            UserData.data.Add(new Data("" + x, count));
+
+                        }
+                        conn.Close();
                         if (admincheck.Length != 0)
                         {   
                             UserData.admin = true;

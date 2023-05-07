@@ -40,6 +40,7 @@
             this.dniBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dniTableAdapter = new Tylka.onlinegradebookprojectDataSetTableAdapters.DniTableAdapter();
             this.sprawdzianyTableAdapter = new Tylka.onlinegradebookprojectDataSetTableAdapters.SprawdzianyTableAdapter();
+            this.id_klasy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprawdzianyBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).BeginInit();
@@ -56,31 +57,40 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idprzedmiotuDataGridViewTextBoxColumn,
             this.tematDataGridViewTextBoxColumn,
-            this.terminDataGridViewTextBoxColumn});
+            this.terminDataGridViewTextBoxColumn,
+            this.id_klasy});
             this.dataGridView1.DataSource = this.sprawdzianyBindingSource1;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 34);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 42);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(789, 366);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(1052, 450);
             this.dataGridView1.TabIndex = 0;
             // 
             // idprzedmiotuDataGridViewTextBoxColumn
             // 
             this.idprzedmiotuDataGridViewTextBoxColumn.DataPropertyName = "id_przedmiotu";
             this.idprzedmiotuDataGridViewTextBoxColumn.HeaderText = "id_przedmiotu";
+            this.idprzedmiotuDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idprzedmiotuDataGridViewTextBoxColumn.Name = "idprzedmiotuDataGridViewTextBoxColumn";
+            this.idprzedmiotuDataGridViewTextBoxColumn.Width = 125;
             // 
             // tematDataGridViewTextBoxColumn
             // 
             this.tematDataGridViewTextBoxColumn.DataPropertyName = "temat";
             this.tematDataGridViewTextBoxColumn.HeaderText = "temat";
+            this.tematDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.tematDataGridViewTextBoxColumn.Name = "tematDataGridViewTextBoxColumn";
+            this.tematDataGridViewTextBoxColumn.Width = 125;
             // 
             // terminDataGridViewTextBoxColumn
             // 
             this.terminDataGridViewTextBoxColumn.DataPropertyName = "termin";
             this.terminDataGridViewTextBoxColumn.HeaderText = "termin";
+            this.terminDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.terminDataGridViewTextBoxColumn.Name = "terminDataGridViewTextBoxColumn";
+            this.terminDataGridViewTextBoxColumn.Width = 125;
             // 
             // sprawdzianyBindingSource1
             // 
@@ -115,13 +125,22 @@
             // 
             this.sprawdzianyTableAdapter.ClearBeforeFill = true;
             // 
+            // id_klasy
+            // 
+            this.id_klasy.DataPropertyName = "id_klasy";
+            this.id_klasy.HeaderText = "id_klasy";
+            this.id_klasy.MinimumWidth = 6;
+            this.id_klasy.Name = "id_klasy";
+            this.id_klasy.Width = 125;
+            // 
             // SprawdzianyUczen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SprawdzianyUczen";
-            this.Size = new System.Drawing.Size(789, 400);
+            this.Size = new System.Drawing.Size(1052, 492);
             this.Load += new System.EventHandler(this.SprawdzianyUczen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprawdzianyBindingSource1)).EndInit();
@@ -146,5 +165,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tematDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn terminDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource sprawdzianyBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_klasy;
     }
 }
