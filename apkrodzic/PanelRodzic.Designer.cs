@@ -47,6 +47,7 @@
             this.classRodzic1 = new Tylka.apkrodzic.ClassRodzic();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ocenyTableAdapter1 = new Tylka.onlinegradebookprojectDataSetTableAdapters.OcenyTableAdapter();
+            this.wiadomosci = new Tylka.CustomButton();
             this.gradient1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -172,6 +173,7 @@
             // 
             this.gradient1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
             this.gradient1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
+            this.gradient1.Controls.Add(this.wiadomosci);
             this.gradient1.Controls.Add(this.ocenyRodzic1);
             this.gradient1.Controls.Add(this.edycjaDanychRodzic1);
             this.gradient1.Controls.Add(this.Edycja_Danych);
@@ -318,6 +320,27 @@
             // 
             this.ocenyTableAdapter1.ClearBeforeFill = true;
             // 
+            // wiadomosci
+            // 
+            this.wiadomosci.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.wiadomosci.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(129)))), ((int)(((byte)(182)))));
+            this.wiadomosci.borderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
+            this.wiadomosci.BorderRadius = 30;
+            this.wiadomosci.BorderSize = 1;
+            this.wiadomosci.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(114)))), ((int)(((byte)(190)))));
+            this.wiadomosci.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(129)))), ((int)(((byte)(182)))));
+            this.wiadomosci.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.wiadomosci.FlatAppearance.BorderSize = 0;
+            this.wiadomosci.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.wiadomosci.ForeColor = System.Drawing.Color.White;
+            this.wiadomosci.Location = new System.Drawing.Point(16, 409);
+            this.wiadomosci.Name = "wiadomosci";
+            this.wiadomosci.Size = new System.Drawing.Size(150, 30);
+            this.wiadomosci.TabIndex = 23;
+            this.wiadomosci.Text = "Wiadomości";
+            this.wiadomosci.TextColor = System.Drawing.Color.White;
+            this.wiadomosci.UseVisualStyleBackColor = false;
+            // 
             // PanelRodzic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -357,5 +380,6 @@
         private EdycjaDanychRodzic edycjaDanychRodzic1;
         private onlinegradebookprojectDataSetTableAdapters.OcenyTableAdapter ocenyTableAdapter1;
         private OcenyRodzic ocenyRodzic1;
+        private CustomButton wiadomosci;
     }
 }

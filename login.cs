@@ -151,7 +151,7 @@ namespace Tylka
                     {
                         conn.Open();
                         UserData.title = "średnia";
-                        SqlCommand cmd = new SqlCommand("SELECT users.name, CAST(AVG(CAST(oceny.ocena AS DECIMAL(12,2)))AS DECIMAL(12,2)) AS sr FROM oceny JOIN users ON oceny.id_ucznia = users.id WHERE oceny.id_ucznia IN (SELECT id FROM users WHERE idopiekuna = " + UserData.user_id + ") GROUP BY users.namer ", conn);
+                        SqlCommand cmd = new SqlCommand("SELECT users.name, CAST(AVG(CAST(oceny.ocena AS DECIMAL(12,2)))AS DECIMAL(12,2)) AS sr FROM oceny JOIN users ON oceny.id_ucznia = users.id WHERE oceny.id_ucznia IN (SELECT id FROM users WHERE idopiekuna = " + UserData.user_id + ") GROUP BY users.name ", conn);
                         SqlDataReader reader0 = cmd.ExecuteReader();
                         while (reader0.Read())
                         {
@@ -165,7 +165,7 @@ namespace Tylka
                         {
                             conn.Open();
                             UserData.adminTitle = "ilość dzieci w klasach";
-                            cmd = new SqlCommand("SELECT klasa,COUNT(user_id) FROM klasy WHERE 1 GROUP BY klasa", conn);
+                            cmd = new SqlCommand("SELECT klasa,COUNT(user_id) FROM klasy GROUP BY klasa", conn);
                             reader0 = cmd.ExecuteReader();
                             while (reader0.Read())
                             {

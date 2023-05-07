@@ -219,3 +219,5 @@ C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkuczen.EdycjaDanychUczen.r
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.OcenyAdmin.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apknauczyciel.message.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apknauczyciel.SendMessage.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apknauczyciel.message.resources
+F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apknauczyciel.SendMessage.resources

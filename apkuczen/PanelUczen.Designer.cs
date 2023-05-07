@@ -33,6 +33,7 @@
             this.ocenyTableAdapter1 = new Tylka.onlinegradebookprojectDataSetTableAdapters.OcenyTableAdapter();
             this.Home = new Tylka.CustomButton();
             this.gradient1 = new Tylka.Gradient();
+            this.wiadomosci = new Tylka.CustomButton();
             this.ocenyUczen1 = new Tylka.apkuczen.OcenyUczen();
             this.edycjaDanychUczen1 = new Tylka.apkuczen.EdycjaDanychUczen();
             this.sprawdzianyUczen1 = new Tylka.apkuczen.SprawdzianyUczen();
@@ -80,7 +81,7 @@
             this.Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Home.ForeColor = System.Drawing.Color.White;
             this.Home.Location = new System.Drawing.Point(16, 135);
-            this.Home.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Home.Margin = new System.Windows.Forms.Padding(5);
             this.Home.Name = "Home";
             this.Home.Size = new System.Drawing.Size(150, 30);
             this.Home.TabIndex = 15;
@@ -93,6 +94,7 @@
             // 
             this.gradient1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
             this.gradient1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
+            this.gradient1.Controls.Add(this.wiadomosci);
             this.gradient1.Controls.Add(this.ocenyUczen1);
             this.gradient1.Controls.Add(this.edycjaDanychUczen1);
             this.gradient1.Controls.Add(this.sprawdzianyUczen1);
@@ -112,10 +114,31 @@
             this.gradient1.Size = new System.Drawing.Size(984, 511);
             this.gradient1.TabIndex = 17;
             // 
+            // wiadomosci
+            // 
+            this.wiadomosci.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.wiadomosci.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(129)))), ((int)(((byte)(182)))));
+            this.wiadomosci.borderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
+            this.wiadomosci.BorderRadius = 30;
+            this.wiadomosci.BorderSize = 1;
+            this.wiadomosci.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(114)))), ((int)(((byte)(190)))));
+            this.wiadomosci.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(129)))), ((int)(((byte)(182)))));
+            this.wiadomosci.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.wiadomosci.FlatAppearance.BorderSize = 0;
+            this.wiadomosci.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.wiadomosci.ForeColor = System.Drawing.Color.White;
+            this.wiadomosci.Location = new System.Drawing.Point(14, 369);
+            this.wiadomosci.Name = "wiadomosci";
+            this.wiadomosci.Size = new System.Drawing.Size(150, 30);
+            this.wiadomosci.TabIndex = 23;
+            this.wiadomosci.Text = "Wiadomości";
+            this.wiadomosci.TextColor = System.Drawing.Color.White;
+            this.wiadomosci.UseVisualStyleBackColor = false;
+            // 
             // ocenyUczen1
             // 
             this.ocenyUczen1.BackColor = System.Drawing.Color.Transparent;
-            this.ocenyUczen1.Location = new System.Drawing.Point(202, 47);
+            this.ocenyUczen1.Location = new System.Drawing.Point(187, 47);
             this.ocenyUczen1.Name = "ocenyUczen1";
             this.ocenyUczen1.Size = new System.Drawing.Size(789, 400);
             this.ocenyUczen1.TabIndex = 21;
@@ -124,7 +147,7 @@
             // 
             this.edycjaDanychUczen1.BackColor = System.Drawing.Color.Transparent;
             this.edycjaDanychUczen1.Location = new System.Drawing.Point(187, 47);
-            this.edycjaDanychUczen1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.edycjaDanychUczen1.Margin = new System.Windows.Forms.Padding(4);
             this.edycjaDanychUczen1.Name = "edycjaDanychUczen1";
             this.edycjaDanychUczen1.Size = new System.Drawing.Size(789, 400);
             this.edycjaDanychUczen1.TabIndex = 20;
@@ -133,7 +156,7 @@
             // 
             this.sprawdzianyUczen1.BackColor = System.Drawing.Color.Transparent;
             this.sprawdzianyUczen1.Location = new System.Drawing.Point(187, 47);
-            this.sprawdzianyUczen1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sprawdzianyUczen1.Margin = new System.Windows.Forms.Padding(4);
             this.sprawdzianyUczen1.Name = "sprawdzianyUczen1";
             this.sprawdzianyUczen1.Size = new System.Drawing.Size(789, 400);
             this.sprawdzianyUczen1.TabIndex = 19;
@@ -142,7 +165,7 @@
             // 
             this.przedmiotyUczen1.BackColor = System.Drawing.Color.Transparent;
             this.przedmiotyUczen1.Location = new System.Drawing.Point(187, 47);
-            this.przedmiotyUczen1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.przedmiotyUczen1.Margin = new System.Windows.Forms.Padding(4);
             this.przedmiotyUczen1.Name = "przedmiotyUczen1";
             this.przedmiotyUczen1.Size = new System.Drawing.Size(789, 400);
             this.przedmiotyUczen1.TabIndex = 18;
@@ -151,7 +174,7 @@
             // 
             this.planLekcjiUczen1.BackColor = System.Drawing.Color.Transparent;
             this.planLekcjiUczen1.Location = new System.Drawing.Point(187, 47);
-            this.planLekcjiUczen1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.planLekcjiUczen1.Margin = new System.Windows.Forms.Padding(2);
             this.planLekcjiUczen1.Name = "planLekcjiUczen1";
             this.planLekcjiUczen1.Size = new System.Drawing.Size(789, 400);
             this.planLekcjiUczen1.TabIndex = 17;
@@ -160,7 +183,7 @@
             // 
             this.klasyUczen1.BackColor = System.Drawing.Color.Transparent;
             this.klasyUczen1.Location = new System.Drawing.Point(187, 47);
-            this.klasyUczen1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.klasyUczen1.Margin = new System.Windows.Forms.Padding(4);
             this.klasyUczen1.Name = "klasyUczen1";
             this.klasyUczen1.Size = new System.Drawing.Size(789, 400);
             this.klasyUczen1.TabIndex = 16;
@@ -169,7 +192,7 @@
             // 
             this.home2.BackColor = System.Drawing.Color.Transparent;
             this.home2.Location = new System.Drawing.Point(187, 47);
-            this.home2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.home2.Margin = new System.Windows.Forms.Padding(2);
             this.home2.Name = "home2";
             this.home2.Size = new System.Drawing.Size(789, 400);
             this.home2.TabIndex = 15;
@@ -198,7 +221,7 @@
             this.Sprawdziany.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Sprawdziany.ForeColor = System.Drawing.Color.White;
             this.Sprawdziany.Location = new System.Drawing.Point(14, 295);
-            this.Sprawdziany.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Sprawdziany.Margin = new System.Windows.Forms.Padding(5);
             this.Sprawdziany.Name = "Sprawdziany";
             this.Sprawdziany.Size = new System.Drawing.Size(150, 30);
             this.Sprawdziany.TabIndex = 13;
@@ -221,7 +244,7 @@
             this.Przedmioty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Przedmioty.ForeColor = System.Drawing.Color.White;
             this.Przedmioty.Location = new System.Drawing.Point(14, 255);
-            this.Przedmioty.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Przedmioty.Margin = new System.Windows.Forms.Padding(5);
             this.Przedmioty.Name = "Przedmioty";
             this.Przedmioty.Size = new System.Drawing.Size(150, 30);
             this.Przedmioty.TabIndex = 12;
@@ -245,7 +268,7 @@
             this.Plany_Lekcji.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Plany_Lekcji.ForeColor = System.Drawing.Color.White;
             this.Plany_Lekcji.Location = new System.Drawing.Point(14, 215);
-            this.Plany_Lekcji.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Plany_Lekcji.Margin = new System.Windows.Forms.Padding(5);
             this.Plany_Lekcji.Name = "Plany_Lekcji";
             this.Plany_Lekcji.Size = new System.Drawing.Size(150, 30);
             this.Plany_Lekcji.TabIndex = 11;
@@ -290,7 +313,7 @@
             this.oceny.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.oceny.ForeColor = System.Drawing.Color.White;
             this.oceny.Location = new System.Drawing.Point(16, 175);
-            this.oceny.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.oceny.Margin = new System.Windows.Forms.Padding(5);
             this.oceny.Name = "oceny";
             this.oceny.Size = new System.Drawing.Size(150, 30);
             this.oceny.TabIndex = 10;
@@ -309,7 +332,7 @@
             this.Controls.Add(this.gradient1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PanelUczen";
             this.Text = "PanelUczen";
             this.Load += new System.EventHandler(this.PanelUczen_Load);
@@ -338,5 +361,6 @@
         private EdycjaDanychUczen edycjaDanychUczen1;
         private onlinegradebookprojectDataSetTableAdapters.OcenyTableAdapter ocenyTableAdapter1;
         private OcenyUczen ocenyUczen1;
+        private CustomButton wiadomosci;
     }
 }

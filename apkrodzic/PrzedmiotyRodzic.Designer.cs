@@ -65,11 +65,11 @@
             this.nazwaDataGridViewTextBoxColumn,
             this.idnauczycielaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.przedmiotybindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 42);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 34);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1052, 450);
+            this.dataGridView1.Size = new System.Drawing.Size(789, 366);
             this.dataGridView1.TabIndex = 8;
             // 
             // idprzedmiotuDataGridViewTextBoxColumn
@@ -87,6 +87,7 @@
             this.nazwaDataGridViewTextBoxColumn.HeaderText = "nazwa";
             this.nazwaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nazwaDataGridViewTextBoxColumn.Name = "nazwaDataGridViewTextBoxColumn";
+            this.nazwaDataGridViewTextBoxColumn.ReadOnly = true;
             this.nazwaDataGridViewTextBoxColumn.Width = 125;
             // 
             // idnauczycielaDataGridViewTextBoxColumn
@@ -95,16 +96,16 @@
             this.idnauczycielaDataGridViewTextBoxColumn.HeaderText = "id_nauczyciela";
             this.idnauczycielaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idnauczycielaDataGridViewTextBoxColumn.Name = "idnauczycielaDataGridViewTextBoxColumn";
+            this.idnauczycielaDataGridViewTextBoxColumn.ReadOnly = true;
             this.idnauczycielaDataGridViewTextBoxColumn.Width = 125;
             // 
             // PrzedmiotyRodzic
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "PrzedmiotyRodzic";
-            this.Size = new System.Drawing.Size(1052, 492);
+            this.Size = new System.Drawing.Size(789, 400);
             this.Load += new System.EventHandler(this.PrzedmiotyRodzic_Load);
             ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.przedmiotybindingSource1)).EndInit();

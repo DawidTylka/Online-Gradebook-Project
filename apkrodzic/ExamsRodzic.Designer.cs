@@ -58,6 +58,7 @@
             this.dataGridView1.DataSource = this.examsbindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(0, 34);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(789, 366);
             this.dataGridView1.TabIndex = 9;
@@ -68,6 +69,7 @@
             this.idprzedmiotuDataGridViewTextBoxColumn.HeaderText = "id_przedmiotu";
             this.idprzedmiotuDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idprzedmiotuDataGridViewTextBoxColumn.Name = "idprzedmiotuDataGridViewTextBoxColumn";
+            this.idprzedmiotuDataGridViewTextBoxColumn.ReadOnly = true;
             this.idprzedmiotuDataGridViewTextBoxColumn.Width = 125;
             // 
             // tematDataGridViewTextBoxColumn
@@ -76,6 +78,7 @@
             this.tematDataGridViewTextBoxColumn.HeaderText = "temat";
             this.tematDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.tematDataGridViewTextBoxColumn.Name = "tematDataGridViewTextBoxColumn";
+            this.tematDataGridViewTextBoxColumn.ReadOnly = true;
             this.tematDataGridViewTextBoxColumn.Width = 125;
             // 
             // terminDataGridViewTextBoxColumn
@@ -84,6 +87,7 @@
             this.terminDataGridViewTextBoxColumn.HeaderText = "termin";
             this.terminDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.terminDataGridViewTextBoxColumn.Name = "terminDataGridViewTextBoxColumn";
+            this.terminDataGridViewTextBoxColumn.ReadOnly = true;
             this.terminDataGridViewTextBoxColumn.Width = 125;
             // 
             // id_klasy
@@ -92,6 +96,7 @@
             this.id_klasy.HeaderText = "id_klasy";
             this.id_klasy.MinimumWidth = 6;
             this.id_klasy.Name = "id_klasy";
+            this.id_klasy.ReadOnly = true;
             this.id_klasy.Width = 125;
             // 
             // examsbindingSource1
@@ -118,7 +123,7 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(110, 11);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(92, 21);
             this.comboBox1.TabIndex = 11;
@@ -135,7 +140,7 @@
             this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton1.ForeColor = System.Drawing.Color.White;
             this.customButton1.Location = new System.Drawing.Point(229, 4);
-            this.customButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.customButton1.Margin = new System.Windows.Forms.Padding(2);
             this.customButton1.Name = "customButton1";
             this.customButton1.Size = new System.Drawing.Size(88, 27);
             this.customButton1.TabIndex = 12;

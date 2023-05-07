@@ -62,9 +62,9 @@
             this.idprzedmiotuDataGridViewTextBoxColumn,
             this.ocenaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.ocenyBindingSource;
-            this.dataGridView1.Enabled = false;
             this.dataGridView1.Location = new System.Drawing.Point(0, 34);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(789, 366);
             this.dataGridView1.TabIndex = 0;
@@ -84,6 +84,7 @@
             this.tematDataGridViewTextBoxColumn.HeaderText = "temat";
             this.tematDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.tematDataGridViewTextBoxColumn.Name = "tematDataGridViewTextBoxColumn";
+            this.tematDataGridViewTextBoxColumn.ReadOnly = true;
             this.tematDataGridViewTextBoxColumn.Width = 125;
             // 
             // iduczniaDataGridViewTextBoxColumn
@@ -92,6 +93,7 @@
             this.iduczniaDataGridViewTextBoxColumn.HeaderText = "id_ucznia";
             this.iduczniaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.iduczniaDataGridViewTextBoxColumn.Name = "iduczniaDataGridViewTextBoxColumn";
+            this.iduczniaDataGridViewTextBoxColumn.ReadOnly = true;
             this.iduczniaDataGridViewTextBoxColumn.Width = 125;
             // 
             // idnauczycielaDataGridViewTextBoxColumn
@@ -100,6 +102,7 @@
             this.idnauczycielaDataGridViewTextBoxColumn.HeaderText = "id_nauczyciela";
             this.idnauczycielaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idnauczycielaDataGridViewTextBoxColumn.Name = "idnauczycielaDataGridViewTextBoxColumn";
+            this.idnauczycielaDataGridViewTextBoxColumn.ReadOnly = true;
             this.idnauczycielaDataGridViewTextBoxColumn.Width = 125;
             // 
             // datawystawieniaDataGridViewTextBoxColumn
@@ -108,6 +111,7 @@
             this.datawystawieniaDataGridViewTextBoxColumn.HeaderText = "data_wystawienia";
             this.datawystawieniaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.datawystawieniaDataGridViewTextBoxColumn.Name = "datawystawieniaDataGridViewTextBoxColumn";
+            this.datawystawieniaDataGridViewTextBoxColumn.ReadOnly = true;
             this.datawystawieniaDataGridViewTextBoxColumn.Width = 125;
             // 
             // idprzedmiotuDataGridViewTextBoxColumn
@@ -116,6 +120,7 @@
             this.idprzedmiotuDataGridViewTextBoxColumn.HeaderText = "id_przedmiotu";
             this.idprzedmiotuDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idprzedmiotuDataGridViewTextBoxColumn.Name = "idprzedmiotuDataGridViewTextBoxColumn";
+            this.idprzedmiotuDataGridViewTextBoxColumn.ReadOnly = true;
             this.idprzedmiotuDataGridViewTextBoxColumn.Width = 125;
             // 
             // ocenaDataGridViewTextBoxColumn
@@ -124,6 +129,7 @@
             this.ocenaDataGridViewTextBoxColumn.HeaderText = "ocena";
             this.ocenaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.ocenaDataGridViewTextBoxColumn.Name = "ocenaDataGridViewTextBoxColumn";
+            this.ocenaDataGridViewTextBoxColumn.ReadOnly = true;
             this.ocenaDataGridViewTextBoxColumn.Width = 125;
             // 
             // ocenyBindingSource
@@ -144,7 +150,7 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(109, 9);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(92, 21);
             this.comboBox1.TabIndex = 1;
@@ -171,7 +177,7 @@
             this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton1.ForeColor = System.Drawing.Color.White;
             this.customButton1.Location = new System.Drawing.Point(204, 2);
-            this.customButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.customButton1.Margin = new System.Windows.Forms.Padding(2);
             this.customButton1.Name = "customButton1";
             this.customButton1.Size = new System.Drawing.Size(65, 28);
             this.customButton1.TabIndex = 3;

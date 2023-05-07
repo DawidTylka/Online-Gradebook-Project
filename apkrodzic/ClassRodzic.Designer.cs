@@ -63,11 +63,11 @@
             this.identyfikatorDataGridViewTextBoxColumn,
             this.profilDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.classbindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 42);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 34);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1052, 450);
+            this.dataGridView1.Size = new System.Drawing.Size(789, 366);
             this.dataGridView1.TabIndex = 6;
             // 
             // identyfikatorDataGridViewTextBoxColumn
@@ -85,16 +85,16 @@
             this.profilDataGridViewTextBoxColumn.HeaderText = "Profil";
             this.profilDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.profilDataGridViewTextBoxColumn.Name = "profilDataGridViewTextBoxColumn";
+            this.profilDataGridViewTextBoxColumn.ReadOnly = true;
             this.profilDataGridViewTextBoxColumn.Width = 125;
             // 
             // ClassRodzic
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ClassRodzic";
-            this.Size = new System.Drawing.Size(1052, 492);
+            this.Size = new System.Drawing.Size(789, 400);
             this.Load += new System.EventHandler(this.ClassRodzic_Load);
             ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.classbindingSource1)).EndInit();

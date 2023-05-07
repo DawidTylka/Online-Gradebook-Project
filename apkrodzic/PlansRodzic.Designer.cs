@@ -82,9 +82,9 @@
             this.sobotaDataGridViewTextBoxColumn,
             this.niedzielaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.plansbindingSource1;
-            this.dataGridView1.Enabled = false;
             this.dataGridView1.Location = new System.Drawing.Point(0, 34);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(789, 366);
             this.dataGridView1.TabIndex = 7;
@@ -104,6 +104,7 @@
             this.idklasyDataGridViewTextBoxColumn.HeaderText = "id_klasy";
             this.idklasyDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idklasyDataGridViewTextBoxColumn.Name = "idklasyDataGridViewTextBoxColumn";
+            this.idklasyDataGridViewTextBoxColumn.ReadOnly = true;
             this.idklasyDataGridViewTextBoxColumn.Width = 125;
             // 
             // godzinaDataGridViewTextBoxColumn
@@ -112,6 +113,7 @@
             this.godzinaDataGridViewTextBoxColumn.HeaderText = "godzina";
             this.godzinaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.godzinaDataGridViewTextBoxColumn.Name = "godzinaDataGridViewTextBoxColumn";
+            this.godzinaDataGridViewTextBoxColumn.ReadOnly = true;
             this.godzinaDataGridViewTextBoxColumn.Width = 125;
             // 
             // poniedziałeDataGridViewTextBoxColumn
@@ -120,6 +122,7 @@
             this.poniedziałeDataGridViewTextBoxColumn.HeaderText = "Poniedziałe";
             this.poniedziałeDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.poniedziałeDataGridViewTextBoxColumn.Name = "poniedziałeDataGridViewTextBoxColumn";
+            this.poniedziałeDataGridViewTextBoxColumn.ReadOnly = true;
             this.poniedziałeDataGridViewTextBoxColumn.Width = 125;
             // 
             // wtorekDataGridViewTextBoxColumn
@@ -128,6 +131,7 @@
             this.wtorekDataGridViewTextBoxColumn.HeaderText = "Wtorek";
             this.wtorekDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.wtorekDataGridViewTextBoxColumn.Name = "wtorekDataGridViewTextBoxColumn";
+            this.wtorekDataGridViewTextBoxColumn.ReadOnly = true;
             this.wtorekDataGridViewTextBoxColumn.Width = 125;
             // 
             // środaDataGridViewTextBoxColumn
@@ -136,6 +140,7 @@
             this.środaDataGridViewTextBoxColumn.HeaderText = "Środa";
             this.środaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.środaDataGridViewTextBoxColumn.Name = "środaDataGridViewTextBoxColumn";
+            this.środaDataGridViewTextBoxColumn.ReadOnly = true;
             this.środaDataGridViewTextBoxColumn.Width = 125;
             // 
             // czwartekDataGridViewTextBoxColumn
@@ -144,6 +149,7 @@
             this.czwartekDataGridViewTextBoxColumn.HeaderText = "Czwartek";
             this.czwartekDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.czwartekDataGridViewTextBoxColumn.Name = "czwartekDataGridViewTextBoxColumn";
+            this.czwartekDataGridViewTextBoxColumn.ReadOnly = true;
             this.czwartekDataGridViewTextBoxColumn.Width = 125;
             // 
             // piątekDataGridViewTextBoxColumn
@@ -152,6 +158,7 @@
             this.piątekDataGridViewTextBoxColumn.HeaderText = "Piątek";
             this.piątekDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.piątekDataGridViewTextBoxColumn.Name = "piątekDataGridViewTextBoxColumn";
+            this.piątekDataGridViewTextBoxColumn.ReadOnly = true;
             this.piątekDataGridViewTextBoxColumn.Width = 125;
             // 
             // sobotaDataGridViewTextBoxColumn
@@ -160,6 +167,7 @@
             this.sobotaDataGridViewTextBoxColumn.HeaderText = "Sobota";
             this.sobotaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.sobotaDataGridViewTextBoxColumn.Name = "sobotaDataGridViewTextBoxColumn";
+            this.sobotaDataGridViewTextBoxColumn.ReadOnly = true;
             this.sobotaDataGridViewTextBoxColumn.Width = 125;
             // 
             // niedzielaDataGridViewTextBoxColumn
@@ -168,6 +176,7 @@
             this.niedzielaDataGridViewTextBoxColumn.HeaderText = "Niedziela";
             this.niedzielaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.niedzielaDataGridViewTextBoxColumn.Name = "niedzielaDataGridViewTextBoxColumn";
+            this.niedzielaDataGridViewTextBoxColumn.ReadOnly = true;
             this.niedzielaDataGridViewTextBoxColumn.Width = 125;
             // 
             // label1
@@ -184,7 +193,7 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(94, 8);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(92, 21);
             this.comboBox1.TabIndex = 10;
@@ -201,7 +210,7 @@
             this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton1.ForeColor = System.Drawing.Color.White;
             this.customButton1.Location = new System.Drawing.Point(215, 2);
-            this.customButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.customButton1.Margin = new System.Windows.Forms.Padding(2);
             this.customButton1.Name = "customButton1";
             this.customButton1.Size = new System.Drawing.Size(83, 27);
             this.customButton1.TabIndex = 8;

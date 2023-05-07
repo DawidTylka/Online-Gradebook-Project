@@ -33,7 +33,6 @@
             this.onlinegradebookprojectDataSet = new Tylka.onlinegradebookprojectDataSet();
             this.ocenyTableAdapter = new Tylka.onlinegradebookprojectDataSetTableAdapters.OcenyTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ocenyBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.identyfikatorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tematDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iduczniaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,6 +40,7 @@
             this.datawystawieniaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idprzedmiotuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ocenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ocenyBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ocenyBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -75,18 +75,14 @@
             this.idprzedmiotuDataGridViewTextBoxColumn,
             this.ocenaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.ocenyBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 42);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 34);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1052, 450);
+            this.dataGridView1.Size = new System.Drawing.Size(789, 366);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // ocenyBindingSource1
-            // 
-            this.ocenyBindingSource1.DataMember = "Oceny";
-            this.ocenyBindingSource1.DataSource = this.onlinegradebookprojectDataSet;
             // 
             // identyfikatorDataGridViewTextBoxColumn
             // 
@@ -103,6 +99,7 @@
             this.tematDataGridViewTextBoxColumn.HeaderText = "temat";
             this.tematDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.tematDataGridViewTextBoxColumn.Name = "tematDataGridViewTextBoxColumn";
+            this.tematDataGridViewTextBoxColumn.ReadOnly = true;
             this.tematDataGridViewTextBoxColumn.Width = 125;
             // 
             // iduczniaDataGridViewTextBoxColumn
@@ -111,6 +108,7 @@
             this.iduczniaDataGridViewTextBoxColumn.HeaderText = "id_ucznia";
             this.iduczniaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.iduczniaDataGridViewTextBoxColumn.Name = "iduczniaDataGridViewTextBoxColumn";
+            this.iduczniaDataGridViewTextBoxColumn.ReadOnly = true;
             this.iduczniaDataGridViewTextBoxColumn.Width = 125;
             // 
             // idnauczycielaDataGridViewTextBoxColumn
@@ -119,6 +117,7 @@
             this.idnauczycielaDataGridViewTextBoxColumn.HeaderText = "id_nauczyciela";
             this.idnauczycielaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idnauczycielaDataGridViewTextBoxColumn.Name = "idnauczycielaDataGridViewTextBoxColumn";
+            this.idnauczycielaDataGridViewTextBoxColumn.ReadOnly = true;
             this.idnauczycielaDataGridViewTextBoxColumn.Width = 125;
             // 
             // datawystawieniaDataGridViewTextBoxColumn
@@ -127,6 +126,7 @@
             this.datawystawieniaDataGridViewTextBoxColumn.HeaderText = "data_wystawienia";
             this.datawystawieniaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.datawystawieniaDataGridViewTextBoxColumn.Name = "datawystawieniaDataGridViewTextBoxColumn";
+            this.datawystawieniaDataGridViewTextBoxColumn.ReadOnly = true;
             this.datawystawieniaDataGridViewTextBoxColumn.Width = 125;
             // 
             // idprzedmiotuDataGridViewTextBoxColumn
@@ -135,6 +135,7 @@
             this.idprzedmiotuDataGridViewTextBoxColumn.HeaderText = "id_przedmiotu";
             this.idprzedmiotuDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idprzedmiotuDataGridViewTextBoxColumn.Name = "idprzedmiotuDataGridViewTextBoxColumn";
+            this.idprzedmiotuDataGridViewTextBoxColumn.ReadOnly = true;
             this.idprzedmiotuDataGridViewTextBoxColumn.Width = 125;
             // 
             // ocenaDataGridViewTextBoxColumn
@@ -143,16 +144,21 @@
             this.ocenaDataGridViewTextBoxColumn.HeaderText = "ocena";
             this.ocenaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.ocenaDataGridViewTextBoxColumn.Name = "ocenaDataGridViewTextBoxColumn";
+            this.ocenaDataGridViewTextBoxColumn.ReadOnly = true;
             this.ocenaDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ocenyBindingSource1
+            // 
+            this.ocenyBindingSource1.DataMember = "Oceny";
+            this.ocenyBindingSource1.DataSource = this.onlinegradebookprojectDataSet;
             // 
             // OcenyUczen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OcenyUczen";
-            this.Size = new System.Drawing.Size(1052, 492);
+            this.Size = new System.Drawing.Size(789, 400);
             this.Load += new System.EventHandler(this.OcenyUczen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ocenyBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).EndInit();

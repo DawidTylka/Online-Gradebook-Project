@@ -222,6 +222,7 @@
             this.dataGridView1.DataSource = this.przedmiotybindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(0, 34);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(789, 366);
             this.dataGridView1.TabIndex = 4;
             // 
@@ -237,12 +238,14 @@
             this.nazwaDataGridViewTextBoxColumn.DataPropertyName = "nazwa";
             this.nazwaDataGridViewTextBoxColumn.HeaderText = "nazwa";
             this.nazwaDataGridViewTextBoxColumn.Name = "nazwaDataGridViewTextBoxColumn";
+            this.nazwaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // idnauczycielaDataGridViewTextBoxColumn
             // 
             this.idnauczycielaDataGridViewTextBoxColumn.DataPropertyName = "id_nauczyciela";
             this.idnauczycielaDataGridViewTextBoxColumn.HeaderText = "id_nauczyciela";
             this.idnauczycielaDataGridViewTextBoxColumn.Name = "idnauczycielaDataGridViewTextBoxColumn";
+            this.idnauczycielaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // PrzedmiotyNauczyciel
             // 
