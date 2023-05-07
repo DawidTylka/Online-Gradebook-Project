@@ -20,6 +20,7 @@ namespace Tylka.apkrodzic
             InitializeComponent();
             MaximizeBox = false;
             MinimizeBox = false;
+            UserData.admin = false;
             chowaj();
         }
 

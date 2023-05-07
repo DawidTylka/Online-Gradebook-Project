@@ -10,13 +10,14 @@ namespace Tylka.dziennik_funkcje
     public class Data
     {
         public String v1;
-        public int v2;
+        public object v2;
 
-        public Data(String x, int y)
+        public Data(String x, object y)
         {
             v1 = x;
             v2 = y;
         }
+
     }
     static class UserData
     {

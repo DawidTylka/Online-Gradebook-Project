@@ -19,6 +19,7 @@ namespace Tylka.apknauczyciel
             InitializeComponent();
             MaximizeBox = false;
             MinimizeBox = false;
+            UserData.admin = false;
             chowaj();
         }
 

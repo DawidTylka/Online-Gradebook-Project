@@ -19,6 +19,7 @@ namespace Tylka.apkuczen
             InitializeComponent();
             MaximizeBox = false;
             MinimizeBox = false;
+            UserData.admin = false;
         }
         private void chowaj()
         {

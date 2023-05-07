@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tylka.dziennik_funkcje;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 
 namespace Tylka
 {
@@ -32,11 +33,7 @@ namespace Tylka
             String login, password; ;
             UserData.login_all = login = LLoginTxtB.Text;
             UserData.admin = false;
-            Random rnd = new Random();
 
-
-            UserData.title = "oceny";
-            UserData.adminTitle = "oceny";
 
             password = LPasswordTxtB.Text;
             int i = 0;
@@ -115,17 +112,29 @@ namespace Tylka
                     if (rolecheck1.Length != 0)
                     {
                         conn.Open();
-                        for (int x = 1; x <= 6; x++)
-                        {
-                            
-                            SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM oceny WHERE ocena ="+x+"AND id_ucznia="+UserData.user_id, conn);
-                            int count = (int)cmd.ExecuteScalar();
-                            UserData.data.Add(new Data("" + x, count));
-
-                        }
+                        UserData.title = "oceny";
+                        SqlCommand cmd = new SqlCommand("SELECT ocena, COUNT(*) FROM oceny WHERE id_ucznia= " + UserData.user_id + " GROUP BY ocena ", conn); 
+                            SqlDataReader reader0 = cmd.ExecuteReader();
+                            while (reader0.Read())
+                            {
+                                UserData.data.Add(new Data(""+reader0.GetInt32(0), reader0.GetInt32(1)));
+                            }
+                        reader0.Close();
                         conn.Close();
+
                         if (admincheck.Length != 0)
-                        {   
+                        {
+                            conn.Open();
+                            UserData.adminTitle = "ilość dzieci w klasach";
+                            cmd = new SqlCommand("SELECT klasa,COUNT(user_id) FROM klasy GROUP BY klasa", conn);
+                            reader0 = cmd.ExecuteReader();
+                            while (reader0.Read())
+                            {
+
+                                UserData.dataAadmin.Add(new Data("" + reader0.GetValue(0), reader0.GetValue(1)));
+                            }
+                            reader0.Close();
+                            conn.Close();
                             UserData.admin = true;
                             loginpick11.Show();
                         }
@@ -140,8 +149,31 @@ namespace Tylka
                     DataRow[] rolecheck2 = dtable.Select("rola = '" + 2 + "'");
                     if (rolecheck2.Length != 0)
                     {
+                        conn.Open();
+                        UserData.title = "średnia";
+                        SqlCommand cmd = new SqlCommand("SELECT users.name, CAST(AVG(CAST(oceny.ocena AS DECIMAL(12,2)))AS DECIMAL(12,2)) AS sr FROM oceny JOIN users ON oceny.id_ucznia = users.id WHERE oceny.id_ucznia IN (SELECT id FROM users WHERE idopiekuna = " + UserData.user_id + ") GROUP BY users.namer ", conn);
+                        SqlDataReader reader0 = cmd.ExecuteReader();
+                        while (reader0.Read())
+                        {
+                            
+                            UserData.data.Add(new Data(reader0.GetString(0), reader0.GetValue(1)));
+                        }
+                        reader0.Close();
+                        conn.Close();
+
                         if (admincheck.Length != 0)
                         {
+                            conn.Open();
+                            UserData.adminTitle = "ilość dzieci w klasach";
+                            cmd = new SqlCommand("SELECT klasa,COUNT(user_id) FROM klasy WHERE 1 GROUP BY klasa", conn);
+                            reader0 = cmd.ExecuteReader();
+                            while (reader0.Read())
+                            {
+
+                                UserData.dataAadmin.Add(new Data("" + reader0.GetValue(0), reader0.GetValue(1)));
+                            }
+                            reader0.Close();
+                            conn.Close();
                             UserData.admin = true;
                             loginpick21.Show();
                         }
@@ -149,22 +181,45 @@ namespace Tylka
                         {
                             apkrodzic.PanelRodzic panelrodzic = new apkrodzic.PanelRodzic();
                             panelrodzic.Show();
-                            MessageBox.Show("prrr", "rodzic" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         
                     }
                     DataRow[] rolecheck3 = dtable.Select("rola = '" + 3 + "'");
                     if (rolecheck3.Length != 0)
                     {
+
+                        conn.Open();
+                        UserData.title = "średnia z przedmiotów";
+                        SqlCommand cmd = new SqlCommand("SELECT nazwa, CAST(AVG(CAST(oceny.ocena AS DECIMAL(12,2)))AS DECIMAL(12,1)) AS sr FROM oceny JOIN przedmioty ON przedmioty.id_przedmiotu = oceny.id_przedmiotu GROUP BY nazwa", conn);
+                        SqlDataReader reader0 = cmd.ExecuteReader();
+                        while (reader0.Read())
+                        {
+
+                           UserData.data.Add(new Data("" + reader0.GetValue(0), reader0.GetValue(1)));
+                        }
+                        reader0.Close();
+                        conn.Close();
+
                         if (admincheck.Length != 0)
                         {
+                            conn.Open();
+                            UserData.adminTitle = "ilość dzieci w klasach";
+                            cmd = new SqlCommand("SELECT klasa,COUNT(user_id) FROM klasy WHERE 1 GROUP BY klasa", conn);
+                            reader0 = cmd.ExecuteReader();
+                            while (reader0.Read())
+                            {
+
+                                UserData.dataAadmin.Add(new Data("" + reader0.GetValue(0), reader0.GetValue(1)));
+                            }
+                            reader0.Close();
+                            conn.Close();
                             UserData.admin = true;
                             loginpick31.Show();
                         }
                         else
                         {
                             apknauczyciel.PanelNauczyciel panelnauczyciel = new apknauczyciel.PanelNauczyciel();
-                            MessageBox.Show("prrr", "nauczyciel" + i, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            panelnauczyciel.Show();
                         }
 
                     }
@@ -178,9 +233,9 @@ namespace Tylka
                 }
             }
 
-            catch
+            catch (Exception error)
             {
-                MessageBox.Show("prrr", "błont", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(error.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             finally//zamknij polaczenie z baza danych

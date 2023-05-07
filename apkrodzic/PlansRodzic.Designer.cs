@@ -83,11 +83,10 @@
             this.niedzielaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.plansbindingSource1;
             this.dataGridView1.Enabled = false;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 42);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 34);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1052, 450);
+            this.dataGridView1.Size = new System.Drawing.Size(789, 366);
             this.dataGridView1.TabIndex = 7;
             // 
             // iddniaDataGridViewTextBoxColumn
@@ -174,34 +173,37 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 13);
+            this.label1.Location = new System.Drawing.Point(23, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 16);
+            this.label1.Size = new System.Drawing.Size(79, 13);
             this.label1.TabIndex = 9;
             this.label1.Text = "Wybierz ucznia";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(126, 10);
+            this.comboBox1.Location = new System.Drawing.Point(94, 8);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.Size = new System.Drawing.Size(92, 21);
             this.comboBox1.TabIndex = 10;
             // 
             // customButton1
             // 
             this.customButton1.BackColor = System.Drawing.Color.Red;
             this.customButton1.borderColor = System.Drawing.Color.White;
-            this.customButton1.BorderRadius = 33;
+            this.customButton1.BorderRadius = 27;
             this.customButton1.BorderSize = 0;
-            this.customButton1.ColorBottom = System.Drawing.Color.White;
-            this.customButton1.ColorTop = System.Drawing.Color.Red;
+            this.customButton1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(114)))), ((int)(((byte)(190)))));
+            this.customButton1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(129)))), ((int)(((byte)(182)))));
             this.customButton1.FlatAppearance.BorderSize = 0;
             this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(287, 3);
+            this.customButton1.Location = new System.Drawing.Point(215, 2);
+            this.customButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(111, 33);
+            this.customButton1.Size = new System.Drawing.Size(83, 27);
             this.customButton1.TabIndex = 8;
             this.customButton1.Text = "Pokaż";
             this.customButton1.TextColor = System.Drawing.Color.White;
@@ -210,15 +212,14 @@
             // 
             // PlansRodzic
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.customButton1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PlansRodzic";
-            this.Size = new System.Drawing.Size(1052, 492);
+            this.Size = new System.Drawing.Size(789, 400);
             this.Load += new System.EventHandler(this.PlansRodzic_Load);
             this.Click += new System.EventHandler(this.PlansRodzic_Click);
             ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet1)).EndInit();
