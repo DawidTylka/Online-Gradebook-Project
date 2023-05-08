@@ -97,6 +97,7 @@ namespace Tylka.apknauczyciel
         {
             chowaj();
             sendMessage1.Show();
+            message1.Hide();
         }
     }
 }

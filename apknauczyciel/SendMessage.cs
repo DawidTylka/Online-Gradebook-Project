@@ -22,6 +22,12 @@ namespace Tylka.apknauczyciel
         private bool toall = false;
         private void SendMessage_Load(object sender, EventArgs e)
         {
+            if (UserData.messagepermission == 1)
+            { }
+            else
+            {
+                checkBox1.Visible = false;
+            }
             conn.Open();
 
             SqlDataAdapter da1 = new SqlDataAdapter("SELECT id, CONCAT(name, ' ', surname) AS fullname FROM Users", conn);
@@ -39,7 +45,7 @@ namespace Tylka.apknauczyciel
         private void button1_Click(object sender, EventArgs e)
         {
             conn.Open();
-            if (radioButton1.Checked) {
+            if (checkBox1.Checked) {
 
                 String Subject,Text;
                 Subject = textBox1.Text;
@@ -53,6 +59,15 @@ namespace Tylka.apknauczyciel
                 
             }
             conn.Close();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                comboBox1.Visible = false;
+            }
+            else { comboBox1.Visible = true; }
         }
     }
 }

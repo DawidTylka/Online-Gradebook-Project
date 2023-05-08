@@ -27,31 +27,14 @@ namespace Tylka.apknauczyciel
         private int currentPage = 1;
         private int pageSize = 5;
         private int maxPage;
-        private void btnPrevious_Click(object sender, EventArgs e)
-        {
-            if (currentPage > 1)
-            {
-                currentPage--;
-                DisplayMessages();
-            }
-        }
-
-        private void btnNext_Click(object sender, EventArgs e)
-        {
-            if (currentPage < maxPage)
-            {
-                currentPage++;
-                DisplayMessages();
-            }
-        }
-
+        private List<Label> labels = new List<Label>();
+        private List<Button> buttons = new List<Button>();
         private void DisplayMessages()
         {
             // ...
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
             cmd.CommandText = $"SELECT * FROM Wiadomosci WHERE id_receiver = {UserData.user_id} OR publicmessage = 1 ORDER BY id DESC OFFSET {(currentPage - 1) * pageSize} ROWS FETCH NEXT {pageSize} ROWS ONLY";
-
             // Create a SqlDataAdapter object to fill a DataTable
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -84,53 +67,47 @@ namespace Tylka.apknauczyciel
             }
 
             // Clear existing labels
-            foreach (Control control in this.Controls)
-            {
-                if (control is Label label)
-                {
-                    this.Controls.Remove(label);
-                    label.Dispose();
-                }
-                else if (control is Button button)
-                {
-                    this.Controls.Remove(button);
-                    button.Dispose();
-                }
-            }
 
             // Create new labels for each message
             int y = 50; // vertical position of labels
             foreach (DataRow row in dtwiadomosci.Rows)
             {
+                Label label = new Label();
+                Button button = new Button();
+
+                // create label
                 string senderName = row["sender_name"].ToString();
                 string subject = row["subject"].ToString();
                 string message = row["text"].ToString();
                 DateTime dateSent = ((DateTime)row["time"]).Date;
                 string formattedDate = dateSent.ToString("dd/MM/yyyy");
                 string preview = message.Substring(0, Math.Min(message.Length, 10)) + "...";
-                Label label = new Label
-                {
-                    Text = $"{senderName} - {subject} {preview} ({formattedDate}):",
-                    AutoSize = true,
-                    Location = new Point(50, y),
-                    Tag = message // store the full message in the label's Tag property
-                };
-                Button button = new Button
-                {
-                    Text = "Show full message",
-                    Location = new Point(450, y),
-                    Tag = label // store the label that the button belongs to in the Tag property
-                };
+                label.Text = $"{senderName} - Temat: {subject} Treść: {preview} ({formattedDate}):";
+                label.AutoSize = true;
+                label.Location = new Point(50, y + 5);
+                label.Tag = "Wysłano dnia: " + formattedDate + "\r\nNadawca: " + senderName + "\r\n" + "Temat: " + subject + "\r\n" + "Treść wiadomości: " + "\r\n" + message; // store the full message in the label's Tag property
+                labels.Add(label);
+
+                // create button
+                button.Text = "Show full";
+                button.Location = new Point(500, y);
+                button.Tag = label; // store the label that the button belongs to in the Tag property
                 button.Click += ShowMessageButton_Click;
+                buttons.Add(button);
+
+                // add label and button to form
                 this.Controls.Add(label);
                 this.Controls.Add(button);
-                y += 30; // increment vertical position for next label
+
+                y += 30;
             }
+
 
             // Update the paging controls
             pagenr.Text = $"Page {currentPage} of {maxPage}";
             prvpage.Enabled = currentPage > 1;
             nxtpage.Enabled = currentPage < maxPage;
+            conn.Close();
         }
 
         private void ShowMessageButton_Click(object sender, EventArgs e)
@@ -153,10 +130,100 @@ namespace Tylka.apknauczyciel
             // Calculate the max number of pages
             maxPage = (int)Math.Ceiling((double)totalCount / pageSize);
 
-           
-            conn.Close();
-
             DisplayMessages();
+
+
+        }
+
+        private void customButton1_Click(object sender, EventArgs e)
+        {
+            SendMessage myControl = new SendMessage();
+
+            // Add the new user control to the parent control's Controls collection
+            Parent.Controls.Add(myControl);
+
+            // Set the Dock property of the new user control to None or TopLeft
+            myControl.Dock = DockStyle.None;
+
+            // Set the Anchor property of the new user control to Top, Left, and Right
+            myControl.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+
+            // Set the size of the user control to match the size of the parent control
+            myControl.Size = Parent.ClientSize;
+
+            // Bring the new user control to the front
+            myControl.BringToFront();
+
+            // Add an event handler for the SizeChanged event of the parent control
+            Parent.SizeChanged += Parent_SizeChanged;
+        }
+
+        private void Parent_SizeChanged(object sender, EventArgs e)
+        {
+            // Resize the user control to match the size of the parent control
+            foreach (Control control in Parent.Controls)
+            {
+                if (control is SendMessage)
+                {
+                    control.Size = Parent.ClientSize;
+                    break;
+                }
+            }
+        }
+
+
+        private void nxtpage_Click_1(object sender, EventArgs e)
+        {
+            if (currentPage < maxPage)
+            {
+                currentPage++;
+                foreach (Label label in labels)
+                {
+                    this.Controls.Remove(label);
+                    label.Dispose();
+                }
+
+                foreach (Button button in buttons)
+                {
+                    this.Controls.Remove(button);
+                    button.Dispose();
+                }
+                labels.Clear();
+                buttons.Clear();
+                for (int i = 0; i < 250; i++)
+                {
+
+                }
+                DisplayMessages();
+
+            }
+        }
+
+        private void prvpage_Click_1(object sender, EventArgs e)
+        {
+            if (currentPage > 1)
+            {
+                currentPage--;
+
+                foreach (Label label in labels)
+                {
+                    this.Controls.Remove(label);
+                    label.Dispose();
+                }
+
+                foreach (Button button in buttons)
+                {
+                    this.Controls.Remove(button);
+                    button.Dispose();
+                }
+                labels.Clear();
+                buttons.Clear();
+                for (int i = 0; i < 250; i++)
+                {
+
+                }
+                DisplayMessages();
+            }
         }
     }
 }
