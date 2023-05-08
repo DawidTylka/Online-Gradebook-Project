@@ -47,6 +47,7 @@
             this.Plany_Lekcji = new Tylka.CustomButton();
             this.Edycja_Danych = new Tylka.CustomButton();
             this.oceny = new Tylka.CustomButton();
+            this.message1 = new Tylka.apknauczyciel.message();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gradient1.SuspendLayout();
             this.SuspendLayout();
@@ -94,6 +95,7 @@
             // 
             this.gradient1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
             this.gradient1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
+            this.gradient1.Controls.Add(this.message1);
             this.gradient1.Controls.Add(this.wiadomosci);
             this.gradient1.Controls.Add(this.ocenyUczen1);
             this.gradient1.Controls.Add(this.edycjaDanychUczen1);
@@ -134,6 +136,7 @@
             this.wiadomosci.Text = "Wiadomości";
             this.wiadomosci.TextColor = System.Drawing.Color.White;
             this.wiadomosci.UseVisualStyleBackColor = false;
+            this.wiadomosci.Click += new System.EventHandler(this.wiadomosci_Click);
             // 
             // ocenyUczen1
             // 
@@ -322,6 +325,15 @@
             this.oceny.UseVisualStyleBackColor = false;
             this.oceny.Click += new System.EventHandler(this.oceny_Click);
             // 
+            // message1
+            // 
+            this.message1.BackColor = System.Drawing.Color.Transparent;
+            this.message1.Location = new System.Drawing.Point(187, 47);
+            this.message1.Margin = new System.Windows.Forms.Padding(2);
+            this.message1.Name = "message1";
+            this.message1.Size = new System.Drawing.Size(789, 400);
+            this.message1.TabIndex = 24;
+            // 
             // PanelUczen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -362,5 +374,6 @@
         private onlinegradebookprojectDataSetTableAdapters.OcenyTableAdapter ocenyTableAdapter1;
         private OcenyUczen ocenyUczen1;
         private CustomButton wiadomosci;
+        private apknauczyciel.message message1;
     }
 }

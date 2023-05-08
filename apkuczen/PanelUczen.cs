@@ -29,6 +29,7 @@ namespace Tylka.apkuczen
             klasyUczen1.Hide();
             edycjaDanychUczen1.Hide();
             ocenyUczen1.Hide();
+            message1.Hide();
             home2.Hide();
 
         }
@@ -73,6 +74,12 @@ namespace Tylka.apkuczen
         {
             chowaj();
             ocenyUczen1.Show();
+        }
+
+        private void wiadomosci_Click(object sender, EventArgs e)
+        {
+            chowaj();
+            message1.Show();
         }
     }
 }

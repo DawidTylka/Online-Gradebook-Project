@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -32,6 +33,7 @@ namespace Tylka.apkrodzic
             examsRodzic1.Hide();
             ocenyRodzic1.Hide();
             edycjaDanychRodzic1.Hide();
+            message1.Hide();
             home1.Hide();
         }
 
@@ -85,6 +87,12 @@ namespace Tylka.apkrodzic
         {
             chowaj();
             edycjaDanychRodzic1.Show();
+        }
+
+        private void wiadomosci_Click(object sender, EventArgs e)
+        {
+            chowaj();
+            message1.Show();
         }
     }
 }
