@@ -42,24 +42,6 @@ namespace Tylka.apknauczyciel
             conn.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            conn.Open();
-            if (checkBox1.Checked) {
-
-                String Subject,Text;
-                Subject = textBox1.Text;
-                Text = richTextBox1.Text;
-
-
-                SqlCommand cmd = new SqlCommand("INSERT INTO Wiadomosci(id_sender,publicmessage,subject,text,time) VALUES('" + UserData.user_id + "','" + 1 + "','" + Subject + "','" + Text + "','" + DateTime.Now.Date + "')", conn);
-
-                var i = cmd.ExecuteNonQuery();//uruchamamy komende
-
-                
-            }
-            conn.Close();
-        }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
@@ -68,6 +50,49 @@ namespace Tylka.apknauczyciel
                 comboBox1.Visible = false;
             }
             else { comboBox1.Visible = true; }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            String Subject, Text,id_receiver;
+            Subject = textBox1.Text;
+            Text = richTextBox1.Text;
+            id_receiver = comboBox1.SelectedValue.ToString();
+            conn.Open();
+            if (checkBox1.Checked)
+            {
+                if (Subject !="" && Text !="")
+                {
+                    SqlCommand cmd = new SqlCommand("INSERT INTO Wiadomosci(id_sender,publicmessage,subject,text,time) VALUES('" + UserData.user_id + "','" + 1 + "','" + Subject + "','" + Text + "','" + DateTime.Now.Date + "')", conn);
+
+                    var i = cmd.ExecuteNonQuery();//uruchamamy komende
+                    MessageBox.Show("Wysłano wiadomość", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Wypełnij wszystkie pola", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            
+            }
+            else
+            {
+                if (Subject != "" && Text != "")
+                {
+                    SqlCommand cmd = new SqlCommand("INSERT INTO Wiadomosci(id_sender,id_receiver,publicmessage,subject,text,time) VALUES('" + UserData.user_id + "','" + id_receiver + "',0,'" + Subject + "','" + Text + "','" + DateTime.Now.Date + "')", conn);
+                    var i = cmd.ExecuteNonQuery();//uruchamamy komende
+                    MessageBox.Show("Wysłano wiadomość", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Wypełnij wszystkie pola", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            conn.Close();
+        }
+
+        private void customButton1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

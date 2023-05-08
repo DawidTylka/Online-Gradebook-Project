@@ -32,6 +32,7 @@ namespace Tylka.apknauczyciel
             ocenyNauczyciel1.Hide();
             edycjaDanychNauczyciel1.Hide();
             sendMessage1.Hide();
+            message1.Hide();
             home1.Hide();
         }
 
@@ -73,7 +74,6 @@ namespace Tylka.apknauczyciel
             examsNauczyciel1.Parent = this.gradient1;
             home1.Parent = this.gradient1;
             home1.Show();
-            message1.Show();
         }
 
         private void customButton1_Click(object sender, EventArgs e)
@@ -96,8 +96,7 @@ namespace Tylka.apknauczyciel
         private void wiadomosci_Click(object sender, EventArgs e)
         {
             chowaj();
-            sendMessage1.Show();
-            message1.Hide();
+            message1.Show();
         }
     }
 }

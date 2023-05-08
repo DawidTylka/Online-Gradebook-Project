@@ -32,6 +32,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Home = new Tylka.CustomButton();
             this.gradient1 = new Tylka.Gradient();
+            this.message1 = new Tylka.apknauczyciel.message();
             this.wiadomosci = new Tylka.CustomButton();
             this.sendMessage1 = new Tylka.apknauczyciel.SendMessage();
             this.edycjaDanychNauczyciel1 = new Tylka.apknauczyciel.EdycjaDanychNauczyciel();
@@ -48,7 +49,6 @@
             this.classNauczyciel1 = new Tylka.apknauczyciel.ClassNauczyciel();
             this.Plany_Lekcji = new Tylka.CustomButton();
             this.Klasy = new Tylka.CustomButton();
-            this.message1 = new Tylka.apknauczyciel.message();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gradient1.SuspendLayout();
             this.SuspendLayout();
@@ -115,6 +115,13 @@
             this.gradient1.Name = "gradient1";
             this.gradient1.Size = new System.Drawing.Size(1312, 629);
             this.gradient1.TabIndex = 17;
+            // 
+            // message1
+            // 
+            this.message1.Location = new System.Drawing.Point(267, 58);
+            this.message1.Name = "message1";
+            this.message1.Size = new System.Drawing.Size(1019, 482);
+            this.message1.TabIndex = 23;
             // 
             // wiadomosci
             // 
@@ -359,13 +366,6 @@
             this.Klasy.TextColor = System.Drawing.Color.White;
             this.Klasy.UseVisualStyleBackColor = false;
             this.Klasy.Click += new System.EventHandler(this.Klasy_Click);
-            // 
-            // message1
-            // 
-            this.message1.Location = new System.Drawing.Point(288, 24);
-            this.message1.Name = "message1";
-            this.message1.Size = new System.Drawing.Size(931, 472);
-            this.message1.TabIndex = 23;
             // 
             // PanelNauczyciel
             // 

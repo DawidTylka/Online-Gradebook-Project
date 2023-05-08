@@ -140,38 +140,14 @@ namespace Tylka.apknauczyciel
             SendMessage myControl = new SendMessage();
 
             // Add the new user control to the parent control's Controls collection
-            Parent.Controls.Add(myControl);
+            this.Controls.Add(myControl); // or Parent.Controls.Add(myControl) if the parent control is not this form
 
-            // Set the Dock property of the new user control to None or TopLeft
-            myControl.Dock = DockStyle.None;
-
-            // Set the Anchor property of the new user control to Top, Left, and Right
-            myControl.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-
-            // Set the size of the user control to match the size of the parent control
-            myControl.Size = Parent.ClientSize;
+            // Set the Dock property of the new user control to Fill
+            myControl.Dock = DockStyle.Fill;
 
             // Bring the new user control to the front
             myControl.BringToFront();
-
-            // Add an event handler for the SizeChanged event of the parent control
-            Parent.SizeChanged += Parent_SizeChanged;
         }
-
-        private void Parent_SizeChanged(object sender, EventArgs e)
-        {
-            // Resize the user control to match the size of the parent control
-            foreach (Control control in Parent.Controls)
-            {
-                if (control is SendMessage)
-                {
-                    control.Size = Parent.ClientSize;
-                    break;
-                }
-            }
-        }
-
-
         private void nxtpage_Click_1(object sender, EventArgs e)
         {
             if (currentPage < maxPage)
