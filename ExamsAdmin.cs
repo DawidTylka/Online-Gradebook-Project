@@ -21,7 +21,7 @@ namespace Tylka
 
         private void ExamsAdmin_Load(object sender, EventArgs e)
         {
-            this.sprawdzianyTableAdapter1.Fill(onlinegradebookprojectDataSet1.Sprawdziany);
+            this.sprawdzianyTableAdapter.Fill(onlinegradebookprojectDataSet.Sprawdziany);
             Resize_data TaH = new Resize_data();
             TaH.Table_auto_size(dataGridView1);
         }
@@ -29,15 +29,15 @@ namespace Tylka
         private void saveToolStripButton_Click_1(object sender, EventArgs e)
         {
             this.Validate();
-            this.sprawdzianybindingSource1.EndEdit();
-            this.sprawdzianyTableAdapter1.Update(onlinegradebookprojectDataSet1.Sprawdziany);
+            this.sprawdzianyBindingSource.EndEdit();
+            this.sprawdzianyTableAdapter.Update(onlinegradebookprojectDataSet.Sprawdziany);
             Resize_data TaH = new Resize_data();
             TaH.Table_auto_size(dataGridView1);
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            this.sprawdzianyTableAdapter1.Fill(onlinegradebookprojectDataSet1.Sprawdziany);
+            this.sprawdzianyTableAdapter.Fill(onlinegradebookprojectDataSet.Sprawdziany);
             Resize_data TaH = new Resize_data();
             TaH.Table_auto_size(dataGridView1);
         }
