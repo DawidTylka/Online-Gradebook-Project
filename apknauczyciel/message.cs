@@ -40,12 +40,24 @@ namespace Tylka.apknauczyciel
             DataTable dt = new DataTable();
             adapter.Fill(dt);
 
+            foreach (Label label in labels)
+            {
+                this.Controls.Remove(label);
+                label.Dispose();
+            }
+
+            foreach (Button button in buttons)
+            {
+                this.Controls.Remove(button);
+                button.Dispose();
+            }
+            labels.Clear();
+            buttons.Clear();
             // Create new labels for each message
             int y = 50; // vertical position of labels
             foreach (DataRow row in dt.Rows)
             {
                 Label label = new Label();
-                Button button = new Button();
 
                 //get data
                 string senderName = row["sender_name"].ToString();
@@ -58,13 +70,17 @@ namespace Tylka.apknauczyciel
                 // create label
                 label.Text = $"{senderName} - Temat: {subject} Treść: {preview} ({formattedDate}):";
                 label.AutoSize = true;
-                label.Location = new Point(50, y + 5);
+                label.Location = new Point(25, y + 5);
                 label.Tag = "Wysłano dnia: " + formattedDate + "\r\nNadawca: " + senderName + "\r\n" + "Temat: " + subject + "\r\n" + "Treść wiadomości: " + "\r\n" + message; // store the full message in the label's Tag property
+                label.Font = new Font("Arial", 9);
                 labels.Add(label);
 
+
                 // create button
-                button.Text = "Show full";
-                button.Location = new Point(500, y);
+                CustomButton button = new CustomButton();
+                button.Text = "Pokaż całą wiadomość";
+                button.Location = new Point(550, y);
+                button.Size = new Size(100, 30);
                 button.Tag = label; // store the label that the button belongs to in the Tag property
                 button.Click += ShowMessageButton_Click;
                 buttons.Add(button);
@@ -73,7 +89,7 @@ namespace Tylka.apknauczyciel
                 this.Controls.Add(label);
                 this.Controls.Add(button);
 
-                y += 30;
+                y += 40;
             }
 
 
@@ -93,6 +109,7 @@ namespace Tylka.apknauczyciel
         }
         private void message_Load(object sender, EventArgs e)
         {
+
             conn.Open();
 
             // First request: Get the total number of messagesDisplayMessages
@@ -127,23 +144,6 @@ namespace Tylka.apknauczyciel
             if (currentPage < maxPage)
             {
                 currentPage++;
-                foreach (Label label in labels)
-                {
-                    this.Controls.Remove(label);
-                    label.Dispose();
-                }
-
-                foreach (Button button in buttons)
-                {
-                    this.Controls.Remove(button);
-                    button.Dispose();
-                }
-                labels.Clear();
-                buttons.Clear();
-                for (int i = 0; i < 250; i++)
-                {
-
-                }
                 DisplayMessages();
 
             }
@@ -154,24 +154,6 @@ namespace Tylka.apknauczyciel
             if (currentPage > 1)
             {
                 currentPage--;
-
-                foreach (Label label in labels)
-                {
-                    this.Controls.Remove(label);
-                    label.Dispose();
-                }
-
-                foreach (Button button in buttons)
-                {
-                    this.Controls.Remove(button);
-                    button.Dispose();
-                }
-                labels.Clear();
-                buttons.Clear();
-                for (int i = 0; i < 250; i++)
-                {
-
-                }
                 DisplayMessages();
             }
         }
