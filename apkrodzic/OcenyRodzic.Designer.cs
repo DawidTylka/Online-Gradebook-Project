@@ -168,7 +168,7 @@
             // customButton1
             // 
             this.customButton1.BackColor = System.Drawing.Color.Red;
-            this.customButton1.borderColor = System.Drawing.Color.White;
+            this.customButton1.borderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
             this.customButton1.BorderRadius = 28;
             this.customButton1.BorderSize = 0;
             this.customButton1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(114)))), ((int)(((byte)(190)))));

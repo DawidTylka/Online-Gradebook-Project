@@ -58,7 +58,7 @@
             // prvpage
             // 
             this.prvpage.BackColor = System.Drawing.Color.Red;
-            this.prvpage.borderColor = System.Drawing.Color.White;
+            this.prvpage.borderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
             this.prvpage.BorderRadius = 49;
             this.prvpage.BorderSize = 0;
             this.prvpage.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(114)))), ((int)(((byte)(190)))));
@@ -67,7 +67,7 @@
             this.prvpage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.prvpage.ForeColor = System.Drawing.Color.White;
             this.prvpage.Location = new System.Drawing.Point(361, 268);
-            this.prvpage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.prvpage.Margin = new System.Windows.Forms.Padding(2);
             this.prvpage.Name = "prvpage";
             this.prvpage.Size = new System.Drawing.Size(107, 49);
             this.prvpage.TabIndex = 12;
@@ -79,7 +79,7 @@
             // nxtpage
             // 
             this.nxtpage.BackColor = System.Drawing.Color.Red;
-            this.nxtpage.borderColor = System.Drawing.Color.White;
+            this.nxtpage.borderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
             this.nxtpage.BorderRadius = 49;
             this.nxtpage.BorderSize = 0;
             this.nxtpage.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(114)))), ((int)(((byte)(190)))));
@@ -88,7 +88,7 @@
             this.nxtpage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nxtpage.ForeColor = System.Drawing.Color.White;
             this.nxtpage.Location = new System.Drawing.Point(551, 268);
-            this.nxtpage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nxtpage.Margin = new System.Windows.Forms.Padding(2);
             this.nxtpage.Name = "nxtpage";
             this.nxtpage.Size = new System.Drawing.Size(106, 49);
             this.nxtpage.TabIndex = 11;
@@ -100,7 +100,7 @@
             // SendBtn
             // 
             this.SendBtn.BackColor = System.Drawing.Color.Red;
-            this.SendBtn.borderColor = System.Drawing.Color.White;
+            this.SendBtn.borderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
             this.SendBtn.BorderRadius = 49;
             this.SendBtn.BorderSize = 0;
             this.SendBtn.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(114)))), ((int)(((byte)(190)))));
@@ -109,7 +109,7 @@
             this.SendBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SendBtn.ForeColor = System.Drawing.Color.White;
             this.SendBtn.Location = new System.Drawing.Point(86, 268);
-            this.SendBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SendBtn.Margin = new System.Windows.Forms.Padding(2);
             this.SendBtn.Name = "SendBtn";
             this.SendBtn.Size = new System.Drawing.Size(107, 49);
             this.SendBtn.TabIndex = 10;
@@ -127,7 +127,7 @@
             this.Controls.Add(this.SendBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pagenr);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "message";
             this.Size = new System.Drawing.Size(698, 384);
             this.Load += new System.EventHandler(this.message_Load);
