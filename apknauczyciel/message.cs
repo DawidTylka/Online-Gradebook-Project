@@ -34,7 +34,7 @@ namespace Tylka.apknauczyciel
             // ...
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
-            cmd.CommandText = $"SELECT Wiadomosci.subject,Wiadomosci.text,Wiadomosci.time, CONCAT(CONCAT(users.name,' '),users.surname) AS sender_name FROM Wiadomosci JOIN users ON users.id=Wiadomosci.id_sender WHERE Wiadomosci.id_receiver = {UserData.user_id} OR Wiadomosci.publicmessage = 1 ORDER BY Wiadomosci.id OFFSET {(currentPage - 1) * pageSize} ROWS FETCH NEXT {pageSize} ROWS ONLY";
+            cmd.CommandText = $"SELECT Wiadomosci.subject,Wiadomosci.text,Wiadomosci.time, CONCAT(CONCAT(users.name,' '),users.surname) AS sender_name FROM Wiadomosci JOIN users ON users.id=Wiadomosci.id_sender WHERE Wiadomosci.id_receiver = {UserData.user_id} OR Wiadomosci.publicmessage = 1 ORDER BY Wiadomosci.id DESC OFFSET {(currentPage - 1) * pageSize} ROWS FETCH NEXT {pageSize} ROWS ONLY";
             // Create a SqlDataAdapter object to fill a DataTable
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -70,17 +70,20 @@ namespace Tylka.apknauczyciel
                 // create label
                 label.Text = $"{senderName} - Temat: {subject} Treść: {preview} ({formattedDate}):";
                 label.AutoSize = true;
-                label.Location = new Point(25, y + 5);
-                label.Tag = "Wysłano dnia: " + formattedDate + "\r\nNadawca: " + senderName + "\r\n" + "Temat: " + subject + "\r\n" + "Treść wiadomości: " + "\r\n" + message; // store the full message in the label's Tag property
-                label.Font = new Font("Arial", 9);
+                label.Location = new Point(25, y + 10);
+                label.Tag = "Wysłano dnia: " + formattedDate + "\r\nNadawca: " + senderName + "\r\n                                                  \r\n" + "Temat: " + subject + "\r\n\r\n" + "Treść wiadomości: " + "\r\n" + message; // store the full message in the label's Tag property
+                label.Font = new Font("Arial", 11);
                 labels.Add(label);
 
 
                 // create button
                 CustomButton button = new CustomButton();
                 button.Text = "Pokaż całą wiadomość";
-                button.Location = new Point(550, y);
-                button.Size = new Size(100, 30);
+                button.Location = new Point(650, y);
+                button.TextImageRelation = TextImageRelation.ImageAboveText;
+                button.Size = new Size(100, 35);
+                button.Padding = new Padding(0, 0, 0, 0); // set top padding to 10
+                button.Font = new Font(button.Font, FontStyle.Bold);
                 button.Tag = label; // store the label that the button belongs to in the Tag property
                 button.Click += ShowMessageButton_Click;
                 buttons.Add(button);
@@ -89,12 +92,12 @@ namespace Tylka.apknauczyciel
                 this.Controls.Add(label);
                 this.Controls.Add(button);
 
-                y += 40;
+                y += 45;
             }
 
 
             // Update the paging controls
-            pagenr.Text = $"Page {currentPage} of {maxPage}";
+            pagenr.Text = $"Strona {currentPage} z {maxPage}";
             prvpage.Enabled = currentPage > 1;
             nxtpage.Enabled = currentPage < maxPage;
             conn.Close();

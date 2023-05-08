@@ -60,14 +60,17 @@ namespace Tylka
         // Constructor
         public CustomButton()
         {
+            Color color1 = Color.FromArgb(255, 160, 114, 190);
+            Color color2 = Color.FromArgb(255, 190, 129, 182);
+            Color color3 = Color.FromArgb(255, 93, 89, 175);
             Size = new Size(200, 100);
             FlatAppearance.BorderSize = 0;
             FlatStyle = FlatStyle.Flat;
-            BackColor = Color.Red;
+            BackColor = color1;
             ForeColor = Color.White;
-            BordColor = Color.White;
-            ColTop = Color.Red;
-            ColBott = Color.White;
+            BordColor = color3;
+            ColTop = color1;
+            ColBott = color2;
             Resize += new EventHandler(Button_Resize);
         }
 
@@ -94,7 +97,7 @@ namespace Tylka
             //Sizes
             RectangleF rectangleSurface = new RectangleF(0, 0, Width, Height);
             RectangleF rectangleBorder = new RectangleF(1, 1, Width - 1, Height - 1);
-            RectangleF drawtext = new RectangleF(0, Height/2-Font.Size+1, Width, Height);
+            RectangleF drawtext = new RectangleF(0, Height / 2 - Font.Size, Width, Height);
             
             //Gradient
             LinearGradientBrush lgb = new LinearGradientBrush(this.ClientRectangle, this.ColorTop, this.ColorBottom, 90F);
