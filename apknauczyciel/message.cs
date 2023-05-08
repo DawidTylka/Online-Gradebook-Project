@@ -34,54 +34,28 @@ namespace Tylka.apknauczyciel
             // ...
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
-            cmd.CommandText = $"SELECT * FROM Wiadomosci WHERE id_receiver = {UserData.user_id} OR publicmessage = 1 ORDER BY id DESC OFFSET {(currentPage - 1) * pageSize} ROWS FETCH NEXT {pageSize} ROWS ONLY";
+            cmd.CommandText = $"SELECT Wiadomosci.subject,Wiadomosci.text,Wiadomosci.time, CONCAT(CONCAT(users.name,' '),users.surname) AS sender_name FROM Wiadomosci JOIN users ON users.id=Wiadomosci.id_sender WHERE Wiadomosci.id_receiver = {UserData.user_id} OR Wiadomosci.publicmessage = 1 ORDER BY Wiadomosci.id OFFSET {(currentPage - 1) * pageSize} ROWS FETCH NEXT {pageSize} ROWS ONLY";
             // Create a SqlDataAdapter object to fill a DataTable
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             adapter.Fill(dt);
-            dt.Columns.Add("sender_name");
-
-            // Assign the DataTable to a class-level variable
-            dtwiadomosci = dt;
-            DataTable dtUsers = new DataTable();
-            SqlCommand cmdUsers = new SqlCommand();
-            cmdUsers.Connection = conn;
-            cmdUsers.CommandText = "SELECT id, name, surname FROM Users";
-            SqlDataAdapter adapterUsers = new SqlDataAdapter(cmdUsers);
-
-            // Fill dtUsers with data from the Users table
-            adapterUsers.Fill(dtUsers);
-
-            // loop through each row in dtwiadomosci and set the value of the "sender_name" column
-
-            // Loop through each row in dt and set the value of the "sender_name" column
-            foreach (DataRow row in dt.Rows)
-            {
-                int senderId = (int)row["id_sender"];
-                DataRow[] userRows = dtUsers.Select($"id = {senderId}");
-                if (userRows.Length > 0)
-                {
-                    string senderName = $"{userRows[0]["name"]} {userRows[0]["surname"]}";
-                    row["sender_name"] = senderName;
-                }
-            }
-
-            // Clear existing labels
 
             // Create new labels for each message
             int y = 50; // vertical position of labels
-            foreach (DataRow row in dtwiadomosci.Rows)
+            foreach (DataRow row in dt.Rows)
             {
                 Label label = new Label();
                 Button button = new Button();
 
-                // create label
+                //get data
                 string senderName = row["sender_name"].ToString();
                 string subject = row["subject"].ToString();
                 string message = row["text"].ToString();
                 DateTime dateSent = ((DateTime)row["time"]).Date;
                 string formattedDate = dateSent.ToString("dd/MM/yyyy");
                 string preview = message.Substring(0, Math.Min(message.Length, 10)) + "...";
+
+                // create label
                 label.Text = $"{senderName} - Temat: {subject} Treść: {preview} ({formattedDate}):";
                 label.AutoSize = true;
                 label.Location = new Point(50, y + 5);
@@ -121,7 +95,7 @@ namespace Tylka.apknauczyciel
         {
             conn.Open();
 
-            // First request: Get the total number of messages
+            // First request: Get the total number of messagesDisplayMessages
             SqlCommand cmdCount = new SqlCommand();
             cmdCount.Connection = conn;
             cmdCount.CommandText = $"SELECT COUNT(*) FROM Wiadomosci WHERE id_receiver = {UserData.user_id} OR publicmessage = 1";
