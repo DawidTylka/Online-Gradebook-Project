@@ -37,6 +37,7 @@ namespace Tylka.apkuczen
         {
             chowaj();
             home2.Show();
+            label1.Text = "Home";
         }
 
 
@@ -44,18 +45,21 @@ namespace Tylka.apkuczen
         {
             chowaj();
             planLekcjiUczen1.Show();
+            label1.Text = "Plan lekcji";
         }
 
         private void Przedmioty_Click(object sender, EventArgs e)
         {
             chowaj();
             przedmiotyUczen1.Show();
+            label1.Text = "Przedmioty";
         }
 
         private void Sprawdziany_Click(object sender, EventArgs e)
         {
             chowaj();
             sprawdzianyUczen1.Show();
+            label1.Text = "Sprawdziany";
         }
 
         private void PanelUczen_Load(object sender, EventArgs e)
@@ -68,18 +72,21 @@ namespace Tylka.apkuczen
         {
             chowaj();
             edycjaDanychUczen1.Show();
+            label1.Text = "Edycja danych";
         }
 
         private void oceny_Click(object sender, EventArgs e)
         {
             chowaj();
             ocenyUczen1.Show();
+            label1.Text = "Oceny";
         }
 
         private void wiadomosci_Click(object sender, EventArgs e)
         {
             chowaj();
             message1.Show();
+            label1.Text = "Wiadomości";
         }
     }
 }

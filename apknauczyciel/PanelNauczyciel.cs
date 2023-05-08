@@ -40,30 +40,35 @@ namespace Tylka.apknauczyciel
         {
             chowaj();
             home1.Show();
+            label1.Text = "Home";
         }
 
         private void Klasy_Click(object sender, EventArgs e)
         {
             chowaj();
             classNauczyciel1.Show();
+            label1.Text = "Klasy";
         }
 
         private void Plany_Lekcji_Click(object sender, EventArgs e)
         {
             chowaj();
             plansNauczyciel1.Show();
+            label1.Text = "Plan lekcji";
         }
 
         private void Przedmioty_Click(object sender, EventArgs e)
         {
             chowaj();
             przedmiotyNauczyciel1.Show();
+            label1.Text = "Przedmioty";
         }
 
         private void Sprawdziany_Click(object sender, EventArgs e)
         {
             chowaj();
             examsNauczyciel1.Show();
+            label1.Text = "Sprawdziany";
         }
 
         private void PanelNauczyciel_Load(object sender, EventArgs e)
@@ -80,12 +85,14 @@ namespace Tylka.apknauczyciel
         {
             chowaj();
             ocenyNauczyciel1.Show();
+            label1.Text = "Oceny";
         }
 
         private void Edycja_Danych_Click(object sender, EventArgs e)
         {
             chowaj();
             edycjaDanychNauczyciel1.Show();
+            label1.Text = "Edycja danych";
         }
 
         private void edycjaDanychNauczyciel1_Load(object sender, EventArgs e)
@@ -97,6 +104,7 @@ namespace Tylka.apknauczyciel
         {
             chowaj();
             message1.Show();
+            label1.Text = "Wiadomości";
         }
     }
 }

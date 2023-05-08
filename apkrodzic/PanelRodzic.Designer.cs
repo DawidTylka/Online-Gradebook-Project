@@ -35,6 +35,7 @@
             this.Plany_Lekcji = new Tylka.CustomButton();
             this.Klasy = new Tylka.CustomButton();
             this.gradient1 = new Tylka.Gradient();
+            this.message1 = new Tylka.apknauczyciel.message();
             this.wiadomosci = new Tylka.CustomButton();
             this.ocenyRodzic1 = new Tylka.apkrodzic.OcenyRodzic();
             this.edycjaDanychRodzic1 = new Tylka.apkrodzic.EdycjaDanychRodzic();
@@ -48,7 +49,7 @@
             this.classRodzic1 = new Tylka.apkrodzic.ClassRodzic();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ocenyTableAdapter1 = new Tylka.onlinegradebookprojectDataSetTableAdapters.OcenyTableAdapter();
-            this.message1 = new Tylka.apknauczyciel.message();
+            this.label1 = new System.Windows.Forms.Label();
             this.gradient1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -174,6 +175,7 @@
             // 
             this.gradient1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(89)))), ((int)(((byte)(175)))));
             this.gradient1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(144)))), ((int)(((byte)(200)))));
+            this.gradient1.Controls.Add(this.label1);
             this.gradient1.Controls.Add(this.message1);
             this.gradient1.Controls.Add(this.wiadomosci);
             this.gradient1.Controls.Add(this.ocenyRodzic1);
@@ -195,6 +197,15 @@
             this.gradient1.Name = "gradient1";
             this.gradient1.Size = new System.Drawing.Size(984, 511);
             this.gradient1.TabIndex = 17;
+            // 
+            // message1
+            // 
+            this.message1.BackColor = System.Drawing.Color.Transparent;
+            this.message1.Location = new System.Drawing.Point(187, 47);
+            this.message1.Margin = new System.Windows.Forms.Padding(2);
+            this.message1.Name = "message1";
+            this.message1.Size = new System.Drawing.Size(789, 400);
+            this.message1.TabIndex = 24;
             // 
             // wiadomosci
             // 
@@ -344,14 +355,16 @@
             // 
             this.ocenyTableAdapter1.ClearBeforeFill = true;
             // 
-            // message1
+            // label1
             // 
-            this.message1.BackColor = System.Drawing.Color.Transparent;
-            this.message1.Location = new System.Drawing.Point(187, 47);
-            this.message1.Margin = new System.Windows.Forms.Padding(2);
-            this.message1.Name = "message1";
-            this.message1.Size = new System.Drawing.Size(789, 400);
-            this.message1.TabIndex = 24;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(240, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 31);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Home";
             // 
             // PanelRodzic
             // 
@@ -367,6 +380,7 @@
             this.Text = "PanelRodzic";
             this.Load += new System.EventHandler(this.PanelRodzic_Load);
             this.gradient1.ResumeLayout(false);
+            this.gradient1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -394,5 +408,6 @@
         private OcenyRodzic ocenyRodzic1;
         private CustomButton wiadomosci;
         private apknauczyciel.message message1;
+        private System.Windows.Forms.Label label1;
     }
 }

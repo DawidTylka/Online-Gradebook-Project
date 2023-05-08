@@ -38,37 +38,43 @@ namespace Tylka
         {
             Hidef();
             home1.Show();
+            label1.Text = "Home";
         }
 
         private void Klasy_Click(object sender, EventArgs e)
         {
             Hidef();
             classAdmin1.Show();
+            label1.Text = "Klasy";
         }
 
         private void Plany_Lekcji_Click(object sender, EventArgs e)
         {
             Hidef();
             plansAdmin1.Show();
+            label1.Text = "Plan lekcji";
         }
 
         private void Przedmioty_Click(object sender, EventArgs e)
         {
             Hidef();
             przedmiotyAdmin1.Show();
-            
+            label1.Text = "Przedmioty";
+
         }
 
         private void Sprawdziany_Click(object sender, EventArgs e)
         {
             Hidef();
             examsAdmin1.Show();
+            label1.Text = "Sprawdziany";
         }
 
         private void Urzytkownicy_Click(object sender, EventArgs e)
         {
             Hidef();
             usersAdmin1.Show();
+            label1.Text = "Użytkownicy";
         }
 
         private void PanelAdmin_User_Load(object sender, EventArgs e)
@@ -94,6 +100,7 @@ namespace Tylka
         {
             Hidef();
             ocenyAdmin1.Show();
+            label1.Text = "Oceny";
         }
 
         private void ocenyAdmin1_Load(object sender, EventArgs e)
@@ -105,6 +112,7 @@ namespace Tylka
         {
             Hidef();
             message1.Show();
+            label1.Text = "Wiadomości";
         }
     }
 }

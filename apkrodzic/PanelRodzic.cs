@@ -41,30 +41,35 @@ namespace Tylka.apkrodzic
         {
             chowaj();
             home1.Show();
+            label1.Text = "Home";
         }
 
         private void Klasy_Click(object sender, EventArgs e)
         {
             chowaj();
             classRodzic1.Show();
+            label1.Text = "Klasy";
         }
 
         private void Plany_Lekcji_Click(object sender, EventArgs e)
         {
             chowaj();
             plansRodzic1.Show();
+            label1.Text = "Plan lekcji";
         }
 
         private void Przedmioty_Click(object sender, EventArgs e)
         {
             chowaj();
             przedmiotyRodzic1.Show();
+            label1.Text = "Przedmioty";
         }
 
         private void Sprawdziany_Click(object sender, EventArgs e)
         {
             chowaj();
             examsRodzic1.Show();
+            label1.Text = "Sprawdziany";
         }
 
         private void PanelRodzic_Load(object sender, EventArgs e)
@@ -87,12 +92,14 @@ namespace Tylka.apkrodzic
         {
             chowaj();
             edycjaDanychRodzic1.Show();
+            label1.Text = "Edycja danych";
         }
 
         private void wiadomosci_Click(object sender, EventArgs e)
         {
             chowaj();
             message1.Show();
+            label1.Text = "Wiadomości";
         }
     }
 }
