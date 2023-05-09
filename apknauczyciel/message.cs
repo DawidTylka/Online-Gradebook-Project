@@ -71,7 +71,7 @@ namespace Tylka.apknauczyciel
                 label.Text = $"{senderName} - Temat: {subject} Treść: {preview} ({formattedDate}):";
                 label.AutoSize = true;
                 label.Location = new Point(25, y + 10);
-                label.Tag = "Wysłano dnia: " + formattedDate + "\r\nNadawca: " + senderName + "\r\n                                                  \r\n" + "Temat: " + subject + "\r\n\r\n" + "Treść wiadomości: " + "\r\n" + message; // store the full message in the label's Tag property
+                label.Tag = "Wysłano dnia: " + formattedDate + "\r\nNadawca: " + senderName + "\r\n                                                                                                              \r\n" + "Temat: " + subject + "\r\n\r\n" + "Treść wiadomości: " + "\r\n" + message; // store the full message in the label's Tag property
                 label.Font = new Font("Arial", 11);
                 labels.Add(label);
 

@@ -99,10 +99,9 @@ namespace Tylka.apkuczen
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.Columns["teacher_name"].DisplayIndex = 1;
             dataGridView1.Columns["subject_name"].DisplayIndex = 0;
-            dataGridView1.Columns[2].Visible = false;
             dataGridView1.Columns[3].Visible = false;
-            dataGridView1.Columns[4].Visible = false;
-
+            dataGridView1.Columns[2].Visible = false;
+            dataGridView1.Columns[5].Visible = false;
 
             Resize_data TaH = new Resize_data();
             TaH.Table_auto_size(dataGridView1);
