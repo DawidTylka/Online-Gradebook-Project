@@ -1,6 +1,6 @@
-﻿namespace Tylka.apknauczyciel
+﻿namespace Tylka
 {
-    partial class OcenyNauczyciel
+    partial class adminwiadomosc
     {
         /// <summary> 
         /// Wymagana zmienna projektanta.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OcenyNauczyciel));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminwiadomosc));
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -44,22 +44,22 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.identyfikatorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tematDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iduczniaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idnauczycielaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.datawystawieniaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idprzedmiotuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ocenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ocenyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.onlinegradebookprojectDataSet = new Tylka.onlinegradebookprojectDataSet();
-            this.ocenyTableAdapter = new Tylka.onlinegradebookprojectDataSetTableAdapters.OcenyTableAdapter();
+            this.wiadomosciBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.wiadomosciTableAdapter = new Tylka.onlinegradebookprojectDataSetTableAdapters.WiadomosciTableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idsenderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idreceiverDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.publicmessageDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.subjectDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ocenyBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wiadomosciBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // bindingNavigator1
@@ -91,7 +91,7 @@
             this.bindingNavigator1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
             this.bindingNavigator1.Size = new System.Drawing.Size(789, 31);
-            this.bindingNavigator1.TabIndex = 5;
+            this.bindingNavigator1.TabIndex = 6;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
             // bindingNavigatorAddNewItem
@@ -188,7 +188,6 @@
             this.saveToolStripButton.Name = "saveToolStripButton";
             this.saveToolStripButton.Size = new System.Drawing.Size(28, 28);
             this.saveToolStripButton.Text = "&Save";
-            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
             // 
             // toolStripButton1
             // 
@@ -198,123 +197,105 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(28, 28);
             this.toolStripButton1.Text = "toolStripButton1";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
-            // dataGridView2
+            // dataGridView1
             // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(114)))), ((int)(((byte)(190)))));
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.identyfikatorDataGridViewTextBoxColumn,
-            this.tematDataGridViewTextBoxColumn,
-            this.iduczniaDataGridViewTextBoxColumn,
-            this.idnauczycielaDataGridViewTextBoxColumn,
-            this.datawystawieniaDataGridViewTextBoxColumn,
-            this.idprzedmiotuDataGridViewTextBoxColumn,
-            this.ocenaDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.ocenyBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 28);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(789, 372);
-            this.dataGridView2.TabIndex = 7;
-            // 
-            // identyfikatorDataGridViewTextBoxColumn
-            // 
-            this.identyfikatorDataGridViewTextBoxColumn.DataPropertyName = "Identyfikator";
-            this.identyfikatorDataGridViewTextBoxColumn.HeaderText = "Identyfikator";
-            this.identyfikatorDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.identyfikatorDataGridViewTextBoxColumn.Name = "identyfikatorDataGridViewTextBoxColumn";
-            this.identyfikatorDataGridViewTextBoxColumn.ReadOnly = true;
-            this.identyfikatorDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // tematDataGridViewTextBoxColumn
-            // 
-            this.tematDataGridViewTextBoxColumn.DataPropertyName = "temat";
-            this.tematDataGridViewTextBoxColumn.HeaderText = "temat";
-            this.tematDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tematDataGridViewTextBoxColumn.Name = "tematDataGridViewTextBoxColumn";
-            this.tematDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // iduczniaDataGridViewTextBoxColumn
-            // 
-            this.iduczniaDataGridViewTextBoxColumn.DataPropertyName = "id_ucznia";
-            this.iduczniaDataGridViewTextBoxColumn.HeaderText = "id_ucznia";
-            this.iduczniaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.iduczniaDataGridViewTextBoxColumn.Name = "iduczniaDataGridViewTextBoxColumn";
-            this.iduczniaDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // idnauczycielaDataGridViewTextBoxColumn
-            // 
-            this.idnauczycielaDataGridViewTextBoxColumn.DataPropertyName = "id_nauczyciela";
-            this.idnauczycielaDataGridViewTextBoxColumn.HeaderText = "id_nauczyciela";
-            this.idnauczycielaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idnauczycielaDataGridViewTextBoxColumn.Name = "idnauczycielaDataGridViewTextBoxColumn";
-            this.idnauczycielaDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // datawystawieniaDataGridViewTextBoxColumn
-            // 
-            this.datawystawieniaDataGridViewTextBoxColumn.DataPropertyName = "data_wystawienia";
-            this.datawystawieniaDataGridViewTextBoxColumn.HeaderText = "data_wystawienia";
-            this.datawystawieniaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.datawystawieniaDataGridViewTextBoxColumn.Name = "datawystawieniaDataGridViewTextBoxColumn";
-            this.datawystawieniaDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // idprzedmiotuDataGridViewTextBoxColumn
-            // 
-            this.idprzedmiotuDataGridViewTextBoxColumn.DataPropertyName = "id_przedmiotu";
-            this.idprzedmiotuDataGridViewTextBoxColumn.HeaderText = "id_przedmiotu";
-            this.idprzedmiotuDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idprzedmiotuDataGridViewTextBoxColumn.Name = "idprzedmiotuDataGridViewTextBoxColumn";
-            this.idprzedmiotuDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ocenaDataGridViewTextBoxColumn
-            // 
-            this.ocenaDataGridViewTextBoxColumn.DataPropertyName = "ocena";
-            this.ocenaDataGridViewTextBoxColumn.HeaderText = "ocena";
-            this.ocenaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ocenaDataGridViewTextBoxColumn.Name = "ocenaDataGridViewTextBoxColumn";
-            this.ocenaDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ocenyBindingSource
-            // 
-            this.ocenyBindingSource.DataMember = "Oceny";
-            this.ocenyBindingSource.DataSource = this.onlinegradebookprojectDataSet;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(114)))), ((int)(((byte)(190)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.idsenderDataGridViewTextBoxColumn,
+            this.idreceiverDataGridViewTextBoxColumn,
+            this.publicmessageDataGridViewCheckBoxColumn,
+            this.subjectDataGridViewTextBoxColumn,
+            this.textDataGridViewTextBoxColumn,
+            this.timeDataGridViewImageColumn});
+            this.dataGridView1.DataSource = this.wiadomosciBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 34);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(789, 366);
+            this.dataGridView1.TabIndex = 7;
             // 
             // onlinegradebookprojectDataSet
             // 
             this.onlinegradebookprojectDataSet.DataSetName = "onlinegradebookprojectDataSet";
             this.onlinegradebookprojectDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // ocenyTableAdapter
+            // wiadomosciBindingSource
             // 
-            this.ocenyTableAdapter.ClearBeforeFill = true;
+            this.wiadomosciBindingSource.DataMember = "Wiadomosci";
+            this.wiadomosciBindingSource.DataSource = this.onlinegradebookprojectDataSet;
             // 
-            // OcenyNauczyciel
+            // wiadomosciTableAdapter
+            // 
+            this.wiadomosciTableAdapter.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // idsenderDataGridViewTextBoxColumn
+            // 
+            this.idsenderDataGridViewTextBoxColumn.DataPropertyName = "id_sender";
+            this.idsenderDataGridViewTextBoxColumn.HeaderText = "id_sender";
+            this.idsenderDataGridViewTextBoxColumn.Name = "idsenderDataGridViewTextBoxColumn";
+            // 
+            // idreceiverDataGridViewTextBoxColumn
+            // 
+            this.idreceiverDataGridViewTextBoxColumn.DataPropertyName = "id_receiver";
+            this.idreceiverDataGridViewTextBoxColumn.HeaderText = "id_receiver";
+            this.idreceiverDataGridViewTextBoxColumn.Name = "idreceiverDataGridViewTextBoxColumn";
+            // 
+            // publicmessageDataGridViewCheckBoxColumn
+            // 
+            this.publicmessageDataGridViewCheckBoxColumn.DataPropertyName = "publicmessage";
+            this.publicmessageDataGridViewCheckBoxColumn.HeaderText = "publicmessage";
+            this.publicmessageDataGridViewCheckBoxColumn.Name = "publicmessageDataGridViewCheckBoxColumn";
+            // 
+            // subjectDataGridViewTextBoxColumn
+            // 
+            this.subjectDataGridViewTextBoxColumn.DataPropertyName = "subject";
+            this.subjectDataGridViewTextBoxColumn.HeaderText = "subject";
+            this.subjectDataGridViewTextBoxColumn.Name = "subjectDataGridViewTextBoxColumn";
+            // 
+            // textDataGridViewTextBoxColumn
+            // 
+            this.textDataGridViewTextBoxColumn.DataPropertyName = "text";
+            this.textDataGridViewTextBoxColumn.HeaderText = "text";
+            this.textDataGridViewTextBoxColumn.Name = "textDataGridViewTextBoxColumn";
+            // 
+            // timeDataGridViewImageColumn
+            // 
+            this.timeDataGridViewImageColumn.DataPropertyName = "time";
+            this.timeDataGridViewImageColumn.HeaderText = "time";
+            this.timeDataGridViewImageColumn.Name = "timeDataGridViewImageColumn";
+            this.timeDataGridViewImageColumn.ReadOnly = true;
+            // 
+            // adminwiadomosc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bindingNavigator1);
-            this.Name = "OcenyNauczyciel";
+            this.Name = "adminwiadomosc";
             this.Size = new System.Drawing.Size(789, 400);
-            this.Load += new System.EventHandler(this.OcenyNauczyciel_Load);
+            this.Load += new System.EventHandler(this.adminwiadomosc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ocenyBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.onlinegradebookprojectDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wiadomosciBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridViewImageColumn sSMATimeStampDataGridViewImageColumn;
+
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -329,16 +310,16 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton saveToolStripButton;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn identyfikatorDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tematDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iduczniaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idnauczycielaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn datawystawieniaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idprzedmiotuDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ocenaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource ocenyBindingSource;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idsenderDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idreceiverDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn publicmessageDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subjectDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn textDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewImageColumn timeDataGridViewImageColumn;
+        private System.Windows.Forms.BindingSource wiadomosciBindingSource;
         private onlinegradebookprojectDataSet onlinegradebookprojectDataSet;
-        private onlinegradebookprojectDataSetTableAdapters.OcenyTableAdapter ocenyTableAdapter;
+        private onlinegradebookprojectDataSetTableAdapters.WiadomosciTableAdapter wiadomosciTableAdapter;
     }
 }

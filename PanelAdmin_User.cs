@@ -25,6 +25,7 @@ namespace Tylka
             ocenyAdmin1.Hide();
             message1.Hide();
             home1.Hide();
+            adminwiadomosc1.Hide();
         }
         public PanelAdmin_User()
         {
@@ -112,6 +113,13 @@ namespace Tylka
         {
             Hidef();
             message1.Show();
+            label1.Text = "Wiadomości";
+        }
+
+        private void wiadoedit_Click(object sender, EventArgs e)
+        {
+            Hidef();
+            adminwiadomosc1.Show();
             label1.Text = "Wiadomości";
         }
     }

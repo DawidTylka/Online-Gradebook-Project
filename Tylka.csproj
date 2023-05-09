@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminwiadomosc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminwiadomosc.Designer.cs">
+      <DependentUpon>adminwiadomosc.cs</DependentUpon>
+    </Compile>
     <Compile Include="apknauczyciel\ClassNauczyciel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -275,6 +281,9 @@
     <Compile Include="UsersAdmin.Designer.cs">
       <DependentUpon>UsersAdmin.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="adminwiadomosc.resx">
+      <DependentUpon>adminwiadomosc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="apknauczyciel\ClassNauczyciel.resx">
       <DependentUpon>ClassNauczyciel.cs</DependentUpon>
     </EmbeddedResource>
