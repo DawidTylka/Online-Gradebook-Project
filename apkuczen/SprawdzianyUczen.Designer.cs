@@ -61,11 +61,12 @@
             this.id_klasy});
             this.dataGridView1.DataSource = this.sprawdzianyBindingSource1;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 34);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 42);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(789, 366);
+            this.dataGridView1.Size = new System.Drawing.Size(1052, 450);
             this.dataGridView1.TabIndex = 0;
             // 
             // idprzedmiotuDataGridViewTextBoxColumn
@@ -139,11 +140,12 @@
             // 
             // SprawdzianyUczen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SprawdzianyUczen";
-            this.Size = new System.Drawing.Size(789, 400);
+            this.Size = new System.Drawing.Size(1052, 492);
             this.Load += new System.EventHandler(this.SprawdzianyUczen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sprawdzianyBindingSource1)).EndInit();
