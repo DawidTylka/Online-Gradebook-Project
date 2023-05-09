@@ -80,15 +80,13 @@ namespace Tylka.apkuczen
                 Console.WriteLine(rowSprawdziany);
                 foreach (DataRow rowUsers in dtUsers.Rows)
                 {
-                    Console.WriteLine(rowSprawdziany["teacher_id"].GetType());
-                    Console.WriteLine(rowUsers["id"].GetType());
+
                     if (rowSprawdziany["teacher_id"].Equals(rowUsers["id"]))
                     {
                         rowSprawdziany["teacher_name"] = rowUsers["name"].ToString() + " " + rowUsers["surname"].ToString();
                     }
                 }
             }
-
 
             // Set DataTable as the DataGridView's data source
             dataGridView1.DataSource = dtSprawdziany;
@@ -101,16 +99,6 @@ namespace Tylka.apkuczen
             dataGridView1.Columns[0].Visible = false;
             dataGridView1.Columns[3].Visible = false;
             dataGridView1.Columns[6].Visible = false;
-
-            // Hide unnecessary columns and resize DataGridView
-            /*dataGridView1.Columns["teacher_name"].Visible = true;
-            dataGridView1.Columns[1].Visible = false;
-            dataGridView1.Columns[0].Visible = false;
-            dataGridView1.RowHeadersVisible = false;
-            dataGridView1.Columns[3].Visible = false;
-            dataGridView1.Columns[2].Visible = false;
-            dataGridView1.Columns[5].Visible = false;
-            */
 
             Resize_data TaH = new Resize_data();
             TaH.Table_auto_size(dataGridView1);

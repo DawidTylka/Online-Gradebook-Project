@@ -101,12 +101,6 @@
     <Compile Include="apknauczyciel\SendMessage.Designer.cs">
       <DependentUpon>SendMessage.cs</DependentUpon>
     </Compile>
-    <Compile Include="apkrodzic\ClassRodzic.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="apkrodzic\ClassRodzic.Designer.cs">
-      <DependentUpon>ClassRodzic.cs</DependentUpon>
-    </Compile>
     <Compile Include="apkrodzic\EdycjaDanychRodzic.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -307,9 +301,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="apknauczyciel\SendMessage.resx">
       <DependentUpon>SendMessage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="apkrodzic\ClassRodzic.resx">
-      <DependentUpon>ClassRodzic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="apkrodzic\EdycjaDanychRodzic.resx">
       <DependentUpon>EdycjaDanychRodzic.cs</DependentUpon>

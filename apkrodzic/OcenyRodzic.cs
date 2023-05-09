@@ -25,7 +25,7 @@ namespace Tylka.apkrodzic
 
         private void OcenyRodzic_Load(object sender, EventArgs e)
         {
-
+            dataGridView1.Visible = false;
             conn.Open();
             SqlDataAdapter da1 = new SqlDataAdapter("Select id,idopiekuna,CONCAT(name, ' ', surname) AS fullname FROM Users WHERE idopiekuna=" + UserData.user_id, conn);
             DataTable dtopiekun = new DataTable();
@@ -36,21 +36,11 @@ namespace Tylka.apkrodzic
             dataGridView1.Columns.Add("teacher_name", "Nauczyciel");
             dataGridView1.Columns.Add("subject_name", "Przedmioty");
             conn.Close();
-            /*SqlDataAdapter da = new SqlDataAdapter("Select * FROM Oceny WHERE id_ucznia = (Select id FROM Users WHERE idopiekuna = '" + UserData.user_id + "')", conn);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            conn.Close();
-            dataGridView1.Columns[1].Visible = false;
-            dataGridView1.Columns[0].Visible = false;
-            dataGridView1.RowHeadersVisible = false;
-
-            Resize_data TaH = new Resize_data();
-            TaH.Table_auto_size(dataGridView1);*/
         }
 
         private void customButton1_Click(object sender, EventArgs e)
         {
+            dataGridView1.Visible = true;
             int selectedId = (int)comboBox1.SelectedValue;
             // Add "teacher name" column to DataGridView
 

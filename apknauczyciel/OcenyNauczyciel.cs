@@ -13,10 +13,11 @@ namespace Tylka.apknauczyciel
 {
     public partial class OcenyNauczyciel : UserControl
     {
+        
         public OcenyNauczyciel()
         {
             InitializeComponent();
-            dataGridView1.RowHeadersVisible = false;
+            dataGridView2.RowHeadersVisible = false;
         }
 
         private void saveToolStripButton_Click(object sender, EventArgs e)
@@ -25,21 +26,22 @@ namespace Tylka.apknauczyciel
             this.ocenyBindingSource.EndEdit();
             this.ocenyTableAdapter.Update(onlinegradebookprojectDataSet.Oceny);
             Resize_data TaH = new Resize_data();
-            TaH.Table_auto_size(dataGridView1);
+            TaH.Table_auto_size(dataGridView2);
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             this.ocenyTableAdapter.Fill(onlinegradebookprojectDataSet.Oceny);
             Resize_data TaH = new Resize_data();
-            TaH.Table_auto_size(dataGridView1);
+            TaH.Table_auto_size(dataGridView2);
         }
 
         private void OcenyNauczyciel_Load(object sender, EventArgs e)
         {
+
             this.ocenyTableAdapter.Fill(onlinegradebookprojectDataSet.Oceny);
             Resize_data TaH = new Resize_data();
-            TaH.Table_auto_size(dataGridView1);
+            TaH.Table_auto_size(dataGridView2);
         }
     }
 }

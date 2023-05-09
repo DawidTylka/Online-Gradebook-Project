@@ -48,6 +48,12 @@ namespace Tylka.apkrodzic
             comboBox1.ValueMember = "id";
             dataGridView1.Visible = false;
             conn.Close();
+            dataGridView1.Columns.Add("teacher_name", "teacher_name");
+            dataGridView1.Columns.Add("subject_name", "Przedmioty");
+            dataGridView1.Columns.Add("teacher_id", "teacher_id");
+            dataGridView1.Columns["subject_name"].DataPropertyName = "subject_name";
+            dataGridView1.Columns["teacher_id"].DataPropertyName = "teacher_id";
+            dataGridView1.Columns["teacher_name"].DataPropertyName = "teacher_name";
         }
 
         private void customButton1_Click(object sender, EventArgs e)
@@ -66,17 +72,79 @@ namespace Tylka.apkrodzic
                 if (reader2.Read())
                 {
                     class_id = reader2.GetInt32(0);
-                    reader2.Close();
+                }
+                reader2.Close();
+            }
+            // Add "teacher name" column to DataGridView
+
+
+            // First request: Get records from the Oceny table for the specific student
+            SqlCommand cmdSprawdziany = new SqlCommand();
+            cmdSprawdziany.Connection = conn;
+            cmdSprawdziany.CommandText = "SELECT * FROM Sprawdziany WHERE id_klasy = @val1";
+            cmdSprawdziany.Parameters.AddWithValue("@val1", class_id);
+            SqlDataAdapter adapterSprawdziany = new SqlDataAdapter(cmdSprawdziany);
+
+            DataTable dtSprawdziany = new DataTable();
+            adapterSprawdziany.Fill(dtSprawdziany);
+
+            // Add "teacher_name" column to dtOceny
+            dtSprawdziany.Columns.Add("teacher_name");
+            dtSprawdziany.Columns.Add("subject_name");
+            dtSprawdziany.Columns.Add("teacher_id", typeof(int));
+            // Second request: Get the teacher's name from the Users table
+            SqlCommand cmdPrzedmioty = new SqlCommand();
+            cmdPrzedmioty.Connection = conn;
+            cmdPrzedmioty.CommandText = "SELECT id_przedmiotu, nazwa, id_nauczyciela FROM Przedmioty";
+            SqlDataAdapter adapterPrzedmioty = new SqlDataAdapter(cmdPrzedmioty);
+
+            DataTable dtPrzedmioty = new DataTable();
+            adapterPrzedmioty.Fill(dtPrzedmioty);
+            foreach (DataRow rowSprawdziany in dtSprawdziany.Rows)
+            {
+                foreach (DataRow rowPrzedmioty in dtPrzedmioty.Rows)
+                {
+                    if (rowSprawdziany["id_przedmiotu"].Equals(rowPrzedmioty["id_przedmiotu"]))
+                    {
+                        rowSprawdziany["subject_name"] = rowPrzedmioty["nazwa"].ToString();
+                        rowSprawdziany["teacher_id"] = rowPrzedmioty["id_nauczyciela"];
+                    }
                 }
             }
-            SqlCommand cmdDni = new SqlCommand();
-            cmdDni.Connection = conn;
-            cmdDni.CommandText = "SELECT * FROM Sprawdziany WHERE id_klasy =" + class_id;
-            SqlDataAdapter adapterOceny = new SqlDataAdapter(cmdDni);
+            SqlCommand cmdUsers = new SqlCommand();
+            cmdUsers.Connection = conn;
+            cmdUsers.CommandText = "SELECT id, name, surname FROM users WHERE rola = 3";
+            SqlDataAdapter adapterUsers = new SqlDataAdapter(cmdUsers);
 
-            DataTable dtDni = new DataTable();
-            adapterOceny.Fill(dtDni);
-            dataGridView1.DataSource = dtDni;
+            DataTable dtUsers = new DataTable();
+            adapterUsers.Fill(dtUsers);
+            foreach (DataRow rowSprawdziany in dtSprawdziany.Rows)
+            {
+                Console.WriteLine(rowSprawdziany);
+                foreach (DataRow rowUsers in dtUsers.Rows)
+                {
+
+                    if (rowSprawdziany["teacher_id"].Equals(rowUsers["id"]))
+                    {
+                        rowSprawdziany["teacher_name"] = rowUsers["name"].ToString() + " " + rowUsers["surname"].ToString();
+                    }
+                }
+            }
+
+            // Set DataTable as the DataGridView's data source
+            dataGridView1.DataSource = dtSprawdziany;
+            conn.Close();
+
+            dataGridView1.Columns["teacher_name"].DisplayIndex = 0;
+            dataGridView1.Columns["subject_name"].DisplayIndex = 1;
+            dataGridView1.Columns["tematDataGridViewTextBoxColumn"].DisplayIndex = 2;
+            dataGridView1.Columns["terminDataGridViewTextBoxColumn"].DisplayIndex = 3;
+            dataGridView1.Columns[0].Visible = false;
+            dataGridView1.Columns[3].Visible = false;
+            dataGridView1.Columns[6].Visible = false;
+
+            Resize_data TaH = new Resize_data();
+            TaH.Table_auto_size(dataGridView1);
         }
     }
 }

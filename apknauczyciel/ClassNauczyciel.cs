@@ -17,25 +17,9 @@ namespace Tylka.apknauczyciel
         {
             InitializeComponent();
         }
-
-        private void saveToolStripButton_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.klasyBindingSource.EndEdit();
-            this.klasyTableAdapter1.Update(onlinegradebookprojectDataSet1.Klasy);
-            Resize_data TaH = new Resize_data();
-            TaH.Table_auto_size(dataGridView1);
-        }
-
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-            this.klasyTableAdapter1.Fill(onlinegradebookprojectDataSet1.Klasy);
-            Resize_data TaH = new Resize_data();
-            TaH.Table_auto_size(dataGridView1);
-        }
-
         private void ClassNauczyciel_Load(object sender, EventArgs e)
         {
+            this.klasyTableAdapter1.Fill(onlinegradebookprojectDataSet1.Klasy);
             Resize_data TaH = new Resize_data();
             TaH.Table_auto_size(dataGridView1);
         }

@@ -36,7 +36,6 @@ namespace Tylka
 
 
             password = LPasswordTxtB.Text;
-            int i = 0;
             try
             {
                 String querry = "SELECT * FROM Users WHERE login = '" + login + "' AND password = '" + password + "'";//zapytanko do bazy
@@ -101,8 +100,6 @@ namespace Tylka
                             {
                                 MessageBox.Show("No data found for the specified ID.");
                             }
-
-                            reader1.Close();
                             conn.Close();
                         }
                     }

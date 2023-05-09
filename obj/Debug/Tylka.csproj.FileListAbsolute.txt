@@ -191,7 +191,6 @@ C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apknauczyciel.ExamsNauczycie
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apknauczyciel.PanelNauczyciel.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apknauczyciel.PlansNauczyciel.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apknauczyciel.PrzedmiotyNauczyciel.resources
-C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkrodzic.ClassRodzic.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkrodzic.ExamsRodzic.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkrodzic.PanelRodzic.resources
 C:\Users\kacpe\Desktop\newapp\Tylka\obj\Debug\Tylka.apkrodzic.PlansRodzic.resources

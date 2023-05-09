@@ -27,7 +27,6 @@ namespace Tylka.apkrodzic
 
         private void chowaj()
         {
-            classRodzic1.Hide();
             plansRodzic1.Hide();
             przedmiotyRodzic1.Hide();
             examsRodzic1.Hide();
@@ -43,14 +42,6 @@ namespace Tylka.apkrodzic
             home1.Show();
             label1.Text = "Home";
         }
-
-        private void Klasy_Click(object sender, EventArgs e)
-        {
-            chowaj();
-            classRodzic1.Show();
-            label1.Text = "Klasy";
-        }
-
         private void Plany_Lekcji_Click(object sender, EventArgs e)
         {
             chowaj();
@@ -74,7 +65,6 @@ namespace Tylka.apkrodzic
 
         private void PanelRodzic_Load(object sender, EventArgs e)
         {
-            classRodzic1.Parent = this.gradient1;
             plansRodzic1.Parent = this.gradient1;
             przedmiotyRodzic1.Parent = this.gradient1;
             examsRodzic1.Parent = this.gradient1; 
