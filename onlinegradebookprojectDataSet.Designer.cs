@@ -690,8 +690,6 @@ namespace Tylka {
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnIdentyfikator}, true));
                 this.columnIdentyfikator.AutoIncrement = true;
-                this.columnIdentyfikator.AutoIncrementSeed = -1;
-                this.columnIdentyfikator.AutoIncrementStep = -1;
                 this.columnIdentyfikator.AllowDBNull = false;
                 this.columnIdentyfikator.ReadOnly = true;
                 this.columnIdentyfikator.Unique = true;

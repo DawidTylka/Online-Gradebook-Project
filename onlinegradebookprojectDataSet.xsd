@@ -618,7 +618,7 @@ SELECT id, id_sender, id_receiver, publicmessage, subject, text, time FROM Wiado
         <xs:element name="Klasy" msprop:Generator_RowEvHandlerName="KlasyRowChangeEventHandler" msprop:Generator_RowDeletedName="KlasyRowDeleted" msprop:Generator_RowDeletingName="KlasyRowDeleting" msprop:Generator_RowEvArgName="KlasyRowChangeEvent" msprop:Generator_TablePropName="Klasy" msprop:Generator_RowChangedName="KlasyRowChanged" msprop:Generator_UserTableName="Klasy" msprop:Generator_RowChangingName="KlasyRowChanging" msprop:Generator_RowClassName="KlasyRow" msprop:Generator_TableClassName="KlasyDataTable" msprop:Generator_TableVarName="tableKlasy">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Identyfikator" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="IdentyfikatorColumn" msprop:Generator_ColumnPropNameInRow="Identyfikator" msprop:Generator_UserColumnName="Identyfikator" msprop:Generator_ColumnVarNameInTable="columnIdentyfikator" type="xs:int" />
+              <xs:element name="Identyfikator" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnPropNameInTable="IdentyfikatorColumn" msprop:Generator_ColumnPropNameInRow="Identyfikator" msprop:Generator_UserColumnName="Identyfikator" msprop:Generator_ColumnVarNameInTable="columnIdentyfikator" type="xs:int" />
               <xs:element name="Profil" msprop:Generator_ColumnPropNameInTable="ProfilColumn" msprop:Generator_ColumnPropNameInRow="Profil" msprop:Generator_UserColumnName="Profil" msprop:Generator_ColumnVarNameInTable="columnProfil" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -751,9 +751,9 @@ SELECT id, id_sender, id_receiver, publicmessage, subject, text, time FROM Wiado
                 </xs:simpleType>
               </xs:element>
               <xs:element name="id_klasy" msprop:Generator_ColumnPropNameInTable="id_klasyColumn" msprop:Generator_ColumnPropNameInRow="id_klasy" msprop:Generator_UserColumnName="id_klasy" msprop:Generator_ColumnVarNameInTable="columnid_klasy" type="xs:int" />
-              <xs:element name="id" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_UserColumnName="id" type="xs:int" />
-              <xs:element name="id_przedmiotu" msprop:Generator_ColumnPropNameInRow="id_przedmiotu" msprop:Generator_ColumnPropNameInTable="id_przedmiotuColumn" msprop:Generator_ColumnVarNameInTable="columnid_przedmiotu" msprop:Generator_UserColumnName="id_przedmiotu" type="xs:int" />
-              <xs:element name="termin" msprop:Generator_ColumnPropNameInRow="termin" msprop:Generator_ColumnPropNameInTable="terminColumn" msprop:Generator_ColumnVarNameInTable="columntermin" msprop:Generator_UserColumnName="termin">
+              <xs:element name="id" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnVarNameInTable="columnid" type="xs:int" />
+              <xs:element name="id_przedmiotu" msprop:Generator_UserColumnName="id_przedmiotu" msprop:Generator_ColumnPropNameInTable="id_przedmiotuColumn" msprop:Generator_ColumnPropNameInRow="id_przedmiotu" msprop:Generator_ColumnVarNameInTable="columnid_przedmiotu" type="xs:int" />
+              <xs:element name="termin" msprop:Generator_UserColumnName="termin" msprop:Generator_ColumnPropNameInTable="terminColumn" msprop:Generator_ColumnPropNameInRow="termin" msprop:Generator_ColumnVarNameInTable="columntermin">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
@@ -810,28 +810,28 @@ SELECT id, id_sender, id_receiver, publicmessage, subject, text, time FROM Wiado
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Wiadomosci" msprop:Generator_RowClassName="WiadomosciRow" msprop:Generator_RowEvHandlerName="WiadomosciRowChangeEventHandler" msprop:Generator_RowDeletedName="WiadomosciRowDeleted" msprop:Generator_RowDeletingName="WiadomosciRowDeleting" msprop:Generator_RowEvArgName="WiadomosciRowChangeEvent" msprop:Generator_TablePropName="Wiadomosci" msprop:Generator_RowChangedName="WiadomosciRowChanged" msprop:Generator_UserTableName="Wiadomosci" msprop:Generator_RowChangingName="WiadomosciRowChanging" msprop:Generator_TableClassName="WiadomosciDataTable" msprop:Generator_TableVarName="tableWiadomosci">
+        <xs:element name="Wiadomosci" msprop:Generator_RowEvHandlerName="WiadomosciRowChangeEventHandler" msprop:Generator_RowDeletedName="WiadomosciRowDeleted" msprop:Generator_RowDeletingName="WiadomosciRowDeleting" msprop:Generator_RowEvArgName="WiadomosciRowChangeEvent" msprop:Generator_TablePropName="Wiadomosci" msprop:Generator_RowChangedName="WiadomosciRowChanged" msprop:Generator_UserTableName="Wiadomosci" msprop:Generator_RowChangingName="WiadomosciRowChanging" msprop:Generator_RowClassName="WiadomosciRow" msprop:Generator_TableClassName="WiadomosciDataTable" msprop:Generator_TableVarName="tableWiadomosci">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="id" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnVarNameInTable="columnid" type="xs:int" />
-              <xs:element name="id_sender" msprop:Generator_UserColumnName="id_sender" msprop:Generator_ColumnPropNameInTable="id_senderColumn" msprop:Generator_ColumnPropNameInRow="id_sender" msprop:Generator_ColumnVarNameInTable="columnid_sender" type="xs:int" />
-              <xs:element name="id_receiver" msprop:Generator_UserColumnName="id_receiver" msprop:Generator_ColumnPropNameInTable="id_receiverColumn" msprop:Generator_ColumnPropNameInRow="id_receiver" msprop:Generator_ColumnVarNameInTable="columnid_receiver" type="xs:int" minOccurs="0" />
-              <xs:element name="publicmessage" msprop:Generator_UserColumnName="publicmessage" msprop:Generator_ColumnPropNameInTable="publicmessageColumn" msprop:Generator_ColumnPropNameInRow="publicmessage" msprop:Generator_ColumnVarNameInTable="columnpublicmessage" type="xs:boolean" />
-              <xs:element name="subject" msprop:Generator_UserColumnName="subject" msprop:Generator_ColumnPropNameInTable="subjectColumn" msprop:Generator_ColumnPropNameInRow="subject" msprop:Generator_ColumnVarNameInTable="columnsubject" minOccurs="0">
+              <xs:element name="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnVarNameInTable="columnid" type="xs:int" />
+              <xs:element name="id_sender" msprop:Generator_ColumnPropNameInTable="id_senderColumn" msprop:Generator_ColumnPropNameInRow="id_sender" msprop:Generator_UserColumnName="id_sender" msprop:Generator_ColumnVarNameInTable="columnid_sender" type="xs:int" />
+              <xs:element name="id_receiver" msprop:Generator_ColumnPropNameInTable="id_receiverColumn" msprop:Generator_ColumnPropNameInRow="id_receiver" msprop:Generator_UserColumnName="id_receiver" msprop:Generator_ColumnVarNameInTable="columnid_receiver" type="xs:int" minOccurs="0" />
+              <xs:element name="publicmessage" msprop:Generator_ColumnPropNameInTable="publicmessageColumn" msprop:Generator_ColumnPropNameInRow="publicmessage" msprop:Generator_UserColumnName="publicmessage" msprop:Generator_ColumnVarNameInTable="columnpublicmessage" type="xs:boolean" />
+              <xs:element name="subject" msprop:Generator_ColumnPropNameInTable="subjectColumn" msprop:Generator_ColumnPropNameInRow="subject" msprop:Generator_UserColumnName="subject" msprop:Generator_ColumnVarNameInTable="columnsubject" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="text" msprop:Generator_UserColumnName="text" msprop:Generator_ColumnPropNameInTable="textColumn" msprop:Generator_ColumnPropNameInRow="text" msprop:Generator_ColumnVarNameInTable="columntext" minOccurs="0">
+              <xs:element name="text" msprop:Generator_ColumnPropNameInTable="textColumn" msprop:Generator_ColumnPropNameInRow="text" msprop:Generator_UserColumnName="text" msprop:Generator_ColumnVarNameInTable="columntext" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="time" msdata:ReadOnly="true" msprop:Generator_UserColumnName="time" msprop:Generator_ColumnPropNameInTable="timeColumn" msprop:Generator_ColumnPropNameInRow="time" msprop:Generator_ColumnVarNameInTable="columntime" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="time" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="timeColumn" msprop:Generator_ColumnPropNameInRow="time" msprop:Generator_UserColumnName="time" msprop:Generator_ColumnVarNameInTable="columntime" type="xs:base64Binary" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
