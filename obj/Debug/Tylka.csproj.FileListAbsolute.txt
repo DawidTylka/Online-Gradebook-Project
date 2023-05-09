@@ -167,7 +167,6 @@ C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apknauc
 C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apknauczyciel.PlansNauczyciel.resources
 C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apknauczyciel.PrzedmiotyNauczyciel.resources
 C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apknauczyciel.ExamsNauczyciel.resources
-C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkrodzic.ClassRodzic.resources
 C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkrodzic.PlansRodzic.resources
 C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkrodzic.PrzedmiotyRodzic.resources
 C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkrodzic.ExamsRodzic.resources
@@ -284,3 +283,13 @@ C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.dzien
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.OcenyAdmin.resources
 F:\Pliki urzytkownika\Dokumenty\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.adminwiadomosc.resources
 C:\Users\Michał\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.adminwiadomosc.resources
+C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apknauczyciel.EdycjaDanychNauczyciel.resources
+C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apknauczyciel.message.resources
+C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apknauczyciel.OcenyNauczyciel.resources
+C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apknauczyciel.SendMessage.resources
+C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkrodzic.EdycjaDanychRodzic.resources
+C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkrodzic.OcenyRodzic.resources
+C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkuczen.EdycjaDanychUczen.resources
+C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.apkuczen.OcenyUczen.resources
+C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.dziennik_funkcje.home.resources
+C:\Users\mikiw\Documents\GitHub\Online-Gradebook-Project\obj\Debug\Tylka.OcenyAdmin.resources

@@ -55,8 +55,9 @@ namespace Tylka.apkrodzic
                 if (reader2.Read())
                 {
                     class_id = reader2.GetInt32(0);
-                    reader2.Close();
+                    
                 }
+                reader2.Close();
             }
             SqlCommand cmdDni = new SqlCommand();
             cmdDni.Connection = conn;
